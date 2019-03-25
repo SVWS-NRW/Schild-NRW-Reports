@@ -1,0 +1,239 @@
+object Report: TppReport
+  AutoStop = False
+  Columns = 2
+  ColumnPositions.Strings = (
+    '0'
+    '148500')
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'A6 Karteikarte.rtm'
+  PrinterSetup.Orientation = poLandscape
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 0
+  PrinterSetup.mmMarginLeft = 0
+  PrinterSetup.mmMarginRight = 0
+  PrinterSetup.mmMarginTop = 0
+  PrinterSetup.mmPaperHeight = 210000
+  PrinterSetup.mmPaperWidth = 297000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Testbereich\A6 Kar' +
+    'teikarte.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 148500
+  DataPipelineName = 'Schueler'
+  object ppColumnHeaderBand1: TppColumnHeaderBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 105000
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentPrinterSetup = False
+      TraverseAllData = False
+      DataPipelineName = 'Schueler'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 148500
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.Schueler
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'A6 Karteikarte.rtm'
+        PrinterSetup.Orientation = poLandscape
+        PrinterSetup.PaperName = 'A6 105 x 148 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 0
+        PrinterSetup.mmMarginLeft = 0
+        PrinterSetup.mmMarginRight = 0
+        PrinterSetup.mmMarginTop = 0
+        PrinterSetup.mmPaperHeight = 105000
+        PrinterSetup.mmPaperWidth = 148500
+        PrinterSetup.PaperSize = 260
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'Schueler'
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+          Border.Style = psDot
+          Border.Visible = True
+          Border.Weight = 0.500000000000000000
+          mmBottomOffset = 0
+          mmHeight = 105000
+          mmPrintPosition = 0
+          object ppDBText1: TppDBText
+            UserName = 'DBText1'
+            DataField = 'Name'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 4498
+            mmLeft = 9525
+            mmTop = 17463
+            mmWidth = 17198
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText2: TppDBText
+            UserName = 'DBText2'
+            DataField = 'Vorname'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 4498
+            mmLeft = 9525
+            mmTop = 22490
+            mmWidth = 17198
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText3: TppDBText
+            UserName = 'DBText3'
+            DataField = 'Geburtsort'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 4498
+            mmLeft = 9525
+            mmTop = 27781
+            mmWidth = 17198
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel1: TppLabel
+            UserName = 'Label1'
+            Caption = 'Karteikarte'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 16
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 6879
+            mmLeft = 9525
+            mmTop = 7673
+            mmWidth = 25400
+            BandType = 4
+            LayerName = Foreground
+          end
+        end
+        object ppDesignLayers1: TppDesignLayers
+          object ppDesignLayer1: TppDesignLayer
+            UserName = 'Foreground'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+  end
+  object ppColumnFooterBand1: TppColumnFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDesignLayers2: TppDesignLayers
+    object ppDesignLayer2: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end

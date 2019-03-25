@@ -1,0 +1,647 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  OnStartFirstPass = ReportStartFirstPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 
+    'Serienbrief Eltern DIN 5008 Form B Textimport Nachbearbeitung.rt' +
+    'm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 0
+  PrinterSetup.mmMarginLeft = 0
+  PrinterSetup.mmMarginRight = 0
+  PrinterSetup.mmMarginTop = 0
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Grundschule\Serien' +
+    'brief Eltern DIN 5008 Form B Textimport Nachbearbeitung.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OnInitializeParameters = ReportInitializeParameters
+  OnPreviewFormCreate = ReportPreviewFormCreate
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = True
+  OutlineSettings.Visible = True
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 175000
+  DataPipelineName = 'Schueler'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 178540
+    mmPrintPosition = 0
+    object ppRichText3: TppRichText
+      UserName = 'Brieftext'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 12
+      Font.Style = []
+      Border.Weight = 1.000000000000000000
+      Caption = 'Brieftext'
+      MailMerge = True
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
+        'bri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
+        'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\b\f0\fs24 Betreff: Dies ist die B' +
+        'etreffzeile\b0\par'#13#10'\par'#13#10'\par'#13#10'<dbtext datapipeline='#39'Erzieher'#39'>' +
+        'FormaleAnrede</dbtext>\par'#13#10'\par'#13#10'\f1 Es gibt im Moment in diese' +
+        ' Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie si' +
+        'nd. Ich lese nicht sehr viele Zeitungen, aber ich habe geh\'#39'f6rt' +
+        ' viele Situationen. \f0\par'#13#10'\par'#13#10'\f1 Erstens: Wir haben nicht ' +
+        'offensiv gespielt. Es gibt keine deutsche Mannschaft spielt offe' +
+        'nsiv und die Name offensiv wie Bayern. Letzte Spiel hatten wir i' +
+        'n Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m\'#39'fcs' +
+        'sen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehm' +
+        'et eh mehr Basler. Ist klar diese W\'#39'f6rter, ist m\'#39'f6glich vers' +
+        'tehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie mac' +
+        'hen wir in Platz. \f0\par'#13#10'\par'#13#10'\f1 Zweitens: Ich habe erkl\'#39'e4' +
+        'rt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Hal' +
+        'bzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa' +
+        ' nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Traini' +
+        'ng. Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was p' +
+        'assieren in Platz. In diese Spiel es waren zwei, drei diese Spie' +
+        'ler waren schwach wie eine Flasche leer! Haben Sie gesehen Mittw' +
+        'och, welche Mannschaft hat gespielt Mittwoch? Hat gespielt Mehme' +
+        't oder gespielt Basler oder hat gespielt Trapattoni? Diese Spiel' +
+        'er beklagen mehr als sie spielen! Wissen Sie, warum die Italienm' +
+        'annschaften kaufen nicht diese Spieler? Weil wir haben gesehen v' +
+        'iele Male solche Spiel! Haben gesagt sind nicht Spieler f\'#39'fcr d' +
+        'ie italienisch Meisters! \f0\par'#13#10'\par'#13#10'\f1 Strunz! Strunz ist z' +
+        'wei Jahre hier, hat gespielt 10 Spiele, ist immer verletzt! Was ' +
+        'erlauben Strunz? Letzte Jahre Meister Geworden mit Hamann, eh, N' +
+        'erlinger. Diese Spieler waren Spieler! Waren Meister geworden! I' +
+        'st immer verletzt! Hat gespielt 25 Spiele in diese Mannschaft in' +
+        ' diese Verein. Mu\'#39'df respektieren die andere Kollegen! Haben vi' +
+        'el nette kollegen! Stellen Sie die Kollegen die Frage! Haben kei' +
+        'ne Mut an Worten, aber ich wei\'#39'df, was denken \'#39'fcber diese Spi' +
+        'eler. Mussen zeigen jetzt, ich will, Samstag, diese Spieler m\'#39'f' +
+        'cssen zeigen mich, seine Fans, m\'#39'fcssen alleine die Spiel gewin' +
+        'nen. Mu\'#39'df allein die Spiel gewinnen! \f0\par'#13#10'\par'#13#10'\f1 Ich bi' +
+        'n m\'#39'fcde jetzt Vater diese Spieler, eh der Verteidiger diese Sp' +
+        'ieler. Ich habe immer die Schuld \'#39'fcber diese Spieler. Einer is' +
+        't Mario, einer andere ist Mehmet! Strunz ich spreche nicht, hat ' +
+        'gespielt nur 25 Prozent der Spiel. Ich habe fertig! ...wenn es g' +
+        'ab Fragen, ich kann Worte wiederholen.\f0\par'#13#10'\par'#13#10'\f1 Es gibt' +
+        ' im Moment in diese Mannschaft, oh, einige Spieler vergessen ihn' +
+        'en Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber' +
+        ' ich habe geh\'#39'f6rt viele Situationen. \f0\par'#13#10'\par'#13#10'\f1 Ersten' +
+        's: Wir haben nicht offensiv gespielt. Es gibt keine deutsche Man' +
+        'nschaft spielt offensiv und die Name offensiv wie Bayern. Letzte' +
+        ' Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann ' +
+        'Zickler. Wir m\'#39'fcssen nicht vergessen Zickler. Zickler ist eine' +
+        ' Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W\'#39'f6rter, ' +
+        'ist m\'#39'f6glich verstehen, was ich hab gesagt? Danke. Offensiv, o' +
+        'ffensiv ist wie machen wir in Platz. \f0\par'#13#10'\par'#13#10'\f1 Zweitens' +
+        ': Ich habe erkl\'#39'e4rt mit diese zwei Spieler: nach Dortmund brau' +
+        'chen vielleicht Halbzeit Pause. Ich habe auch andere Mannschafte' +
+        'n gesehen in Europa nach diese Mittwoch. Ich habe gesehen auch z' +
+        'wei Tage die Training. Ein Trainer ist nicht ein Idiot! Ein Trai' +
+        'ner sei sehen was passieren in Platz. In diese Spiel es waren zw' +
+        'ei, drei diese Spieler waren schwach wie eine Flasche leer! Habe' +
+        'n Sie gesehen Mittwoch, welche Mannschaft hat gespielt Mittwoch?' +
+        ' Hat gespielt Mehmet oder gespielt Basler oder hat gespielt Trap' +
+        'attoni? Diese Spieler beklagen mehr als sie spielen! Wissen Sie,' +
+        ' warum die Italienmannschaften kaufen nicht diese Spieler? Weil ' +
+        'wir haben gesehen viele Male solche Spiel! Haben gesagt sind nic' +
+        'ht Spieler f\'#39'fcr die italienisch Meisters! \f0\par'#13#10'\par'#13#10'\f1 S' +
+        'trunz! Strunz ist zwei Jahre hier, hat gespielt 10 Spiele, ist i' +
+        'mmer verletzt! Was erlauben Strunz? Letzte Jahre Meister Geworde' +
+        'n mit Hamann, eh, Nerlinger. Diese Spieler waren Spieler! Waren ' +
+        'Meister geworden! Ist immer verletzt! Hat gespielt 25 Spiele in ' +
+        'diese Mannschaft in diese Verein. Mu\'#39'df respektieren die andere' +
+        ' Kollegen! Haben viel nette kollegen! Stellen Sie die Kollegen d' +
+        'ie Frage! Haben keine Mut an Worten, aber ich wei\'#39'df, was denke' +
+        'n \'#39'fcber diese Spieler. Mussen zeigen jetzt, ich will, Samstag,' +
+        ' diese Spieler m\'#39'fcssen zeigen mich, seine Fans, m\'#39'fcssen alle' +
+        'ine die Spiel gewinnen. Mu\'#39'df allein die Spiel gewinnen! \f0\pa' +
+        'r'#13#10'\par'#13#10'\f1 Ich bin m\'#39'fcde jetzt Vater diese Spieler, eh der V' +
+        'erteidiger diese Spieler. Ich habe immer die Schuld \'#39'fcber dies' +
+        'e Spieler. Einer ist Mario, einer andere ist Mehmet! Strunz ich ' +
+        'spreche nicht, hat gespielt nur 25 Prozent der Spiel. Ich habe f' +
+        'ertig! ...wenn es gab Fragen, ich kann Worte wiederholen.\f0\par' +
+        #13#10'\par'#13#10'\f1 Mit freundlichen Gr\'#39'fc\'#39'dfen\f0\par'#13#10'\par'#13#10'\par'#13#10'\p' +
+        'ar'#13#10'<dbtext datapipeline='#39'EigeneSchule'#39'>SchulleiterVorname</dbte' +
+        'xt> <dbtext datapipeline='#39'EigeneSchule'#39'>SchulleiterName</dbtext>' +
+        '\tab\tab\tab\tab\tab\tab <dbtext datapipeline='#39'plSchuelerKlasse'#39 +
+        '>LVorname</dbtext> <dbtext datapipeline='#39'plSchuelerKlasse'#39'>LName' +
+        '</dbtext>\par'#13#10'<dbtext datapipeline='#39'EigeneSchule'#39'>SchulleiterMW' +
+        '</dbtext>\tab\tab\tab\tab\tab\tab\tab <dbtext datapipeline='#39'plSc' +
+        'huelerKlasse'#39'>KlassenlehrerMW</dbtext>\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 178540
+      mmLeft = 25000
+      mmTop = 0
+      mmWidth = 165000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 4230
+      mmOverFlowOffset = 20000
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppLine1: TppLine
+      UserName = 'Faltmarke1'
+      Weight = 0.750000000000000000
+      mmHeight = 1058
+      mmLeft = 0
+      mmTop = 6540
+      mmWidth = 9000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine2: TppLine
+      UserName = 'Faltmarke2'
+      Weight = 0.750000000000000000
+      mmHeight = 1058
+      mmLeft = 0
+      mmTop = 111540
+      mmWidth = 9000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine3: TppLine
+      UserName = 'Lochmarke'
+      Weight = 0.750000000000000000
+      mmHeight = 1058
+      mmLeft = 0
+      mmTop = 50040
+      mmWidth = 13000
+      BandType = 4
+      LayerName = Foreground1
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 20000
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'Seitenzahl'
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 160000
+      mmTop = 0
+      mmWidth = 30000
+      BandType = 8
+      LayerName = Foreground1
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    ResetPageNo = True
+    ReprintOnSubsequentPage = False
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 98480
+      mmPrintPosition = 0
+      object ppLabel1: TppLabel
+        UserName = 'dbBriefkopfSchulbezeichnung'
+        AutoSize = False
+        Caption = 'Briefkopf Schulbezeichnung'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 4993567
+        Font.Name = 'Arial'
+        Font.Size = 14
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 6000
+        mmLeft = 25000
+        mmTop = 20000
+        mmWidth = 80000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppLabel2: TppLabel
+        UserName = 'dbBriefkopfStrasse'
+        AutoSize = False
+        Caption = 'Briefkopf Stra'#223'e'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 10516052
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        Transparent = True
+        mmHeight = 4500
+        mmLeft = 25000
+        mmTop = 26000
+        mmWidth = 80000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppLabel3: TppLabel
+        UserName = 'dbBriefkopfPlzOrt'
+        AutoSize = False
+        Caption = 'Briefkopf Postleitzahl Ort'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 10516052
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        Transparent = True
+        mmHeight = 4500
+        mmLeft = 25000
+        mmTop = 30500
+        mmWidth = 80000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppLabel5: TppLabel
+        UserName = 'dbRuecksendeangaben'
+        AutoSize = False
+        Caption = 'R'#252'cksendeangaben'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial Narrow'
+        Font.Size = 8
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5000
+        mmLeft = 25000
+        mmTop = 52000
+        mmWidth = 73000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppLabel6: TppLabel
+        UserName = 'dbVermerkzone'
+        AutoSize = False
+        Caption = 'Vermerkzone'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 9
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5000
+        mmLeft = 25000
+        mmTop = 57000
+        mmWidth = 73000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppDBMemo1: TppDBMemo
+        UserName = 'dbAnschriftzone'
+        CharWrap = False
+        DataField = 'BriefAdresse'
+        DataPipeline = dmPipelines.Erzieher
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 11
+        Font.Style = []
+        ParentDataPipeline = False
+        RemoveEmptyLines = False
+        Transparent = True
+        DataPipelineName = 'Erzieher'
+        mmHeight = 26000
+        mmLeft = 25000
+        mmTop = 62000
+        mmWidth = 73000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeading = 0
+      end
+      object ppDBImage1: TppDBImage
+        UserName = 'dbSchullogo'
+        AlignHorizontal = ahLeft
+        AlignVertical = avTop
+        MaintainAspectRatio = True
+        Stretch = True
+        DataField = 'SchulLogo'
+        DataPipeline = dmPipelines.EigeneSchule
+        GraphicType = 'AutoDetect'
+        ParentDataPipeline = False
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 35000
+        mmLeft = 125000
+        mmTop = 10000
+        mmWidth = 75000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppMemo4: TppMemo
+        UserName = 'InfoblockLinks'
+        Caption = 'InfoblockLinks'
+        CharWrap = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        Lines.Strings = (
+          'Name:'
+          'Funktion:'
+          ''
+          'Telefon:'
+          'Telefax:'
+          'Internet:'
+          'E-Mail:')
+        RemoveEmptyLines = False
+        Transparent = True
+        mmHeight = 35000
+        mmLeft = 125000
+        mmTop = 50000
+        mmWidth = 18000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeading = 0
+      end
+      object ppMemo5: TppMemo
+        UserName = 'InfoblockRechts'
+        Caption = 'Infoblock'
+        CharWrap = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        Lines.Strings = (
+          'Max Mustermann'
+          'Schulleiter'
+          ''
+          '01234-5678'
+          '01234-56789'
+          'www.mustermann.de'
+          'max@mustermann.de')
+        RemoveEmptyLines = False
+        Transparent = True
+        mmHeight = 35000
+        mmLeft = 145000
+        mmTop = 50000
+        mmWidth = 55000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeading = 0
+      end
+      object ppLabel4: TppLabel
+        UserName = 'dbDatum'
+        AutoSize = False
+        Caption = 'Datum'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5000
+        mmLeft = 125000
+        mmTop = 85000
+        mmWidth = 75000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+      5265706F727441667465725072696E740B50726F6772616D54797065070B7474
+      50726F63656475726506536F75726365064F70726F636564757265205265706F
+      727441667465725072696E743B0D0A626567696E0D0A20204E757245727A6965
+      6865724D6974416E73636872656962656E2846616C7365293B0D0A656E643B0D
+      0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E616D
+      65060A41667465725072696E74074576656E7449440200084361726574506F73
+      0102010201000001060F5472614576656E7448616E646C65720B50726F677261
+      6D4E616D6506115265706F72744265666F72655072696E740B50726F6772616D
+      54797065070B747450726F63656475726506536F757263650CFF01000070726F
+      636564757265205265706F72744265666F72655072696E743B0D0A7661720D0A
+      202064617465696E616D65203A20737472696E673B0D0A2020696D706F727465
+      64527466546578743A2054707052696368746578743B0D0A626567696E0D0A20
+      204E757245727A69656865724D6974416E73636872656962656E285472756529
+      3B0D0A2020696D706F7274656452746654657874203A3D205470705269636874
+      6578742E43726561746520285265706F7274293B200D0A202064617465696E61
+      6D653A3D2046696C654F70656E446C6728272A2E727466272C27272C20202752
+      696368746578742D4461746569656E7C2A2E7274667C546578742D4461746569
+      656E7C2A2E74787427293B0D0A0969662064617465696E616D65203C3E202727
+      207468656E0D0A2020626567696E2020202009090D0A20202020696D706F7274
+      6564527466546578742E5269636874657874203A3D20696D706F727465645274
+      66546578742E4C6F616466726F6D66696C65202844617465696E616D65293B0D
+      0A202020204272696566746578742E5269636874657874203A3D204564697452
+      69636854657874457828696D706F72746564527466546578742E526963687465
+      78742C202750617373656E205369652064656E20696D706F727469657274656E
+      205465787420616E2E27293B0D0A2020656E643B0D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D6506065265706F7274094576656E744E616D65060B4265
+      666F72655072696E74074576656E7449440201084361726574506F7301022502
+      08000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D
+      650624646242726965666B6F7066536368756C62657A656963686E756E674F6E
+      476574546578740B50726F6772616D54797065070B747450726F636564757265
+      06536F7572636506A570726F63656475726520646242726965666B6F70665363
+      68756C62657A656963686E756E674F6E47657454657874287661722054657874
+      3A20537472696E67293B0D0A626567696E0D0A202069662054657874203D2027
+      42726965666B6F706620536368756C62657A656963686E756E6727207468656E
+      2054657874203A3D20456967656E65536368756C655B2742657A656963686E75
+      6E6731275D3B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65061B6462
+      42726965666B6F7066536368756C62657A656963686E756E67094576656E744E
+      616D6506094F6E47657454657874074576656E7449440235084361726574506F
+      730102010201000001060F5472614576656E7448616E646C65720B50726F6772
+      616D4E616D65061B646242726965666B6F7066537472617373654F6E47657454
+      6578740B50726F6772616D54797065070B747450726F63656475726506536F75
+      726365148E00000070726F63656475726520646242726965666B6F7066537472
+      617373654F6E476574546578742876617220546578743A20537472696E67293B
+      0D0A626567696E0D0A202069662054657874203D202742726965666B6F706620
+      53747261C39F6527207468656E2054657874203A3D20456967656E6553636875
+      6C655B2753747261737365275D3B0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D650612646242726965666B6F706653747261737365094576656E744E61
+      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
+      0102010201000001060F5472614576656E7448616E646C65720B50726F677261
+      6D4E616D65061A646242726965666B6F7066506C7A4F72744F6E476574546578
+      740B50726F6772616D54797065070B747450726F63656475726506536F757263
+      65069570726F63656475726520646242726965666B6F7066506C7A4F72744F6E
+      476574546578742876617220546578743A20537472696E67293B0D0A62656769
+      6E0D0A202069662054657874203D202742726965666B6F706620506F73746C65
+      69747A61686C204F727427207468656E2054657874203A3D20456967656E6553
+      6368756C655B27506C7A4F7274275D3B0D0A656E643B0D0A0D436F6D706F6E65
+      6E744E616D650611646242726965666B6F7066506C7A4F7274094576656E744E
+      616D6506094F6E47657454657874074576656E7449440235084361726574506F
+      730102010201000001060F5472614576656E7448616E646C65720B50726F6772
+      616D4E616D65061C6462527565636B73656E6465616E676162656E4F6E476574
+      546578740B50726F6772616D54797065070B747450726F63656475726506536F
+      7572636514D900000070726F636564757265206462527565636B73656E646561
+      6E676162656E4F6E476574546578742876617220546578743A20537472696E67
+      293B0D0A626567696E0D0A0D0A202069662054657874203D202752C3BC636B73
+      656E6465616E676162656E27207468656E2054657874203A3D20456967656E65
+      536368756C655B2742657A656963686E756E6731275D202B2027C2B727202B20
+      456967656E65536368756C655B2753747261737365275D202B2027C2B727202B
+      20456967656E65536368756C655B27506C7A4F7274275D3B0D0A0D0A656E643B
+      0D0A0D436F6D706F6E656E744E616D6506136462527565636B73656E6465616E
+      676162656E094576656E744E616D6506094F6E47657454657874074576656E74
+      49440235084361726574506F730102010201000001060F5472614576656E7448
+      616E646C65720B50726F6772616D4E616D65061664625665726D65726B7A6F6E
+      654F6E476574546578740B50726F6772616D54797065070B747450726F636564
+      75726506536F75726365067270726F6365647572652064625665726D65726B7A
+      6F6E654F6E476574546578742876617220546578743A20537472696E67293B0D
+      0A626567696E0D0A0D0A202069662054657874203D20275665726D65726B7A6F
+      6E6527207468656E2054657874203A3D2027273B0D0A0D0A656E643B0D0A0D43
+      6F6D706F6E656E744E616D65060D64625665726D65726B7A6F6E65094576656E
+      744E616D6506094F6E47657454657874074576656E7449440235084361726574
+      506F730102010201000001060F5472614576656E7448616E646C65720B50726F
+      6772616D4E616D6506106462446174756D4F6E476574546578740B50726F6772
+      616D54797065070B747450726F63656475726506536F75726365068070726F63
+      6564757265206462446174756D4F6E476574546578742876617220546578743A
+      20537472696E67293B0D0A626567696E0D0A0D0A202069662054657874203D20
+      27446174756D27207468656E2054657874203A3D20536368696C64556D676562
+      756E675B275461676573646174756D275D3B0D0A0D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D6506076462446174756D094576656E744E616D6506094F
+      6E47657454657874074576656E7449440235084361726574506F730102010201
+      000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
+      0611466F6F7465724265666F72655072696E740B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365066970726F6365647572652046
+      6F6F7465724265666F72655072696E743B0D0A626567696E0D0A202020536569
+      74656E7A61686C2E56697369626C65203A3D2053656974656E7A61686C2E5465
+      7874203C3E20275365697465203120766F6E2031273B0D0A656E643B0D0A0D43
+      6F6D706F6E656E744E616D650606466F6F746572094576656E744E616D65060B
+      4265666F72655072696E74074576656E7449440218084361726574506F730102
+      030203000000}
+  end
+  object ppDesignLayers2: TppDesignLayers
+    object ppDesignLayer2: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+  end
+end
