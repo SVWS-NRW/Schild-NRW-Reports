@@ -14,9 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Grundschule\Klasse' +
-    'nliste Namen.rtm'
+  Template.FileName =
+    'C:\Users\Jens\Google Drive\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Klassenliste Namen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

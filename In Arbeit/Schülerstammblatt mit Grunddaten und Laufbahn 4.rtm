@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 2.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 4.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -16,7 +16,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\Google Drive\Schild-Reports 2.0\Reportsammlung 2.0\I' +
-    'n Arbeit\Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 2.rtm'
+    'n Arbeit\Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 4.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -126,10 +126,12 @@ object Report: TppReport
       mmMinHeight = 0
       object ppLabel22: TppLabel
         UserName = 'SchuelerdatenUeberschrift'
+        AutoSize = False
         Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
         Border.Color = 10516052
         Border.Weight = 0.750000000000000000
         Caption = 'Sch'#252'lerdaten  '
+        Color = clSkyBlue
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -138,7 +140,7 @@ object Report: TppReport
         mmHeight = 6085
         mmLeft = 0
         mmTop = 2340
-        mmWidth = 29633
+        mmWidth = 170000
         BandType = 4
         LayerName = Foreground1
       end
@@ -691,10 +693,12 @@ object Report: TppReport
       mmMinHeight = 0
       object ppLabel58: TppLabel
         UserName = 'UeberschriftErzieher'
+        AutoSize = False
         Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
         Border.Color = 10516052
         Border.Weight = 0.750000000000000000
         Caption = 'Erzieherdaten  '
+        Color = clSkyBlue
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -703,7 +707,7 @@ object Report: TppReport
         mmHeight = 6085
         mmLeft = 0
         mmTop = 46550
-        mmWidth = 31221
+        mmWidth = 107000
         BandType = 4
         LayerName = Foreground1
       end
@@ -741,7 +745,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.Erzieher
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 2.rtm'
+          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 4.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -931,10 +935,12 @@ object Report: TppReport
       mmMinHeight = 0
       object ppLabel24: TppLabel
         UserName = 'UeberschriftMigrationshintergrund'
+        AutoSize = False
         Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
         Border.Color = 10516052
         Border.Weight = 0.750000000000000000
         Caption = 'Migrationshintergrund  '
+        Color = clSkyBlue
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -943,7 +949,7 @@ object Report: TppReport
         mmHeight = 6086
         mmLeft = 0
         mmTop = 66550
-        mmWidth = 50536
+        mmWidth = 107000
         BandType = 4
         LayerName = Foreground1
       end
@@ -2003,10 +2009,12 @@ object Report: TppReport
       mmMinHeight = 0
       object ppLabel54: TppLabel
         UserName = 'UeberschriftErziehertelefon'
+        AutoSize = False
         Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
         Border.Color = 10516052
         Border.Weight = 0.750000000000000000
         Caption = 'Erziehertelefon  '
+        Color = clSkyBlue
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -2015,7 +2023,7 @@ object Report: TppReport
         mmHeight = 6085
         mmLeft = 110067
         mmTop = 45926
-        mmWidth = 33867
+        mmWidth = 60000
         BandType = 4
         LayerName = Foreground1
       end
@@ -2053,7 +2061,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.plSchuelerTelefone
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 2.rtm'
+          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 4.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -2148,10 +2156,12 @@ object Report: TppReport
       mmMinHeight = 0
       object ppLabel29: TppLabel
         UserName = 'UeberschriftLaufbahn'
+        AutoSize = False
         Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
         Border.Color = 10516052
         Border.Weight = 0.750000000000000000
         Caption = 'Laufbahn  '
+        Color = clSkyBlue
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -2160,7 +2170,7 @@ object Report: TppReport
         mmHeight = 6086
         mmLeft = 110067
         mmTop = 65926
-        mmWidth = 21696
+        mmWidth = 60000
         BandType = 4
         LayerName = Foreground1
       end
@@ -2197,7 +2207,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.plSchuelerlaufbahn
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 2.rtm'
+          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 4.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -2674,7 +2684,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.plVermerke
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 2.rtm'
+          PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten und Laufbahn 4.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
