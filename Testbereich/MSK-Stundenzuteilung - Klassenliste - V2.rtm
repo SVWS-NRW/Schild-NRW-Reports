@@ -1,0 +1,465 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'MSK-Stundenzuteilung - Klassenliste - V2.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 22350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\MSK-Stundenzuteilung - Klassenliste - V2.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'Schueler'
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 32544
+    mmPrintPosition = 0
+    object ppLabel4: TppLabel
+      UserName = 'Label1'
+      HyperlinkEnabled = False
+      Caption = 'Musische Stunde'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5821
+      mmLeft = 0
+      mmTop = 10054
+      mmWidth = 42598
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkEnabled = False
+      Anchors = [atLeft, atBottom]
+      AutoSize = True
+      DataField = 'Klasse'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 5821
+      mmLeft = 51329
+      mmTop = 10054
+      mmWidth = 16669
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppRBLine1: TppLine
+      UserName = 'RBLine1'
+      Weight = 0.750000000000000000
+      mmHeight = 529
+      mmLeft = 0
+      mmTop = 21431
+      mmWidth = 180182
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkEnabled = False
+      AutoSize = True
+      DataField = 'Lehrer'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 5821
+      mmLeft = 62706
+      mmTop = 10054
+      mmWidth = 16405
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      AutoSize = True
+      DataField = 'SchuljahrUndAbschnittText'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5821
+      mmLeft = 107421
+      mmTop = 10054
+      mmWidth = 67469
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label2'
+      Caption = 'Name'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4498
+      mmLeft = 9525
+      mmTop = 27517
+      mmWidth = 10319
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label3'
+      Caption = 'Fach'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4498
+      mmLeft = 67998
+      mmTop = 27517
+      mmWidth = 8731
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label4'
+      Caption = 'Lehrer'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4498
+      mmLeft = 101071
+      mmTop = 27517
+      mmWidth = 11113
+      BandType = 0
+      LayerName = Foreground1
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plZUV'
+      mmHeight = 6350
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 167217
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plZUV
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'MSK-Stundenzuteilung - Klassenliste - V2.rtm'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 6350
+        PrinterSetup.mmMarginLeft = 22350
+        PrinterSetup.mmMarginRight = 6350
+        PrinterSetup.mmMarginTop = 6350
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'plZUV'
+        object ppTitleBand1: TppTitleBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 6350
+          mmPrintPosition = 0
+          object rbTableGrid2: TrbTableGrid
+            UserName = 'TableGrid2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 11
+            Font.Style = []
+            ShowCoordinates = False
+            ShiftWithParent = False
+            mmHeight = 6350
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 134409
+            BandType = 4
+            LayerName = Foreground
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            CellsData = (
+              1
+              4
+              25
+              226
+              126
+              122
+              22
+              272
+              272
+              272
+              272)
+          end
+          object ppDBText3: TppDBText
+            UserName = 'DBText3'
+            AutoSize = True
+            DataField = 'Fachkrz'
+            DataPipeline = dmPipelines.plZUV
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 11
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'plZUV'
+            mmHeight = 4498
+            mmLeft = 67733
+            mmTop = 529
+            mmWidth = 14023
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText6: TppDBText
+            UserName = 'DBText6'
+            AutoSize = True
+            DataField = 'Fachlehrer'
+            DataPipeline = dmPipelines.plZUV
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 11
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'plZUV'
+            mmHeight = 4498
+            mmLeft = 101600
+            mmTop = 600
+            mmWidth = 18521
+            BandType = 4
+            LayerName = Foreground
+          end
+        end
+        object ppSummaryBand1: TppSummaryBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F75726365065970726F63656475726520446574
+            61696C4265666F72655072696E743B0D0A626567696E0D0A202044657461696C
+            2E56697369626C65203A3D205A55565B27466163686B727A275D203C3E207346
+            6163683B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461
+            696C094576656E744E616D65060B4265666F72655072696E74074576656E7449
+            440218084361726574506F7301022C0203000000}
+        end
+        object ppDesignLayers1: TppDesignLayers
+          object ppDesignLayer1: TppDesignLayer
+            UserName = 'Foreground'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppDBCalc1: TppDBCalc
+      UserName = 'DBCalc1'
+      HyperlinkEnabled = False
+      DataPipeline = dmPipelines.Schueler
+      DisplayFormat = '##'#39'.'#39
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      ResetGroup = ppGroup1
+      TextAlignment = taRightJustified
+      Transparent = True
+      DBCalcType = dcCount
+      DataPipelineName = 'Schueler'
+      mmHeight = 5292
+      mmLeft = 0
+      mmTop = 529
+      mmWidth = 6615
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkEnabled = False
+      AutoSize = True
+      DataField = 'NameVorname'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4498
+      mmLeft = 9525
+      mmTop = 794
+      mmWidth = 25929
+      BandType = 4
+      LayerName = Foreground1
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'Klasse'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365064070726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20207346616368203A20537472696E67
+      3B200D0A0D0A626567696E0D0A0D0A656E643B0D0A084361726574506F730102
+      010201000001060F5472614576656E7448616E646C65720B50726F6772616D4E
+      616D6506115265706F72744265666F72655072696E740B50726F6772616D5479
+      7065070B747450726F63656475726506536F75726365147F00000070726F6365
+      64757265205265706F72744265666F72655072696E743B0D0A626567696E0D0A
+      097346616368203A3D20537472696E67496E7075742827426974746520676562
+      656E2053696520646173206175737A757363686C6965C39F656E646520466163
+      682065696E272C20274EC3A468656E27293B0D0A656E643B0D0A0D436F6D706F
+      6E656E744E616D6506065265706F7274094576656E744E616D65060B4265666F
+      72655072696E74074576656E7449440201084361726574506F73010206020400
+      0000}
+  end
+  object ppDesignLayers2: TppDesignLayers
+    object ppDesignLayer2: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+  end
+end

@@ -1,0 +1,1140 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = daADOQueryDataView1.DQ_Lehrer
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'LehrerKursSchuelerMatrix.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 20000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName =
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\LehrerKursSchuelerMatrix.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = True
+  OutlineSettings.Visible = True
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 170000
+  DataPipelineName = 'DQ_Lehrer'
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    Border.BorderPositions = [bpBottom]
+    Border.Visible = True
+    Border.Weight = 0.750000000000000000
+    mmBottomOffset = 0
+    mmHeight = 8731
+    mmPrintPosition = 0
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      Caption = 'Lehrer-Kurs-Liste'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6085
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 36248
+      BandType = 0
+      LayerName = Foreground2
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Color = clSilver
+    Border.BorderPositions = [bpLeft, bpRight, bpBottom]
+    Border.Visible = True
+    Border.Weight = 0.750000000000000000
+    mmBottomOffset = 0
+    mmHeight = 12000
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      DataField = 'Nachname'
+      DataPipeline = daADOQueryDataView1.DQ_Lehrer
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'DQ_Lehrer'
+      mmHeight = 4498
+      mmLeft = 1000
+      mmTop = 3712
+      mmWidth = 18000
+      BandType = 4
+      LayerName = Foreground2
+    end
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentPrinterSetup = False
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'DQ_LehrerKurse'
+      mmHeight = 12000
+      mmLeft = 30000
+      mmTop = 0
+      mmWidth = 140000
+      BandType = 4
+      LayerName = Foreground2
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        Columns = 15
+        ColumnPositions.Strings = (
+          '0'
+          '14000'
+          '28000'
+          '42000'
+          '56000'
+          '70000'
+          '84000'
+          '98000'
+          '112000'
+          '126000'
+          '140000'
+          '154000'
+          '168000'
+          '182000'
+          '196000')
+        DataPipeline = daADOQueryDataView2.DQ_LehrerKurse
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'LehrerKursSchuelerMatrix2.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 0
+        PrinterSetup.mmMarginLeft = 0
+        PrinterSetup.mmMarginRight = 0
+        PrinterSetup.mmMarginTop = 0
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 14000
+        DataPipelineName = 'DQ_LehrerKurse'
+        object ppTitleBand1: TppTitleBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppColumnHeaderBand1: TppColumnHeaderBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          ColumnTraversal = ctLeftToRight
+          mmBottomOffset = 0
+          mmHeight = 12000
+          mmPrintPosition = 0
+          object ppDBText2: TppDBText
+            UserName = 'DBText2'
+            DataField = 'KurzBez'
+            DataPipeline = daADOQueryDataView2.DQ_LehrerKurse
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            DataPipelineName = 'DQ_LehrerKurse'
+            mmHeight = 3969
+            mmLeft = 1000
+            mmTop = 4000
+            mmWidth = 12000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText3: TppDBText
+            UserName = 'DBText3'
+            DataField = 'ASDJahrgang'
+            DataPipeline = daADOQueryDataView2.DQ_LehrerKurse
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            DataPipelineName = 'DQ_LehrerKurse'
+            mmHeight = 3969
+            mmLeft = 1000
+            mmTop = 0
+            mmWidth = 12000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppSubReport2: TppSubReport
+            UserName = 'SubReport2'
+            ExpandAll = False
+            NewPrintJob = False
+            OutlineSettings.CreateNode = True
+            ParentWidth = False
+            TraverseAllData = False
+            DataPipelineName = 'DQ_LehrerKurseSchueler'
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 6973
+            mmWidth = 2035
+            BandType = 4
+            LayerName = Foreground
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            object ppChildReport2: TppChildReport
+              AutoStop = False
+              DataPipeline = daADOQueryDataView3.DQ_LehrerKurseSchueler
+              PrinterSetup.BinName = 'Default'
+              PrinterSetup.DocumentName = 'LehrerKursSchuelerMatrix2.rtm'
+              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PrinterName = 'Default'
+              PrinterSetup.SaveDeviceSettings = False
+              PrinterSetup.mmMarginBottom = 0
+              PrinterSetup.mmMarginLeft = 0
+              PrinterSetup.mmMarginRight = 0
+              PrinterSetup.mmMarginTop = 0
+              PrinterSetup.mmPaperHeight = 297000
+              PrinterSetup.mmPaperWidth = 210000
+              PrinterSetup.PaperSize = 9
+              Template.Format = ftASCII
+              Units = utMillimeters
+              Version = '15.05'
+              mmColumnWidth = 0
+              DataPipelineName = 'DQ_LehrerKurseSchueler'
+              object ppTitleBand2: TppTitleBand
+                Background.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 0
+                mmPrintPosition = 0
+              end
+              object ppDetailBand3: TppDetailBand
+                Background1.Brush.Style = bsClear
+                Background2.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 0
+                mmPrintPosition = 0
+              end
+              object ppSummaryBand2: TppSummaryBand
+                Background.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 0
+                mmPrintPosition = 0
+              end
+              object raCodeModule3: TraCodeModule
+                ProgramStream = {
+                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+                  44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+                  7450726F63656475726506536F75726365063F70726F63656475726520446574
+                  61696C4265666F72655072696E743B0D0A626567696E0D0A202069416E7A203A
+                  3D2069416E7A202B313B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+                  060644657461696C094576656E744E616D65060B4265666F72655072696E7407
+                  4576656E7449440218084361726574506F730102130203000000}
+              end
+              object ppDesignLayers2: TppDesignLayers
+                object ppDesignLayer2: TppDesignLayer
+                  UserName = 'Foreground1'
+                  LayerType = ltBanded
+                  Index = 0
+                end
+              end
+            end
+          end
+          object ppLabel1: TppLabel
+            UserName = 'Label1'
+            AutoSize = False
+            Caption = 'Anz'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            mmHeight = 3969
+            mmLeft = 1000
+            mmTop = 8000
+            mmWidth = 12000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLine2: TppLine
+            UserName = 'Line2'
+            ParentHeight = True
+            Position = lpRight
+            Weight = 0.750000000000000000
+            mmHeight = 12000
+            mmLeft = 13000
+            mmTop = 0
+            mmWidth = 1000
+            BandType = 4
+            LayerName = Foreground
+          end
+        end
+        object ppColumnFooterBand1: TppColumnFooterBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppSummaryBand1: TppSummaryBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+            44657461696C41667465725072696E740B50726F6772616D54797065070B7474
+            50726F63656475726506536F75726365063970726F6365647572652044657461
+            696C41667465725072696E743B0D0A626567696E0D0A20202069416E7A203A3D
+            20303B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064465746169
+            6C094576656E744E616D65060A41667465725072696E74074576656E74494402
+            17084361726574506F7301021E0204000001060F5472614576656E7448616E64
+            6C65720B50726F6772616D4E616D65060F4C6162656C314F6E47657454657874
+            0B50726F6772616D54797065070B747450726F63656475726506536F75726365
+            065B70726F636564757265204C6162656C314F6E476574546578742876617220
+            546578743A20537472696E67293B0D0A626567696E0D0A0D0A20205465787420
+            3A3D2020496E74546F5374722869416E7A293B0D0A0D0A656E643B0D0A0D436F
+            6D706F6E656E744E616D6506064C6162656C31094576656E744E616D6506094F
+            6E47657454657874074576656E7449440235084361726574506F7301021B0204
+            000000}
+        end
+        object ppDesignLayers1: TppDesignLayers
+          object ppDesignLayer1: TppDesignLayer
+            UserName = 'Foreground'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppLine3: TppLine
+      UserName = 'Line3'
+      ParentHeight = True
+      Position = lpRight
+      Weight = 0.750000000000000000
+      mmHeight = 12000
+      mmLeft = 29000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground2
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      AutoSize = False
+      Caption = 'Jg.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 21000
+      mmTop = 0
+      mmWidth = 8000
+      BandType = 4
+      LayerName = Foreground2
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      AutoSize = False
+      Caption = 'Kurs'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 21000
+      mmTop = 4000
+      mmWidth = 8000
+      BandType = 4
+      LayerName = Foreground2
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      AutoSize = False
+      Caption = 'SuS'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 21000
+      mmTop = 8000
+      mmWidth = 8000
+      BandType = 4
+      LayerName = Foreground2
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object daDataModule1: TdaDataModule
+    object daADOQueryDataView1: TdaADOQueryDataView
+      UserName = 'Query_DQ_Lehrer'
+      Height = 199
+      Left = 526
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 60
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      object DQ_Lehrer: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'DQ_Lehrer'
+        object ppField1: TppField
+          FieldAlias = 'ID'
+          FieldName = 'ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'K_Lehrer'
+        end
+        object ppField2: TppField
+          FieldAlias = 'Kuerzel'
+          FieldName = 'Kuerzel'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 1
+          TableName = 'K_Lehrer'
+        end
+        object ppField3: TppField
+          FieldAlias = 'Anrede'
+          FieldName = 'Anrede'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 2
+          TableName = 'K_Lehrer'
+        end
+        object ppField4: TppField
+          FieldAlias = 'Titel'
+          FieldName = 'Titel'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 3
+          TableName = 'K_Lehrer'
+        end
+        object ppField5: TppField
+          FieldAlias = 'Vorname'
+          FieldName = 'Vorname'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 4
+          TableName = 'K_Lehrer'
+        end
+        object ppField6: TppField
+          FieldAlias = 'Nachname'
+          FieldName = 'Nachname'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 5
+          TableName = 'K_Lehrer'
+        end
+      end
+      object daSQL1: TdaSQL
+        GuidCollationType = gcMSAccess
+        DatabaseName = 'ADOConnection'
+        DatabaseType = dtMSAccess
+        DataPipelineName = 'DQ_Lehrer'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltParameterizedSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT K_Lehrer.ID, K_Lehrer.Kuerzel, '
+          '       K_Lehrer.Anrede, K_Lehrer.Titel, '
+          '       K_Lehrer.Vorname, K_Lehrer.Nachname'
+          'FROM K_Lehrer K_Lehrer'
+          'WHERE ( K_Lehrer.Sichtbar = '#39'+'#39' )'
+          'ORDER BY K_Lehrer.Kuerzel')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Value = '+'
+          object TdaField
+            Alias = 'Sichtbar'
+            DisplayWidth = 1
+            FieldAlias = 'Sichtbar'
+            FieldLength = 1
+            FieldName = 'Sichtbar'
+            SQLFieldName = 'Sichtbar'
+            TableAlias = 'K_Lehrer'
+            TableName = 'K_Lehrer'
+            TableSQLAlias = 'K_Lehrer'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'ID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID'
+          FieldLength = 0
+          FieldName = 'ID'
+          SQLFieldName = 'ID'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daField2: TdaField
+          Alias = 'Kuerzel'
+          DisplayWidth = 10
+          FieldAlias = 'Kuerzel'
+          FieldLength = 10
+          FieldName = 'Kuerzel'
+          SQLFieldName = 'Kuerzel'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daField3: TdaField
+          Alias = 'Anrede'
+          DisplayWidth = 10
+          FieldAlias = 'Anrede'
+          FieldLength = 10
+          FieldName = 'Anrede'
+          SQLFieldName = 'Anrede'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daField4: TdaField
+          Alias = 'Titel'
+          DisplayWidth = 20
+          FieldAlias = 'Titel'
+          FieldLength = 20
+          FieldName = 'Titel'
+          SQLFieldName = 'Titel'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daField5: TdaField
+          Alias = 'Vorname'
+          DisplayWidth = 20
+          FieldAlias = 'Vorname'
+          FieldLength = 20
+          FieldName = 'Vorname'
+          SQLFieldName = 'Vorname'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daField6: TdaField
+          Alias = 'Nachname'
+          DisplayWidth = 30
+          FieldAlias = 'Nachname'
+          FieldLength = 30
+          FieldName = 'Nachname'
+          SQLFieldName = 'Nachname'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daField7: TdaField
+          ChildType = 2
+          Alias = 'Kuerzel'
+          DisplayWidth = 10
+          FieldAlias = 'Kuerzel'
+          FieldLength = 10
+          FieldName = 'Kuerzel'
+          SQLFieldName = 'Kuerzel'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+          TableSQLAlias = 'K_Lehrer'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'K_Lehrer'
+          JoinType = dajtNone
+          SQLAlias = 'K_Lehrer'
+          TableAlias = 'K_Lehrer'
+          TableName = 'K_Lehrer'
+        end
+      end
+    end
+    object daADOQueryDataView2: TdaADOQueryDataView
+      UserName = 'Query_DQ_LehrerKurse'
+      Height = 283
+      Left = 853
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 179
+      TypeColumnWidth = 52
+      Width = 212
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_DQ_Lehrer'
+      object DQ_LehrerKurse: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'DQ_LehrerKurse'
+        MasterDataPipelineName = 'DQ_Lehrer'
+        object ppField1: TppField
+          FieldAlias = 'LehrerKrz'
+          FieldName = 'LehrerKrz'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'Kurse'
+        end
+        object ppField2: TppField
+          FieldAlias = 'ASDJahrgang'
+          FieldName = 'ASDJahrgang'
+          FieldLength = 2
+          DisplayWidth = 2
+          Position = 1
+          TableName = 'Kurse'
+        end
+        object ppField3: TppField
+          FieldAlias = 'KurzBez'
+          FieldName = 'KurzBez'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 2
+          TableName = 'Kurse'
+        end
+        object ppField4: TppField
+          FieldAlias = 'Kurs_ID'
+          FieldName = 'ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 3
+          TableName = 'Kurse'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'Kuerzel'
+          GuidCollationType = gcMSAccess
+          DetailFieldName = 'LehrerKrz'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL2: TdaSQL
+        GuidCollationType = gcMSAccess
+        DatabaseName = 'ADOConnection'
+        DatabaseType = dtMSAccess
+        DataPipelineName = 'DQ_LehrerKurse'
+        Distinct = True
+        IsCaseSensitive = True
+        LinkColor = clNavy
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT DISTINCT Kurse.LehrerKrz, '
+          '                Kurse.ASDJahrgang, Kurse.KurzBez, '
+          '                Kurse.ID'
+          'FROM Kurse Kurse'
+          'WHERE ( Kurse.Jahr = 2018 )'
+          '       AND ( Kurse.Abschnitt = 2 )'
+          
+            '       AND ( Kurse.ASDJahrgang IN ('#39'05'#39','#39'06'#39','#39'07'#39','#39'08'#39','#39'09'#39','#39'10'#39 +
+            ') )'
+          '       AND ( Kurse.ID IS NOT NULL  )'
+          'ORDER BY Kurse.LehrerKrz, Kurse.ASDJahrgang, '
+          '         Kurse.KurzBez')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          ParamName = 'Schuljahr'
+          Value = '2018'
+          object TdaField
+            Alias = 'Jahr'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'Jahr'
+            FieldLength = 0
+            FieldName = 'Jahr'
+            Mandatory = True
+            SQLFieldName = 'Jahr'
+            TableAlias = 'Kurse'
+            TableName = 'Kurse'
+            TableSQLAlias = 'Kurse'
+          end
+          object TdaNumericValue
+            Value = 2018.000000000000000000
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          ParamName = 'Halbjahr'
+          Value = '2'
+          object TdaField
+            Alias = 'Abschnitt'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'Abschnitt'
+            FieldLength = 0
+            FieldName = 'Abschnitt'
+            Mandatory = True
+            SQLFieldName = 'Abschnitt'
+            TableAlias = 'Kurse'
+            TableName = 'Kurse'
+            TableSQLAlias = 'Kurse'
+          end
+          object TdaNumericValue
+            Value = 2.000000000000000000
+          end
+        end
+        object daCriteria3: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoInList
+          ParamName = 'Jahrgaenge'
+          Value = '05,06,07,08,09,10,EF,Q1,Q2'
+          object TdaField
+            Alias = 'ASDJahrgang'
+            DisplayWidth = 2
+            FieldAlias = 'ASDJahrgang'
+            FieldLength = 2
+            FieldName = 'ASDJahrgang'
+            Mandatory = True
+            SQLFieldName = 'ASDJahrgang'
+            TableAlias = 'Kurse'
+            TableName = 'Kurse'
+            TableSQLAlias = 'Kurse'
+          end
+        end
+        object daCriteria4: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoNotBlank
+          object TdaField
+            Alias = 'ID'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID'
+            FieldLength = 0
+            FieldName = 'ID'
+            SQLFieldName = 'ID'
+            TableAlias = 'Kurse'
+            TableName = 'Kurse'
+            TableSQLAlias = 'Kurse'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'LehrerKrz'
+          DisplayWidth = 10
+          FieldAlias = 'LehrerKrz'
+          FieldLength = 10
+          FieldName = 'LehrerKrz'
+          SQLFieldName = 'LehrerKrz'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daField2: TdaField
+          Alias = 'ASDJahrgang'
+          DisplayWidth = 2
+          FieldAlias = 'ASDJahrgang'
+          FieldLength = 2
+          FieldName = 'ASDJahrgang'
+          SQLFieldName = 'ASDJahrgang'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daField3: TdaField
+          Alias = 'KurzBez'
+          DisplayWidth = 20
+          FieldAlias = 'KurzBez'
+          FieldLength = 20
+          FieldName = 'KurzBez'
+          SQLFieldName = 'KurzBez'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daField4: TdaField
+          Alias = 'Kurs_ID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID'
+          FieldLength = 0
+          FieldName = 'ID'
+          SQLFieldName = 'ID'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daField5: TdaField
+          ChildType = 2
+          Alias = 'LehrerKrz'
+          DisplayWidth = 10
+          FieldAlias = 'LehrerKrz'
+          FieldLength = 10
+          FieldName = 'LehrerKrz'
+          SQLFieldName = 'LehrerKrz'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daField6: TdaField
+          ChildType = 2
+          Alias = 'ASDJahrgang'
+          DisplayWidth = 2
+          FieldAlias = 'ASDJahrgang'
+          FieldLength = 2
+          FieldName = 'ASDJahrgang'
+          SQLFieldName = 'ASDJahrgang'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daField7: TdaField
+          ChildType = 2
+          Alias = 'KurzBez'
+          DisplayWidth = 20
+          FieldAlias = 'KurzBez'
+          FieldLength = 20
+          FieldName = 'KurzBez'
+          SQLFieldName = 'KurzBez'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+          TableSQLAlias = 'Kurse'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'Kurse'
+          JoinType = dajtNone
+          SQLAlias = 'Kurse'
+          TableAlias = 'Kurse'
+          TableName = 'Kurse'
+        end
+        object TdaSQLLink
+          ChildType = 9
+          object daField8: TdaField
+            ChildType = 10
+            Alias = 'Kuerzel'
+            DisplayWidth = 10
+            FieldAlias = 'Kuerzel'
+            FieldLength = 10
+            FieldName = 'Kuerzel'
+            SQLFieldName = 'Kuerzel'
+            TableAlias = 'K_Lehrer'
+            TableName = 'K_Lehrer'
+            TableSQLAlias = 'K_Lehrer'
+          end
+          object daField9: TdaField
+            ChildType = 11
+            Alias = 'LehrerKrz'
+            DisplayWidth = 10
+            FieldAlias = 'LehrerKrz'
+            FieldLength = 10
+            FieldName = 'LehrerKrz'
+            SQLFieldName = 'LehrerKrz'
+            TableAlias = 'Kurse'
+            TableName = 'Kurse'
+            TableSQLAlias = 'Kurse'
+          end
+        end
+      end
+    end
+    object daADOQueryDataView3: TdaADOQueryDataView
+      UserName = 'Query_DQ_LehrerKurseSchueler'
+      Height = 209
+      Left = 1240
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 402
+      TypeColumnWidth = 52
+      Width = 350
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_DQ_LehrerKurse'
+      object DQ_LehrerKurseSchueler: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'DQ_LehrerKurseSchueler'
+        MasterDataPipelineName = 'DQ_LehrerKurse'
+        object ppField1: TppField
+          FieldAlias = 'Kurs_ID'
+          FieldName = 'Kurs_ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'SchuelerLeistungsdaten'
+        end
+        object ppField2: TppField
+          FieldAlias = 'SchuelerID'
+          FieldName = 'ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 1
+          TableName = 'SchuelerLeistungsdaten'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'Kuerzel'
+          GuidCollationType = gcMSAccess
+          DetailFieldName = 'LehrerKrz'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'ASDJahrgang'
+          GuidCollationType = gcMSAccess
+          DetailFieldName = 'ASDJahrgang'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'KurzBez'
+          GuidCollationType = gcMSAccess
+          DetailFieldName = 'KurzBez'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'ID'
+          GuidCollationType = gcMSAccess
+          DetailFieldName = 'Kurs_ID'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL3: TdaSQL
+        GuidCollationType = gcMSAccess
+        DatabaseName = 'ADOConnection'
+        DatabaseType = dtMSAccess
+        DataPipelineName = 'DQ_LehrerKurseSchueler'
+        IsCaseSensitive = True
+        LinkColor = clGreen
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT SchuelerLeistungsdaten.Kurs_ID, '
+          '       SchuelerLeistungsdaten.ID'
+          'FROM SchuelerLeistungsdaten SchuelerLeistungsdaten'
+          'WHERE '
+          '      ( SchuelerLeistungsdaten.Kurs_ID IS NOT NULL  )')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoNotBlank
+          object TdaField
+            Alias = 'Kurs_ID'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'Kurs_ID'
+            FieldLength = 0
+            FieldName = 'Kurs_ID'
+            SQLFieldName = 'Kurs_ID'
+            TableAlias = 'SchuelerLeistungsdaten'
+            TableName = 'SchuelerLeistungsdaten'
+            TableSQLAlias = 'SchuelerLeistungsdaten'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'Kurs_ID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'Kurs_ID'
+          FieldLength = 0
+          FieldName = 'Kurs_ID'
+          SQLFieldName = 'Kurs_ID'
+          TableAlias = 'SchuelerLeistungsdaten'
+          TableName = 'SchuelerLeistungsdaten'
+          TableSQLAlias = 'SchuelerLeistungsdaten'
+        end
+        object daField2: TdaField
+          Alias = 'SchuelerID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID'
+          FieldLength = 0
+          FieldName = 'ID'
+          SQLFieldName = 'ID'
+          TableAlias = 'SchuelerLeistungsdaten'
+          TableName = 'SchuelerLeistungsdaten'
+          TableSQLAlias = 'SchuelerLeistungsdaten'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'SchuelerLeistungsdaten'
+          JoinType = dajtNone
+          SQLAlias = 'SchuelerLeistungsdaten'
+          TableAlias = 'SchuelerLeistungsdaten'
+          TableName = 'SchuelerLeistungsdaten'
+        end
+        object daSQLLink1: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'Kurs_ID'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID'
+            FieldLength = 0
+            FieldName = 'ID'
+            SQLFieldName = 'ID'
+            TableAlias = 'Kurse'
+            TableName = 'Kurse'
+            TableSQLAlias = 'Kurse'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'Kurs_ID'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'Kurs_ID'
+            FieldLength = 0
+            FieldName = 'Kurs_ID'
+            SQLFieldName = 'Kurs_ID'
+            TableAlias = 'SchuelerLeistungsdaten'
+            TableName = 'SchuelerLeistungsdaten'
+            TableSQLAlias = 'SchuelerLeistungsdaten'
+          end
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365064070726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20202069416E7A203A20496E74656765
+      723B0D0A0D0A626567696E0D0A0D0A656E643B0D0A084361726574506F730102
+      130202000000}
+  end
+  object ppDesignLayers3: TppDesignLayers
+    object ppDesignLayer3: TppDesignLayer
+      UserName = 'Foreground2'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppParameter1: TppParameter
+      AutoSearchSettings.Enabled = True
+      AutoSearchSettings.FieldAlias = 'Jahr'
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '2018'
+      DataType = dtInteger
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 2018
+      UserName = 'Schuljahr'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.Enabled = True
+      AutoSearchSettings.FieldAlias = 'Abschnitt'
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '2'
+      DataType = dtInteger
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 2
+      UserName = 'Halbjahr'
+    end
+    object ppParameter3: TppParameter
+      AutoSearchSettings.Enabled = True
+      AutoSearchSettings.FieldAlias = 'ASDJahrgang'
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '05,06,07,08,09,10,EF,Q1,Q2'
+      AutoSearchSettings.SearchOperator = soInList
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '05'
+      UserName = 'Jahrgaenge'
+    end
+    object ppParameter4: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Kursarten'
+    end
+  end
+end

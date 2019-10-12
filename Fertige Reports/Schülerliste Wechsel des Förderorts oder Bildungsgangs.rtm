@@ -1,0 +1,2068 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste Wechsel des F'#246'rderorts oder Bildungsgangs.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 25000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
+    'ammlung 2.0\Fertige Reports\Sch'#252'lerliste Wechsel des F'#246'rderorts ' +
+    'oder Bildungsgangs.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = True
+  OutlineSettings.Visible = True
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 165000
+  DataPipelineName = 'Schueler'
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    Border.BorderPositions = [bpLeft, bpRight, bpBottom]
+    Border.Color = clWhite
+    Border.Visible = True
+    Border.Weight = 0.750000000000000000
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 17198
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'Seite1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Sch'#252'lerliste Wechsel des F'#246'rderorts oder Bildungsgangs.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 25000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 257000
+          mmPrintPosition = 0
+          object ppShape1: TppShape
+            UserName = 'Rahmen'
+            mmHeight = 63000
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 170000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel1: TppLabel
+            UserName = #220'berschrift'
+            AutoSize = False
+            Caption = 
+              'J'#228'hrliche '#220'berpr'#252'fung, Wechsel des F'#246'rderschwerorts oder des Bil' +
+              'dungsgangs (gem'#228#223' '#167' 17 AO-SF)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 13
+            Font.Style = [fsBold, fsUnderline]
+            Transparent = True
+            WordWrap = True
+            mmHeight = 12000
+            mmLeft = 3000
+            mmTop = 3000
+            mmWidth = 153723
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel2: TppLabel
+            UserName = 'Schule'
+            Caption = 'Schule/Schulstempel:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 3000
+            mmTop = 20000
+            mmWidth = 38894
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel3: TppLabel
+            UserName = 'Datum'
+            AutoSize = False
+            Caption = 'Entscheidung der Klassenkonferenz vom ______________________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 6000
+            mmLeft = 3000
+            mmTop = 56000
+            mmWidth = 125000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText1: TppDBText
+            UserName = 'SchulBezeichnung1'
+            AutoSize = True
+            DataField = 'Bezeichnung1'
+            DataPipeline = dmPipelines.EigeneSchule
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'EigeneSchule'
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 26000
+            mmWidth = 23812
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText2: TppDBText
+            UserName = 'SchulBezeichnung2'
+            AutoSize = True
+            DataField = 'Bezeichnung2'
+            DataPipeline = dmPipelines.EigeneSchule
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'EigeneSchule'
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 32000
+            mmWidth = 23812
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText3: TppDBText
+            UserName = 'SchulBezeichnung3'
+            AutoSize = True
+            DataField = 'Bezeichnung3'
+            DataPipeline = dmPipelines.EigeneSchule
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'EigeneSchule'
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 38000
+            mmWidth = 23812
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel4: TppLabel
+            UserName = 'Schu'#252'lerangaben'
+            Caption = 'Angaben zum Kind'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 7938
+            mmTop = 73025
+            mmWidth = 33866
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel5: TppLabel
+            UserName = 'Unterst'#252'tzungsBedarf'
+            Caption = 'Bisheriger Bedarf an sonderp'#228'dagogischer Unterst'#252'tzung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 130000
+            mmWidth = 103188
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel6: TppLabel
+            UserName = 'F'#246'rderschwerpunkt'
+            Caption = 'F'#246'rderschwerpunkt:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 140000
+            mmWidth = 40000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel7: TppLabel
+            UserName = 'WeitererF'#246'rderschwerpunkt'
+            Caption = 'ggf. weiterer'#13#10'F'#246'rderschwerpunkt:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 8000
+            mmTop = 150000
+            mmWidth = 40000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel8: TppLabel
+            UserName = 'ZieldifferenzierterBildungsgang'
+            Caption = 'ggf. weiterer'#13#10'F'#246'rderschwerpunkt  :'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 7938
+            mmTop = 165894
+            mmWidth = 40000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText4: TppDBText
+            UserName = 'DBF'#246'rderschwerpunkt'
+            AutoSize = True
+            DataField = 'Foerderschwerpunkt'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 5027
+            mmLeft = 53000
+            mmTop = 140000
+            mmWidth = 34661
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText5: TppDBText
+            UserName = 'DBWeitererF'#246'rderschwerpunkt'
+            AutoSize = True
+            DataField = 'Foerderschwerpunkt2'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 5027
+            mmLeft = 53000
+            mmTop = 155046
+            mmWidth = 36777
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel9: TppLabel
+            UserName = 'Fu'#223'note1Link'
+            Caption = '1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 41936
+            mmTop = 170393
+            mmWidth = 1588
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel10: TppLabel
+            UserName = 'Fu'#223'note1Text'
+            AutoSize = False
+            Caption = 
+              '___________________________ '#13#10'   nur bei den F'#246'rderschwerpunkten' +
+              ' Sprache, Emotionale und soziale Entwicklung, K'#246'rperliche und mo' +
+              'torische Entwicklung, H'#246'ren und Kommunikation und Sehen eintrage' +
+              'n'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 15000
+            mmLeft = 3000
+            mmTop = 241000
+            mmWidth = 164000
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel11: TppLabel
+            UserName = 'Fu'#223'note1Ziel'
+            Caption = '1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 244609
+            mmWidth = 1588
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel14: TppLabel
+            UserName = 'Aufz'#228'hlung1'
+            Caption = '1.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 2910
+            mmTop = 73000
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel15: TppLabel
+            UserName = 'Aufz'#228'hlung2'
+            Caption = '2.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 3000
+            mmTop = 130000
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel16: TppLabel
+            UserName = 'Name'
+            Caption = 'Name:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 81000
+            mmWidth = 11112
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel17: TppLabel
+            UserName = 'Vorname'
+            Caption = 'Vorname:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 91017
+            mmWidth = 16404
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel18: TppLabel
+            UserName = 'Geburtsdatum'
+            Caption = 'Geburtsdatum:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 101071
+            mmWidth = 25400
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppLabel19: TppLabel
+            UserName = 'Klasse'
+            Caption = 'Klasse bzw. Lernstufe:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 111000
+            mmWidth = 38100
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText6: TppDBText
+            UserName = 'DBName'
+            AutoSize = True
+            DataField = 'Name'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 5027
+            mmLeft = 48000
+            mmTop = 81000
+            mmWidth = 10054
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText7: TppDBText
+            UserName = 'DBVorname'
+            AutoSize = True
+            DataField = 'Vorname'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 5027
+            mmLeft = 47890
+            mmTop = 91000
+            mmWidth = 15346
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText8: TppDBText
+            UserName = 'DBGeburtsdatum'
+            AutoSize = True
+            DataField = 'Geburtsdatum'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 5027
+            mmLeft = 48000
+            mmTop = 101000
+            mmWidth = 24341
+            BandType = 4
+            LayerName = Foreground
+          end
+          object ppDBText9: TppDBText
+            UserName = 'DBKlasse'
+            AutoSize = True
+            DataField = 'Klasse'
+            DataPipeline = dmPipelines.Schueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Schueler'
+            mmHeight = 5027
+            mmLeft = 48000
+            mmTop = 111125
+            mmWidth = 11112
+            BandType = 4
+            LayerName = Foreground
+          end
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D651419
+            00000053636875C3BC6C6572616E676162656E4F6E476574546578740B50726F
+            6772616D54797065070B747450726F63656475726506536F7572636514250100
+            0070726F6365647572652053636875C3BC6C6572616E676162656E4F6E476574
+            546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
+            0D0A202069662053636875656C65725B2747657363686C65636874275D203D20
+            34205468656E0D0A2020202054657874203A3D2020537472696E675265706C61
+            636528546578742C20277A756D204B696E64272C20277A757220536368C3BC6C
+            6572696E272C2054727565290D0A2020656C73652069662053636875656C6572
+            5B2747657363686C65636874275D203D2033205468656E0D0A20202020546578
+            74203A3D2020537472696E675265706C61636528546578742C20277A756D204B
+            696E64272C20277A756D20536368C3BC6C6572272C2054727565293B0D0A0D0A
+            656E643B0D0A0D436F6D706F6E656E744E616D65141000000053636875C3BC6C
+            6572616E676162656E094576656E744E616D6506094F6E476574546578740745
+            76656E7449440235084361726574506F7301022F0209000000}
+        end
+        object ppDesignLayers1: TppDesignLayers
+          object ppDesignLayer1: TppDesignLayer
+            UserName = 'Foreground'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppSubReport2: TppSubReport
+      UserName = 'Seite2'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ShiftRelativeTo = ppSubReport1
+      TraverseAllData = False
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 3969
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Sch'#252'lerliste Wechsel des F'#246'rderorts oder Bildungsgangs.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 25000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDetailBand3: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 257000
+          mmPrintPosition = 0
+          object ppLabel12: TppLabel
+            UserName = 'Fortbestand1'
+            AutoSize = False
+            Caption = 'Fortbestand des Bedarfs an sonderp'#228'dagogischer'#13#10'Unterst'#252'tzung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 8000
+            mmTop = 0
+            mmWidth = 95000
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel13: TppLabel
+            UserName = 'Aufz'#228'hlung3'
+            Caption = '3.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 3000
+            mmTop = 0
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox1: TmyDBCheckBox
+            UserName = 'DBCheckBox1'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6000
+            mmLeft = 13000
+            mmTop = 25000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel20: TppLabel
+            UserName = 'Fortbestand2'
+            Caption = 'Der bisherige Bedarf an sonderp'#228'dagogischer Unterst'#252'tzung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 13000
+            mmTop = 15000
+            mmWidth = 103717
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel21: TppLabel
+            UserName = 'Fortbestand3'
+            Caption = 'soll weiterhin unver'#228'ndert bestehen'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 23019
+            mmTop = 24871
+            mmWidth = 61912
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox2: TmyDBCheckBox
+            UserName = 'DBCheckBox2'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 13000
+            mmTop = 35000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel22: TppLabel
+            UserName = 'Fortbestand4'
+            Caption = 'soll erg'#228'nzt werden um den / die weiteren F'#246'rderschwerpunkt(e)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 23019
+            mmTop = 34925
+            mmWidth = 75000
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel23: TppLabel
+            UserName = 'Wechsel1'
+            Caption = 'Wechsel des Bildungsgangs'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 7938
+            mmTop = 56436
+            mmWidth = 48948
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel24: TppLabel
+            UserName = 'Aufz'#228'hlung4'
+            Caption = '4.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 2910
+            mmTop = 56436
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox5: TmyDBCheckBox
+            UserName = 'DBCheckBox3'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 13000
+            mmTop = 66436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel26: TppLabel
+            UserName = 'Wechsel3'
+            Caption = 'in der Sekundarstufe I in den Bildungsgang'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5028
+            mmLeft = 33073
+            mmTop = 76436
+            mmWidth = 73290
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox3: TmyDBCheckBox
+            UserName = 'DBCheckBox4'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 76436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel27: TppLabel
+            UserName = 'Wechsel4'
+            Caption = 'in der Sekundarstufe I in den Bildungsgang'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 86395
+            mmWidth = 73290
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox4: TmyDBCheckBox
+            UserName = 'DBCheckBox5'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 86436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel25: TppLabel
+            UserName = 'Wechsel2'
+            Caption = 
+              'Es wird bei der Schulaufsicht ein Wechsel des Bildungsgangs bean' +
+              'trag:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 23019
+            mmTop = 66436
+            mmWidth = 122238
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox6: TmyDBCheckBox
+            UserName = 'DBCheckBox6'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 33000
+            mmTop = 96436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel28: TppLabel
+            UserName = 'Wechsel5'
+            Caption = 'der Hauptschule'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 43127
+            mmTop = 96436
+            mmWidth = 28046
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox7: TmyDBCheckBox
+            UserName = 'DBCheckBox7'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 33000
+            mmTop = 102436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel29: TppLabel
+            UserName = 'Wechsel6'
+            Caption = 'der Realschule'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 43000
+            mmTop = 102436
+            mmWidth = 25400
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox8: TmyDBCheckBox
+            UserName = 'DBCheckBox8'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 33000
+            mmTop = 108436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel30: TppLabel
+            UserName = 'Wechsel7'
+            Caption = 'des Gymnasiums'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 43000
+            mmTop = 108436
+            mmWidth = 29104
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox9: TmyDBCheckBox
+            UserName = 'DBCheckBox9'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 118436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel31: TppLabel
+            UserName = 'Wechsel8'
+            Caption = 'in den zieldifferenzierten Bildungsgang Lernen'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 118436
+            mmWidth = 79640
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox10: TmyDBCheckBox
+            UserName = 'DBCheckBox10'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 128436
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel32: TppLabel
+            UserName = 'Wechsel9'
+            Caption = 'in den zieldifferenzierten Bildungsgang Geistige Entwicklung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 128436
+            mmWidth = 103981
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel34: TppLabel
+            UserName = 'Aufz'#228'hlung5'
+            Caption = '5.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 3440
+            mmTop = 144992
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel33: TppLabel
+            UserName = 'F'#246'rderort'
+            Caption = 'Wechsel des F'#246'rderorts'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8467
+            mmTop = 145000
+            mmWidth = 42333
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox13: TmyDBCheckBox
+            UserName = 'DBCheckBox13'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 13000
+            mmTop = 155000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel37: TppLabel
+            UserName = 'F'#246'rderort2'
+            AutoSize = False
+            Caption = 
+              'Es wird bei der Schulaufsicht ein Wechsel des F'#246'rderorts beantra' +
+              'gt - vorschlagsweise'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 23000
+            mmTop = 155000
+            mmWidth = 103320
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox11: TmyDBCheckBox
+            UserName = 'DBCheckBox11'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 171000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel35: TppLabel
+            UserName = 'F'#246'rderort3'
+            Caption = 'an folgende allgemeine Schule:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 170921
+            mmWidth = 53711
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox12: TmyDBCheckBox
+            UserName = 'DBCheckBox12'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 191000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel36: TppLabel
+            UserName = 'F'#246'rderort4'
+            Caption = 'an folgende Schule des Gemeinsamen Lernens:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 191000
+            mmWidth = 80963
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox17: TmyDBCheckBox
+            UserName = 'DBCheckBox14'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 231000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel41: TppLabel
+            UserName = 'F'#246'rderort6'
+            Caption = 'probeweise f'#252'r ein halbes Jahr'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 231000
+            mmWidth = 52388
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox18: TmyDBCheckBox
+            UserName = 'DBCheckBox15'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 241000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel42: TppLabel
+            UserName = 'F'#246'rderort7'
+            Caption = 'endg'#252'ltig'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 241000
+            mmWidth = 16140
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object myDBCheckBox14: TmyDBCheckBox
+            UserName = 'DBCheckBox16'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 23000
+            mmTop = 211000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel38: TppLabel
+            UserName = 'F'#246'rderort5'
+            Caption = 'an folgende F'#246'rderschule:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 33073
+            mmTop = 211000
+            mmWidth = 44450
+            BandType = 4
+            LayerName = Foreground2
+          end
+        end
+        object ppDesignLayers3: TppDesignLayers
+          object ppDesignLayer3: TppDesignLayer
+            UserName = 'Foreground2'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppSubReport3: TppSubReport
+      UserName = 'Seite3'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ShiftRelativeTo = ppSubReport2
+      TraverseAllData = False
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 8202
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport3: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Sch'#252'lerliste Wechsel des F'#246'rderorts oder Bildungsgangs.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 25000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDetailBand4: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 257000
+          mmPrintPosition = 0
+          object ppLabel39: TppLabel
+            UserName = 'Schulaufsicht'
+            AutoSize = False
+            Caption = 
+              'Der Wunsch der konkreten Schule hat f'#252'r die Entscheidung der Sch' +
+              'ulaufsicht keinen bindenden Charakter. Schulrechtlich besteht be' +
+              'i sonderp'#228'dagogischer F'#246'rderung kein Anspruch auf die Wahl einer' +
+              ' bestimmten Schule.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 17000
+            mmLeft = 3000
+            mmTop = 0
+            mmWidth = 164000
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel40: TppLabel
+            UserName = 'Begr'#252'ndung1'
+            Caption = 'Begr'#252'ndung der Entscheidung der Klassenkonferenz'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 7938
+            mmTop = 29000
+            mmWidth = 94191
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel43: TppLabel
+            UserName = 'Aufz'#228'hlung6'
+            Caption = '6.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 2910
+            mmTop = 29000
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel44: TppLabel
+            UserName = 'Begr'#252'ndung2'
+            AutoSize = False
+            Caption = 
+              'Begr'#252'ndung des Fortbestands des Bedarfs an sonderp'#228'dagogischer U' +
+              'nterst'#252'tzung auf der Grundlage des evaluierten F'#246'rderplans:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 13000
+            mmTop = 39000
+            mmWidth = 119724
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel45: TppLabel
+            UserName = 'Begr'#252'ndung3'
+            Caption = 'F'#246'rderprognose f'#252'r das Schuljahr'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 13000
+            mmTop = 74000
+            mmWidth = 56356
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel46: TppLabel
+            UserName = 'Anlage'
+            Caption = 'Anlage: F'#246'rderplan vom'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 12965
+            mmTop = 104000
+            mmWidth = 40481
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel47: TppLabel
+            UserName = 'OrtDatumKlassenlehrer'
+            Caption = 'Ort, Datum'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3439
+            mmLeft = 3000
+            mmTop = 150000
+            mmWidth = 13759
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel48: TppLabel
+            UserName = 'LinieKlassenlehrer'
+            Caption = 
+              '________________________________________________________________' +
+              '________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 167000
+            mmWidth = 95251
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel49: TppLabel
+            UserName = 'UnterschriftKlassenlehrer'
+            Caption = 'Unterschrift der Klassenleitung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 2910
+            mmTop = 170127
+            mmWidth = 38894
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel50: TppLabel
+            UserName = 'OrtDatumP'#228'dagogin'
+            Caption = 'Ort, Datum'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 190000
+            mmWidth = 13758
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel51: TppLabel
+            UserName = 'Label51'
+            Caption = 
+              '________________________________________________________________' +
+              '________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 207000
+            mmWidth = 95250
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel52: TppLabel
+            UserName = 'UnterschriftP'#228'dagogin'
+            Caption = 
+              'im Gemeinsamen Lernen: Unterschrift der Lehrkraft f'#252'r Sonderp'#228'da' +
+              'gogik'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3439
+            mmLeft = 3000
+            mmTop = 210080
+            mmWidth = 90223
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel53: TppLabel
+            UserName = 'OrtDatumSchulleitung'
+            Caption = 'Ort, Datum'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 230000
+            mmWidth = 13758
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel54: TppLabel
+            UserName = 'LinieSchulleitung'
+            Caption = 
+              '________________________________________________________________' +
+              '________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 247000
+            mmWidth = 95250
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel55: TppLabel
+            UserName = 'UnterschriftSchulleitung'
+            Caption = 'Unterschrift der Schulleitung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3439
+            mmLeft = 3000
+            mmTop = 250032
+            mmWidth = 35719
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel72: TppLabel
+            UserName = 'LinieOrtDatumKlassenlehrer'
+            Caption = '________________________________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 147000
+            mmWidth = 42333
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel73: TppLabel
+            UserName = 'LinieOrtDatumSonderp'#228'dagoge'
+            Caption = '________________________________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 187000
+            mmWidth = 42333
+            BandType = 4
+            LayerName = Foreground3
+          end
+          object ppLabel74: TppLabel
+            UserName = 'LinieOrtDatumSchulleitung'
+            Caption = '________________________________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 3000
+            mmTop = 227000
+            mmWidth = 42333
+            BandType = 4
+            LayerName = Foreground3
+          end
+        end
+        object raCodeModule4: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650622
+            556E746572736368726966744B6C617373656E6C65687265724F6E4765745465
+            78740B50726F6772616D54797065070B747450726F63656475726506536F7572
+            63650C5901000070726F63656475726520556E746572736368726966744B6C61
+            7373656E6C65687265724F6E476574546578742876617220546578743A205374
+            72696E67293B0D0A626567696E0D0A0D0A202069662053636875656C65724B6C
+            617373655B274C47657363686C65636874275D203D2034207468656E0D0A2020
+            202054657874203A3D20537472696E675265706C61636528546578742C202764
+            6572204B6C617373656E6C656974756E67272C2027646572204B6C617373656E
+            6C6568726572696E272C2054727565290D0A2020656C73652069662053636875
+            656C65724B6C617373655B274C47657363686C65636874275D203D2033207468
+            656E0D0A2020202054657874203A3D20537472696E675265706C616365285465
+            78742C2027646572204B6C617373656E6C656974756E67272C2027646573204B
+            6C617373656E6C656872657273272C2054727565293B0D0A0D0A656E643B0D0A
+            0D436F6D706F6E656E744E616D650619556E746572736368726966744B6C6173
+            73656E6C6568726572094576656E744E616D6506094F6E476574546578740745
+            76656E7449440235084361726574506F7301020E0209000000}
+        end
+        object ppDesignLayers4: TppDesignLayers
+          object ppDesignLayer4: TppDesignLayer
+            UserName = 'Foreground3'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppSubReport4: TppSubReport
+      UserName = 'Seite4'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ShiftRelativeTo = ppSubReport3
+      TraverseAllData = False
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 12171
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport4: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Sch'#252'lerliste Wechsel des F'#246'rderorts oder Bildungsgangs.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 25000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Offset = 284
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDetailBand5: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 257000
+          mmPrintPosition = 0
+          object ppLabel56: TppLabel
+            UserName = 'Erkl'#228'rung1'
+            Caption = 'Erkl'#228'rung der Eltern'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 8000
+            mmTop = 0
+            mmWidth = 36512
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel57: TppLabel
+            UserName = 'Aufz'#228'hlung7'
+            Caption = '7.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 3000
+            mmTop = 0
+            mmWidth = 3175
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object myDBCheckBox15: TmyDBCheckBox
+            UserName = 'DBCheckBox1'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 13000
+            mmTop = 20000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel60: TppLabel
+            UserName = 'Erkl'#228'rung2'
+            Caption = 'Ich bin / Wir sind mit der Entscheidung der Klassenkonferenz'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 13000
+            mmTop = 10054
+            mmWidth = 104246
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object myDBCheckBox16: TmyDBCheckBox
+            UserName = 'DBCheckBox2'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 13000
+            mmTop = 30000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel58: TppLabel
+            UserName = 'Einverstanden'
+            Caption = 'einverstanden'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 23019
+            mmTop = 20000
+            mmWidth = 24342
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object myDBCheckBox19: TmyDBCheckBox
+            UserName = 'DBCheckBox19'
+            CheckBoxColor = clBlack
+            BooleanFalse = 'False'
+            BooleanTrue = 'True'
+            mmHeight = 6085
+            mmLeft = 73000
+            mmTop = 20000
+            mmWidth = 6350
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel59: TppLabel
+            UserName = 'NichtEinverstanden'
+            Caption = 'nicht einverstanden'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 83000
+            mmTop = 20000
+            mmWidth = 33867
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel61: TppLabel
+            UserName = 'WechselwunschEltern'
+            AutoSize = False
+            Caption = 'Ich w'#252'nsche / Wir w'#252'nschen den Wechsel unseres Kindes zur'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11000
+            mmLeft = 23019
+            mmTop = 29898
+            mmWidth = 93266
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel62: TppLabel
+            UserName = 'Erkl'#228'rang'
+            AutoSize = False
+            Caption = 
+              'Mir / Uns ist bewusst, dass der Wunsch einer bestimmten Schule k' +
+              'einen bindenden Charakter f'#252'r die Entscheidung hat.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 11113
+            mmLeft = 23000
+            mmTop = 70000
+            mmWidth = 110596
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel63: TppLabel
+            UserName = 'OrtDatumEltern'
+            Caption = 'Ort, Datum'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23000
+            mmTop = 95000
+            mmWidth = 13758
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel64: TppLabel
+            UserName = 'LinieEltern'
+            Caption = 
+              '________________________________________________________________' +
+              '________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23000
+            mmTop = 112000
+            mmWidth = 95250
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel65: TppLabel
+            UserName = 'UnterschriftEltern'
+            Caption = 'Unterschrift der Eltern'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23019
+            mmTop = 115094
+            mmWidth = 27781
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel66: TppLabel
+            UserName = 'Anwesenheit'
+            AutoSize = False
+            Caption = 
+              'Die Eltern sind trotz schriftlicher Einladung nicht zum Gespr'#228'ch' +
+              ' erschienen. Eine Kopie der Einladung ist beigef'#252'gt.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            WordWrap = True
+            mmHeight = 17463
+            mmLeft = 23000
+            mmTop = 135070
+            mmWidth = 98822
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel67: TppLabel
+            UserName = 'OrtDatumKlassenleitung'
+            Caption = 'Ort, Datum'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23000
+            mmTop = 165086
+            mmWidth = 13758
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel68: TppLabel
+            UserName = 'LinieKlassenleitung'
+            Caption = 
+              '________________________________________________________________' +
+              '________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23000
+            mmTop = 182086
+            mmWidth = 95250
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel69: TppLabel
+            UserName = 'UnterschriftKlassenleitung'
+            Caption = 'Unterschrift der Klassenleitung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23019
+            mmTop = 184960
+            mmWidth = 38894
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel70: TppLabel
+            UserName = 'LinieOrtDatumEltern'
+            Caption = '________________________________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23019
+            mmTop = 92075
+            mmWidth = 42333
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppLabel71: TppLabel
+            UserName = 'LinieOrtDatumKlassenleitung'
+            Caption = '________________________________'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 23000
+            mmTop = 162070
+            mmWidth = 42333
+            BandType = 4
+            LayerName = Foreground4
+          end
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061C
+            5765636873656C77756E736368456C7465726E4F6E476574546578740B50726F
+            6772616D54797065070B747450726F63656475726506536F757263650C370100
+            0070726F636564757265205765636873656C77756E736368456C7465726E4F6E
+            476574546578742876617220546578743A20537472696E67293B0D0A62656769
+            6E0D0A0D0A202069662053636875656C65725B2747657363686C65636874275D
+            203D2034205468656E0D0A2020202054657874203A3D2020537472696E675265
+            706C61636528546578742C2027756E7365726573204B696E646573272C202775
+            6E736572657220546F6368746572272C2054727565290D0A2020656C73652069
+            662053636875656C65725B2747657363686C65636874275D203D203320546865
+            6E0D0A2020202054657874203A3D2020537472696E675265706C616365285465
+            78742C2027756E7365726573204B696E646573272C2027756E73657265722053
+            6F686E6573272C2054727565293B0D0A0D0A656E643B0D0A0D436F6D706F6E65
+            6E744E616D6506135765636873656C77756E736368456C7465726E094576656E
+            744E616D6506094F6E47657454657874074576656E7449440235084361726574
+            506F730102010202000001060F5472614576656E7448616E646C65720B50726F
+            6772616D4E616D650623556E746572736368726966744B6C617373656E6C6569
+            74756E674F6E476574546578740B50726F6772616D54797065070B747450726F
+            63656475726506536F757263650C5A01000070726F63656475726520556E7465
+            72736368726966744B6C617373656E6C656974756E674F6E4765745465787428
+            76617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A202069
+            662053636875656C65724B6C617373655B274C47657363686C65636874275D20
+            3D2034207468656E0D0A2020202054657874203A3D20537472696E675265706C
+            61636528546578742C2027646572204B6C617373656E6C656974756E67272C20
+            27646572204B6C617373656E6C6568726572696E272C2054727565290D0A2020
+            656C73652069662053636875656C65724B6C617373655B274C47657363686C65
+            636874275D203D2033207468656E0D0A2020202054657874203A3D2053747269
+            6E675265706C61636528546578742C2027646572204B6C617373656E6C656974
+            756E67272C2027646573204B6C617373656E6C656872657273272C2054727565
+            293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65061A556E7465
+            72736368726966744B6C617373656E6C656974756E67094576656E744E616D65
+            06094F6E47657454657874074576656E7449440235084361726574506F730102
+            010202000000}
+        end
+        object ppDesignLayers5: TppDesignLayers
+          object ppDesignLayer5: TppDesignLayer
+            UserName = 'Foreground4'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {00}
+  end
+  object ppDesignLayers2: TppDesignLayers
+    object ppDesignLayer2: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+  end
+end

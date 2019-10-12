@@ -1,0 +1,222 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Eingabem'#246'glichkeitText.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Testbereich\Eingabem'#246'glichkeitText.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'Schueler'
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 28310
+    mmPrintPosition = 0
+    object ppMemo1: TppMemo
+      UserName = 'Memo1'
+      Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+      Border.Visible = True
+      Border.Weight = 1.000000000000000000
+      Caption = 'Memo1'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Lines.Strings = (
+        'Memotext 1')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 23548
+      mmLeft = 0
+      mmTop = 4762
+      mmWidth = 48948
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppRichText1: TppRichText
+      UserName = 'RichText1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+      Border.Visible = True
+      Border.Weight = 1.000000000000000000
+      Caption = 'RichText1'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Arial;' +
+        '}}'#13#10'\viewkind4\uc1\pard\lang1031\fs22 Bitte Text eingeben (Richt' +
+        'extfeld 1)\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 23548
+      mmLeft = 50006
+      mmTop = 4762
+      mmWidth = 48948
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppRichText2: TppRichText
+      UserName = 'RichText2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+      Border.Visible = True
+      Border.Weight = 1.000000000000000000
+      Caption = 'RichText2'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Arial;' +
+        '}}'#13#10'\viewkind4\uc1\pard\lang1031\fs22 Bitte Text eingeben (Richt' +
+        'extfeld 2)\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 23548
+      mmLeft = 100013
+      mmTop = 4762
+      mmWidth = 48948
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      AutoSize = True
+      DataField = 'NameVorname'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4233
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 25135
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+      5265706F72744265666F72655072696E740B50726F6772616D54797065070B74
+      7450726F63656475726506536F757263650CCF01000070726F63656475726520
+      5265706F72744265666F72655072696E743B0D0A7661720D0A766172312C7661
+      72322C766172333A737472696E673B2020202020202020202020200D0A626567
+      696E0D0A2020202020766172313A3D2045646974506C61696E54657874282742
+      6974746520676562656E205369652065696E656E20546578742065696E2E2729
+      3B0D0A2020202020766172323A3D204564697452696368546578742827426974
+      746520676562656E205369652065696E656E20546578742065696E2E27293B0D
+      0A202020202076617233203A3D20456469745269636854657874457828274269
+      74746520676562656E205369652065696E656E20546578742065696E2E272C20
+      2745696E6761626566656C6427293B0D0A0D0A20202020206D656D6F312E5465
+      7874203A3D20766172313B0D0A20202020205269636854657874312E52696368
+      54657874203A3D20766172323B0D0A20202020205269636854657874322E5269
+      636854657874203A3D20766172333B0D0A0D0A656E643B202020202020202020
+      2020202020202020202020202020202020202020202020202020202020202020
+      2020202020202020202020202020202020202020202020202020202020202020
+      2020200D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E
+      744E616D65060B4265666F72655072696E74074576656E744944020108436172
+      6574506F730102010201000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+  end
+end

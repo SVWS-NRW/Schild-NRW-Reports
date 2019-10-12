@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = '1.rtm'
+  PrinterSetup.DocumentName = 'Englischlehrer.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -16,7 +16,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
-    'tsammlung 2.0\Testbereich\1.rtm'
+    'tsammlung 2.0\Testbereich\Englischlehrer.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -105,22 +105,6 @@ object Report: TppReport
     mmBottomOffset = 0
     mmHeight = 6350
     mmPrintPosition = 0
-    object ppLabel1: TppLabel
-      UserName = 'Label1'
-      Caption = 'Label1'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 10
-      Font.Style = []
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 57679
-      mmTop = 794
-      mmWidth = 9525
-      BandType = 4
-      LayerName = Foreground
-    end
     object ppDBText1: TppDBText
       UserName = 'DBText1'
       DataField = 'NameVorname'
@@ -139,38 +123,6 @@ object Report: TppReport
       BandType = 4
       LayerName = Foreground
     end
-    object ppLabel2: TppLabel
-      UserName = 'Label2'
-      Caption = 'Label2'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 10
-      Font.Style = []
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 73025
-      mmTop = 794
-      mmWidth = 19844
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppLabel3: TppLabel
-      UserName = 'Label3'
-      Caption = 'Label3'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 10
-      Font.Style = []
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 94721
-      mmTop = 794
-      mmWidth = 21696
-      BandType = 4
-      LayerName = Foreground
-    end
     object ppSubReport1: TppSubReport
       UserName = 'SubReport1'
       ExpandAll = False
@@ -180,8 +132,8 @@ object Report: TppReport
       TraverseAllData = False
       DataPipelineName = 'plFremdsprachen'
       mmHeight = 5027
-      mmLeft = 121709
-      mmTop = 529
+      mmLeft = 57944
+      mmTop = 794
       mmWidth = 58208
       BandType = 4
       LayerName = Foreground
@@ -193,7 +145,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plFremdsprachen
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = '1.rtm'
+        PrinterSetup.DocumentName = 'Englischlehrer.rtm'
         PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -240,12 +192,42 @@ object Report: TppReport
             BandType = 4
             LayerName = Foreground1
           end
+          object ppDBText3: TppDBText
+            UserName = 'DBText3'
+            DataField = 'Fachlehrer'
+            DataPipeline = dmPipelines.plFremdsprachen
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'plFremdsprachen'
+            mmHeight = 4498
+            mmLeft = 20108
+            mmTop = 0
+            mmWidth = 17198
+            BandType = 4
+            LayerName = Foreground1
+          end
         end
         object ppSummaryBand1: TppSummaryBand
           Background.Brush.Style = bsClear
           mmBottomOffset = 0
           mmHeight = 0
           mmPrintPosition = 0
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F75726365066270726F63656475726520446574
+            61696C4265666F72655072696E743B0D0A626567696E0D0A2020204465746169
+            6C2E56697369626C65203A3D204672656D64737072616368656E5B2746616368
+            6B727A275D203D202745273B200D0A656E643B0D0A0D436F6D706F6E656E744E
+            616D65060644657461696C094576656E744E616D65060B4265666F7265507269
+            6E74074576656E7449440218084361726574506F730102010201000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -264,43 +246,7 @@ object Report: TppReport
     mmPrintPosition = 0
   end
   object raCodeModule1: TraCodeModule
-    ProgramStream = {
-      01060A54726150726F6772616D094368696C645479706502150E497346756E63
-      74696F6E54797065090B50726F6772616D4E616D6506036167650B50726F6772
-      616D54797065070A747446756E6374696F6E06536F7572636506EE66756E6374
-      696F6E20616765284269727468446174653A205444617465293A20496E746567
-      65723B200D0A766172200D0A79312C79322C6D312C6D322C64312C64323A2049
-      6E74656765723B0D0A200D0A626567696E200D0A20204465636F646544617465
-      2843757272656E74446174652C79312C6D312C6431293B200D0A20204465636F
-      646544617465284269727468446174652C79322C6D322C6432293B0D0A202052
-      6573756C74203A3D202879312A3130303030202B206D312A313030202B206431
-      2D2079322A3130303030202D206D322A313030202D206432292F31303030303B
-      200D0A656E643B0D0A084361726574506F7301024B0206000001060F54726145
-      76656E7448616E646C65720B50726F6772616D4E616D65060F4C6162656C314F
-      6E476574546578740B50726F6772616D54797065070B747450726F6365647572
-      6506536F75726365067370726F636564757265204C6162656C314F6E47657454
-      6578742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D
-      0A202054657874203A3D2020496E74546F537472284167652853636875656C65
-      725B2747656275727473646174756D275D29290D0A0D0A656E643B0D0A0D436F
-      6D706F6E656E744E616D6506064C6162656C31094576656E744E616D6506094F
-      6E47657454657874074576656E7449440235084361726574506F7301020F0204
-      000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
-      060F4C6162656C324F6E476574546578740B50726F6772616D54797065070B74
-      7450726F63656475726506536F75726365066270726F636564757265204C6162
-      656C324F6E476574546578742876617220546578743A20537472696E67293B0D
-      0A626567696E0D0A0D0A202054657874203A3D2064617465746F737472284375
-      7272656E7444617465293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E
-      616D6506064C6162656C32094576656E744E616D6506094F6E47657454657874
-      074576656E7449440235084361726574506F730102220204000001060F547261
-      4576656E7448616E646C65720B50726F6772616D4E616D65060F4C6162656C33
-      4F6E476574546578740B50726F6772616D54797065070B747450726F63656475
-      726506536F75726365067070726F636564757265204C6162656C334F6E476574
-      546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
-      0D0A202054657874203A3D202044617465546F5374722853636875656C65725B
-      2747656275727473646174756D275D293B0D0A0D0A656E643B0D0A0D436F6D70
-      6F6E656E744E616D6506064C6162656C33094576656E744E616D6506094F6E47
-      657454657874074576656E7449440235084361726574506F7301023002040000
-      00}
+    ProgramStream = {00}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
