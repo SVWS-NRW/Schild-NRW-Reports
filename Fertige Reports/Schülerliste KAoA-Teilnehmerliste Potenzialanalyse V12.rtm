@@ -3,10 +3,10 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'KAOA-TN-Liste-PA.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste KAoA-Teilnehmerliste Potenzialanalyse V12.rtm'
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -17,8 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Schild-NRW\SchILD-Reports\Typo3\Pfotenhauer\KAOA-TN-Liste-PA.' +
-    'rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Fertige Reports\Sch'#252'lerliste KAoA-Teilnehmerliste ' +
+    'Potenzialanalyse V12.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -66,7 +67,7 @@ object Report: TppReport
   ThumbnailSettings.Visible = True
   ThumbnailSettings.DeadSpace = 30
   PDFSettings.Author = 'Schild-NRW'
-  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
@@ -97,19 +98,81 @@ object Report: TppReport
   object ppHeaderBand1: TppHeaderBand
     Background.Brush.Style = bsClear
     mmBottomOffset = 0
-    mmHeight = 37835
+    mmHeight = 44979
     mmPrintPosition = 0
-    object ppShape2: TppShape
-      UserName = 'Shape2'
-      mmHeight = 17463
+    object rbTableGrid5: TrbTableGrid
+      UserName = 'TabelleUeberschriften'
+      OutlineStyle = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      ShowCoordinates = False
+      ShiftWithParent = False
+      mmHeight = 11642
+      mmLeft = 0
+      mmTop = 33338
+      mmWidth = 261144
+      BandType = 0
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      CellsData = (
+        1
+        5
+        25
+        505
+        92
+        35
+        330
+        44
+        536871184
+        262144
+        536871184
+        67372032
+        536871184
+        67372032
+        536871184
+        262144
+        536871184
+        67372032)
+    end
+    object rbTableGrid3: TrbTableGrid
+      UserName = 'TabelleKopf'
+      OutlineStyle = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      ShowCoordinates = False
+      ShiftWithParent = False
+      mmHeight = 26458
       mmLeft = 2117
-      mmTop = 8987
+      mmTop = 7144
       mmWidth = 262732
       BandType = 0
       LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      CellsData = (
+        2
+        1
+        993
+        35
+        536871184
+        263172
+        65
+        536871184
+        67372036)
     end
     object ppLabel7: TppLabel
-      UserName = 'Label7'
+      UserName = 'Potenzialanalyse'
       Caption = 'Potenzialanalyse'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -119,14 +182,14 @@ object Report: TppReport
       Transparent = True
       mmHeight = 6085
       mmLeft = 45244
-      mmTop = 15869
+      mmTop = 22606
       mmWidth = 35454
       BandType = 0
       LayerName = Foreground
     end
     object ppMemo1: TppMemo
-      UserName = 'Memo1'
-      Caption = 'Memo1'
+      UserName = 'MemoGefoerdertVon'
+      Caption = 'MemoGefoerdertVon'
       CharWrap = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -142,7 +205,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 14023
       mmLeft = 131498
-      mmTop = 11373
+      mmTop = 18108
       mmWidth = 128588
       BandType = 0
       LayerName = Foreground
@@ -152,36 +215,9 @@ object Report: TppReport
       mmMinHeight = 0
       mmLeading = 0
     end
-    object ppShape3: TppShape
-      UserName = 'Shape3'
-      mmHeight = 11642
-      mmLeft = 6350
-      mmTop = 26184
-      mmWidth = 134144
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppShape4: TppShape
-      UserName = 'Shape4'
-      mmHeight = 11642
-      mmLeft = 140230
-      mmTop = 26185
-      mmWidth = 24342
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppShape5: TppShape
-      UserName = 'Shape5'
-      mmHeight = 11642
-      mmLeft = 174096
-      mmTop = 26184
-      mmWidth = 87313
-      BandType = 0
-      LayerName = Foreground
-    end
     object ppMemo2: TppMemo
-      UserName = 'Memo2'
-      Caption = 'Memo2'
+      UserName = 'MemoTeilnahmebeleg'
+      Caption = 'MemoTeilnahmebeleg'
       CharWrap = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -196,7 +232,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 10583
       mmLeft = 4498
-      mmTop = 13223
+      mmTop = 19960
       mmWidth = 38365
       BandType = 0
       LayerName = Foreground
@@ -207,7 +243,7 @@ object Report: TppReport
       mmLeading = 0
     end
     object ppImage1: TppImage
-      UserName = 'Image1'
+      UserName = 'BildKAoA'
       AlignHorizontal = ahCenter
       AlignVertical = avCenter
       MaintainAspectRatio = False
@@ -3811,45 +3847,33 @@ object Report: TppReport
         454E44AE426082}
       mmHeight = 14023
       mmLeft = 88106
-      mmTop = 11371
+      mmTop = 18108
       mmWidth = 37306
       BandType = 0
       LayerName = Foreground
     end
     object ppLabel6: TppLabel
-      UserName = 'Label6'
-      Caption = 'auszuf'#252'llen von der Schule:'
+      UserName = 'Auszufuellen'
+      AutoSize = False
+      Caption = 
+        'auszuf'#252'llen von der Schule:'#13#10'Name, Vorname, Geburtsdatum, Geschl' +
+        'echt'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = []
       Transparent = True
-      mmHeight = 3969
+      WordWrap = True
+      mmHeight = 8731
       mmLeft = 8731
-      mmTop = 27508
-      mmWidth = 39688
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel9: TppLabel
-      UserName = 'Label9'
-      Caption = 'Name, Vorname, Geburtsdatum, Geschlecht'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 10
-      Font.Style = []
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 8731
-      mmTop = 32270
+      mmTop = 34660
       mmWidth = 62442
       BandType = 0
       LayerName = Foreground
     end
     object ppLabel10: TppLabel
-      UserName = 'Label10'
+      UserName = 'UeberschriftUnterschrift'
       Caption = 'Unterschrift des Teilnehmers / der Teilnehmerin'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -3859,31 +3883,15 @@ object Report: TppReport
       Transparent = True
       mmHeight = 3969
       mmLeft = 177007
-      mmTop = 30947
+      mmTop = 39427
       mmWidth = 69321
       BandType = 0
       LayerName = Foreground
     end
     object ppLabel11: TppLabel
-      UserName = 'Label11'
-      Caption = 'Einwilligung'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 10
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 143669
-      mmTop = 27508
-      mmWidth = 17992
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel12: TppLabel
-      UserName = 'Label12'
-      Caption = 'liegt vor'
+      UserName = 'UeberschriftEinwilligung'
+      AutoSize = False
+      Caption = 'Einwilligung'#13#10'liegt vor'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -3891,24 +3899,16 @@ object Report: TppReport
       Font.Style = []
       TextAlignment = taCentered
       Transparent = True
-      mmHeight = 3969
-      mmLeft = 146315
-      mmTop = 32270
-      mmWidth = 11906
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppShape1: TppShape
-      UserName = 'Shape1'
-      mmHeight = 9260
-      mmLeft = 2117
-      mmTop = 260
-      mmWidth = 262732
+      WordWrap = True
+      mmHeight = 8731
+      mmLeft = 143669
+      mmTop = 34663
+      mmWidth = 17992
       BandType = 0
       LayerName = Foreground
     end
     object ppLabel1: TppLabel
-      UserName = 'Label1'
+      UserName = 'Losnummer'
       Caption = 'Losnummer:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -3918,13 +3918,13 @@ object Report: TppReport
       Transparent = True
       mmHeight = 4763
       mmLeft = 3440
-      mmTop = 2641
+      mmTop = 9376
       mmWidth = 20373
       BandType = 0
       LayerName = Foreground
     end
     object ppLabel2: TppLabel
-      UserName = 'Label2'
+      UserName = 'Belegnummer'
       Caption = 'Belegnummer:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -3934,45 +3934,13 @@ object Report: TppReport
       Transparent = True
       mmHeight = 4763
       mmLeft = 47096
-      mmTop = 2641
+      mmTop = 9376
       mmWidth = 24342
       BandType = 0
       LayerName = Foreground
     end
-    object ppLabel3: TppLabel
-      UserName = 'Label3'
-      Caption = 'Bildungtr'#228'ger:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 92075
-      mmTop = 2641
-      mmWidth = 23283
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel4: TppLabel
-      UserName = 'Label4'
-      Caption = 'Losnummer:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 3440
-      mmTop = 2641
-      mmWidth = 20373
-      BandType = 0
-      LayerName = Foreground
-    end
     object ppLabel5: TppLabel
-      UserName = 'Label5'
+      UserName = 'Schulnummer'
       Caption = 'Schulnummer:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -3981,14 +3949,14 @@ object Report: TppReport
       Font.Style = []
       Transparent = True
       mmHeight = 4763
-      mmLeft = 210609
-      mmTop = 2641
+      mmLeft = 213259
+      mmTop = 9376
       mmWidth = 23813
       BandType = 0
       LayerName = Foreground
     end
     object ppLabel8: TppLabel
-      UserName = 'Label8'
+      UserName = 'Durchfuehrungsdatum'
       Caption = 'Durchf'#252'hrungsdatum:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -3997,64 +3965,54 @@ object Report: TppReport
       Font.Style = []
       Transparent = True
       mmHeight = 4763
-      mmLeft = 148696
-      mmTop = 2641
+      mmLeft = 151346
+      mmTop = 9376
       mmWidth = 35719
       BandType = 0
       LayerName = Foreground
     end
     object ppShape7: TppShape
-      UserName = 'Shape7'
+      UserName = 'Rahmen5'
       Brush.Color = 16774378
       mmHeight = 7144
       mmLeft = 26458
-      mmTop = 1318
+      mmTop = 8054
       mmWidth = 18256
       BandType = 0
       LayerName = Foreground
     end
     object ppShape9: TppShape
-      UserName = 'Shape9'
+      UserName = 'Rahmen6'
       Brush.Color = 16774378
       mmHeight = 7144
       mmLeft = 73554
-      mmTop = 1318
+      mmTop = 8054
       mmWidth = 15875
       BandType = 0
       LayerName = Foreground
     end
-    object ppShape10: TppShape
-      UserName = 'Shape10'
-      Brush.Color = 16774378
-      mmHeight = 7144
-      mmLeft = 115623
-      mmTop = 1318
-      mmWidth = 31750
-      BandType = 0
-      LayerName = Foreground
-    end
     object ppShape12: TppShape
-      UserName = 'Shape12'
+      UserName = 'Rahmen8'
       Brush.Color = 16774378
       mmHeight = 7144
-      mmLeft = 235744
-      mmTop = 1318
+      mmLeft = 238394
+      mmTop = 8054
       mmWidth = 20638
       BandType = 0
       LayerName = Foreground
     end
     object ppShape11: TppShape
-      UserName = 'Shape11'
+      UserName = 'Rahmen9'
       Brush.Color = 16774378
       mmHeight = 7144
-      mmLeft = 186267
-      mmTop = 1318
+      mmLeft = 188917
+      mmTop = 8054
       mmWidth = 22754
       BandType = 0
       LayerName = Foreground
     end
     object ppDBText1: TppDBText
-      UserName = 'DBText1'
+      UserName = 'DBSchulnummer'
       DataField = 'SchulNr'
       DataPipeline = dmPipelines.EigeneSchule
       Font.Charset = DEFAULT_CHARSET
@@ -4066,9 +4024,69 @@ object Report: TppReport
       Transparent = True
       DataPipelineName = 'EigeneSchule'
       mmHeight = 4498
-      mmLeft = 237596
-      mmTop = 2641
+      mmLeft = 240246
+      mmTop = 9376
       mmWidth = 17198
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel22: TppLabel
+      UserName = 'Anlage11'
+      Caption = 'Anlage 11 - Teilnehmerliste'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 2117
+      mmTop = 1852
+      mmWidth = 39423
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel23: TppLabel
+      UserName = 'V12Datum'
+      Caption = 'V12 /V12b - 2019/2020'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 230982
+      mmTop = 1852
+      mmWidth = 33867
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Bildungstraeger'
+      Caption = 'Bildungtr'#228'ger:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 92075
+      mmTop = 9260
+      mmWidth = 23283
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppShape10: TppShape
+      UserName = 'Rahmen'
+      Brush.Color = 16774378
+      mmHeight = 7144
+      mmLeft = 117213
+      mmTop = 7937
+      mmWidth = 31750
       BandType = 0
       LayerName = Foreground
     end
@@ -4079,37 +4097,49 @@ object Report: TppReport
     mmBottomOffset = 0
     mmHeight = 7144
     mmPrintPosition = 0
-    object ppShape8: TppShape
-      UserName = 'Shape8'
-      Brush.Color = 16774378
+    object rbTableGrid4: TrbTableGrid
+      UserName = 'Tabelle'
+      OutlineStyle = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      ShowCoordinates = False
+      ShiftWithParent = False
       mmHeight = 7144
-      mmLeft = 6350
+      mmLeft = 0
       mmTop = 0
-      mmWidth = 134144
+      mmWidth = 261144
       BandType = 4
       LayerName = Foreground
-    end
-    object ppShape6: TppShape
-      UserName = 'Shape6'
-      mmHeight = 7144
-      mmLeft = 140230
-      mmTop = 0
-      mmWidth = 24342
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppShape13: TppShape
-      UserName = 'Shape13'
-      mmHeight = 7144
-      mmLeft = 174096
-      mmTop = 0
-      mmWidth = 87313
-      BandType = 4
-      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      CellsData = (
+        1
+        5
+        25
+        505
+        92
+        35
+        330
+        27
+        536871184
+        262144
+        536887568
+        16774378
+        67371008
+        536871184
+        67371008
+        536871184
+        262144
+        536871184
+        67371008)
     end
     object ppDBText2: TppDBText
-      UserName = 'DBText2'
-      AutoSize = True
+      UserName = 'DBNameVorname'
       DataField = 'NameVorname'
       DataPipeline = dmPipelines.Schueler
       Font.Charset = DEFAULT_CHARSET
@@ -4122,12 +4152,12 @@ object Report: TppReport
       mmHeight = 4763
       mmLeft = 8731
       mmTop = 1323
-      mmWidth = 24871
+      mmWidth = 129911
       BandType = 4
       LayerName = Foreground
     end
     object ppDBCalc1: TppDBCalc
-      UserName = 'DBCalc1'
+      UserName = 'Zaehler'
       DataPipeline = dmPipelines.Schueler
       DisplayFormat = '##'
       Font.Charset = DEFAULT_CHARSET
@@ -4147,7 +4177,7 @@ object Report: TppReport
       LayerName = Foreground
     end
     object ppShape14: TppShape
-      UserName = 'Shape14'
+      UserName = 'Ankreuzfeld'
       mmHeight = 3704
       mmLeft = 150019
       mmTop = 1588
@@ -4159,10 +4189,10 @@ object Report: TppReport
   object ppFooterBand1: TppFooterBand
     Background.Brush.Style = bsClear
     mmBottomOffset = 0
-    mmHeight = 35190
+    mmHeight = 29369
     mmPrintPosition = 0
     object ppLabel13: TppLabel
-      UserName = 'Label13'
+      UserName = 'Beobachter'
       Caption = 'Beobachter/innen:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -4178,286 +4208,120 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppShape15: TppShape
-      UserName = 'Shape15'
-      mmHeight = 7144
-      mmLeft = 13758
-      mmTop = 6083
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape16: TppShape
-      UserName = 'Shape16'
-      mmHeight = 7144
-      mmLeft = 66146
-      mmTop = 6083
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape17: TppShape
-      UserName = 'Shape17'
-      Brush.Color = 16774378
-      mmHeight = 7144
-      mmLeft = 13758
-      mmTop = 12697
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape18: TppShape
-      UserName = 'Shape18'
-      mmHeight = 7144
-      mmLeft = 66146
-      mmTop = 12697
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape19: TppShape
-      UserName = 'Shape19'
-      Brush.Color = 16774378
-      mmHeight = 7144
-      mmLeft = 13758
-      mmTop = 19576
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape20: TppShape
-      UserName = 'Shape20'
-      mmHeight = 7144
-      mmLeft = 66146
-      mmTop = 19576
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel14: TppLabel
-      UserName = 'Label14'
-      Caption = '1.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 8731
-      mmTop = 13755
-      mmWidth = 2910
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel15: TppLabel
-      UserName = 'Label15'
-      Caption = '2.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4762
-      mmLeft = 8731
-      mmTop = 20899
-      mmWidth = 2911
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel16: TppLabel
-      UserName = 'Label16'
-      Caption = 'Name, Vorname'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 16140
-      mmTop = 7141
-      mmWidth = 26723
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel17: TppLabel
-      UserName = 'Label17'
-      Caption = 'Unterschrift'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 68792
-      mmTop = 7141
-      mmWidth = 20904
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape21: TppShape
-      UserName = 'Shape21'
-      mmHeight = 7144
-      mmLeft = 144727
-      mmTop = 6083
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape22: TppShape
-      UserName = 'Shape22'
-      mmHeight = 7144
-      mmLeft = 197115
-      mmTop = 6083
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape23: TppShape
-      UserName = 'Shape23'
-      Brush.Color = 16771022
-      mmHeight = 7144
-      mmLeft = 144727
-      mmTop = 12697
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape24: TppShape
-      UserName = 'Shape24'
-      mmHeight = 7144
-      mmLeft = 197115
-      mmTop = 12697
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape25: TppShape
-      UserName = 'Shape25'
-      Brush.Color = 16771022
-      mmHeight = 7144
-      mmLeft = 144727
-      mmTop = 19576
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppShape26: TppShape
-      UserName = 'Shape201'
-      mmHeight = 7144
-      mmLeft = 197115
-      mmTop = 19576
-      mmWidth = 53181
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel18: TppLabel
-      UserName = 'Label18'
-      Caption = '3.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4762
-      mmLeft = 139700
-      mmTop = 13755
-      mmWidth = 2911
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel19: TppLabel
-      UserName = 'Label19'
-      Caption = '4.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4762
-      mmLeft = 139700
-      mmTop = 20899
-      mmWidth = 2911
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel20: TppLabel
-      UserName = 'Label20'
-      Caption = 'Name, Vorname'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 147109
-      mmTop = 7141
-      mmWidth = 26723
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel21: TppLabel
-      UserName = 'Label21'
-      Caption = 'Unterschrift'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 199761
-      mmTop = 7141
-      mmWidth = 20902
-      BandType = 8
-      LayerName = Foreground
-    end
-    object ppLabel22: TppLabel
-      UserName = 'Label22'
-      Caption = 'Anlage 6 - Teilnehmerliste'
+    object rbTableGrid1: TrbTableGrid
+      UserName = 'TabelleBeobachter1'
+      OutlineStyle = 0
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 3969
+      ShowCoordinates = False
+      ShiftWithParent = False
+      mmHeight = 21431
       mmLeft = 6350
-      mmTop = 29895
-      mmWidth = 37571
+      mmTop = 6085
+      mmWidth = 246857
       BandType = 8
       LayerName = Foreground
-    end
-    object ppSystemVariable1: TppSystemVariable
-      UserName = 'SystemVariable1'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 10
-      Font.Style = []
-      TextAlignment = taRightJustified
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 233892
-      mmTop = 29895
-      mmWidth = 16404
-      BandType = 8
-      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      CellsData = (
+        3
+        7
+        25
+        201
+        201
+        79
+        25
+        201
+        201
+        27
+        553648832
+        11
+        33685761
+        0
+        16810640
+        'Name, Vorname'
+        11
+        84214017
+        536871568
+        11
+        263172
+        536871568
+        11
+        262144
+        553648832
+        11
+        33685761
+        263168
+        553681552
+        'Name, Vorname'
+        11
+        84214017
+        263168
+        536871568
+        11
+        263168
+        27
+        553681600
+        '1.'
+        11
+        33685761
+        0
+        16794000
+        16774378
+        11
+        84214017
+        536871312
+        11
+        263172
+        536871312
+        11
+        262144
+        553681344
+        '3.'
+        11
+        33685761
+        263168
+        536887696
+        16774378
+        11
+        263168
+        536871312
+        11
+        263168
+        27
+        553681600
+        '2.'
+        11
+        33685761
+        0
+        553664912
+        16774378
+        11
+        84214017
+        67109892
+        536871312
+        11
+        67372036
+        536871312
+        11
+        262144
+        553681344
+        '4.'
+        11
+        33685761
+        67372032
+        536887696
+        16774378
+        11
+        67372032
+        536871312
+        11
+        67372032)
     end
   end
   object raCodeModule1: TraCodeModule
@@ -4467,33 +4331,44 @@ object Report: TppReport
       0B747450726F63656475726506536F75726365064470726F6365647572652056
       61726961626C65733B0D0A7661720D0A2020202020202020436F756E743A496E
       74656765723B0D0A0D0A626567696E0D0A0D0A656E643B0D0A08436172657450
-      6F7301020F0202000001060F5472614576656E7448616E646C65720B50726F67
-      72616D4E616D650610444254657874324F6E476574546578740B50726F677261
-      6D54797065070B747450726F63656475726506536F7572636506B570726F6365
-      6475726520444254657874324F6E476574546578742876617220546578743A20
-      537472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D20205363
-      6875656C65725B274E616D65566F726E616D65275D2B272C20272B4461746554
-      6F5374722853636875656C65725B2747656275727473646174756D275D292B27
-      2C20272B2053636875656C65725B2747657363686C656368744D57275D3B2020
-      20202020202020200D0A656E643B0D0A0D436F6D706F6E656E744E616D650607
-      44425465787432094576656E744E616D6506094F6E4765745465787407457665
-      6E7449440235084361726574506F7301024C0204000001060F5472614576656E
-      7448616E646C65720B50726F6772616D4E616D65060D444243616C63314F6E43
-      616C630B50726F6772616D54797065070B747450726F63656475726506536F75
-      726365067670726F63656475726520444243616C63314F6E43616C633B0D0A62
-      6567696E0D0A2020436F756E743A3D444243616C63312E56616C75653B0D0A20
-      20436F756E743A3D436F756E74206D6F642031363B0D0A2020496620436F756E
-      743D30205468656E20436F756E743A3D31363B0D0A656E643B0D0A0D436F6D70
-      6F6E656E744E616D650607444243616C6331094576656E744E616D6506064F6E
-      43616C63074576656E7449440221084361726574506F73010219020500000106
-      0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506104442
-      43616C63314F6E476574546578740B50726F6772616D54797065070B74745072
-      6F63656475726506536F75726365066270726F63656475726520444243616C63
-      314F6E476574546578742876617220546578743A20537472696E67293B0D0A62
-      6567696E0D0A0D0A202054657874203A3D202020496E74546F53747228436F75
-      6E74292B272E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
-      0607444243616C6331094576656E744E616D6506094F6E476574546578740745
-      76656E7449440235084361726574506F7301021C0204000000}
+      6F730102010201000001060F5472614576656E7448616E646C65720B50726F67
+      72616D4E616D65061644424E616D65566F726E616D654F6E476574546578740B
+      50726F6772616D54797065070B747450726F63656475726506536F7572636506
+      BB70726F6365647572652044424E616D65566F726E616D654F6E476574546578
+      742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
+      2054657874203A3D202053636875656C65725B274E616D65566F726E616D6527
+      5D2B272C20272B44617465546F5374722853636875656C65725B274765627572
+      7473646174756D275D292B272C20272B2053636875656C65725B274765736368
+      6C656368744D57275D3B202020202020202020200D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D65060D44424E616D65566F726E616D65094576656E744E
+      616D6506094F6E47657454657874074576656E7449440235084361726574506F
+      7301024C0204000001060F5472614576656E7448616E646C65720B50726F6772
+      616D4E616D65060D5A6165686C65724F6E43616C630B50726F6772616D547970
+      65070B747450726F63656475726506536F75726365066970726F636564757265
+      205A6165686C65724F6E43616C633B0D0A626567696E0D0A2020436F756E7420
+      3A3D205A6165686C65722E56616C7565206D6F642031363B0D0A202049662043
+      6F756E74203D2030205468656E20436F756E743A3D31363B0D0A656E643B0D0A
+      0D436F6D706F6E656E744E616D6506075A6165686C6572094576656E744E616D
+      6506064F6E43616C63074576656E7449440221084361726574506F7301021F02
+      04000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D
+      6506105A6165686C65724F6E476574546578740B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365066470726F636564757265205A
+      6165686C65724F6E476574546578742876617220546578743A20537472696E67
+      293B0D0A626567696E0D0A0D0A202054657874203A3D202020496E74546F5374
+      7228436F756E7429202B20272E273B0D0A0D0A656E643B0D0A0D436F6D706F6E
+      656E744E616D6506075A6165686C6572094576656E744E616D6506094F6E4765
+      7454657874074576656E7449440235084361726574506F730102100206000001
+      060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061156
+      3132446174756D4F6E476574546578740B50726F6772616D54797065070B7474
+      50726F63656475726506536F7572636506B170726F6365647572652056313244
+      6174756D4F6E476574546578742876617220546578743A20537472696E67293B
+      0D0A626567696E0D0A0D0A202054657874203A3D2027563132202F5631326220
+      2D2027202B20496E74546F53747228456967656E65536368756C655B27536368
+      756C6A616872275D29202B20272F27202B20496E74546F53747228456967656E
+      65536368756C655B27536368756C6A616872275D202B2031290D0A0D0A656E64
+      3B0D0A0D436F6D706F6E656E744E616D650608563132446174756D094576656E
+      744E616D6506094F6E47657454657874074576656E7449440235084361726574
+      506F7301026E0204000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
