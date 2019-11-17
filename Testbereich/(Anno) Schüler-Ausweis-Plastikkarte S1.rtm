@@ -15,9 +15,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 86000
   PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
-  Template.FileName = 
-    '\\SIEGBURG62\Reports\ANNO\SchILD-Reports\Standard\Bescheinigunge' +
-    'n\(Anno) Sch'#252'ler-Ausweis-Plastikkarte S1.rtm'
+  Template.FileName =
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\(Anno) Sch''#252''ler-Ausweis-Plastikkarte S1.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

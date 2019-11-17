@@ -14,9 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Importe\xxxxxBescheinigung Studiere' +
-    'nde, weiblich.rtm'
+  Template.FileName =
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\Bescheinigung Studierende_ M_W.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

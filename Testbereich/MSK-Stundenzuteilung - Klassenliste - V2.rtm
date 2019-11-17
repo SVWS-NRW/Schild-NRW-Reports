@@ -15,7 +15,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\MSK-Stundenzuteilung - Klassenliste - V2.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\MSK-Stundenzuteilung - Klassenliste - V2.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

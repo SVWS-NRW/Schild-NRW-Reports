@@ -19,9 +19,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 297000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Testbereich\A6 Kar' +
-    'teikarte.rtm'
+  Template.FileName =
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\A6 Karteikarte.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Erzieher Warnbrief.rtm'
+  PrinterSetup.DocumentName = 'Erzieher WarnbriefTest.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -17,7 +17,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
-    'tsammlung 2.0\In Arbeit\Erzieher Warnbrief.rtm'
+    'tsammlung 2.0\In Arbeit\Erzieher WarnbriefTest.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -93,6 +93,13 @@ object Report: TppReport
   Version = '15.05'
   mmColumnWidth = 175000
   DataPipelineName = 'Schueler'
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
   object ppDetailBand1: TppDetailBand
     Background1.Brush.Style = bsClear
     Background2.Brush.Style = bsClear
@@ -122,7 +129,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.Erzieher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Erzieher Warnbrief.rtm'
+        PrinterSetup.DocumentName = 'Erzieher WarnbriefTest.rtm'
         PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -523,8 +530,8 @@ object Report: TppReport
               DataPipelineName = 'plWarnungen'
               mmHeight = 5027
               mmLeft = 0
-              mmTop = 93398
-              mmWidth = 7938
+              mmTop = 93397
+              mmWidth = 5000
               BandType = 3
               GroupNo = 0
               LayerName = Foreground
@@ -536,7 +543,7 @@ object Report: TppReport
                 AutoStop = False
                 DataPipeline = dmPipelines.plWarnungen
                 PrinterSetup.BinName = 'Default'
-                PrinterSetup.DocumentName = 'Erzieher Warnbrief.rtm'
+                PrinterSetup.DocumentName = 'Erzieher WarnbriefTest.rtm'
                 PrinterSetup.PaperName = 'A4 297 x 210 mm'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
@@ -547,7 +554,6 @@ object Report: TppReport
                 PrinterSetup.mmPaperHeight = 297000
                 PrinterSetup.mmPaperWidth = 210000
                 PrinterSetup.PaperSize = 9
-                Template.Offset = 284
                 Template.Format = ftASCII
                 Units = utMillimeters
                 Version = '15.05'

@@ -16,9 +16,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    '\\s206x016\Schulordner\Schild-NRW\SchILD-Reports\Seki\F'#246'rderkind' +
-    'er - sortiert nach Name.rtm'
+  Template.FileName =
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\F''#246''rderkinder - sortiert nach Name.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

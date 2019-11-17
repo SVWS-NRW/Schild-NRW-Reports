@@ -14,9 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\ra\Google Drive\Schild-Reports 2.0\Reportsammlung 2.0\T' +
-    'estbereich\Abteilungsleitungen.rtm'
+  Template.FileName =
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Testbereich\Abteilungsleitungen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToFile = True
