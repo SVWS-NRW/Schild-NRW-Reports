@@ -196,11 +196,10 @@ object Report: TppReport
               '_____________________________\line\pard Ort, Datum\tab\tab\tab\t' +
               'ab\tab\tab Unterschrift der Eltern\super 1\nosupersub\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
-            Stretch = True
             Transparent = True
             mmHeight = 61442
             mmLeft = 25000
-            mmTop = 116094
+            mmTop = 116000
             mmWidth = 165100
             BandType = 4
             LayerName = Foreground
@@ -230,11 +229,11 @@ object Report: TppReport
               'd von den Noten im letzten Zeugnis$ $auch$ in $Faecher$ nicht au' +
               'sreichend sind und damit $die Versetzung$ gef\'#39'e4hrdet ist.\par'#13 +
               #10'Ich lade Sie zu einem Beratungsgespr\'#39'e4ch am $Datum und Ort$ e' +
-              'in.\par'#13#10'$Bemerkungen$\par'#13#10'Mit freundlichen Gr\'#39'fc\'#39'dfen\tab __' +
-              '_________________________________________\par'#13#10'\tab\tab\tab\tab ' +
-              '$KLVornameKurz$ $KLName$, $KLAmt$ ($Klassenlehrer$)\par'#13#10'}'#13#10#0
+              'in.\par'#13#10'$Bemerkungen$\par'#13#10'\par'#13#10'Mit freundlichen Gr\'#39'fc\'#39'dfen\' +
+              'tab ___________________________________________\par'#13#10'\tab\tab\ta' +
+              'b\tab $KLVornameKurz$ $KLName$, $KLAmt$ ($Klassenlehrer$)\par'#13#10'}' +
+              #13#10#0
             RemoveEmptyLines = False
-            Stretch = True
             Transparent = True
             mmHeight = 116000
             mmLeft = 25000
@@ -280,18 +279,16 @@ object Report: TppReport
             Font.Style = []
             Border.Weight = 1.000000000000000000
             Caption = 'Brieftext'
-            MailMerge = True
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fp' +
               'rq2\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\g' +
               'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\sa200\sl276\slmult1\sub\f0\fs' +
               '22 _________________________________\line\nosupersub 1) siehe \'#39 +
-              'a7 123 SchulG, die Unterschrift eines Elternteils gen\'#39'fcgt\sub\' +
-              'par'#13#10'\pard\cf1\nosupersub\f1\fs24\par'#13#10'}'#13#10#0
+              'a7 123 SchulG, die Unterschrift eines Elternteils gen\'#39'fcgt\cf1\' +
+              'f1\fs24\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
-            Stretch = True
             Transparent = True
-            mmHeight = 20000
+            mmHeight = 15000
             mmLeft = 25000
             mmTop = 0
             mmWidth = 165000
