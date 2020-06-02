@@ -14,8 +14,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\Google Drive\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Sch''#252''lerstammblatt mit Grunddaten und Laufbahn farbig.rtm'
+  Template.FileName = 
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Fertige Reports\Sch'#252'lerstammblatt mit Grunddaten u' +
+    'nd Laufbahn farbig.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -3420,7 +3422,7 @@ object Report: TppReport
       Index = 0
     end
   end
-  object ppParameterList1: TppParameterList
+  object ppParameterList2: TppParameterList
     object ppArchivierung: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
