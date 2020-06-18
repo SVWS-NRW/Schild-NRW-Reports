@@ -13,7 +13,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName =
-    'C:\Users\ra\Google Drive\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Statistik Kreuztabelle Klassen.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Basisreports\Statistik Kreuztabelle Klassen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

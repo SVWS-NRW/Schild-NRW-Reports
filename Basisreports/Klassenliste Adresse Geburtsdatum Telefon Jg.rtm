@@ -1,9 +1,10 @@
 object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.plVersetzung
+  PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Klassenliste Adresse Geburtsdatum Telefon Jg.rtm'
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,8 +16,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Grundschule\Klasse' +
-    'nliste Adresse Geburtsdatum Telefon Jg.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
+    'ammlung 2.0\Fertige Reports\Basisreports\Klassenliste Adresse Ge' +
+    'burtsdatum Telefon Jg.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -122,7 +124,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.ppKlassenSchueler
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Klassenliste Adresse Geburtsdatum Telefon Jg.rtm'
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -146,7 +148,7 @@ object Report: TppReport
           mmBottomOffset = 0
           mmHeight = 10400
           mmPrintPosition = 0
-          object ppShape1: TppShape
+          object ppShape2: TppShape
             UserName = 'HintergrundUnsichtbar'
             Brush.Color = 10516052
             ParentHeight = True
@@ -159,7 +161,7 @@ object Report: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLine6: TppLine
+          object ppLine1: TppLine
             UserName = 'TrennlinieK1'
             Pen.Color = 4993567
             ParentHeight = True
@@ -173,7 +175,7 @@ object Report: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLine3: TppLine
+          object ppLine2: TppLine
             UserName = 'TrennlinieK2'
             Pen.Color = 4993567
             ParentHeight = True
@@ -201,7 +203,7 @@ object Report: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLine2: TppLine
+          object ppLine4: TppLine
             UserName = 'TrennlinieK4'
             Pen.Color = 4993567
             ParentHeight = True
@@ -215,7 +217,7 @@ object Report: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel6: TppLabel
+          object ppLabel2: TppLabel
             UserName = 'Nr'
             Anchors = [atLeft, atRight]
             AutoSize = False
@@ -234,7 +236,7 @@ object Report: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel1: TppLabel
+          object ppLabel3: TppLabel
             UserName = 'Name'
             Anchors = [atLeft, atRight]
             AutoSize = False
@@ -385,7 +387,7 @@ object Report: TppReport
             BandType = 4
             LayerName = Foreground1
           end
-          object ppLine4: TppLine
+          object ppLine8: TppLine
             UserName = 'TrennlinieD2'
             Pen.Color = 4993567
             ParentHeight = True
@@ -398,7 +400,7 @@ object Report: TppReport
             BandType = 4
             LayerName = Foreground1
           end
-          object ppLine8: TppLine
+          object ppLine9: TppLine
             UserName = 'TrennlinieD3'
             Pen.Color = 4993567
             ParentHeight = True
@@ -411,7 +413,7 @@ object Report: TppReport
             BandType = 4
             LayerName = Foreground1
           end
-          object ppLine9: TppLine
+          object ppLine10: TppLine
             UserName = 'TrennlinieD4'
             Pen.Color = 4993567
             ParentHeight = True
@@ -593,7 +595,7 @@ object Report: TppReport
             656C65725B27504C5A275D202B20272027202B4B6C617373656E53636875656C
             65725B274F727441626B275D3B200D0A656E643B0D0A0D436F6D706F6E656E74
             4E616D6506086462506C7A4F7274094576656E744E616D6506094F6E47657454
-            657874074576656E7449440235084361726574506F730102440203000000}
+            657874074576656E7449440235084361726574506F730102010201000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -610,7 +612,7 @@ object Report: TppReport
     mmBottomOffset = 0
     mmHeight = 4763
     mmPrintPosition = 0
-    object ppLine1: TppLine
+    object ppLine11: TppLine
       UserName = 'AbgrenzungslinieFuss'
       Pen.Color = 4993567
       ParentWidth = True
@@ -695,14 +697,14 @@ object Report: TppReport
       mmBottomOffset = 0
       mmHeight = 17000
       mmPrintPosition = 0
-      object ppLabel3: TppLabel
+      object ppLabel12: TppLabel
         UserName = 'dbListenbezeichnung'
         AutoSize = False
         Border.BorderPositions = [bpTop, bpBottom]
         Border.Color = 10516052
         Border.Visible = True
         Border.Weight = 2.000000000000000000
-        Caption = 'Namensliste der Klasse'
+        Caption = 'Namensliste'
         Color = 16051687
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -718,7 +720,7 @@ object Report: TppReport
         GroupNo = 0
         LayerName = Foreground
       end
-      object ppLabel2: TppLabel
+      object ppLabel13: TppLabel
         UserName = 'dbKlassenleitung'
         Caption = 'Klassenlehrer'
         Font.Charset = DEFAULT_CHARSET
@@ -792,35 +794,29 @@ object Report: TppReport
     ProgramStream = {
       01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061C
       64624C697374656E62657A656963686E756E674F6E476574546578740B50726F
-      6772616D54797065070B747450726F63656475726506536F75726365067B7072
+      6772616D54797065070B747450726F63656475726506536F7572636506807072
       6F6365647572652064624C697374656E62657A656963686E756E674F6E476574
       546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
-      202054657874203A3D2054657874202B20272027202B204B6C617373656E5363
-      6875656C65725B274B6C61737365275D3B0D0A656E643B0D0A0D436F6D706F6E
-      656E744E616D65061364624C697374656E62657A656963686E756E6709457665
-      6E744E616D6506094F6E47657454657874074576656E74494402350843617265
-      74506F730102320203000001060F5472614576656E7448616E646C65720B5072
-      6F6772616D4E616D65061964624B6C617373656E6C656974756E674F6E476574
-      546578740B50726F6772616D54797065070B747450726F63656475726506536F
-      757263650CED01000070726F6365647572652064624B6C617373656E6C656974
-      756E674F6E476574546578742876617220546578743A20537472696E67293B0D
-      0A7661720D0A20206B6C617373656E6C656974756E672C20746974656C203A20
-      537472696E673B0D0A626567696E0D0A20206966204B6C617373656E5B274C41
-      6E72656465275D203D20274672617527207468656E0D0A202020206B6C617373
-      656E6C656974756E67203A3D20274B6C617373656E6C6568726572696E3A2027
-      0D0A2020656C7365206966204B6C617373656E5B274C416E72656465275D203D
-      20274865727227207468656E0D0A202020206B6C617373656E6C656974756E67
-      203A3D20274B6C617373656E6C65687265723A20270D0A2020656C73650D0A20
-      2020206B6C617373656E6C656974756E67203A3D20274B6C617373656E6C6569
-      74756E673A20273B0D0A20206966204B6C617373656E5B274C546974656C275D
-      203D202727207468656E20746974656C203A3D20272720656C73652074697465
-      6C203A3D204B6C617373656E5B274C546974656C275D202B202720273B0D0A20
-      2054657874203A3D206B6C617373656E6C656974756E67202B204B6C61737365
-      6E5B274C416E72656465275D202B20272027202B20746974656C202B204B6C61
-      7373656E5B274C4E616D65275D3B0D0A656E643B0D0A0D436F6D706F6E656E74
+      2020202054657874203A3D2054657874202B202720646572204B6C6173736520
+      27202B204B6C617373656E5B274B6C61737365275D3B0D0A656E643B0D0A0D43
+      6F6D706F6E656E744E616D65061364624C697374656E62657A656963686E756E
+      67094576656E744E616D6506094F6E47657454657874074576656E7449440235
+      084361726574506F730102290203000001060F5472614576656E7448616E646C
+      65720B50726F6772616D4E616D65061964624B6C617373656E6C656974756E67
+      4F6E476574546578740B50726F6772616D54797065070B747450726F63656475
+      726506536F757263650C2801000070726F6365647572652064624B6C61737365
+      6E6C656974756E674F6E476574546578742876617220546578743A2053747269
+      6E67293B0D0A626567696E0D0A20206966204B6C617373656E5B274C54697465
+      6C275D203D202727207468656E0D0A2020202054657874203A3D20274B6C6173
+      73656E6C656974756E673A2027202B204B6C617373656E5B274C416E72656465
+      275D202B20272027202B204B6C617373656E5B274C4E616D65275D0D0A202065
+      6C73650D0A2020202054657874203A3D20274B6C617373656E6C656974756E67
+      3A2027202B204B6C617373656E5B274C416E72656465275D202B20272027202B
+      204B6C617373656E5B274C546974656C275D202B20272027202B204B6C617373
+      656E5B274C4E616D65275D3B0D0A656E643B0D0A0D0A0D436F6D706F6E656E74
       4E616D65061064624B6C617373656E6C656974756E67094576656E744E616D65
       06094F6E47657454657874074576656E7449440235084361726574506F730102
-      13020A000000}
+      060202000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
