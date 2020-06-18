@@ -15,7 +15,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName =
-    'C:\Users\ra\Google Drive\Schild-Reports 2.0\Reportsammlung 2.0\Standardreports\Unfallanzeige Unfallkasse NRW Rheinland.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Basisreports\Unfallanzeige Unfallkasse NRW Rheinland.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

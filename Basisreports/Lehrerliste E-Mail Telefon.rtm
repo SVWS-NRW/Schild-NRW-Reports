@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.plLehrer
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Lehrerliste E-Mail Telefon.rtm'
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,8 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Grundschule\Lehrer' +
-    'liste E-Mail Telefon.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Fertige Reports\Basisreports\Lehrerliste E-Mail Te' +
+    'lefon.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -117,7 +118,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 170000
       BandType = 1
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText4: TppDBText
       UserName = 'dbSchuljahrAbschnitt'
@@ -138,7 +139,7 @@ object Report: TppReport
       mmTop = 8996
       mmWidth = 38364
       BandType = 1
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText9: TppDBText
       UserName = 'dbSchuleBezeichnung'
@@ -158,7 +159,7 @@ object Report: TppReport
       mmTop = 8996
       mmWidth = 19844
       BandType = 1
-      LayerName = Foreground
+      LayerName = Foreground1
     end
   end
   object ppHeaderBand1: TppHeaderBand
@@ -181,7 +182,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 170000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine6: TppLine
       UserName = 'TrennlinieK1'
@@ -195,7 +196,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine9: TppLine
       UserName = 'TrennlinieK2'
@@ -209,7 +210,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine3: TppLine
       UserName = 'TrennlinieK3'
@@ -223,7 +224,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine7: TppLine
       UserName = 'TrennlinieK4'
@@ -237,7 +238,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1058
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel6: TppLabel
       UserName = 'Nr'
@@ -256,10 +257,10 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 8000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel10: TppLabel
-      UserName = 'Klasse'
+      UserName = 'Kuerzel'
       Anchors = [atLeft, atRight]
       AutoSize = False
       Caption = 'Krz.'
@@ -275,7 +276,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 8000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel1: TppLabel
       UserName = 'Name'
@@ -293,7 +294,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 51000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel8: TppLabel
       UserName = 'Vorname'
@@ -311,7 +312,7 @@ object Report: TppReport
       mmTop = 5027
       mmWidth = 51000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel4: TppLabel
       UserName = 'EMail'
@@ -329,7 +330,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 62000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel9: TppLabel
       UserName = 'EMailDienstlich'
@@ -347,7 +348,7 @@ object Report: TppReport
       mmTop = 5027
       mmWidth = 62000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel7: TppLabel
       UserName = 'Telefonnummer'
@@ -365,7 +366,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 31000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLabel5: TppLabel
       UserName = 'Handynummer'
@@ -383,7 +384,7 @@ object Report: TppReport
       mmTop = 5027
       mmWidth = 31000
       BandType = 0
-      LayerName = Foreground
+      LayerName = Foreground1
     end
   end
   object ppDetailBand1: TppDetailBand
@@ -407,7 +408,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine2: TppLine
       UserName = 'TrennlinieD2'
@@ -421,7 +422,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine4: TppLine
       UserName = 'TrennlinieD3'
@@ -434,7 +435,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppLine8: TppLine
       UserName = 'TrennlinieD4'
@@ -447,7 +448,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 1000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBCalc1: TppDBCalc
       UserName = 'LaufenderZaehler'
@@ -467,10 +468,10 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 8000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText8: TppDBText
-      UserName = 'dbKlasse'
+      UserName = 'dbKuerzel'
       DataField = 'Kuerzel'
       DataPipeline = dmPipelines.plLehrer
       Font.Charset = DEFAULT_CHARSET
@@ -486,7 +487,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 8000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText3: TppDBText
       UserName = 'dbName'
@@ -504,7 +505,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 51000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText7: TppDBText
       UserName = 'dbVorname'
@@ -522,7 +523,7 @@ object Report: TppReport
       mmTop = 5200
       mmWidth = 51000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText5: TppDBText
       UserName = 'dbEMail'
@@ -541,7 +542,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 62000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText6: TppDBText
       UserName = 'dbEMailDienstlich'
@@ -560,7 +561,7 @@ object Report: TppReport
       mmTop = 5200
       mmWidth = 63000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText2: TppDBText
       UserName = 'dbTelefonnummer'
@@ -578,7 +579,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 31000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppDBText1: TppDBText
       UserName = 'dbHandynummer'
@@ -596,7 +597,7 @@ object Report: TppReport
       mmTop = 5200
       mmWidth = 31000
       BandType = 4
-      LayerName = Foreground
+      LayerName = Foreground1
     end
   end
   object ppFooterBand1: TppFooterBand
@@ -614,7 +615,7 @@ object Report: TppReport
       mmTop = 0
       mmWidth = 170000
       BandType = 8
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppSystemVariable1: TppSystemVariable
       UserName = 'Datum'
@@ -629,7 +630,7 @@ object Report: TppReport
       mmTop = 1000
       mmWidth = 20000
       BandType = 8
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppSystemVariable2: TppSystemVariable
       UserName = 'Dokumentenname'
@@ -647,7 +648,7 @@ object Report: TppReport
       mmTop = 1000
       mmWidth = 71967
       BandType = 8
-      LayerName = Foreground
+      LayerName = Foreground1
     end
     object ppSystemVariable3: TppSystemVariable
       UserName = 'Seitenzahl'
@@ -664,7 +665,7 @@ object Report: TppReport
       mmTop = 1000
       mmWidth = 20000
       BandType = 8
-      LayerName = Foreground
+      LayerName = Foreground1
     end
   end
   object raCodeModule1: TraCodeModule
@@ -677,7 +678,7 @@ object Report: TppReport
       0D0A084361726574506F7301021F0202000001060F5472614576656E7448616E
       646C65720B50726F6772616D4E616D6506115265706F72744265666F72655072
       696E740B50726F6772616D54797065070B747450726F63656475726506536F75
-      726365140D02000070726F636564757265205265706F72744265666F72655072
+      72636514EF01000070726F636564757265205265706F72744265666F72655072
       696E743B0D0A7661720D0A20206765776165686C7465536F7274696572756E67
       203A20537472696E673B0D0A626567696E0D0A20206765776165686C7465536F
       7274696572756E67203A3D2053656C656374537472696E672827536F6C6C2064
@@ -686,28 +687,27 @@ object Report: TppReport
       204C65687265726E616D656E3F272C20276E616368204BC3BC727A656C2C6E61
       6368204E616D6527293B0D0A20206F726967696E616C536F7274696572756E67
       203A3D20536F7274696572756E67566F6E285265706F72742E44617461706970
-      656C696E65293B0D0A20206966206765776165686C7465536F7274696572756E
-      67203D20276E616368204E616D6527207468656E0D0A2020626567696E0D0A20
-      2020205365747A65536F7274696572756E67285265706F72742E446174617069
-      70656C696E652C274E6163686E616D652C566F726E616D652C4B7565727A656C
-      27293B0D0A2020656E640D0A2020656C73650D0A2020626567696E0D0A202020
-      205365747A65536F7274696572756E67285265706F72742E4461746170697065
-      6C696E652C274B7565727A656C2C4E6163686E616D652C566F726E616D652729
-      3B0D0A2020656E643B202020200D0A656E643B0D0A0D436F6D706F6E656E744E
-      616D6506065265706F7274094576656E744E616D65060B4265666F7265507269
-      6E74074576656E7449440201084361726574506F730102050209000001060F54
-      72614576656E7448616E646C65720B50726F6772616D4E616D6506105265706F
-      727441667465725072696E740B50726F6772616D54797065070B747450726F63
-      656475726506536F75726365066670726F636564757265205265706F72744166
-      7465725072696E743B0D0A626567696E0D0A20205365747A65536F7274696572
-      756E67285265706F72742E44617461706970656C696E652C6F726967696E616C
-      536F7274696572756E67293B0D0A656E643B0D0A0D436F6D706F6E656E744E61
-      6D6506065265706F7274094576656E744E616D65060A41667465725072696E74
-      074576656E7449440200084361726574506F730102390203000000}
+      656C696E65293B0D0A20200D0A20206966206765776165686C7465536F727469
+      6572756E67203D20276E616368204E616D6527207468656E0D0A202020205365
+      747A65536F7274696572756E67285265706F72742E44617461706970656C696E
+      652C274E6163686E616D652C566F726E616D652C4B7565727A656C27290D0A20
+      20656C73650D0A202020205365747A65536F7274696572756E67285265706F72
+      742E44617461706970656C696E652C274B7565727A656C2C4E6163686E616D65
+      2C566F726E616D6527293B202020200D0A656E643B0D0A0D436F6D706F6E656E
+      744E616D6506065265706F7274094576656E744E616D65060B4265666F726550
+      72696E74074576656E7449440201084361726574506F73010249020B00000106
+      0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506105265
+      706F727441667465725072696E740B50726F6772616D54797065070B74745072
+      6F63656475726506536F75726365066670726F636564757265205265706F7274
+      41667465725072696E743B0D0A626567696E0D0A20205365747A65536F727469
+      6572756E67285265706F72742E44617461706970656C696E652C6F726967696E
+      616C536F7274696572756E67293B0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D6506065265706F7274094576656E744E616D65060A4166746572507269
+      6E74074576656E7449440200084361726574506F730102010201000000}
   end
-  object ppDesignLayers1: TppDesignLayers
-    object ppDesignLayer1: TppDesignLayer
-      UserName = 'Foreground'
+  object ppDesignLayers2: TppDesignLayers
+    object ppDesignLayer2: TppDesignLayer
+      UserName = 'Foreground1'
       LayerType = ltBanded
       Index = 0
     end

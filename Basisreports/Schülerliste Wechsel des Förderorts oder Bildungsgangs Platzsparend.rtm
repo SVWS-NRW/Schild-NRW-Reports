@@ -17,7 +17,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Sch''#252''lerliste Wechsel des F''#246''rderorts oder Bildungsgangs Platzsparend.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Basisreports\Sch''#252''lerliste Wechsel des F''#246''rderorts oder Bildungsgangs Platzsparend.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

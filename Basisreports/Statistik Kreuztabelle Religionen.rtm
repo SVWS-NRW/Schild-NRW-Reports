@@ -13,9 +13,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 297000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\Jens\Google Drive\Reportsammlung 2.0\Grundschule\Statis' +
-    'tik Kreuztabelle Religionen.rtm'
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Basisreports\Statistik Kreuztabelle Religionen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
