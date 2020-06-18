@@ -17,7 +17,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
-    'tsammlung 2.0\Fertige Reports\Basisreports\Serienbrief Eltern DI' +
+    'tsammlung 2.0\Fertige Reports\Serienbriefe\Serienbrief Eltern DI' +
     'N 5008 Form B.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
