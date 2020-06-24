@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Unfallanzeige Unfallkasse NRW Rheinland.rtm'
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -14,8 +14,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Basisreports\Unfallanzeige Unfallkasse NRW Rheinland.rtm'
+  Template.FileName = 
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Fertige Reports\Basisreports\Unfallanzeige Unfallk' +
+    'asse NRW Rheinland.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
