@@ -1,0 +1,65 @@
+plugins {
+    id 'maven-publish'
+    id 'distribution'
+}
+
+group = 'de.nrw.schule.svws'
+version = '1.0.6'
+
+
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/SVWS-NRW/Schild-NRW-Reports"
+            credentials {
+            	username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+    publications {
+        mavenZip(MavenPublication) {
+            artifact  'build/Schild-NRW-Reports.zip'
+            artifactId = 'svws-schild-nrw-reports'
+            pom {
+                name = 'SVWS Schild-NRW-Reports'
+                description = 'Diese Bibliothek stellt das ZIP-Archiv für den Schild3.0-Installer für die Dateien der Schild-NRW-Reports zur Verfügung.'
+                url = 'http://www.svws.nrw.de'
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'http://www.opensource.org/licenses/mit-license.php'
+                    }
+                }
+                scm {
+                    connection = 'scm:git@github.com/SVWS-NRW/Schild-NRW-Reports'
+                    developerConnection = 'scm:git@github.com/SVWS-NRW/Schild-NRW-Reports.git'
+                    url = 'https://github.com/SVWS-NRW/Schild-NRW-Reports.git'
+                }
+            }
+        }
+    }
+}
+
+task copyBasisreports(type: Copy) {
+    into "$buildDir/output/Basisreports"
+    from "Basisreports"
+}
+
+task copySerienbriefe(type: Copy) {
+    into "$buildDir/output/Serienbriefe"
+    from "Serienbriefe"
+}
+
+task doZip(type: Zip) {
+    archiveFileName = "Schild-NRW-Reports.zip"
+    destinationDirectory = file("$buildDir")
+    from "$buildDir/output"
+}
+
+doZip.dependsOn copyBasisreports
+doZip.dependsOn copySerienbriefe
+build.dependsOn doZip
+generatePomFileForMavenZipPublication.dependsOn build
