@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: mkdir .zip
-      - run: for i in */; do zip -r ."/.zip/${i%/}.$(date +'%d-%m-%Y').${{ github.run_number }}.zip" "$i" *.pdf; done
+      - run: for i in */; do zip -r ."/.zip/${i%/}-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" "$i" *.pdf; done
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "./.zip/*"
