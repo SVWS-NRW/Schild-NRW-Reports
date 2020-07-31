@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: mkdir .zip
-      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . 
-             -x ".git/*" ".github/*" "gradle/*" ".zip/*" "LICENCE" "gradlew"
+      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/"
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "./.zip/*"
