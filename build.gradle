@@ -4,8 +4,7 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '1.0.7'
-
+version = '1.0.8'
 
 
 publishing {
@@ -54,7 +53,8 @@ task copySerienbriefe(type: Copy) {
 }
 
 task doZip(type: Zip) {
-    archiveFileName = "Schild-NRW-Reports.zip"
+	metadataCharset 'utf-8'
+	archiveFileName = "Schild-NRW-Reports.zip"
     destinationDirectory = file("$buildDir")
     from "$buildDir/output"
 }
