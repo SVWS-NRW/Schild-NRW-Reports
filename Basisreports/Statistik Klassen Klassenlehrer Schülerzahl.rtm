@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.plVersetzung
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Statistik Klassen Klassenlehrer Sch'#252'lerzahl.rtm'
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -14,8 +14,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Basisreports\Statistik Klassen Klassenlehrer Sch''#252''lerzahl.rtm'
+  Template.FileName = 
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
+    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Stat' +
+    'istik Klassen Klassenlehrer Sch'#252'lerzahl.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -437,7 +439,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.ppKlassenSchueler
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Statistik Klassen Klassenlehrer Sch'#252'lerzahl.rtm'
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -596,7 +598,7 @@ object Report: TppReport
       0B747450726F63656475726506536F75726365065370726F6365647572652056
       61726961626C65733B0D0A7661720D0A73756D6D654B6C617373652C2073756D
       6D65476573616D74203A496E74656765723B2020200D0A0D0A626567696E0D0A
-      0D0A656E643B0D0A084361726574506F730102010201000001060F5472614576
+      0D0A656E643B0D0A084361726574506F730102190202000001060F5472614576
       656E7448616E646C65720B50726F6772616D4E616D65061D646253636875656C
       65727A61686C476573616D744F6E476574546578740B50726F6772616D547970
       65070B747450726F63656475726506536F75726365066B70726F636564757265
@@ -615,7 +617,14 @@ object Report: TppReport
       2073756D6D654B6C617373653B0D0A202073756D6D654B6C61737365203A3D20
       303B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C
       094576656E744E616D65060D416674657247656E6572617465074576656E7449
-      440219084361726574506F730102010201000000}
+      440219084361726574506F730102010201000001060F5472614576656E744861
+      6E646C65720B50726F6772616D4E616D65061153756D6D617279416674657250
+      72696E740B50726F6772616D54797065070B747450726F63656475726506536F
+      75726365064170726F6365647572652053756D6D61727941667465725072696E
+      743B0D0A626567696E0D0A20202073756D6D65476573616D74203A3D20303B0D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D65060753756D6D6172790945
+      76656E744E616D65060A41667465725072696E74074576656E74494402170843
+      61726574506F730102150203000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
