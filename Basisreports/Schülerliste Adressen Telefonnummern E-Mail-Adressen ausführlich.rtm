@@ -4,8 +4,8 @@ object Report: TppReport
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
-    'Sch'#252'ler-Klassenliste Adressen Telefonnummern E-Mail-Adressen aus' +
-    'f'#252'hrlich.rtm'
+    'Sch'#252'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich' +
+    '.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -20,8 +20,7 @@ object Report: TppReport
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
     'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Sch'#252 +
-    'ler-Klassenliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hr' +
-    'lich.rtm'
+    'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -97,7 +96,7 @@ object Report: TppReport
   Version = '15.05'
   mmColumnWidth = 165000
   DataPipelineName = 'Schueler'
-  object ppHeaderBand2: TppHeaderBand
+  object ppTitleBand1: TppTitleBand
     Background.Brush.Style = bsClear
     mmBottomOffset = 0
     mmHeight = 13755
@@ -116,11 +115,11 @@ object Report: TppReport
       Font.Name = 'Calibri'
       Font.Size = 16
       Font.Style = [fsBold]
-      mmHeight = 8800
+      mmHeight = 8731
       mmLeft = 0
       mmTop = 0
-      mmWidth = 170000
-      BandType = 0
+      mmWidth = 170127
+      BandType = 1
       LayerName = Foreground1
     end
     object ppDBText2: TppDBText
@@ -140,8 +139,8 @@ object Report: TppReport
       mmHeight = 3704
       mmLeft = 129911
       mmTop = 8996
-      mmWidth = 40000
-      BandType = 0
+      mmWidth = 39952
+      BandType = 1
       LayerName = Foreground1
     end
     object ppLabel1: TppLabel
@@ -157,7 +156,7 @@ object Report: TppReport
       mmLeft = 0
       mmTop = 8996
       mmWidth = 20108
-      BandType = 0
+      BandType = 1
       LayerName = Foreground1
     end
     object ppDBText8: TppDBText
@@ -178,7 +177,7 @@ object Report: TppReport
       mmLeft = 75142
       mmTop = 8996
       mmWidth = 19844
-      BandType = 0
+      BandType = 1
       LayerName = Foreground1
     end
   end
@@ -652,8 +651,8 @@ object Report: TppReport
           DataPipeline = dmPipelines.Erzieher
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 
-            'Sch'#252'ler-Klassenliste Adressen Telefonnummern E-Mail-Adressen aus' +
-            'f'#252'hrlich.rtm'
+            'Sch'#252'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich' +
+            '.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -1195,8 +1194,8 @@ object Report: TppReport
           DataPipeline = dmPipelines.plSchuelerTelefone
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 
-            'Sch'#252'ler-Klassenliste Adressen Telefonnummern E-Mail-Adressen aus' +
-            'f'#252'hrlich.rtm'
+            'Sch'#252'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich' +
+            '.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -1374,34 +1373,6 @@ object Report: TppReport
       mmWidth = 20000
       BandType = 8
       LayerName = Foreground1
-    end
-  end
-  object ppGroup1: TppGroup
-    BreakName = 'Klasse'
-    DataPipeline = dmPipelines.Schueler
-    GroupFileSettings.NewFile = False
-    GroupFileSettings.EmailFile = False
-    OutlineSettings.CreateNode = True
-    NewPage = True
-    ResetPageNo = True
-    StartOnOddPage = False
-    UserName = 'Group1'
-    mmNewColumnThreshold = 0
-    mmNewPageThreshold = 0
-    DataPipelineName = 'Schueler'
-    NewFile = False
-    object ppGroupHeaderBand1: TppGroupHeaderBand
-      Background.Brush.Style = bsClear
-      mmBottomOffset = 0
-      mmHeight = 0
-      mmPrintPosition = 0
-    end
-    object ppGroupFooterBand1: TppGroupFooterBand
-      Background.Brush.Style = bsClear
-      HideWhenOneDetail = False
-      mmBottomOffset = 0
-      mmHeight = 0
-      mmPrintPosition = 0
     end
   end
   object raCodeModule1: TraCodeModule
