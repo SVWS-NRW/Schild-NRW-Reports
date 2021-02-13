@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Basisreports\Sch'#252'ler-Klassenliste K'#228 +
-    'stchen.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Sc' +
+    'h'#252'ler-Klassenliste K'#228'stchen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -699,19 +699,18 @@ object Report: TppReport
         GroupNo = 0
         LayerName = Foreground
       end
-      object ppRotatedLabel1: TppRotatedLabel
+      object ppLabel1: TppLabel
         UserName = 'Spaltenkopf1'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 72496
+        mmLeft = 72500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -720,19 +719,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel2: TppRotatedLabel
+      object ppLabel6: TppLabel
         UserName = 'Spaltenkopf2'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 82550
+        mmLeft = 82500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -741,19 +739,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel3: TppRotatedLabel
+      object ppLabel7: TppLabel
         UserName = 'Spaltenkopf3'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 92604
+        mmLeft = 92500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -762,19 +759,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel4: TppRotatedLabel
+      object ppLabel8: TppLabel
         UserName = 'Spaltenkopf4'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 102394
+        mmLeft = 102500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -783,19 +779,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel5: TppRotatedLabel
+      object ppLabel9: TppLabel
         UserName = 'Spaltenkopf5'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 112448
+        mmLeft = 112500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -804,19 +799,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel6: TppRotatedLabel
+      object ppLabel10: TppLabel
         UserName = 'Spaltenkopf6'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 122502
+        mmLeft = 122500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -825,19 +819,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel7: TppRotatedLabel
+      object ppLabel11: TppLabel
         UserName = 'Spaltenkopf7'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 132557
+        mmLeft = 132500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -846,19 +839,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel8: TppRotatedLabel
+      object ppLabel12: TppLabel
         UserName = 'Spaltenkopf8'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 142611
+        mmLeft = 142500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -867,19 +859,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel9: TppRotatedLabel
+      object ppLabel13: TppLabel
         UserName = 'Spaltenkopf9'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 152400
+        mmLeft = 152500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -888,19 +879,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel10: TppRotatedLabel
+      object ppLabel14: TppLabel
         UserName = 'Spaltenkopf10'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 162454
+        mmLeft = 162500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
