@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Basisreports\Klassenliste K'#228'stchen.r' +
-    'tm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
+    'tsammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Kl' +
+    'assenliste K'#228'stchen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -350,13 +350,12 @@ object Report: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppRotatedLabel1: TppRotatedLabel
+          object ppLabel1: TppLabel
             UserName = 'Spaltenkopf1'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -370,13 +369,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel2: TppRotatedLabel
+          object ppLabel6: TppLabel
             UserName = 'Spaltenkopf2'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -390,13 +388,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel3: TppRotatedLabel
+          object ppLabel7: TppLabel
             UserName = 'Spaltenkopf3'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -410,13 +407,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel4: TppRotatedLabel
+          object ppLabel8: TppLabel
             UserName = 'Spaltenkopf4'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -430,13 +426,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel5: TppRotatedLabel
+          object ppLabel9: TppLabel
             UserName = 'Spaltenkopf5'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -450,13 +445,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel6: TppRotatedLabel
+          object ppLabel10: TppLabel
             UserName = 'Spaltenkopf6'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -470,13 +464,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel7: TppRotatedLabel
+          object ppLabel11: TppLabel
             UserName = 'Spaltenkopf7'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -490,13 +483,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel8: TppRotatedLabel
+          object ppLabel12: TppLabel
             UserName = 'Spaltenkopf8'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -510,13 +502,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel9: TppRotatedLabel
+          object ppLabel13: TppLabel
             UserName = 'Spaltenkopf9'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
@@ -530,13 +521,12 @@ object Report: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 15000
           end
-          object ppRotatedLabel10: TppRotatedLabel
+          object ppLabel14: TppLabel
             UserName = 'Spaltenkopf10'
             Angle = 90
             AutoSize = False
-            Border.Color = clWindow
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
+            Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = [fsBold]
