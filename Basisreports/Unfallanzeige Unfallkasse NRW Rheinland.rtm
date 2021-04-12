@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
-    'tsammlung 2.0\Fertige Reports\Basisreports\Unfallanzeige Unfallk' +
-    'asse NRW Rheinland.rtm'
+    'tsammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Un' +
+    'fallanzeige Unfallkasse NRW Rheinland.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1468,7 +1468,7 @@ object Report: TppReport
       2027417269616C273B0D0A2020506978656C50726F4D696C6C696D6574657220
       3A3D205265706F72742E5072696E7465722E43616E7661732E54657874576964
       746828276162636465666768696A6B6C6D6E6F707172737475767778797A2729
-      2F3130373B0D0A20207B5A756EC3A46368737420646965204272656974652064
+      2F3130383B0D0A20207B5A756EC3A46368737420646965204272656974652064
       65732054657874657320626569204F726967696E616C65696E7374656C6C756E
       67656E2062657374696D6D656E7D0D0A20205265706F72742E5072696E746572
       2E43616E7661732E466F6E742E4E616D65203A3D204F726967696E616C736368
@@ -1790,6 +1790,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-    end
-  end
+		end
+		object ppParameter1: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '1.0.25'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '1.0.25'
+			UserName = 'Versionsnummer'
+		end
+	end
 end
+

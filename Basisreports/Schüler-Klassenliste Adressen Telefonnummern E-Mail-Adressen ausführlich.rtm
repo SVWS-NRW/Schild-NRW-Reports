@@ -97,91 +97,6 @@ object Report: TppReport
   Version = '15.05'
   mmColumnWidth = 165000
   DataPipelineName = 'Schueler'
-  object ppHeaderBand2: TppHeaderBand
-    Background.Brush.Style = bsClear
-    mmBottomOffset = 0
-    mmHeight = 13755
-    mmPrintPosition = 0
-    object ppLabel3: TppLabel
-      UserName = 'dbListenbezeichnung'
-      AutoSize = False
-      Border.BorderPositions = [bpTop, bpBottom]
-      Border.Color = 10516052
-      Border.Visible = True
-      Border.Weight = 3.000000000000000000
-      Caption = ' Sch'#252'lerliste'
-      Color = 16051687
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 16
-      Font.Style = [fsBold]
-      mmHeight = 8800
-      mmLeft = 0
-      mmTop = 0
-      mmWidth = 170000
-      BandType = 0
-      LayerName = Foreground1
-    end
-    object ppDBText2: TppDBText
-      UserName = 'dbSchuljahrAbschnitt'
-      AutoSize = True
-      DataField = 'SchuljahrUndAbschnittText'
-      DataPipeline = dmPipelines.EigeneSchule
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 9
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taRightJustified
-      Transparent = True
-      DataPipelineName = 'EigeneSchule'
-      mmHeight = 3704
-      mmLeft = 129911
-      mmTop = 8996
-      mmWidth = 40000
-      BandType = 0
-      LayerName = Foreground1
-    end
-    object ppLabel1: TppLabel
-      UserName = 'dbKlassenleitung'
-      Caption = 'Klassenlehrer'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 9
-      Font.Style = []
-      Transparent = True
-      mmHeight = 3704
-      mmLeft = 0
-      mmTop = 8996
-      mmWidth = 20108
-      BandType = 0
-      LayerName = Foreground1
-    end
-    object ppDBText8: TppDBText
-      UserName = 'dbSchuleBezeichnung'
-      AutoSize = True
-      DataField = 'Bezeichnung1'
-      DataPipeline = dmPipelines.EigeneSchule
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 9
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      DataPipelineName = 'EigeneSchule'
-      mmHeight = 3704
-      mmLeft = 75142
-      mmTop = 8996
-      mmWidth = 19844
-      BandType = 0
-      LayerName = Foreground1
-    end
-  end
   object ppDetailBand1: TppDetailBand
     Background1.Brush.Style = bsClear
     Background2.Brush.Style = bsClear
@@ -208,46 +123,6 @@ object Report: TppReport
       mmOverFlowOffset = 0
       mmStopPosition = 0
       mmMinHeight = 0
-      object ppDBText3: TppDBText
-        UserName = 'DBNameVorname'
-        Border.BorderPositions = [bpBottom]
-        Border.Visible = True
-        Border.Weight = 0.750000000000000000
-        Color = 10516052
-        DataField = 'NameVorname'
-        DataPipeline = dmPipelines.Schueler
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
-        Font.Name = 'Calibri'
-        Font.Size = 14
-        Font.Style = [fsBold, fsItalic]
-        DataPipelineName = 'Schueler'
-        mmHeight = 6350
-        mmLeft = 0
-        mmTop = 3445
-        mmWidth = 170000
-        BandType = 4
-        LayerName = Foreground1
-      end
-      object ppDBText1: TppDBText
-        UserName = 'DBKlasse'
-        DataField = 'Klasse'
-        DataPipeline = dmPipelines.Schueler
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
-        Font.Name = 'Calibri'
-        Font.Size = 14
-        Font.Style = [fsBold, fsItalic]
-        TextAlignment = taRightJustified
-        Transparent = True
-        DataPipelineName = 'Schueler'
-        mmHeight = 6615
-        mmLeft = 148167
-        mmTop = 3445
-        mmWidth = 21696
-        BandType = 4
-        LayerName = Foreground1
-      end
       object ppLabel21: TppLabel
         UserName = 'Name'
         AutoSize = False
@@ -575,6 +450,27 @@ object Report: TppReport
         mmLeft = 87842
         mmTop = 15087
         mmWidth = 29898
+        BandType = 4
+        LayerName = Foreground1
+      end
+      object ppDBText3: TppDBText
+        UserName = 'DBNameVorname'
+        Border.BorderPositions = [bpBottom]
+        Border.Visible = True
+        Border.Weight = 0.750000000000000000
+        Color = 10516052
+        DataField = 'NameVorname'
+        DataPipeline = dmPipelines.Schueler
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Name = 'Calibri'
+        Font.Size = 14
+        Font.Style = [fsBold, fsItalic]
+        DataPipelineName = 'Schueler'
+        mmHeight = 6350
+        mmLeft = 0
+        mmTop = 3445
+        mmWidth = 170000
         BandType = 4
         LayerName = Foreground1
       end
@@ -1379,22 +1275,106 @@ object Report: TppReport
   object ppGroup1: TppGroup
     BreakName = 'Klasse'
     DataPipeline = dmPipelines.Schueler
-    GroupFileSettings.NewFile = False
-    GroupFileSettings.EmailFile = False
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
     OutlineSettings.CreateNode = True
     NewPage = True
     ResetPageNo = True
+    ReprintOnSubsequentPage = False
     StartOnOddPage = False
     UserName = 'Group1'
     mmNewColumnThreshold = 0
     mmNewPageThreshold = 0
     DataPipelineName = 'Schueler'
-    NewFile = False
+    NewFile = True
     object ppGroupHeaderBand1: TppGroupHeaderBand
       Background.Brush.Style = bsClear
       mmBottomOffset = 0
-      mmHeight = 0
+      mmHeight = 13755
       mmPrintPosition = 0
+      object ppLabel3: TppLabel
+        UserName = 'dbListenbezeichnung'
+        AutoSize = False
+        Border.BorderPositions = [bpTop, bpBottom]
+        Border.Color = 10516052
+        Border.Visible = True
+        Border.Weight = 3.000000000000000000
+        Caption = ' Sch'#252'lerliste'
+        Color = 16051687
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 16
+        Font.Style = [fsBold]
+        mmHeight = 8731
+        mmLeft = 0
+        mmTop = 0
+        mmWidth = 170127
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppDBText2: TppDBText
+        UserName = 'dbSchuljahrAbschnitt'
+        AutoSize = True
+        DataField = 'SchuljahrUndAbschnittText'
+        DataPipeline = dmPipelines.EigeneSchule
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taRightJustified
+        Transparent = True
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 3704
+        mmLeft = 129911
+        mmTop = 8731
+        mmWidth = 39952
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppLabel1: TppLabel
+        UserName = 'dbKlassenleitung'
+        Caption = 'Klassenlehrer'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3704
+        mmLeft = 0
+        mmTop = 8731
+        mmWidth = 20108
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppDBText8: TppDBText
+        UserName = 'dbSchuleBezeichnung'
+        AutoSize = True
+        DataField = 'Bezeichnung1'
+        DataPipeline = dmPipelines.EigeneSchule
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taCentered
+        Transparent = True
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 3704
+        mmLeft = 75142
+        mmTop = 8731
+        mmWidth = 19844
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
     end
     object ppGroupFooterBand1: TppGroupFooterBand
       Background.Brush.Style = bsClear
@@ -1478,15 +1458,7 @@ object Report: TppReport
       6974756E673A2027202B204C65687265723B0D0A656E643B0D0A0D436F6D706F
       6E656E744E616D65061064624B6C617373656E6C656974756E67094576656E74
       4E616D6506094F6E47657454657874074576656E744944023508436172657450
-      6F73010205020E000001060F5472614576656E7448616E646C65720B50726F67
-      72616D4E616D65061644424E616D65566F726E616D654F6E476574546578740B
-      50726F6772616D54797065070B747450726F63656475726506536F7572636506
-      5D70726F6365647572652044424E616D65566F726E616D654F6E476574546578
-      742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
-      2054657874203A3D20272027202B20546578743B0D0A0D0A656E643B0D0A0D43
-      6F6D706F6E656E744E616D65060D44424E616D65566F726E616D65094576656E
-      744E616D6506094F6E47657454657874074576656E7449440235084361726574
-      506F730102160204000000}
+      6F73010205020E000000}
   end
   object ppDesignLayers6: TppDesignLayers
     object ppDesignLayer6: TppDesignLayer
@@ -1508,6 +1480,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-    end
-  end
+		end
+		object ppParameter1: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '1.0.25'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '1.0.25'
+			UserName = 'Versionsnummer'
+		end
+	end
 end
+

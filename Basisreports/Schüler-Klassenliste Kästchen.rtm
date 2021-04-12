@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Basisreports\Sch'#252'ler-Klassenliste K'#228 +
-    'stchen.rtm'
+    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Sch'#252 +
+    'ler-Klassenliste K'#228'stchen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -93,91 +93,6 @@ object Report: TppReport
   Version = '15.05'
   mmColumnWidth = 165000
   DataPipelineName = 'Schueler'
-  object ppHeaderBand1: TppHeaderBand
-    Background.Brush.Style = bsClear
-    mmBottomOffset = 0
-    mmHeight = 16933
-    mmPrintPosition = 0
-    object ppDBText4: TppDBText
-      UserName = 'dbSchuljahrAbschnitt'
-      AutoSize = True
-      DataField = 'SchuljahrUndAbschnittText'
-      DataPipeline = dmPipelines.EigeneSchule
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 9
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taRightJustified
-      Transparent = True
-      DataPipelineName = 'EigeneSchule'
-      mmHeight = 3705
-      mmLeft = 131498
-      mmTop = 8996
-      mmWidth = 38365
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel3: TppLabel
-      UserName = 'dbListenbezeichnung'
-      AutoSize = False
-      Border.BorderPositions = [bpTop, bpBottom]
-      Border.Color = 10516052
-      Border.Visible = True
-      Border.Weight = 3.000000000000000000
-      Caption = ' Sch'#252'lerliste'
-      Color = 16051687
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 16
-      Font.Style = [fsBold]
-      mmHeight = 8800
-      mmLeft = 0
-      mmTop = 0
-      mmWidth = 170000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppDBText8: TppDBText
-      UserName = 'dbSchuleBezeichnung'
-      AutoSize = True
-      DataField = 'Bezeichnung1'
-      DataPipeline = dmPipelines.EigeneSchule
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 9
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      DataPipelineName = 'EigeneSchule'
-      mmHeight = 3704
-      mmLeft = 75274
-      mmTop = 8996
-      mmWidth = 19844
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel2: TppLabel
-      UserName = 'dbKlassenleitung'
-      Caption = 'Klassenlehrer'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 9
-      Font.Style = []
-      Transparent = True
-      mmHeight = 3704
-      mmLeft = 0
-      mmTop = 8996
-      mmWidth = 20108
-      BandType = 0
-      LayerName = Foreground
-    end
-  end
   object ppDetailBand1: TppDetailBand
     Background1.Brush.Style = bsClear
     Background2.Brush.Color = 16051687
@@ -458,14 +373,124 @@ object Report: TppReport
       LayerName = Foreground
     end
   end
+  object ppGroup2: TppGroup
+    BreakName = 'Klasse'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    ResetPageNo = True
+    ReprintOnSubsequentPage = False
+    StartOnOddPage = False
+    UserName = 'Group2'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = True
+    object ppGroupHeaderBand2: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 17198
+      mmPrintPosition = 0
+      object ppDBText4: TppDBText
+        UserName = 'dbSchuljahrAbschnitt'
+        AutoSize = True
+        DataField = 'SchuljahrUndAbschnittText'
+        DataPipeline = dmPipelines.EigeneSchule
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taRightJustified
+        Transparent = True
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 3704
+        mmLeft = 131498
+        mmTop = 8731
+        mmWidth = 38365
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel3: TppLabel
+        UserName = 'dbListenbezeichnung'
+        AutoSize = False
+        Border.BorderPositions = [bpTop, bpBottom]
+        Border.Color = 10516052
+        Border.Visible = True
+        Border.Weight = 3.000000000000000000
+        Caption = ' Sch'#252'lerliste'
+        Color = 16051687
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 16
+        Font.Style = [fsBold]
+        mmHeight = 8731
+        mmLeft = 0
+        mmTop = 0
+        mmWidth = 170127
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppDBText8: TppDBText
+        UserName = 'dbSchuleBezeichnung'
+        AutoSize = True
+        DataField = 'Bezeichnung1'
+        DataPipeline = dmPipelines.EigeneSchule
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taCentered
+        Transparent = True
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 3704
+        mmLeft = 75142
+        mmTop = 8731
+        mmWidth = 19844
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel2: TppLabel
+        UserName = 'dbKlassenleitung'
+        Caption = 'Klassenlehrer'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3704
+        mmLeft = 0
+        mmTop = 8731
+        mmWidth = 20108
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+    end
+    object ppGroupFooterBand2: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
   object ppGroup1: TppGroup
     BreakName = 'Klasse'
     DataPipeline = dmPipelines.Schueler
     GroupFileSettings.NewFile = False
     GroupFileSettings.EmailFile = False
     OutlineSettings.CreateNode = True
-    NewPage = True
-    ResetPageNo = True
     StartOnOddPage = False
     UserName = 'Group1'
     mmNewColumnThreshold = 0
@@ -699,19 +724,18 @@ object Report: TppReport
         GroupNo = 0
         LayerName = Foreground
       end
-      object ppRotatedLabel1: TppRotatedLabel
+      object ppLabel1: TppLabel
         UserName = 'Spaltenkopf1'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 72496
+        mmLeft = 72500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -720,19 +744,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel2: TppRotatedLabel
+      object ppLabel6: TppLabel
         UserName = 'Spaltenkopf2'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 82550
+        mmLeft = 82500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -741,19 +764,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel3: TppRotatedLabel
+      object ppLabel7: TppLabel
         UserName = 'Spaltenkopf3'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 92604
+        mmLeft = 92500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -762,19 +784,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel4: TppRotatedLabel
+      object ppLabel8: TppLabel
         UserName = 'Spaltenkopf4'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 102394
+        mmLeft = 102500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -783,19 +804,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel5: TppRotatedLabel
+      object ppLabel9: TppLabel
         UserName = 'Spaltenkopf5'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 112448
+        mmLeft = 112500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -804,19 +824,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel6: TppRotatedLabel
+      object ppLabel10: TppLabel
         UserName = 'Spaltenkopf6'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 122502
+        mmLeft = 122500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -825,19 +844,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel7: TppRotatedLabel
+      object ppLabel11: TppLabel
         UserName = 'Spaltenkopf7'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 132557
+        mmLeft = 132500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -846,19 +864,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel8: TppRotatedLabel
+      object ppLabel12: TppLabel
         UserName = 'Spaltenkopf8'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 142611
+        mmLeft = 142500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -867,19 +884,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel9: TppRotatedLabel
+      object ppLabel13: TppLabel
         UserName = 'Spaltenkopf9'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 152400
+        mmLeft = 152500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -888,19 +904,18 @@ object Report: TppReport
         RotatedOriginLeft = 0
         RotatedOriginTop = 15000
       end
-      object ppRotatedLabel10: TppRotatedLabel
+      object ppLabel14: TppLabel
         UserName = 'Spaltenkopf10'
         Angle = 90
         AutoSize = False
-        Border.Color = clWindow
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
+        Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 11
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 15000
-        mmLeft = 162454
+        mmLeft = 162500
         mmTop = 500
         mmWidth = 5027
         BandType = 3
@@ -975,6 +990,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-    end
-  end
+		end
+		object ppParameter1: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '1.0.25'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '1.0.25'
+			UserName = 'Versionsnummer'
+		end
+	end
 end
+
