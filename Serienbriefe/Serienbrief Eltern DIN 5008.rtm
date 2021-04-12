@@ -227,8 +227,8 @@ object Report: TppReport
         object ppGroup2: TppGroup
           BreakName = 'ID'
           DataPipeline = dmPipelines.Erzieher
-          GroupFileSettings.NewFile = False
-          GroupFileSettings.EmailFile = False
+          GroupFileSettings.NewFile = True
+          GroupFileSettings.EmailFile = True
           OutlineSettings.CreateNode = True
           NewPage = True
           ResetPageNo = True
@@ -238,7 +238,7 @@ object Report: TppReport
           mmNewColumnThreshold = 0
           mmNewPageThreshold = 0
           DataPipelineName = 'Erzieher'
-          NewFile = False
+          NewFile = True
           object ppGroupHeaderBand2: TppGroupHeaderBand
             Background.Brush.Style = bsClear
             mmBottomOffset = 0
@@ -1426,6 +1426,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = 'Ja'
       UserName = 'rtfLaden'
-    end
-  end
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter3: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '1.0.25'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '1.0.25'
+			UserName = 'Versionsnummer'
+		end
+	end
 end
+

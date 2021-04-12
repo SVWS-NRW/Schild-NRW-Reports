@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Basisreports\Sch'#252'ler-Klassenliste Ad' +
-    'resse Geburtsdatum Telefon.rtm'
+    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Sch'#252 +
+    'ler-Klassenliste Adresse Geburtsdatum Telefon.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -342,8 +342,8 @@ object Report: TppReport
   object ppGroup1: TppGroup
     BreakName = 'Klasse'
     DataPipeline = dmPipelines.Schueler
-    GroupFileSettings.NewFile = False
-    GroupFileSettings.EmailFile = False
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
     OutlineSettings.CreateNode = True
     NewPage = True
     ResetPageNo = True
@@ -353,7 +353,7 @@ object Report: TppReport
     mmNewColumnThreshold = 0
     mmNewPageThreshold = 0
     DataPipelineName = 'Schueler'
-    NewFile = False
+    NewFile = True
     object ppGroupHeaderBand1: TppGroupHeaderBand
       Background.Brush.Style = bsClear
       Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
@@ -735,6 +735,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-    end
-  end
+		end
+		object ppParameter1: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '1.0.25'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '1.0.25'
+			UserName = 'Versionsnummer'
+		end
+	end
 end
+

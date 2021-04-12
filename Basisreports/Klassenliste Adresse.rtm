@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.plVersetzung
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Klassenliste Adresse.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
-    'tsammlung 2.0\Fertige Reports\Basisreports\Klassenliste Adresse.' +
-    'rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
+    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Klas' +
+    'senliste Adresse.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -510,8 +510,8 @@ object Report: TppReport
   object ppGroup1: TppGroup
     BreakName = 'Klasse'
     DataPipeline = dmPipelines.plVersetzung
-    GroupFileSettings.NewFile = False
-    GroupFileSettings.EmailFile = False
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
     OutlineSettings.CreateNode = True
     NewPage = True
     ResetPageNo = True
@@ -521,7 +521,7 @@ object Report: TppReport
     mmNewColumnThreshold = 0
     mmNewPageThreshold = 0
     DataPipelineName = 'plVersetzung'
-    NewFile = False
+    NewFile = True
     object ppGroupHeaderBand1: TppGroupHeaderBand
       Background.Brush.Style = bsClear
       Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
@@ -671,6 +671,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-    end
-  end
+		end
+		object ppParameter1: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '1.0.25'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '1.0.25'
+			UserName = 'Versionsnummer'
+		end
+	end
 end
+
