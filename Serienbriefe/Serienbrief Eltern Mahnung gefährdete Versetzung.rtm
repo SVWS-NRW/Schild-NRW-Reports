@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Serienbrief Mahnung gef'#228'hrdete Versetzung Eltern.rtm'
+  PrinterSetup.DocumentName = 'Serienbrief Eltern Mahnung gef'#228'hrdete Versetzung.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -18,7 +18,7 @@ object Report: TppReport
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
     'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Serienbriefe\Seri' +
-    'enbrief Mahnung gef'#228'hrdete Versetzung Eltern.rtm'
+    'enbrief Eltern Mahnung gef'#228'hrdete Versetzung.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -123,7 +123,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.Erzieher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Serienbrief Mahnung gef'#228'hrdete Versetzung Eltern.rtm'
+        PrinterSetup.DocumentName = 'Serienbrief Eltern Mahnung gef'#228'hrdete Versetzung.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -308,8 +308,8 @@ object Report: TppReport
         object ppGroup2: TppGroup
           BreakName = 'ID'
           DataPipeline = dmPipelines.Erzieher
-          GroupFileSettings.NewFile = True
-          GroupFileSettings.EmailFile = True
+          GroupFileSettings.NewFile = False
+          GroupFileSettings.EmailFile = False
           OutlineSettings.CreateNode = True
           NewPage = True
           ResetPageNo = True
@@ -319,7 +319,7 @@ object Report: TppReport
           mmNewColumnThreshold = 0
           mmNewPageThreshold = 0
           DataPipelineName = 'Erzieher'
-          NewFile = True
+          NewFile = False
           object ppGroupHeaderBand2: TppGroupHeaderBand
             Background.Brush.Style = bsClear
             PrintHeight = phDynamic
@@ -349,7 +349,7 @@ object Report: TppReport
                 AutoStop = False
                 DataPipeline = dmPipelines.plWarnungen
                 PrinterSetup.BinName = 'Default'
-                PrinterSetup.DocumentName = 'Serienbrief Mahnung gef'#228'hrdete Versetzung Eltern.rtm'
+                PrinterSetup.DocumentName = 'Serienbrief Eltern Mahnung gef'#228'hrdete Versetzung.rtm'
                 PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
@@ -2192,27 +2192,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = 'Nein'
       UserName = 'rtfLaden'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter3: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '1.0.25'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '1.0.25'
-			UserName = 'Versionsnummer'
-		end
-	end
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter3: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '1.0.26'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '1.0.26'
+      UserName = 'Versionsnummer'
+    end
+  end
 end
-
