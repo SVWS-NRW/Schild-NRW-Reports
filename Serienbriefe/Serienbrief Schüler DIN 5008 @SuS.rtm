@@ -15,10 +15,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Serienbriefe\Seri' +
-    'enbrief Sch'#252'ler DIN 5008 Form B.rtm'
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Schild-NRW-Reports\Serienbriefe\Serienbrief Sch''#252''ler DIN 5008 @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
