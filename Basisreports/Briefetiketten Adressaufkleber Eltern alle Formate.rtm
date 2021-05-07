@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Basisreports\Briefetiketten Adressau' +
-    'fkleber Eltern.rtm'
+    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Brie' +
+    'fetiketten Adressaufkleber Eltern.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -122,7 +122,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.Erzieher
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Briefetiketten Adressaufkleber Eltern.rtm'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -132,6 +132,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 210000
         PrinterSetup.PaperSize = 9
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -181,7 +182,7 @@ object Report: TppReport
             UserName = 'dbAnschriftzone'
             CharWrap = False
             DataField = 'BriefAdresse'
-            DataPipeline = dmPipelines.Schueler
+            DataPipeline = dmPipelines.Erzieher
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -190,7 +191,7 @@ object Report: TppReport
             ParentDataPipeline = False
             RemoveEmptyLines = False
             Transparent = True
-            DataPipelineName = 'Schueler'
+            DataPipelineName = 'Erzieher'
             mmHeight = 25000
             mmLeft = 3000
             mmTop = 13000
@@ -527,27 +528,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = 0s
       UserName = 'SeitenrandUnten'
-		end
-		object ppParameter7: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter8: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '1.0.25'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '1.0.25'
-			UserName = 'Versionsnummer'
-		end
-	end
+    end
+    object ppParameter7: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter8: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '1.0.25'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '1.0.25'
+      UserName = 'Versionsnummer'
+    end
+  end
 end
-
