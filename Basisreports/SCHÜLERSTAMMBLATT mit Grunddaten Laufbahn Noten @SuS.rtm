@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten Laufbahn.rtm'
+  PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -15,8 +15,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reportsammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\SCH''#220''LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
+  Template.FileName = 
+    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
+    'ammlung 2.0\Basisreports\SCH'#220'LERSTAMMBLATT mit Grunddaten Laufba' +
+    'hn Noten @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -4499,7 +4501,7 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten Laufbahn.rtm'
+        PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -4808,7 +4810,7 @@ object Report: TppReport
                   '165000')
                 DataPipeline = dmPipelines.plLeistungsuebersicht
                 PrinterSetup.BinName = 'Default'
-                PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten Laufbahn.rtm'
+                PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
                 PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
@@ -4906,7 +4908,7 @@ object Report: TppReport
                 AutoStop = False
                 DataPipeline = dmPipelines.plSchuelerlaufbahn
                 PrinterSetup.BinName = 'Default'
-                PrinterSetup.DocumentName = 'Sch'#252'lerstammblatt mit Grunddaten Laufbahn.rtm'
+                PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
                 PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
@@ -5237,7 +5239,7 @@ object Report: TppReport
                   end
                   object ppDBText87: TppDBText
                     UserName = 'DBFehlstunden'
-                    DataField = 'SumFehlStdU'
+                    DataField = 'SumFehlStd'
                     DataPipeline = dmPipelines.plSchuelerlaufbahn
                     Font.Charset = DEFAULT_CHARSET
                     Font.Color = clBlack
@@ -5257,7 +5259,7 @@ object Report: TppReport
                   end
                   object ppDBText85: TppDBText
                     UserName = 'DBFehlstundenUE'
-                    DataField = 'SumFehlStd'
+                    DataField = 'SumFehlStdU'
                     DataPipeline = dmPipelines.plSchuelerlaufbahn
                     Font.Charset = DEFAULT_CHARSET
                     Font.Color = clBlack
@@ -5451,7 +5453,7 @@ object Report: TppReport
                     69626C65203A3D2053636875656C65724C6175666261686E42656D5B274C454C
                     53275D203C3E2027273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
                     060644657461696C094576656E744E616D65060B4265666F72655072696E7407
-                    4576656E7449440218084361726574506F730102030206000001060F54726145
+                    4576656E7449440218084361726574506F730102010201000001060F54726145
                     76656E7448616E646C65720B50726F6772616D4E616D65061444424162736368
                     6E6974744F6E476574546578740B50726F6772616D54797065070B747450726F
                     63656475726506536F757263650C3C01000070726F6365647572652044424162
@@ -5484,7 +5486,7 @@ object Report: TppReport
                     202049662054657874203D202727205468656E2054657874203A3D202730273B
                     20200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D44424665
                     686C7374756E64656E094576656E744E616D6506094F6E476574546578740745
-                    76656E7449440235084361726574506F730102010201000001060F5472614576
+                    76656E7449440235084361726574506F730102030204000001060F5472614576
                     656E7448616E646C65720B50726F6772616D4E616D6506174442576965646572
                     686F6C756E684F6E476574546578740B50726F6772616D54797065070B747450
                     726F63656475726506536F75726365066A70726F636564757265204442576965
@@ -8632,27 +8634,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-		end
-		object ppParameter1: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '1.0.25'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '1.0.25'
-			UserName = 'Versionsnummer'
-		end
-	end
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '1.0.26'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '1.0.26'
+      UserName = 'Versionsnummer'
+    end
+  end
 end
-
