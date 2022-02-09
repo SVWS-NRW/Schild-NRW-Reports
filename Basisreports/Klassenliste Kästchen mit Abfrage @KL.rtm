@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'ler-Klassenliste K'#228'stchen.rtm'
+  PrinterSetup.DocumentName = 'Klassenliste K'#228'stchen mit Abfrage @KL.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -14,8 +14,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Basisreports\Klassenliste K''#228''stchen @KL.rtm'
+  Template.FileName = 
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Basisreports\Klassenliste K'#228'stchen mit Abfrag' +
+    'e @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -502,7 +504,7 @@ object Report: TppReport
       Border.Visible = True
       Border.Weight = 0.750000000000000000
       mmBottomOffset = 0
-      mmHeight = 17000
+      mmHeight = 32000
       mmPrintPosition = 0
       object ppShape2: TppShape
         UserName = 'HintergrundUnsichtbar'
@@ -510,7 +512,7 @@ object Report: TppReport
         ParentHeight = True
         ParentWidth = True
         Visible = False
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 0
         mmTop = 0
         mmWidth = 170000
@@ -525,7 +527,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 10000
         mmTop = 0
         mmWidth = 1000
@@ -540,7 +542,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 70000
         mmTop = 0
         mmWidth = 1000
@@ -555,7 +557,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 80000
         mmTop = 0
         mmWidth = 1000
@@ -570,7 +572,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 90000
         mmTop = 0
         mmWidth = 1000
@@ -585,7 +587,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 100000
         mmTop = 0
         mmWidth = 1000
@@ -600,7 +602,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 110000
         mmTop = 0
         mmWidth = 1000
@@ -615,7 +617,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 120000
         mmTop = 0
         mmWidth = 1000
@@ -630,7 +632,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 130000
         mmTop = 0
         mmWidth = 1000
@@ -645,7 +647,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 140000
         mmTop = 0
         mmWidth = 1000
@@ -660,7 +662,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 150000
         mmTop = 0
         mmWidth = 1000
@@ -675,7 +677,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 160000
         mmTop = 0
         mmWidth = 1000
@@ -697,7 +699,7 @@ object Report: TppReport
         Transparent = True
         mmHeight = 5200
         mmLeft = 1000
-        mmTop = 11257
+        mmTop = 26257
         mmWidth = 8000
         BandType = 3
         GroupNo = 0
@@ -716,7 +718,7 @@ object Report: TppReport
         Transparent = True
         mmHeight = 5200
         mmLeft = 11000
-        mmTop = 11257
+        mmTop = 26257
         mmWidth = 58000
         BandType = 3
         GroupNo = 0
@@ -729,10 +731,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 72500
         mmTop = 500
         mmWidth = 5027
@@ -749,10 +751,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 82500
         mmTop = 500
         mmWidth = 5027
@@ -769,10 +771,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 92500
         mmTop = 500
         mmWidth = 5027
@@ -789,10 +791,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 102500
         mmTop = 500
         mmWidth = 5027
@@ -809,10 +811,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 112500
         mmTop = 500
         mmWidth = 5027
@@ -829,10 +831,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 122500
         mmTop = 500
         mmWidth = 5027
@@ -849,10 +851,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 132500
         mmTop = 500
         mmWidth = 5027
@@ -869,10 +871,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 142500
         mmTop = 500
         mmWidth = 5027
@@ -889,10 +891,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 152500
         mmTop = 500
         mmWidth = 5027
@@ -909,10 +911,10 @@ object Report: TppReport
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 162500
         mmTop = 500
         mmWidth = 5027
@@ -966,7 +968,50 @@ object Report: TppReport
       2027202B204C65687265723B0D0A656E643B0D0A0D436F6D706F6E656E744E61
       6D65061064624B6C617373656E6C656974756E67094576656E744E616D650609
       4F6E47657454657874074576656E7449440235084361726574506F7301020502
-      0E000000}
+      0E000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D
+      6506115265706F72744265666F72655072696E740B50726F6772616D54797065
+      070B747450726F63656475726506536F7572636514CE04000070726F63656475
+      7265205265706F72744265666F72655072696E743B0D0A626567696E0D0A2020
+      64624C697374656E62657A656963686E756E672E54657874203A3D2053747269
+      6E67496E707574282757656C6368656E20546974656C20736F6C6C2064696520
+      536368C3BC6C65726C6973746520686162656E3F272C202727293B0D0A202053
+      70616C74656E6B6F7066312E54657874203A3D20537472696E67496E70757428
+      27476562656E205369652065696E65206B75727A6520C39C6265727363687269
+      66742066C3BC7220646965205370616C7465203120766F6E2031302065696E2E
+      272C202727293B0D0A20205370616C74656E6B6F7066322E54657874203A3D20
+      537472696E67496E7075742827476562656E205369652065696E65206B75727A
+      6520C39C626572736368726966742066C3BC7220646965205370616C74652032
+      20766F6E2031302065696E2E272C202727293B200D0A20205370616C74656E6B
+      6F7066332E54657874203A3D20537472696E67496E7075742827476562656E20
+      5369652065696E65206B75727A6520C39C626572736368726966742066C3BC72
+      20646965205370616C7465203320766F6E2031302065696E2E272C202727293B
+      200D0A20205370616C74656E6B6F7066342E54657874203A3D20537472696E67
+      496E7075742827476562656E205369652065696E65206B75727A6520C39C6265
+      72736368726966742066C3BC7220646965205370616C7465203420766F6E2031
+      302065696E2E272C202727293B200D0A20205370616C74656E6B6F7066352E54
+      657874203A3D20537472696E67496E7075742827476562656E20536965206569
+      6E65206B75727A6520C39C626572736368726966742066C3BC72206469652053
+      70616C7465203520766F6E2031302065696E2E272C202727293B200D0A202053
+      70616C74656E6B6F7066362E54657874203A3D20537472696E67496E70757428
+      27476562656E205369652065696E65206B75727A6520C39C6265727363687269
+      66742066C3BC7220646965205370616C7465203620766F6E2031302065696E2E
+      272C202727293B200D0A20205370616C74656E6B6F7066372E54657874203A3D
+      20537472696E67496E7075742827476562656E205369652065696E65206B7572
+      7A6520C39C626572736368726966742066C3BC7220646965205370616C746520
+      3720766F6E2031302065696E2E272C202727293B200D0A20205370616C74656E
+      6B6F7066382E54657874203A3D20537472696E67496E7075742827476562656E
+      205369652065696E65206B75727A6520C39C626572736368726966742066C3BC
+      7220646965205370616C7465203820766F6E2031302065696E2E272C20272729
+      3B200D0A20205370616C74656E6B6F7066392E54657874203A3D20537472696E
+      67496E7075742827476562656E205369652065696E65206B75727A6520C39C62
+      6572736368726966742066C3BC7220646965205370616C7465203920766F6E20
+      31302065696E2E272C202727293B200D0A20205370616C74656E6B6F70663130
+      2E54657874203A3D20537472696E67496E7075742827476562656E2053696520
+      65696E65206B75727A6520C39C626572736368726966742066C3BC7220646965
+      205370616C746520313020766F6E2031302065696E2E272C202727293B20200D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576
+      656E744E616D65060B4265666F72655072696E74074576656E74494402010843
+      61726574506F73010205020E000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -988,27 +1033,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-		end
-		object ppParameter1: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '1.0.25'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '1.0.25'
-			UserName = 'Versionsnummer'
-		end
-	end
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '1.0.25'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '1.0.25'
+      UserName = 'Versionsnummer'
+    end
+  end
 end
-

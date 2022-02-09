@@ -15,9 +15,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\Jens\OneDrive - neg-velbert.de\Schild-Reports 2.0\Repor' +
-    'tsammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Sc' +
-    'h'#252'lerliste K'#228'stchen.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Basisreports\Sch'#252'lerliste K'#228'stchen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -151,7 +150,6 @@ object Report: TppReport
       Font.Size = 9
       Font.Style = []
       ParentDataPipeline = False
-      TextAlignment = taCentered
       Transparent = True
       DataPipelineName = 'EigeneSchule'
       mmHeight = 3704
@@ -375,9 +373,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf1'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf1'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -395,9 +392,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf2'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf2'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -415,9 +411,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf3'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf3'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -435,9 +430,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf4'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf4'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -455,9 +449,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf5'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf5'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -475,9 +468,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf6'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf6'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -495,9 +487,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf7'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf7'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -515,9 +506,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf8'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf8'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -535,9 +525,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf9'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf9'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -555,9 +544,8 @@ object Report: TppReport
       UserName = 'Spaltenkopf10'
       Angle = 90
       AutoSize = False
-      Caption = 'Spaltenkopf10'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
@@ -871,27 +859,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-		end
-		object ppParameter1: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '1.0.25'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '1.0.25'
-			UserName = 'Versionsnummer'
-		end
-	end
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '1.0.25'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '1.0.25'
+      UserName = 'Versionsnummer'
+    end
+  end
 end
-
