@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.plLehrer
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Lehrerliste K'#228'stchen mit Abfrage.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Lehrerliste K'#228'stchen mit Abfrage' +
-    '.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Report' +
+    's\Reportsammlung 2.0\Basisreports\Lehrerliste K'#228'stchen mit Abfra' +
+    'ge.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -386,7 +386,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -405,7 +405,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -424,7 +424,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -443,7 +443,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -462,7 +462,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -481,7 +481,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -500,7 +500,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
@@ -519,7 +519,7 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = [fsBold]
