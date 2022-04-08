@@ -15,8 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'S:\SchILD-NRW\SchILD-Reports\A1 Basisreports\Sch'#252'lerliste Gemahn' +
-    'te Sch'#252'ler.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Gemahnte Sch'#252'ler.rt' +
+    'm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -340,7 +341,7 @@ object Report: TppReport
       UserName = 'Note'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'Note'
+      Caption = 'akt. Note'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
@@ -350,7 +351,7 @@ object Report: TppReport
       mmHeight = 5292
       mmLeft = 153000
       mmTop = 0
-      mmWidth = 15081
+      mmWidth = 16000
       BandType = 0
       LayerName = Foreground1
     end
@@ -570,12 +571,14 @@ object Report: TppReport
             end
             object ppLabel3: TppLabel
               UserName = 'Halbjahr'
+              AutoSize = False
               Caption = 'Halbjahr'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
               Font.Name = 'Calibri'
               Font.Size = 11
               Font.Style = []
+              TextAlignment = taCentered
               Transparent = True
               mmHeight = 5200
               mmLeft = 41000
@@ -593,6 +596,7 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 11
               Font.Style = []
+              TextAlignment = taCentered
               Transparent = True
               DataPipelineName = 'plWarnungen'
               mmHeight = 5199
