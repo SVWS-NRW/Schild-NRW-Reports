@@ -1694,11 +1694,11 @@ object Report: TppReport
     object ppParameter8: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '1.0.33'
+      AutoSearchSettings.SearchExpression = '1.0.34'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '1.0.33'
+      Value = '1.0.34'
       UserName = 'Versionsnummer'
     end
   end
