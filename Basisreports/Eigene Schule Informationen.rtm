@@ -2,8 +2,8 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.EigeneSchule
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Schule Informationen.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.DocumentName = 'Eigene Schule Informationen.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 20000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Schu' +
-    'le Informationen.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Report' +
+    's\Reportsammlung 2.0\Basisreports\Eigene Schule Informationen.rt' +
+    'm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -103,19 +103,18 @@ object Report: TppReport
       Border.BorderPositions = [bpTop, bpBottom]
       Border.Color = 10516052
       Border.Weight = 2.000000000000000000
-      Caption = 'E I G E N E   S C H U L E I N F O R M A T I O N E N'
+      Caption = 'EIGENE SCHULE INFORMATIONEN'
       Color = 16051687
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
       Font.Size = 16
       Font.Style = [fsBold]
-      TextAlignment = taCentered
       Transparent = True
       mmHeight = 6879
       mmLeft = 0
       mmTop = 0
-      mmWidth = 109802
+      mmWidth = 78052
       BandType = 0
       LayerName = Foreground1
     end
@@ -2617,27 +2616,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-		end
-		object ppParameter1: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '16.05.2021'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '16.05.2021'
-			UserName = 'Versionsdatum'
-		end
-	end
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '16.05.2021'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '16.05.2021'
+      UserName = 'Versionsdatum'
+    end
+  end
 end
-

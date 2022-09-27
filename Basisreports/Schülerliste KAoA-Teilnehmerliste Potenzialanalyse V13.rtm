@@ -3,9 +3,9 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste KAoA-Teilnehmerliste Potenzialanalyse V13_neu.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste KAoA-Teilnehmerliste Potenzialanalyse V13.rtm'
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -17,9 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Sch'#252 +
-    'lerliste KAoA-Teilnehmerliste Potenzialanalyse V13_neu.rtm'
+    'C:\Users\Jens\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Report' +
+    's\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste KAoA-Teilnehmerli' +
+    'ste Potenzialanalyse V13.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -445,34 +445,34 @@ object Report: TppReport
           end
         end
       end
-      object ppTableColumn1: TppTableColumn
-        mmWidth = 20638
-      end
-      object ppTableColumn2: TppTableColumn
-        mmWidth = 15346
-      end
-      object ppTableColumn3: TppTableColumn
-        mmWidth = 23548
-      end
       object ppTableColumn4: TppTableColumn
         mmWidth = 20638
       end
       object ppTableColumn5: TppTableColumn
+        mmWidth = 15346
+      end
+      object ppTableColumn21: TppTableColumn
+        mmWidth = 23548
+      end
+      object ppTableColumn22: TppTableColumn
+        mmWidth = 20638
+      end
+      object ppTableColumn23: TppTableColumn
         mmWidth = 23019
       end
-      object ppTableColumn6: TppTableColumn
+      object ppTableColumn24: TppTableColumn
         mmWidth = 70115
       end
-      object ppTableColumn7: TppTableColumn
+      object ppTableColumn25: TppTableColumn
         mmWidth = 33602
       end
-      object ppTableColumn8: TppTableColumn
+      object ppTableColumn26: TppTableColumn
         mmWidth = 19844
       end
-      object ppTableColumn9: TppTableColumn
+      object ppTableColumn27: TppTableColumn
         mmWidth = 22754
       end
-      object ppTableColumn10: TppTableColumn
+      object ppTableColumn28: TppTableColumn
         mmWidth = 15610
       end
     end
@@ -1435,16 +1435,16 @@ object Report: TppReport
           end
         end
       end
-      object ppTableColumn11: TppTableColumn
+      object ppTableColumn29: TppTableColumn
         mmWidth = 44450
       end
-      object ppTableColumn12: TppTableColumn
+      object ppTableColumn30: TppTableColumn
         mmWidth = 47096
       end
-      object ppTableColumn13: TppTableColumn
+      object ppTableColumn31: TppTableColumn
         mmWidth = 24871
       end
-      object ppTableColumn14: TppTableColumn
+      object ppTableColumn32: TppTableColumn
         mmWidth = 148696
       end
     end
@@ -2114,28 +2114,28 @@ object Report: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn15: TppTableColumn
+      object ppTableColumn33: TppTableColumn
         mmWidth = 8001
       end
-      object ppTableColumn16: TppTableColumn
+      object ppTableColumn34: TppTableColumn
         mmWidth = 80479
       end
-      object ppTableColumn17: TppTableColumn
+      object ppTableColumn35: TppTableColumn
         mmWidth = 25056
       end
-      object ppTableColumn18: TppTableColumn
+      object ppTableColumn36: TppTableColumn
         mmWidth = 18038
       end
-      object ppTableColumn19: TppTableColumn
+      object ppTableColumn37: TppTableColumn
         mmWidth = 33558
       end
-      object ppTableColumn20: TppTableColumn
+      object ppTableColumn38: TppTableColumn
         mmWidth = 33558
       end
-      object ppTableColumn21: TppTableColumn
+      object ppTableColumn41: TppTableColumn
         mmWidth = 33558
       end
-      object ppTableColumn22: TppTableColumn
+      object ppTableColumn42: TppTableColumn
         mmWidth = 33558
       end
     end
@@ -2382,28 +2382,28 @@ object Report: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn23: TppTableColumn
+      object ppTableColumn43: TppTableColumn
         mmWidth = 8013
       end
-      object ppTableColumn24: TppTableColumn
+      object ppTableColumn44: TppTableColumn
         mmWidth = 80491
       end
-      object ppTableColumn25: TppTableColumn
+      object ppTableColumn55: TppTableColumn
         mmWidth = 25068
       end
-      object ppTableColumn26: TppTableColumn
+      object ppTableColumn56: TppTableColumn
         mmWidth = 18050
       end
-      object ppTableColumn27: TppTableColumn
+      object ppTableColumn57: TppTableColumn
         mmWidth = 33570
       end
-      object ppTableColumn28: TppTableColumn
+      object ppTableColumn58: TppTableColumn
         mmWidth = 33570
       end
-      object ppTableColumn29: TppTableColumn
+      object ppTableColumn59: TppTableColumn
         mmWidth = 33570
       end
-      object ppTableColumn30: TppTableColumn
+      object ppTableColumn60: TppTableColumn
         mmWidth = 33570
       end
     end
@@ -2907,13 +2907,13 @@ object Report: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn31: TppTableColumn
+      object ppTableColumn61: TppTableColumn
         mmWidth = 6472
       end
-      object ppTableColumn32: TppTableColumn
+      object ppTableColumn62: TppTableColumn
         mmWidth = 27456
       end
-      object ppTableColumn33: TppTableColumn
+      object ppTableColumn63: TppTableColumn
         mmWidth = 29043
       end
     end
@@ -3411,13 +3411,13 @@ object Report: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn34: TppTableColumn
+      object ppTableColumn64: TppTableColumn
         mmWidth = 6472
       end
-      object ppTableColumn35: TppTableColumn
+      object ppTableColumn65: TppTableColumn
         mmWidth = 27456
       end
-      object ppTableColumn36: TppTableColumn
+      object ppTableColumn66: TppTableColumn
         mmWidth = 29043
       end
     end
@@ -3915,13 +3915,13 @@ object Report: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn37: TppTableColumn
+      object ppTableColumn67: TppTableColumn
         mmWidth = 6472
       end
-      object ppTableColumn38: TppTableColumn
+      object ppTableColumn68: TppTableColumn
         mmWidth = 27456
       end
-      object ppTableColumn39: TppTableColumn
+      object ppTableColumn69: TppTableColumn
         mmWidth = 29043
       end
     end
@@ -4419,13 +4419,13 @@ object Report: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn40: TppTableColumn
+      object ppTableColumn70: TppTableColumn
         mmWidth = 6472
       end
-      object ppTableColumn41: TppTableColumn
+      object ppTableColumn71: TppTableColumn
         mmWidth = 27456
       end
-      object ppTableColumn42: TppTableColumn
+      object ppTableColumn72: TppTableColumn
         mmWidth = 29043
       end
     end
@@ -4478,15 +4478,15 @@ object Report: TppReport
       4576656E7449440235084361726574506F730102010201000001060F54726145
       76656E7448616E646C65720B50726F6772616D4E616D65061156313244617475
       6D4F6E476574546578740B50726F6772616D54797065070B747450726F636564
-      75726506536F7572636506B270726F63656475726520563132446174756D4F6E
+      75726506536F7572636506BD70726F63656475726520563132446174756D4F6E
       476574546578742876617220546578743A20537472696E67293B0D0A62656769
-      6E0D0A0D0A202054657874203A3D2027563133202F2056313362202D2027202B
-      20496E74546F53747228456967656E65536368756C655B27536368756C6A6168
-      72275D29202B20272F27202B20496E74546F53747228456967656E6553636875
-      6C655B27536368756C6A616872275D202B2031290D0A0D0A656E643B0D0A0D43
-      6F6D706F6E656E744E616D650608563132446174756D094576656E744E616D65
-      06094F6E47657454657874074576656E7449440235084361726574506F730102
-      120204000000}
+      6E0D0A0D0A202054657874203A3D2027563133202F20563135202F2056313720
+      2F20563139202D2027202B20496E74546F53747228456967656E65536368756C
+      655B27536368756C6A616872275D29202B20272F27202B20496E74546F537472
+      28456967656E65536368756C655B27536368756C6A616872275D202B2031290D
+      0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060856313244617475
+      6D094576656E744E616D6506094F6E47657454657874074576656E7449440235
+      084361726574506F730102120204000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -4508,27 +4508,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-		end
-		object ppParameter1: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '16.05.2021'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '16.05.2021'
-			UserName = 'Versionsdatum'
-		end
-	end
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '16.05.2021'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '16.05.2021'
+      UserName = 'Versionsdatum'
+    end
+  end
 end
-
