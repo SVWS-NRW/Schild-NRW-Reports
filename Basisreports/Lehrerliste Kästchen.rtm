@@ -697,7 +697,7 @@ object Report: TppReport
       Transparent = True
       DBCalcType = dcCount
       DataPipelineName = 'plLehrer'
-      mmHeight = 6200
+      mmHeight = 5200
       mmLeft = 1000
       mmTop = 0
       mmWidth = 8000
