@@ -13,7 +13,7 @@ object Report: TppReport
   PrinterSetup.mmMarginTop = 0
   PrinterSetup.mmPaperHeight = 297000
   PrinterSetup.mmPaperWidth = 210000
-  PrinterSetup.PaperSize = 9
+  PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
@@ -1739,11 +1739,11 @@ object Report: TppReport
     object ppParameter7: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '28.11.2022'
+      AutoSearchSettings.SearchExpression = '06.12.2022'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '28.11.2022'
+      Value = '06.12.2022'
       UserName = 'Versionsdatum'
     end
   end
