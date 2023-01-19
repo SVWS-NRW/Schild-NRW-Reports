@@ -4,7 +4,7 @@ object Report: TppReport
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Serienbrief Mahnung gef'#228'hrdete Versetzung @Eltern.rtm'
-  PrinterSetup.PaperName = 'Custom'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -13,12 +13,12 @@ object Report: TppReport
   PrinterSetup.mmMarginTop = 0
   PrinterSetup.mmPaperHeight = 297000
   PrinterSetup.mmPaperWidth = 210000
-  PrinterSetup.PaperSize = 256
+  PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Serienbriefe\Serienbrief Mahnung gef'#228'hrdete V' +
-    'ersetzung @Eltern.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Serienbriefe\Serienbrief Mahnung gef'#228'hrdet' +
+    'e Versetzung @Eltern.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -306,7 +306,7 @@ object Report: TppReport
           DataPipeline = dmPipelines.plWarnungen
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 'Serienbrief Mahnung gef'#228'hrdete Versetzung @Eltern.rtm'
-          PrinterSetup.PaperName = 'Custom'
+          PrinterSetup.PaperName = 'A4 297 x 210 mm'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
           PrinterSetup.mmMarginBottom = 0
@@ -315,7 +315,7 @@ object Report: TppReport
           PrinterSetup.mmMarginTop = 0
           PrinterSetup.mmPaperHeight = 297000
           PrinterSetup.mmPaperWidth = 210000
-          PrinterSetup.PaperSize = 256
+          PrinterSetup.PaperSize = 9
           Template.Offset = 284
           Template.Format = ftASCII
           Units = utMillimeters
@@ -2396,14 +2396,7 @@ object Report: TppReport
       727A69656865724D6974416E73636872656962656E2854727565293B0D0A656E
       643B0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E74
       4E616D65060B4265666F72655072696E74074576656E74494402010843617265
-      74506F730102010201000001060F5472614576656E7448616E646C65720B5072
-      6F6772616D4E616D6506105265706F727441667465725072696E740B50726F67
-      72616D54797065070B747450726F63656475726506536F75726365064F70726F
-      636564757265205265706F727441667465725072696E743B0D0A626567696E0D
-      0A20204E757245727A69656865724D6974416E73636872656962656E2846616C
-      7365293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F
-      7274094576656E744E616D65060A41667465725072696E74074576656E744944
-      0200084361726574506F730102010201000000}
+      74506F730102010201000000}
   end
   object ppDesignLayers2: TppDesignLayers
     object ppDesignLayer2: TppDesignLayer
@@ -2469,11 +2462,11 @@ object Report: TppReport
     object ppParameter5: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '06.12.2022'
+      AutoSearchSettings.SearchExpression = '19.01.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '06.12.2022'
+      Value = '19.01.2023'
       UserName = 'Versionsdatum'
     end
   end
