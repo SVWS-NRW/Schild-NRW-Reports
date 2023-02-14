@@ -8,7 +8,7 @@ object Report: TppReport
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Lehrerliste Lehrerk'#252'rzel Lehrername.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -20,9 +20,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Lehrerliste Lehrerk'#252'rzel Lehrern' +
-    'ame.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports - Kopie\Lehrerliste Lehrerk'#252'r' +
+    'zel Lehrername.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -262,7 +262,7 @@ object Report: TppReport
     Background1.Brush.Style = bsClear
     Background2.Brush.Color = 16051687
     Border.BorderPositions = [bpLeft, bpRight, bpBottom]
-    Border.Color = 10516052
+    Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     mmBottomOffset = 0
@@ -488,11 +488,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '02.02.2023'
+      AutoSearchSettings.SearchExpression = '10.02.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '02.02.2023'
+      Value = '10.02.2023'
       UserName = 'Versionsdatum'
     end
   end

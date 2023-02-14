@@ -297,7 +297,7 @@ object Report: TppReport
     Background1.Brush.Style = bsClear
     Background2.Brush.Color = 16051687
     Border.BorderPositions = [bpLeft, bpRight, bpBottom]
-    Border.Color = 10516052
+    Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     PrintHeight = phDynamic

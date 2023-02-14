@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Sch'#252'lerliste Telefonnummern ausf'#252'hrlich.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Basisreports\Sch'#252'lerliste Telefonnum' +
-    'mern ausf'#252'hrlich.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Telefonnummern a' +
+    'usf'#252'hrlich.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -250,41 +250,13 @@ object Report: TppReport
     Background1.Brush.Style = bsClear
     Background2.Brush.Color = 16051687
     Border.BorderPositions = [bpLeft, bpRight, bpBottom]
-    Border.Color = 10516052
+    Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     PrintHeight = phDynamic
     mmBottomOffset = 0
-    mmHeight = 5027
+    mmHeight = 5292
     mmPrintPosition = 0
-    object ppLine5: TppLine
-      UserName = 'TrennlinieD2'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 5027
-      mmLeft = 10000
-      mmTop = 0
-      mmWidth = 1000
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppLine4: TppLine
-      UserName = 'TrennlinieD1'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 5027
-      mmLeft = 70000
-      mmTop = 0
-      mmWidth = 1000
-      BandType = 4
-      LayerName = Foreground
-    end
     object ppRegion1: TppRegion
       UserName = 'r'
       KeepTogether = True
@@ -376,7 +348,7 @@ object Report: TppReport
           DataPipeline = dmPipelines.plSchuelerTelefone
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 'Sch'#252'lerliste Telefonnummern ausf'#252'hrlich.rtm'
-          PrinterSetup.PaperName = 'A4'
+          PrinterSetup.PaperName = 'A4 297 x 210 mm'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
           PrinterSetup.mmMarginBottom = 15000
@@ -451,6 +423,34 @@ object Report: TppReport
             end
           end
         end
+      end
+      object ppLine5: TppLine
+        UserName = 'TrennlinieD2'
+        Pen.Color = 4993567
+        ParentHeight = True
+        Position = lpLeft
+        StretchWithParent = True
+        Weight = 0.750000000000000000
+        mmHeight = 5200
+        mmLeft = 10000
+        mmTop = 0
+        mmWidth = 1000
+        BandType = 4
+        LayerName = Foreground
+      end
+      object ppLine4: TppLine
+        UserName = 'TrennlinieD1'
+        Pen.Color = 4993567
+        ParentHeight = True
+        Position = lpLeft
+        StretchWithParent = True
+        Weight = 0.750000000000000000
+        mmHeight = 5200
+        mmLeft = 70000
+        mmTop = 0
+        mmWidth = 1000
+        BandType = 4
+        LayerName = Foreground
       end
     end
   end
@@ -542,27 +542,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-		end
-		object ppParameter1: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = 'J. Raffenberg'
-			UserName = 'Autoren'
-		end
-		object ppParameter2: TppParameter
-			AutoSearchSettings.LogicalPrefix = []
-			AutoSearchSettings.Mandatory = True
-			AutoSearchSettings.SearchExpression = '16.05.2021'
-			DataType = dtString
-			LookupSettings.DisplayType = dtNameOnly
-			LookupSettings.SortOrder = soName
-			Value = '16.05.2021'
-			UserName = 'Versionsdatum'
-		end
-	end
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '10.02.2023'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '10.02.2023'
+      UserName = 'Versionsdatum'
+    end
+  end
 end
-

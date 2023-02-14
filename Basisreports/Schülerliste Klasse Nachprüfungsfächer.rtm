@@ -2,8 +2,8 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste Nichtversetzte Nachpr'#252'fung.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste Klasse Nachpr'#252'fungsf'#228'cher.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -14,8 +14,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    '\\vserver\Programme\SchILD-NRW\SchILD-Reports\A2 Basisreports\Sch''#252''lerliste Klasse Nichtversetzte Nachpr''#252''fungsf''#228''cher.rtm'
+  Template.FileName = 
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Klasse Nachpr'#252'fu' +
+    'ngsf'#228'cher.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -102,15 +104,15 @@ object Report: TppReport
       Border.BorderPositions = [bpTop, bpBottom]
       Border.Color = 10516052
       Border.Visible = True
-      Border.Weight = 3.000000000000000000
-      Caption = 'Nichtversetzte Nachpr'#252'fung'
+      Border.Weight = 2.000000000000000000
+      Caption = 'Sch'#252'lerliste m'#246'glicher Nachpr'#252'fungsf'#228'cher'
       Color = 16051687
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
       Font.Size = 16
       Font.Style = [fsBold]
-      mmHeight = 8731
+      mmHeight = 8800
       mmLeft = 0
       mmTop = 0
       mmWidth = 170127
@@ -297,7 +299,7 @@ object Report: TppReport
     Background1.Brush.Style = bsClear
     Background2.Brush.Color = 16051687
     Border.BorderPositions = [bpLeft, bpRight, bpBottom]
-    Border.Color = 10516052
+    Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     mmBottomOffset = 0
@@ -522,12 +524,12 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '1.0.25'
+      AutoSearchSettings.SearchExpression = '10.02.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '1.0.25'
-      UserName = 'Versionsnummer'
+      Value = '10.02.2023'
+      UserName = 'Versionsdatum'
     end
   end
 end
