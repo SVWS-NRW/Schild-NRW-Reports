@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: mkdir .zip
-      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx"
+      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
       # zerlegen der Sammlung in zwei getrennte Files
       # - run: zip -r ."/.zip/Basisreports - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Serienbriefe/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
       # - run: zip -r ."/.zip/Serienbriefe - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Basisreports/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
