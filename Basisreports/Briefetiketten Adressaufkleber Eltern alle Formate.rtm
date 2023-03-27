@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Briefetiketten Adressaufkleber Eltern.rtm'
+  PrinterSetup.DocumentName = 'Briefetiketten Adressaufkleber Eltern alle Formate.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Schild-Reports 2.0\Reports' +
-    'ammlung 2.0\Fertige Reports\Schild-NRW-Reports\Basisreports\Brie' +
-    'fetiketten Adressaufkleber Eltern.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Basisreports\Briefetiketten Adressaufkleber E' +
+    'ltern alle Formate.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -121,7 +121,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.Erzieher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Briefetiketten Adressaufkleber Eltern.rtm'
+        PrinterSetup.DocumentName = 'Briefetiketten Adressaufkleber Eltern alle Formate.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -132,7 +132,6 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 210000
         PrinterSetup.PaperSize = 9
-        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -263,7 +262,7 @@ object Report: TppReport
             65202D2032202A206462527565636B73656E6465616E676162656E2E546F703B
             200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F727409
             4576656E744E616D65060B4F6E537461727450616765074576656E7449440215
-            084361726574506F730102010201000000}
+            084361726574506F730102110206000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -440,13 +439,7 @@ object Report: TppReport
       73202B20282869202D203129202A202873676C4574696B657474427265697465
       202B2073676C5A7769736368656E5370616C7465292929293B0D0A2020202020
       20202020656E643B200D0A2020656E643B0D0A0D0A656E643B20200D0A084361
-      726574506F730102010201000001060A54726150726F6772616D094368696C64
-      5479706502140B50726F6772616D4E616D65060F476C6F62616C4F6E44657374
-      726F790B50726F6772616D54797065070B747450726F63656475726506536F75
-      726365064E70726F63656475726520476C6F62616C4F6E44657374726F793B0D
-      0A626567696E0D0A20204E757245727A69656865724D6974416E736368726569
-      62656E2846616C7365293B0D0A656E643B0D0A084361726574506F7301020102
-      01000000}
+      726574506F730102200209000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -542,11 +535,11 @@ object Report: TppReport
     object ppParameter8: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '13.12.2021'
+      AutoSearchSettings.SearchExpression = '26.01.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '13.12.2021'
+      Value = '26.01.2023'
       UserName = 'Versionsdatum'
     end
   end
