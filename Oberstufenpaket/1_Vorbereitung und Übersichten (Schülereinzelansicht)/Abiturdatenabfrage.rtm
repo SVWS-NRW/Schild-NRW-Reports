@@ -1,0 +1,1349 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Abiturdatenabfrage-neu (Ley).rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 20000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName =
+    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\1_Vorbereitung und ''#220''bersichten (Sch''#252''lereinzelansicht)\Abiturdatenabfrage.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '14.08'
+  mmColumnWidth = 0
+  DataPipelineName = 'Schueler'
+  object ppHeaderBand2: TppHeaderBand
+    Background.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 50006
+    mmPrintPosition = 0
+    object ppLine8: TppLine
+      UserName = 'Line8'
+      ParentWidth = True
+      Position = lpBottom
+      Style = lsDouble
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 46037
+      mmWidth = 170000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label1'
+      Caption = 'Abfrage pers'#246'nlicher Daten und Daten f'#252'r das Abiturzeugnis'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 16
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 6646
+      mmLeft = 2005
+      mmTop = 0
+      mmWidth = 161883
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppRichText1: TppRichText
+      UserName = 'RichText1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      Caption = 'RichText1'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 MS Sans Serif;}{\f1\fnil MS Sans Serif;}}'#13#10'\viewkind4\uc1\' +
+        'pard\f0\fs22 Bitte \'#39'fcberpr\'#39'fcfen Sie die folgenden Angaben so' +
+        'rgf\'#39'e4ltig.\par'#13#10'\par'#13#10'Es handelt sich einmal um pers\'#39'f6nliche' +
+        ' Daten, die im Schulverwaltungsprogramm gespeichert sind. \par'#13#10 +
+        'Dar\'#39'fcber hinaus werden einige Daten f\'#39'fcr das Abiturzeugnis b' +
+        'en\'#39'f6tigt.\par'#13#10'Korrekturen und Erg\'#39'e4nzungen m\'#39'fcssen unbedi' +
+        'ngt \b deutlich und gut lesbar \b0 eingetragen werden.\par'#13#10'Erg\' +
+        #39'e4nzungen (etwa beim Vornamen) bitte ebenfalls vermerken.\par'#13#10 +
+        '\f1\fs16\par'#13#10'}'#13#10#0
+      mmHeight = 27517
+      mmLeft = 2117
+      mmTop = 11377
+      mmWidth = 167217
+      BandType = 0
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeftMargin = 794
+    end
+    object ppLabel10: TppLabel
+      UserName = 'Label10'
+      Caption = 'Rueckgabe!'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 2117
+      mmTop = 43127
+      mmWidth = 24077
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel11: TppLabel
+      UserName = 'Label101'
+      Caption = 'Termin bitte unbedingt einhalten!'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 103188
+      mmTop = 43127
+      mmWidth = 66940
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine3: TppLine
+      UserName = 'Line1'
+      ParentWidth = True
+      Style = lsDouble
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 8467
+      mmWidth = 170000
+      BandType = 0
+      LayerName = Foreground
+    end
+  end
+  object ppDetailBand2: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 115359
+    mmPrintPosition = 0
+    object ppSubReport2: TppSubReport
+      UserName = 'SubReport2'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      ShiftRelativeTo = ppSubReport1
+      TraverseAllData = False
+      mmHeight = 12965
+      mmLeft = 0
+      mmTop = 85196
+      mmWidth = 98954
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Abiturdatenabfrage-neu (Ley).rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 20000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 20000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '14.08'
+        mmColumnWidth = 0
+        object ppTitleBand2: TppTitleBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 2910
+          mmPrintPosition = 0
+        end
+        object ppDetailBand3: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 99219
+          mmPrintPosition = 0
+          object ppLine6: TppLine
+            UserName = 'Line6'
+            ParentWidth = True
+            Weight = 0.750000000000000000
+            mmHeight = 2117
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 170000
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppRichText7: TppRichText
+            UserName = 'RichText7'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Caption = 'RichText7'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Aria' +
+              'l;}{\f1\fnil\fcharset0 Arial;}}'#13#10'\viewkind4\uc1\pard\f0\fs20 Wel' +
+              'che(r) der nicht einzubringenden Kurse der Qualifikationsphase (' +
+              'Jahrgangsstufen \f1 Q1\f0  und \f1 Q2\f0 ) soll nicht auf dem Ab' +
+              'iturzeugnis ausgewiesen werden\f1  (Pflichtkurse k\'#39'f6nnen nicht' +
+              ' gestrichen werden)\f0 ?\par'#13#10'\f1 (Empfehlung: \b keinen \b0 Kur' +
+              's streichen!)\f0\par'#13#10'}'#13#10#0
+            mmHeight = 12700
+            mmLeft = 0
+            mmTop = 1323
+            mmWidth = 169863
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeftMargin = 794
+          end
+          object ppLine5: TppLine
+            UserName = 'Line5'
+            ParentWidth = True
+            Weight = 0.750000000000000000
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 21167
+            mmWidth = 170000
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel15: TppLabel
+            UserName = 'Label15'
+            Caption = 'Bemerkungen:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Arial'
+            Font.Size = 11
+            Font.Style = []
+            Transparent = True
+            mmHeight = 4498
+            mmLeft = 0
+            mmTop = 21960
+            mmWidth = 25665
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppRichText8: TppRichText
+            UserName = 'RichText8'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Caption = 'RichText8'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Arial;}{\f1\fnil MS Sans Serif;}}'#13#10'\viewkind4\uc1\pard\fs2' +
+              '0 (Hier k\'#39'f6nnen beispielsweise Mitarbeit in der SV sowie die T' +
+              'eilnahme an Wettbewerben eingetragen werden. Diese m\'#39'fcssen aus' +
+              ' der Qualifikationsphase stammen.)\f1\par'#13#10'}'#13#10#0
+            mmHeight = 11377
+            mmLeft = 529
+            mmTop = 26458
+            mmWidth = 169334
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeftMargin = 794
+          end
+          object ppRichText5: TppRichText
+            UserName = 'RichText5'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Caption = 'RichText5'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Arial;}{\f1\fnil Arial;}}'#13#10'\viewkind4\uc1\pard\fs20 Die ob' +
+              'igen Angaben sind von mir gepr\'#39'fcft und gegebenenfalls korrigie' +
+              'rt worden.\f1\par'#13#10'Sie sollen in der angegebenen Form auf dem Ab' +
+              'iturzeugnis erscheinen.\par'#13#10'}'#13#10#0
+            mmHeight = 10583
+            mmLeft = 0
+            mmTop = 65352
+            mmWidth = 169598
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeftMargin = 794
+          end
+          object ppLine4: TppLine
+            UserName = 'Line3'
+            ParentWidth = True
+            Position = lpBottom
+            Style = lsDouble
+            Weight = 0.750000000000000000
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 61119
+            mmWidth = 170000
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel9: TppLabel
+            UserName = 'Label9'
+            Caption = 'Label9'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Arial'
+            Font.Size = 11
+            Font.Style = []
+            Transparent = True
+            mmHeight = 4498
+            mmLeft = 265
+            mmTop = 94456
+            mmWidth = 11642
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppLabel16: TppLabel
+            UserName = 'Label16'
+            Caption = '(Unterschrift)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Arial'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3175
+            mmLeft = 116681
+            mmTop = 96044
+            mmWidth = 16404
+            BandType = 4
+            LayerName = Foreground2
+          end
+          object ppRichText3: TppRichText
+            UserName = 'RichText3'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Caption = 'RichText3'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Arial;}{\f1\fnil MS Sans Serif;}}'#13#10'\viewkind4\uc1\pard\fs2' +
+              '0 Ich bin damit einverstanden, dass\par'#13#10'mein Name nach bestande' +
+              'nem Abitur in der Lokalpresse ver\'#39'f6ffentlicht wird\tab        ' +
+              '\b\fs26 O\b0\fs20\tab\b ja        \fs26 O\fs20   nein\b0\par'#13#10'\f' +
+              '1\par'#13#10'}'#13#10#0
+            mmHeight = 17198
+            mmLeft = 0
+            mmTop = 46302
+            mmWidth = 169334
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeftMargin = 794
+          end
+          object ppLine9: TppLine
+            UserName = 'Line9'
+            ParentWidth = True
+            Weight = 0.750000000000000000
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 45773
+            mmWidth = 170000
+            BandType = 4
+            LayerName = Foreground2
+          end
+        end
+        object ppSummaryBand2: TppSummaryBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+            4C6162656C394F6E476574546578740B50726F6772616D54797065070B747450
+            726F63656475726506536F75726365066A70726F636564757265204C6162656C
+            394F6E476574546578742876617220546578743A20537472696E67293B0D0A62
+            6567696E0D0A0D0A202054657874203A3D20456967656E65536368756C655B27
+            4F7274275D202B20272C2064656E20273B0D0A0D0A656E643B0D0A0D436F6D70
+            6F6E656E744E616D6506064C6162656C39094576656E744E616D6506094F6E47
+            657454657874074576656E74494402350000}
+        end
+        object ppDesignLayers3: TppDesignLayers
+          object ppDesignLayer3: TppDesignLayer
+            UserName = 'Foreground2'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      Caption = 'Geburtsdatum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4498
+      mmLeft = 77258
+      mmTop = 27781
+      mmWidth = 25929
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      AutoSize = True
+      DataField = 'Geburtsdatum'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4487
+      mmLeft = 115094
+      mmTop = 27781
+      mmWidth = 19473
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText8: TppDBText
+      UserName = 'DBText8'
+      AutoSize = True
+      DataField = 'Strasse'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4487
+      mmLeft = 2381
+      mmTop = 28575
+      mmWidth = 41783
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText9: TppDBText
+      UserName = 'DBText9'
+      AutoSize = True
+      DataField = 'PLZ'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4487
+      mmLeft = 2646
+      mmTop = 34396
+      mmWidth = 10795
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText12: TppDBText
+      UserName = 'DBText12'
+      AutoSize = True
+      DataField = 'OrtAbk'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4487
+      mmLeft = 15875
+      mmTop = 34396
+      mmWidth = 19431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Label8'
+      Caption = 'Staatsangeh'#246'rigkeit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4487
+      mmLeft = 77258
+      mmTop = 38629
+      mmWidth = 34502
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText13: TppDBText
+      UserName = 'DBText13'
+      AutoSize = True
+      DataField = 'StaatAbk'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4487
+      mmLeft = 115359
+      mmTop = 38894
+      mmWidth = 13631
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText14: TppDBText
+      UserName = 'DBText14'
+      DataField = 'Geburtsort'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4498
+      mmLeft = 115359
+      mmTop = 33338
+      mmWidth = 52388
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel13: TppLabel
+      UserName = 'Label13'
+      Caption = 'Bekenntnis'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4498
+      mmLeft = 77258
+      mmTop = 44450
+      mmWidth = 19315
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText15: TppDBText
+      UserName = 'DBText15'
+      AutoSize = True
+      DataField = 'ReligionZeugnisbez'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4487
+      mmLeft = 115623
+      mmTop = 44450
+      mmWidth = 28998
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine7: TppLine
+      UserName = 'Line2'
+      ParentWidth = True
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 46567
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine10: TppLine
+      UserName = 'Line7'
+      ParentWidth = True
+      Weight = 0.750000000000000000
+      mmHeight = 1588
+      mmLeft = 0
+      mmTop = 69850
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel19: TppLabel
+      UserName = 'Label19'
+      Caption = 'Geburtsort:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4498
+      mmLeft = 77258
+      mmTop = 33338
+      mmWidth = 19579
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppRichText2: TppRichText
+      UserName = 'RichText2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      Caption = 'RichText2'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Arial;}{\f1\fnil Arial;}}'#13#10'\viewkind4\uc1\pard\fs20 Die Re' +
+        'ligionszugeh\'#39'f6rigkeit soll auf dem Abiturzeugnis vermerkt werd' +
+        'en.\f1\fs22\par'#13#10'}'#13#10#0
+      mmHeight = 5027
+      mmLeft = 2117
+      mmTop = 63236
+      mmWidth = 116417
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeftMargin = 794
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label3'
+      Caption = 'Sprachenfolge:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 4657
+      mmLeft = 0
+      mmTop = 71438
+      mmWidth = 28321
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel12: TppLabel
+      UserName = 'Label4'
+      Caption = 'Latinum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3598
+      mmLeft = 129646
+      mmTop = 72761
+      mmWidth = 12277
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentPrinterSetup = False
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plSprachenfolge'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 76994
+      mmWidth = 97367
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plSprachenfolge
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Sprachenfolge-'#252'bersicht'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '14.08'
+        mmColumnWidth = 180000
+        DataPipelineName = 'plSprachenfolge'
+        object ppTitleBand1: TppTitleBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppDetailBand4: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 5027
+          mmPrintPosition = 0
+          object ppDBText1: TppDBText
+            UserName = 'DBText1'
+            DataField = 'Reihenfolge'
+            DataPipeline = dmPipelines.plSprachenfolge
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            DataPipelineName = 'plSprachenfolge'
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 1058
+            mmWidth = 7408
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText2: TppDBText
+            UserName = 'DBText2'
+            DataField = 'Fachbezeichnung'
+            DataPipeline = dmPipelines.plSprachenfolge
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'plSprachenfolge'
+            mmHeight = 3969
+            mmLeft = 10054
+            mmTop = 1058
+            mmWidth = 40217
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel17: TppLabel
+            UserName = 'Label17'
+            Caption = 'Label17'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3969
+            mmLeft = 60325
+            mmTop = 1058
+            mmWidth = 12435
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText4: TppDBText
+            UserName = 'DBText4'
+            AutoSize = True
+            DataField = 'Referenzniveau'
+            DataPipeline = dmPipelines.plSprachenfolge
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'plSprachenfolge'
+            mmHeight = 4022
+            mmLeft = 90223
+            mmTop = 1058
+            mmWidth = 24511
+            BandType = 4
+            LayerName = Foreground1
+          end
+        end
+        object ppSummaryBand1: TppSummaryBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+            4C6162656C31374F6E476574546578740B50726F6772616D54797065070B7474
+            50726F63656475726506536F757263650C9A01000070726F636564757265204C
+            6162656C31374F6E476574546578742876617220546578743A20537472696E67
+            293B0D0A626567696E0D0A2020696620202828537072616368656E666F6C6765
+            5B2752656968656E666F6C6765275D203D2027502729206F7220285370726163
+            68656E666F6C67655B2752656968656E666F6C6765275D203D2027702729290D
+            0A202020207468656E2054657874203A3D20496E74546F537472285370726163
+            68656E666F6C67655B274A61687267616E67566F6E275D290D0A20202020656C
+            73652054657874203A3D20496E74546F53747228537072616368656E666F6C67
+            655B274A61687267616E67566F6E275D29202B20272E27202B20496E74546F53
+            747228537072616368656E666F6C67655B2741627363686E697474566F6E275D
+            29202B2027206269732027202B20496E74546F53747228537072616368656E66
+            6F6C67655B274A61687267616E67426973275D29202B20272E27202B20496E74
+            546F53747228537072616368656E666F6C67655B2741627363686E6974744269
+            73275D293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506074C
+            6162656C3137094576656E744E616D6506094F6E47657454657874074576656E
+            74494402350000}
+        end
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'Foreground1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppLabel14: TppLabel
+      UserName = 'Label7'
+      Caption = 'ja / nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3598
+      mmLeft = 149225
+      mmTop = 72761
+      mmWidth = 11218
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppRichText4: TppRichText
+      UserName = 'RichText4'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      Caption = 'RichText4'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Arial;}}'#13#10'\viewkind4\uc1\pard\fs20 Wird die Angabe weitere' +
+        'r Vornamen auf dem Abiturzeugnis gew\'#39'fcnscht, \par'#13#10'm\'#39'fcssen d' +
+        'iese durch Ausweis oder Geburtsurkunde belegt werden!\par'#13#10'}'#13#10#0
+      mmHeight = 8731
+      mmLeft = 2646
+      mmTop = 8996
+      mmWidth = 165100
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeftMargin = 794
+    end
+    object ppLabel18: TppLabel
+      UserName = 'Label12'
+      Caption = 'ja / nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 149225
+      mmTop = 80698
+      mmWidth = 11113
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel20: TppLabel
+      UserName = 'Label14'
+      Caption = 'Graecum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 127794
+      mmTop = 80698
+      mmWidth = 14023
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel21: TppLabel
+      UserName = 'Label18'
+      Caption = 'Hebraicum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 125413
+      mmTop = 84402
+      mmWidth = 16404
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel23: TppLabel
+      UserName = 'Label20'
+      Caption = 'Kl. Latinum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 124884
+      mmTop = 76465
+      mmWidth = 16933
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel24: TppLabel
+      UserName = 'Label21'
+      Caption = 'ja / nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 149225
+      mmTop = 76465
+      mmWidth = 11113
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel25: TppLabel
+      UserName = 'Label23'
+      Caption = 'ja / nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 149225
+      mmTop = 84402
+      mmWidth = 11113
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label9'
+      Caption = 'Pers'#246'nlicher Daten:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5821
+      mmLeft = 2381
+      mmTop = 19579
+      mmWidth = 50536
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      DataField = 'VornameName'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 16
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 6615
+      mmLeft = 12700
+      mmTop = 2117
+      mmWidth = 136790
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine1: TppLine
+      UserName = 'Line3'
+      ParentWidth = True
+      Position = lpBottom
+      Style = lsDouble
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 23019
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label11'
+      Caption = 'Daten f'#252'r das Abiturzeugnis:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5821
+      mmLeft = 2117
+      mmTop = 52652
+      mmWidth = 72761
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppShape1: TppShape
+      UserName = 'Shape1'
+      mmHeight = 3969
+      mmLeft = 122767
+      mmTop = 63500
+      mmWidth = 4233
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label2'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 4657
+      mmLeft = 129827
+      mmTop = 62706
+      mmWidth = 3217
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppShape2: TppShape
+      UserName = 'Shape2'
+      mmHeight = 4233
+      mmLeft = 144463
+      mmTop = 63236
+      mmWidth = 4233
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label15'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 4657
+      mmLeft = 150454
+      mmTop = 62706
+      mmWidth = 8001
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine2: TppLine
+      UserName = 'Line4'
+      ParentWidth = True
+      Position = lpBottom
+      Style = lsDouble
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 55033
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object ppFooterBand2: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable1'
+      VarType = vtDocumentName
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clSilver
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3260
+      mmLeft = 2381
+      mmTop = 3175
+      mmWidth = 24045
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3260
+      mmLeft = 146315
+      mmTop = 3175
+      mmWidth = 14139
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppLabel26: TppLabel
+      UserName = 'Label5'
+      Caption = 'Ausgabe:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3260
+      mmLeft = 133086
+      mmTop = 3175
+      mmWidth = 11980
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppLine12: TppLine
+      UserName = 'Line10'
+      ParentWidth = True
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 794
+      mmWidth = 170000
+      BandType = 8
+      LayerName = Foreground
+    end
+  end
+  object ppGroup3: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group3'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand3: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand3: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F547261436F6E737450726F6772616D094368696C645479706502120B50
+      726F6772616D4E616D650609436F6E7374616E74730B50726F6772616D547970
+      65070B747450726F63656475726506536F75726365065770726F636564757265
+      20436F6E7374616E74733B0D0A636F6E73740D0A20202020526570566572733D
+      275265706F727456657273696F6E3A2042412E30352E3031273B200D0A0D0A62
+      6567696E0D0A0D0A656E643B0D0A0001060D54726156617250726F6772616D09
+      4368696C645479706502110B50726F6772616D4E616D6506095661726961626C
+      65730B50726F6772616D54797065070B747450726F63656475726506536F7572
+      6365065D70726F636564757265205661726961626C65733B0D0A7661720D0A20
+      2020727565636B646174756D203A20537472696E673B0D0A202020442C205431
+      2C205432203A204461746554696D653B0D0A626567696E0D0A0D0A656E643B0D
+      0A0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
+      06115265706F72744265666F72655072696E740B50726F6772616D5479706507
+      0B747450726F63656475726506536F7572636514B500000070726F6365647572
+      65205265706F72744265666F72655072696E743B0D0A626567696E0D0A202053
+      65744162697475722874727565293B0D0A2020526561644461746554696D6528
+      2752C3BC636B67616265646174756D3A20272C20442C2054312C2054322C2066
+      616C7365293B0D0A2020727565636B646174756D203A3D202752C3BC636B6761
+      626520626973207A756D2027202B2044617465546F537472284429202B202720
+      212720203B0D0A656E643B0D0A0D436F6D706F6E656E744E616D650606526570
+      6F7274094576656E744E616D65060B4265666F72655072696E74074576656E74
+      494402010001060F5472614576656E7448616E646C65720B50726F6772616D4E
+      616D6506105265706F727441667465725072696E740B50726F6772616D547970
+      65070B747450726F63656475726506536F75726365063F70726F636564757265
+      205265706F727441667465725072696E743B0D0A626567696E0D0A2020536574
+      4162697475722866616C7365293B0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D6506065265706F7274094576656E744E616D65060A4166746572507269
+      6E74074576656E74494402000001060F5472614576656E7448616E646C65720B
+      50726F6772616D4E616D65060F4C6162656C374F6E476574546578740B50726F
+      6772616D54797065070B747450726F63656475726506536F75726365068C7072
+      6F636564757265204C6162656C374F6E47657454657874287661722054657874
+      3A20537472696E67293B0D0A626567696E0D0A20206966204162697475725B27
+      4C6174696E756D275D203D20272B270D0A202020207468656E2054657874203A
+      3D20276A61270D0A20202020656C73652054657874203A3D20276E65696E273B
+      0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C6162656C37
+      094576656E744E616D6506094F6E47657454657874074576656E744944023500
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+      4C6162656C31324F6E476574546578740B50726F6772616D54797065070B7474
+      50726F63656475726506536F75726365068E70726F636564757265204C616265
+      6C31324F6E476574546578742876617220546578743A20537472696E67293B0D
+      0A626567696E0D0A20206966204162697475725B274772616563756D275D203D
+      20272B270D0A202020207468656E2054657874203A3D20276A61270D0A202020
+      20656C73652054657874203A3D20276E65696E273B200D0A0D0A656E643B0D0A
+      0D436F6D706F6E656E744E616D6506074C6162656C3132094576656E744E616D
+      6506094F6E47657454657874074576656E74494402350001060F547261457665
+      6E7448616E646C65720B50726F6772616D4E616D6506104C6162656C31304F6E
+      476574546578740B50726F6772616D54797065070B747450726F636564757265
+      06536F75726365065770726F636564757265204C6162656C31304F6E47657454
+      6578742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D
+      0A202054657874203A3D20727565636B646174756D3B0D0A0D0A656E643B0D0A
+      0D436F6D706F6E656E744E616D6506074C6162656C3130094576656E744E616D
+      6506094F6E47657454657874074576656E74494402350001060F547261457665
+      6E7448616E646C65720B50726F6772616D4E616D6506104C6162656C32314F6E
+      476574546578740B50726F6772616D54797065070B747450726F636564757265
+      06536F75726365068970726F636564757265204C6162656C32314F6E47657454
+      6578742876617220546578743A20537472696E67293B0D0A626567696E0D0A20
+      20696620204162697475725B274B6C4C6174696E756D275D3D272B2720746865
+      6E0D0A202054657874203A3D20276A61270D0A2020656C736520746578743A3D
+      276E65696E27203B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+      06074C6162656C3231094576656E744E616D6506094F6E476574546578740745
+      76656E74494402350001060F5472614576656E7448616E646C65720B50726F67
+      72616D4E616D6506104C6162656C32334F6E476574546578740B50726F677261
+      6D54797065070B747450726F63656475726506536F75726365068A70726F6365
+      64757265204C6162656C32334F6E476574546578742876617220546578743A20
+      537472696E67293B0D0A626567696E0D0A2020206966204162697475725B2748
+      656272616963756D275D203D272B27207468656E0D0A202054657874203A3D20
+      276A61270D0A2020656C736520746578743A3D276E65696E27203B0D0A0D0A65
+      6E643B0D0A0D436F6D706F6E656E744E616D6506074C6162656C323309457665
+      6E744E616D6506094F6E47657454657874074576656E74494402350000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end
