@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Ergebnisse_ZAA2_APO_GOSt_B_V0704_ohne_Abwprf_neue_Bemerkung.rtm'
+  PrinterSetup.DocumentName = 'Ergebnisse_ZAA2_APO_GOSt_B_V0704.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -14,8 +14,9 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210080
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\3_ZAA\ZAA Konferenz 2\Ergebnisse_ZAA2_APO_GOSt_B_V0704_ohne_Abwprf.rtm'
+  Template.FileName = 
+    'C:\SchILD-NRW\SchILD-Reports\Oberstufenpaket_git\3_ZAA\ZAA Konfe' +
+    'renz 2\Ergebnisse_ZAA2_APO_GOSt_B_V0704.rtm'
   Template.Format = ftASCII
   Units = utScreenPixels
   AllowPrintToArchive = True
@@ -558,7 +559,7 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport1: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Ergebnisse_ZAA2_APO_GOSt_B_V0704_ohne_Abwprf_neue_Bemerkung.rtm'
+        PrinterSetup.DocumentName = 'Ergebnisse_ZAA2_APO_GOSt_B_V0704.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -800,7 +801,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plAbifaecher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Ergebnisse_ZAA2_APO_GOSt_B_V0704_ohne_Abwprf_neue_Bemerkung.rtm'
+        PrinterSetup.DocumentName = 'Ergebnisse_ZAA2_APO_GOSt_B_V0704.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -2451,7 +2452,7 @@ object Report: TppReport
             UserName = 'Shape1'
             mmHeight = 29617
             mmLeft = 120386
-            mmTop = 1058
+            mmTop = 4503
             mmWidth = 16933
             BandType = 4
             LayerName = Foreground7
@@ -2462,7 +2463,7 @@ object Report: TppReport
             Weight = 0.750000000000000000
             mmHeight = 2000
             mmLeft = 120386
-            mmTop = 6350
+            mmTop = 9795
             mmWidth = 16404
             BandType = 4
             LayerName = Foreground7
@@ -2473,7 +2474,7 @@ object Report: TppReport
             Weight = 0.750000000000000000
             mmHeight = 2000
             mmLeft = 120386
-            mmTop = 13758
+            mmTop = 17203
             mmWidth = 16404
             BandType = 4
             LayerName = Foreground7
@@ -2484,14 +2485,13 @@ object Report: TppReport
             Weight = 0.750000000000000000
             mmHeight = 2117
             mmLeft = 120386
-            mmTop = 20902
+            mmTop = 24347
             mmWidth = 16404
             BandType = 4
             LayerName = Foreground7
           end
           object ppLabel3: TppLabel
             UserName = 'LaZwstAbi'
-            AutoSize = False
             Caption = 'Zwischenstand der Punktwertung im Block II (Abiturbereich)'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
@@ -2500,16 +2500,15 @@ object Report: TppReport
             Font.Style = []
             TextAlignment = taRightJustified
             Transparent = True
-            mmHeight = 5165
-            mmLeft = 11906
-            mmTop = 2117
-            mmWidth = 102659
+            mmHeight = 5027
+            mmLeft = 12171
+            mmTop = 5562
+            mmWidth = 102394
             BandType = 4
             LayerName = Foreground7
           end
           object ppLabel6: TppLabel
             UserName = 'LaPkte_Gk'
-            AutoSize = False
             Caption = 'Gesamtpunktzahl aus dem Block I (Zulassungsbereich)'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
@@ -2518,16 +2517,15 @@ object Report: TppReport
             Font.Style = []
             TextAlignment = taRightJustified
             Transparent = True
-            mmHeight = 5165
-            mmLeft = 11906
-            mmTop = 9525
-            mmWidth = 102659
+            mmHeight = 5027
+            mmLeft = 21167
+            mmTop = 12970
+            mmWidth = 93398
             BandType = 4
             LayerName = Foreground7
           end
           object ppLabel15: TppLabel
             UserName = 'LaVorl_Pkt_GesQual'
-            AutoSize = False
             Caption = 'Vorl'#228'ufige Punktzahl der Gesamtqualifikation'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
@@ -2536,16 +2534,15 @@ object Report: TppReport
             Font.Style = []
             TextAlignment = taRightJustified
             Transparent = True
-            mmHeight = 5165
-            mmLeft = 11906
-            mmTop = 16933
-            mmWidth = 102659
+            mmHeight = 5027
+            mmLeft = 37042
+            mmTop = 20378
+            mmWidth = 77523
             BandType = 4
             LayerName = Foreground7
           end
           object ppLabel16: TppLabel
             UserName = 'LaVorl_Durchschnittnote'
-            AutoSize = False
             Caption = 'Vorl'#228'ufige Durchschnittsnote'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
@@ -2554,10 +2551,10 @@ object Report: TppReport
             Font.Style = []
             TextAlignment = taRightJustified
             Transparent = True
-            mmHeight = 5165
-            mmLeft = 11906
-            mmTop = 24342
-            mmWidth = 102659
+            mmHeight = 5027
+            mmLeft = 64558
+            mmTop = 27787
+            mmWidth = 50007
             BandType = 4
             LayerName = Foreground7
           end
@@ -2574,7 +2571,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 5165
             mmLeft = 120386
-            mmTop = 16933
+            mmTop = 20378
             mmWidth = 16933
             BandType = 4
             LayerName = Foreground7
@@ -2592,7 +2589,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 5165
             mmLeft = 120386
-            mmTop = 24342
+            mmTop = 27787
             mmWidth = 16933
             BandType = 4
             LayerName = Foreground7
@@ -2610,7 +2607,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 5165
             mmLeft = 120386
-            mmTop = 9525
+            mmTop = 12970
             mmWidth = 16933
             BandType = 4
             LayerName = Foreground7
@@ -2628,7 +2625,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 5165
             mmLeft = 120386
-            mmTop = 2117
+            mmTop = 5562
             mmWidth = 16933
             BandType = 4
             LayerName = Foreground7
@@ -2642,7 +2639,7 @@ object Report: TppReport
             Font.Style = []
             mmHeight = 29633
             mmLeft = 146050
-            mmTop = 1058
+            mmTop = 4503
             mmWidth = 28575
             BandType = 4
             LayerName = Foreground7
@@ -2659,7 +2656,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 3852
             mmLeft = 148167
-            mmTop = 5292
+            mmTop = 8737
             mmWidth = 24299
             BandType = 4
             LayerName = Foreground7
@@ -2677,7 +2674,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 3852
             mmLeft = 146315
-            mmTop = 26194
+            mmTop = 29639
             mmWidth = 27915
             BandType = 4
             LayerName = Foreground7
@@ -2695,7 +2692,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 4276
             mmLeft = 160602
-            mmTop = 17727
+            mmTop = 21172
             mmWidth = 13759
             BandType = 4
             LayerName = Foreground7
@@ -2706,7 +2703,7 @@ object Report: TppReport
             Weight = 0.750000000000000000
             mmHeight = 16385
             mmLeft = 160338
-            mmTop = 9525
+            mmTop = 12970
             mmWidth = 3175
             BandType = 4
             LayerName = Foreground7
@@ -2723,7 +2720,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 3852
             mmLeft = 151871
-            mmTop = 1588
+            mmTop = 5033
             mmWidth = 17611
             BandType = 4
             LayerName = Foreground7
@@ -2742,7 +2739,7 @@ object Report: TppReport
             DataPipelineName = 'plAbi'
             mmHeight = 4276
             mmLeft = 146315
-            mmTop = 9260
+            mmTop = 12705
             mmWidth = 13758
             BandType = 4
             LayerName = Foreground7
@@ -2761,7 +2758,7 @@ object Report: TppReport
             DataPipelineName = 'plAbi'
             mmHeight = 4276
             mmLeft = 160602
-            mmTop = 9260
+            mmTop = 12705
             mmWidth = 13758
             BandType = 4
             LayerName = Foreground7
@@ -2779,7 +2776,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 4276
             mmLeft = 146315
-            mmTop = 13494
+            mmTop = 16939
             mmWidth = 14023
             BandType = 4
             LayerName = Foreground7
@@ -2797,7 +2794,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 4276
             mmLeft = 160338
-            mmTop = 13494
+            mmTop = 16939
             mmWidth = 14023
             BandType = 4
             LayerName = Foreground7
@@ -2815,7 +2812,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 3969
             mmLeft = 146315
-            mmTop = 22490
+            mmTop = 25935
             mmWidth = 13770
             BandType = 4
             LayerName = Foreground7
@@ -2832,7 +2829,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 3969
             mmLeft = 164836
-            mmTop = 22490
+            mmTop = 25935
             mmWidth = 5556
             BandType = 4
             LayerName = Foreground7
@@ -2850,7 +2847,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 4234
             mmLeft = 146315
-            mmTop = 17727
+            mmTop = 21172
             mmWidth = 13754
             BandType = 4
             LayerName = Foreground7
@@ -2860,7 +2857,7 @@ object Report: TppReport
             Weight = 0.750000000000000000
             mmHeight = 2114
             mmLeft = 148696
-            mmTop = 22225
+            mmTop = 25670
             mmWidth = 23299
             BandType = 4
             LayerName = Foreground7
