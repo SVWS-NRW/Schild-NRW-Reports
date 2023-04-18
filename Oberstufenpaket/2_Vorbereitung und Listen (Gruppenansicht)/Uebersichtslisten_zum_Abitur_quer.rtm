@@ -15,8 +15,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 297000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\2_Vorbereitung und Listen (Gruppenansicht)\Uebersichtslisten_zum_Abitur_quer.rtm'
+  Template.FileName = 
+    'C:\SchILD-NRW\SchILD-Reports\Oberstufenpaket_git\2_Vorbereitung ' +
+    'und Listen (Gruppenansicht)\Uebersichtslisten_zum_Abitur_quer.rt' +
+    'm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -3507,9 +3509,7 @@ object Report: TppReport
     end
     object ppLabel20: TppLabel
       UserName = 'Label20'
-      Caption = 
-        'Art: 1 Abweichungs-/Pflichtpr'#252'fung; 2 Bestehenspr'#252'fung; 3 freiw.' +
-        ' Pr'#252'fung'
+      Caption = 'Art: 2 Bestehenspr'#252'fung; 3 freiw. Pr'#252'fung'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Arial'
@@ -3519,7 +3519,7 @@ object Report: TppReport
       mmHeight = 3968
       mmLeft = 82815
       mmTop = 265
-      mmWidth = 104510
+      mmWidth = 59002
       BandType = 8
       LayerName = Foreground
     end
@@ -4027,6 +4027,6 @@ object Report: TppReport
       Index = 0
     end
   end
-  object ppParameterList2: TppParameterList
+  object ppParameterList1: TppParameterList
   end
 end
