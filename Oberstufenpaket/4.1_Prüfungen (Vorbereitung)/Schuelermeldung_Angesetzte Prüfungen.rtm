@@ -15,8 +15,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\4.1_Pr'#252'fu' +
-    'ngen (Vorbereitung)\Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
+    'C:\SchILD-NRW\SchILD-Reports\Oberstufenpaket_git\4.1_Pr'#252'fungen (' +
+    'Vorbereitung)\Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
   Template.Format = ftASCII
   Units = utScreenPixels
   AllowPrintToArchive = True
@@ -423,9 +423,9 @@ object Report: TppReport
           object ppShape1: TppShape
             UserName = 'Shape1'
             mmHeight = 17727
-            mmLeft = 37926
+            mmLeft = 38191
             mmTop = 11643
-            mmWidth = 134198
+            mmWidth = 133933
             BandType = 1
             LayerName = Foreground2
           end
