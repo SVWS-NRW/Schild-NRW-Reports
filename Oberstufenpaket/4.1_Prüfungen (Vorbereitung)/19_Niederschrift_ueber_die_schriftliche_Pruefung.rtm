@@ -17,8 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\InAbitursammlung_Oberstufenzeugnis\' +
-    '19_Niederschrift_ueber_die_schriftliche_Pruefung.rtm'
+    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_Mai_2023\4.1_Pr'#252'fung' +
+    'en (Vorbereitung)\19_Niederschrift_ueber_die_schriftliche_Pruefu' +
+    'ng.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -177,17 +178,21 @@ object Report: TppReport
               60
               64
               34
-              536903952
+              553681168
               'Name'
+              196608
               67108864
-              536903952
+              553681168
               'von'
+              196608
               67108865
-              536903952
+              553681168
               'bis'
+              196608
               67108868
-              536903952
-              'Namens-'#13#10'zeichen'
+              553681168
+              'Paraphe'
+              131072
               67108868
               28
               536871184
@@ -241,17 +246,21 @@ object Report: TppReport
               60
               64
               34
-              536903952
+              553681168
               'Name'
+              196608
               67108864
-              536903952
+              553681168
               'von'
+              196608
               67108865
-              536903952
+              553681168
               'bis'
+              196608
               67108868
-              536903952
-              'Namens-'#13#10'zeichen'
+              553681168
+              'Paraphe'
+              131072
               67108868
               28
               536871184
@@ -347,17 +356,21 @@ object Report: TppReport
               60
               64
               34
-              536903952
+              553681168
               'Name'
+              196608
               67108864
-              536903952
+              553681168
               'von'
+              196608
               67108865
-              536903952
+              553681168
               'bis'
+              196608
               67108868
-              536903952
-              'Namens-'#13#10'zeichen'
+              553681168
+              'Paraphe'
+              131072
               67108868
               28
               536871184
@@ -411,17 +424,21 @@ object Report: TppReport
               60
               64
               34
-              536903952
+              553681168
               'Name'
+              196608
               67108864
-              536903952
+              553681168
               'von'
+              196608
               67108865
-              536903952
+              553681168
               'bis'
+              196608
               67108868
-              536903952
-              'Namens-'#13#10'zeichen'
+              553681168
+              'Paraphe'
+              131072
               67108868
               28
               536871184
@@ -1120,7 +1137,7 @@ object Report: TppReport
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
-        mmColumnWidth = 60000
+        mmColumnWidth = 59000
         DataPipelineName = 'plKursSchueler'
         object ppHeaderBand1: TppHeaderBand
           Background.Brush.Style = bsClear
@@ -1162,7 +1179,7 @@ object Report: TppReport
             Font.Size = 10
             Font.Style = []
             Transparent = True
-            mmHeight = 5556
+            mmHeight = 6400
             mmLeft = 0
             mmTop = 0
             mmWidth = 44979
@@ -1172,7 +1189,7 @@ object Report: TppReport
           object ppLabel25: TppLabel
             UserName = 'Label25'
             AutoSize = False
-            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.BorderPositions = [bpTop, bpRight, bpBottom]
             Border.Visible = True
             Border.Weight = 0.748799979686737000
             Caption = 'Uhrzeit'
@@ -1184,20 +1201,10 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             VerticalAlignment = avCenter
-            mmHeight = 5556
+            mmHeight = 6400
             mmLeft = 44979
             mmTop = 0
-            mmWidth = 14817
-            BandType = 2
-            LayerName = Foreground2
-          end
-          object ppLine4: TppLine
-            UserName = 'Line4'
-            Weight = 0.750000000000000000
-            mmHeight = 265
-            mmLeft = 529
-            mmTop = 5556
-            mmWidth = 59000
+            mmWidth = 13229
             BandType = 2
             LayerName = Foreground2
           end
@@ -1212,7 +1219,7 @@ object Report: TppReport
           object ppLabel23: TppLabel
             UserName = 'Label23'
             AutoSize = False
-            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.BorderPositions = [bpLeft, bpRight, bpBottom]
             Border.Visible = True
             Border.Weight = 0.748799979686737000
             Font.Charset = DEFAULT_CHARSET
@@ -1250,7 +1257,7 @@ object Report: TppReport
           object ppLabel24: TppLabel
             UserName = 'Label24'
             AutoSize = False
-            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.BorderPositions = [bpRight, bpBottom]
             Border.Visible = True
             Border.Weight = 0.748799979686737000
             Font.Charset = DEFAULT_CHARSET
@@ -1262,7 +1269,7 @@ object Report: TppReport
             mmHeight = 7000
             mmLeft = 44979
             mmTop = 0
-            mmWidth = 14817
+            mmWidth = 13229
             BandType = 4
             LayerName = Foreground2
           end
