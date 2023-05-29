@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste Erziehungsberechtigte.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste Kl Erziehungsberechtigte.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Erziehungsberech' +
-    'tigte.rtm'
+    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Kl Erziehungsber' +
+    'echtigte.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -201,7 +201,21 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 5292
-      mmLeft = 70000
+      mmLeft = 25000
+      mmTop = 0
+      mmWidth = 1058
+      BandType = 0
+      LayerName = Foreground2
+    end
+    object ppLine3: TppLine
+      UserName = 'TrennlinieK3'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5292
+      mmLeft = 90000
       mmTop = 0
       mmWidth = 1058
       BandType = 0
@@ -226,6 +240,24 @@ object Report: TppReport
       BandType = 0
       LayerName = Foreground2
     end
+    object ppLabel1: TppLabel
+      UserName = 'Klasse'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'Kl.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 11000
+      mmTop = 0
+      mmWidth = 13000
+      BandType = 0
+      LayerName = Foreground2
+    end
     object ppLabel5: TppLabel
       UserName = 'Schuelername'
       Anchors = [atLeft, atRight]
@@ -238,9 +270,9 @@ object Report: TppReport
       Font.Style = [fsBold]
       Transparent = True
       mmHeight = 5292
-      mmLeft = 11000
+      mmLeft = 26000
       mmTop = 0
-      mmWidth = 57944
+      mmWidth = 63000
       BandType = 0
       LayerName = Foreground2
     end
@@ -256,9 +288,9 @@ object Report: TppReport
       Font.Style = [fsBold]
       Transparent = True
       mmHeight = 5292
-      mmLeft = 71000
+      mmLeft = 91000
       mmTop = 0
-      mmWidth = 97896
+      mmWidth = 78000
       BandType = 0
       LayerName = Foreground2
     end
@@ -274,34 +306,6 @@ object Report: TppReport
     mmBottomOffset = 0
     mmHeight = 5027
     mmPrintPosition = 0
-    object ppLine5: TppLine
-      UserName = 'TrennlinieD2'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 5027
-      mmLeft = 10000
-      mmTop = 0
-      mmWidth = 1000
-      BandType = 4
-      LayerName = Foreground2
-    end
-    object ppLine4: TppLine
-      UserName = 'TrennlinieD1'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 5027
-      mmLeft = 70000
-      mmTop = 0
-      mmWidth = 1000
-      BandType = 4
-      LayerName = Foreground2
-    end
     object ppRegion1: TppRegion
       UserName = 'r'
       KeepTogether = True
@@ -323,6 +327,48 @@ object Report: TppReport
       mmOverFlowOffset = 0
       mmStopPosition = 0
       mmMinHeight = 0
+      object ppLine4: TppLine
+        UserName = 'TrennlinieD1'
+        Pen.Color = 4993567
+        ParentHeight = True
+        Position = lpLeft
+        StretchWithParent = True
+        Weight = 0.750000000000000000
+        mmHeight = 5200
+        mmLeft = 10000
+        mmTop = 0
+        mmWidth = 1000
+        BandType = 4
+        LayerName = Foreground2
+      end
+      object ppLine5: TppLine
+        UserName = 'TrennlinieD2'
+        Pen.Color = 4993567
+        ParentHeight = True
+        Position = lpLeft
+        StretchWithParent = True
+        Weight = 0.750000000000000000
+        mmHeight = 5200
+        mmLeft = 25000
+        mmTop = 0
+        mmWidth = 1000
+        BandType = 4
+        LayerName = Foreground2
+      end
+      object ppLine6: TppLine
+        UserName = 'TrennlinieD3'
+        Pen.Color = 4993567
+        ParentHeight = True
+        Position = lpLeft
+        StretchWithParent = True
+        Weight = 0.750000000000000000
+        mmHeight = 5200
+        mmLeft = 90000
+        mmTop = 0
+        mmWidth = 1000
+        BandType = 4
+        LayerName = Foreground2
+      end
       object ppSubReport1: TppSubReport
         UserName = 'Unterbericht'
         ExpandAll = False
@@ -332,9 +378,9 @@ object Report: TppReport
         TraverseAllData = False
         DataPipelineName = 'Erzieher'
         mmHeight = 5200
-        mmLeft = 71000
+        mmLeft = 91000
         mmTop = 0
-        mmWidth = 98000
+        mmWidth = 78000
         BandType = 4
         LayerName = Foreground2
         mmBottomOffset = 0
@@ -345,7 +391,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.Erzieher
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Sch'#252'lerliste Erziehungsberechtigte.rtm'
+          PrinterSetup.DocumentName = 'Sch'#252'lerliste Kl Erziehungsberechtigte.rtm'
           PrinterSetup.PaperName = 'A4 297 x 210 mm'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -368,7 +414,7 @@ object Report: TppReport
             Border.Weight = 0.750000000000000000
             PrintHeight = phDynamic
             mmBottomOffset = 0
-            mmHeight = 5200
+            mmHeight = 10319
             mmPrintPosition = 0
             object ppDBMemo3: TppDBMemo
               UserName = 'dbBezeichnung'
@@ -387,7 +433,7 @@ object Report: TppReport
               mmHeight = 5200
               mmLeft = 0
               mmTop = 0
-              mmWidth = 24000
+              mmWidth = 78000
               BandType = 4
               LayerName = Foreground1
               mmBottomOffset = 0
@@ -399,7 +445,7 @@ object Report: TppReport
             object ppMemo1: TppMemo
               UserName = 'dbErzieherAdressen'
               Caption = 'ErzieherAdressen'
-              CharWrap = False
+              CharWrap = True
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
               Font.Name = 'Calibri'
@@ -409,8 +455,8 @@ object Report: TppReport
               Stretch = True
               Transparent = True
               mmHeight = 5200
-              mmLeft = 25000
-              mmTop = 0
+              mmLeft = 5000
+              mmTop = 5119
               mmWidth = 73000
               BandType = 4
               LayerName = Foreground1
@@ -547,6 +593,32 @@ object Report: TppReport
         BandType = 4
         LayerName = Foreground2
       end
+      object ppDBMemo2: TppDBMemo
+        UserName = 'dbKlasse'
+        CharWrap = False
+        DataField = 'Klasse'
+        DataPipeline = dmPipelines.Schueler
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = []
+        RemoveEmptyLines = False
+        Stretch = True
+        Transparent = True
+        DataPipelineName = 'Schueler'
+        mmHeight = 5200
+        mmLeft = 11000
+        mmTop = 0
+        mmWidth = 13000
+        BandType = 4
+        LayerName = Foreground2
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeading = 0
+      end
       object ppDBMemo1: TppDBMemo
         UserName = 'dbNameVorname'
         CharWrap = False
@@ -562,9 +634,9 @@ object Report: TppReport
         Transparent = True
         DataPipelineName = 'Schueler'
         mmHeight = 5200
-        mmLeft = 11000
+        mmLeft = 26000
         mmTop = 0
-        mmWidth = 58000
+        mmWidth = 63000
         BandType = 4
         LayerName = Foreground2
         mmBottomOffset = 0
@@ -707,11 +779,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2021'
+      AutoSearchSettings.SearchExpression = '29.05.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '16.05.2021'
+      Value = '29.05.2023'
       UserName = 'Versionsdatum'
     end
   end

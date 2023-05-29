@@ -4,8 +4,8 @@ object Report: TppReport
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
-    'Sch'#252'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich' +
-    '.rtm'
+    'Sch'#252'lerliste Kl Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrl' +
+    'ich.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -19,8 +19,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports - Kopie\Sch'#252'lerliste Adressen' +
-    ' Telefonnummern E-Mail-Adressen ausf'#252'hrlich.rtm'
+    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Kl Adressen Tele' +
+    'fonnummern E-Mail-Adressen ausf'#252'hrlich.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -213,6 +213,7 @@ object Report: TppReport
       end
       object ppDBText1: TppDBText
         UserName = 'DBKlasse'
+        AutoSize = True
         DataField = 'Klasse'
         DataPipeline = dmPipelines.Schueler
         Font.Charset = DEFAULT_CHARSET
@@ -223,10 +224,10 @@ object Report: TppReport
         TextAlignment = taRightJustified
         Transparent = True
         DataPipelineName = 'Schueler'
-        mmHeight = 6615
-        mmLeft = 148167
-        mmTop = 3445
-        mmWidth = 21696
+        mmHeight = 6085
+        mmLeft = 149000
+        mmTop = 3440
+        mmWidth = 20000
         BandType = 4
         LayerName = Foreground1
       end
@@ -634,8 +635,8 @@ object Report: TppReport
           DataPipeline = dmPipelines.Erzieher
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 
-            'Sch'#252'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich' +
-            '.rtm'
+            'Sch'#252'lerliste Kl Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrl' +
+            'ich.rtm'
           PrinterSetup.PaperName = 'A4 297 x 210 mm'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -1176,8 +1177,8 @@ object Report: TppReport
           DataPipeline = dmPipelines.plSchuelerTelefone
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 
-            'Sch'#252'lerliste Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrlich' +
-            '.rtm'
+            'Sch'#252'lerliste Kl Adressen Telefonnummern E-Mail-Adressen ausf'#252'hrl' +
+            'ich.rtm'
           PrinterSetup.PaperName = 'A4 297 x 210 mm'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -1442,11 +1443,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '10.02.2023'
+      AutoSearchSettings.SearchExpression = '29.05.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '10.02.2023'
+      Value = '29.05.2023'
       UserName = 'Versionsdatum'
     end
   end
