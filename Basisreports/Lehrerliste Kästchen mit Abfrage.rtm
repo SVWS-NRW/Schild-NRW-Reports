@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports - Kopie\Lehrerliste K'#228'stchen ' +
-    'mit Abfrage.rtm'
+    'ts\Reportsammlung 2.0\Basisreports\Lehrerliste K'#228'stchen mit Abfr' +
+    'age.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -549,7 +549,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 10000
@@ -563,7 +562,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 25000
@@ -577,7 +575,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 90000
@@ -591,7 +588,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 100000
@@ -605,7 +601,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 110000
@@ -619,7 +614,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 120000
@@ -633,7 +627,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 130000
@@ -647,7 +640,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 140000
@@ -661,7 +653,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 150000
@@ -675,7 +666,6 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
-      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 160000
