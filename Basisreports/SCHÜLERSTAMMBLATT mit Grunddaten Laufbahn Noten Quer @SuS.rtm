@@ -3374,6 +3374,7 @@ object Report: TppReport
                     mmTop = 3969
                     mmWidth = 82042
                     BandType = 0
+                    LayerName = PageLayer3
                   end
                 end
                 object ppColumnHeaderBand6: TppColumnHeaderBand
@@ -3399,6 +3400,7 @@ object Report: TppReport
                     mmTop = 265
                     mmWidth = 62971
                     BandType = 2
+                    LayerName = PageLayer3
                   end
                   object ppLabel55: TppLabel
                     UserName = 'Datum'
@@ -3415,6 +3417,7 @@ object Report: TppReport
                     mmTop = 265
                     mmWidth = 15875
                     BandType = 2
+                    LayerName = PageLayer3
                   end
                   object ppLine26: TppLine
                     UserName = 'TrennlinieK1'
@@ -3426,6 +3429,7 @@ object Report: TppReport
                     mmTop = 0
                     mmWidth = 1058
                     BandType = 2
+                    LayerName = PageLayer3
                   end
                 end
                 object ppDetailBand5: TppDetailBand
@@ -3454,6 +3458,7 @@ object Report: TppReport
                     mmTop = 0
                     mmWidth = 16000
                     BandType = 4
+                    LayerName = PageLayer3
                   end
                   object ppLine28: TppLine
                     UserName = 'TrennlinieD1'
@@ -3464,6 +3469,7 @@ object Report: TppReport
                     mmTop = 0
                     mmWidth = 1000
                     BandType = 4
+                    LayerName = PageLayer3
                   end
                   object ppDBText22: TppDBText
                     UserName = 'DBVermerkart'
@@ -3481,6 +3487,7 @@ object Report: TppReport
                     mmTop = 0
                     mmWidth = 62042
                     BandType = 4
+                    LayerName = PageLayer3
                   end
                   object ppDBMemo1: TppDBMemo
                     UserName = 'DBBemerkung'
@@ -3502,6 +3509,7 @@ object Report: TppReport
                     mmTop = 4693
                     mmWidth = 80042
                     BandType = 4
+                    LayerName = PageLayer3
                     mmBottomOffset = 0
                     mmOverFlowOffset = 0
                     mmStopPosition = 0
@@ -3516,6 +3524,7 @@ object Report: TppReport
                     mmTop = 4314
                     mmWidth = 82021
                     BandType = 4
+                    LayerName = PageLayer3
                   end
                 end
                 object ppColumnFooterBand5: TppColumnFooterBand
@@ -5434,6 +5443,7 @@ object Report: TppReport
                 PrinterSetup.mmPaperHeight = 210000
                 PrinterSetup.mmPaperWidth = 297000
                 PrinterSetup.PaperSize = 9
+                Template.Offset = 284
                 Template.Format = ftASCII
                 Units = utScreenPixels
                 Version = '15.05'
@@ -5445,7 +5455,7 @@ object Report: TppReport
                   Border.Style = psClear
                   PrintHeight = phDynamic
                   mmBottomOffset = 0
-                  mmHeight = 37835
+                  mmHeight = 41540
                   mmPrintPosition = 0
                   object ppRegion14: TppRegion
                     UserName = 'Region14'
@@ -5456,11 +5466,12 @@ object Report: TppReport
                     Pen.Style = psClear
                     Stretch = True
                     Transparent = True
-                    mmHeight = 37835
+                    mmHeight = 41371
                     mmLeft = 0
                     mmTop = 0
                     mmWidth = 257000
                     BandType = 4
+                    LayerName = Foreground4
                     mmBottomOffset = 0
                     mmOverFlowOffset = 0
                     mmStopPosition = 0
@@ -5472,6 +5483,7 @@ object Report: TppReport
                       mmTop = 0
                       mmWidth = 17463
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppShape10: TppShape
                       UserName = 'ShapeKlassenleitung'
@@ -5480,6 +5492,7 @@ object Report: TppReport
                       mmTop = 0
                       mmWidth = 20108
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppShape6: TppShape
                       UserName = 'ShapeVersetzung'
@@ -5488,6 +5501,7 @@ object Report: TppReport
                       mmTop = 0
                       mmWidth = 5027
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppShape5: TppShape
                       UserName = 'ShapeFehlstunden'
@@ -5496,6 +5510,7 @@ object Report: TppReport
                       mmTop = 0
                       mmWidth = 7408
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppSubReport9: TppSubReport
                       UserName = 'Noten'
@@ -5511,6 +5526,7 @@ object Report: TppReport
                       mmTop = 0
                       mmWidth = 206905
                       BandType = 4
+                      LayerName = Foreground4
                       mmBottomOffset = 0
                       mmOverFlowOffset = 0
                       mmStopPosition = 0
@@ -5567,6 +5583,7 @@ object Report: TppReport
                         PrinterSetup.mmPaperHeight = 210000
                         PrinterSetup.mmPaperWidth = 297000
                         PrinterSetup.PaperSize = 9
+                        Template.Offset = 284
                         Template.Format = ftASCII
                         Units = utMillimeters
                         Version = '15.05'
@@ -5595,9 +5612,30 @@ object Report: TppReport
                             mmTop = 0
                             mmWidth = 5000
                             BandType = 4
+                            LayerName = Foreground5
                           end
-                          object ppDBText86: TppDBText
-                            UserName = 'DBText5'
+                          object ppDBText99: TppDBText
+                            UserName = 'DBKursart'
+                            DataField = 'Kursart'
+                            DataPipeline = dmPipelines.plLeistungsuebersicht
+                            Font.Charset = DEFAULT_CHARSET
+                            Font.Color = clBlack
+                            Font.Name = 'Calibri'
+                            Font.Size = 6
+                            Font.Style = []
+                            TextAlignment = taCentered
+                            Transparent = True
+                            VerticalAlignment = avCenter
+                            DataPipelineName = 'plLeistungsuebersicht'
+                            mmHeight = 3500
+                            mmLeft = 265
+                            mmTop = 5027
+                            mmWidth = 4500
+                            BandType = 4
+                            LayerName = Foreground5
+                          end
+                          object ppDBText100: TppDBText
+                            UserName = 'DBNotenkuerzel'
                             DataField = 'NotenKrz'
                             DataPipeline = dmPipelines.plLeistungsuebersicht
                             Font.Charset = DEFAULT_CHARSET
@@ -5609,11 +5647,12 @@ object Report: TppReport
                             Transparent = True
                             VerticalAlignment = avCenter
                             DataPipelineName = 'plLeistungsuebersicht'
-                            mmHeight = 4500
-                            mmLeft = 250
-                            mmTop = 2750
+                            mmHeight = 3500
+                            mmLeft = 265
+                            mmTop = 1852
                             mmWidth = 4500
                             BandType = 4
+                            LayerName = Foreground5
                           end
                         end
                         object ppColumnFooterBand2: TppColumnFooterBand
@@ -5650,6 +5689,7 @@ object Report: TppReport
                       mmTop = 1058
                       mmWidth = 15610
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText65: TppDBText
                       UserName = 'DBAbschnitt'
@@ -5667,6 +5707,7 @@ object Report: TppReport
                       mmTop = 5027
                       mmWidth = 15610
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText91: TppDBText
                       UserName = 'DBKlassenleitung'
@@ -5684,6 +5725,7 @@ object Report: TppReport
                       mmTop = 794
                       mmWidth = 17992
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText83: TppDBText
                       UserName = 'DBZeugnisDatum'
@@ -5701,6 +5743,7 @@ object Report: TppReport
                       mmTop = 3704
                       mmWidth = 17992
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText67: TppDBText
                       UserName = 'DBKonferenzdatum'
@@ -5718,6 +5761,7 @@ object Report: TppReport
                       mmTop = 6615
                       mmWidth = 17992
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText88: TppDBText
                       UserName = 'DBVersetzung'
@@ -5737,6 +5781,7 @@ object Report: TppReport
                       mmTop = 529
                       mmWidth = 4498
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText89: TppDBText
                       UserName = 'DBWiederholunh'
@@ -5756,6 +5801,7 @@ object Report: TppReport
                       mmTop = 5027
                       mmWidth = 4498
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText87: TppDBText
                       UserName = 'DBFehlstunden'
@@ -5775,6 +5821,7 @@ object Report: TppReport
                       mmTop = 529
                       mmWidth = 6879
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppDBText85: TppDBText
                       UserName = 'DBFehlstundenUE'
@@ -5794,6 +5841,7 @@ object Report: TppReport
                       mmTop = 5027
                       mmWidth = 6879
                       BandType = 4
+                      LayerName = Foreground4
                     end
                     object ppRichText1: TppRichText
                       UserName = 'DBZeugnisBemerkung'
@@ -5819,6 +5867,7 @@ object Report: TppReport
                       mmTop = 10054
                       mmWidth = 256911
                       BandType = 4
+                      LayerName = Foreground4
                       mmBottomOffset = 0
                       mmOverFlowOffset = 0
                       mmStopPosition = 0
@@ -5849,6 +5898,7 @@ object Report: TppReport
                       mmTop = 15081
                       mmWidth = 256911
                       BandType = 4
+                      LayerName = Foreground4
                       mmBottomOffset = 0
                       mmOverFlowOffset = 0
                       mmStopPosition = 0
@@ -5879,6 +5929,7 @@ object Report: TppReport
                       mmTop = 20108
                       mmWidth = 256911
                       BandType = 4
+                      LayerName = Foreground4
                       mmBottomOffset = 0
                       mmOverFlowOffset = 0
                       mmStopPosition = 0
@@ -5908,6 +5959,37 @@ object Report: TppReport
                       mmTop = 24871
                       mmWidth = 256911
                       BandType = 4
+                      LayerName = Foreground4
+                      mmBottomOffset = 0
+                      mmOverFlowOffset = 0
+                      mmStopPosition = 0
+                      mmMinHeight = 0
+                    end
+                    object ppRichText2: TppRichText
+                      UserName = 'DBPrognoseAbschluss'
+                      Font.Charset = DEFAULT_CHARSET
+                      Font.Color = clBlack
+                      Font.Name = 'Calibri'
+                      Font.Size = 7
+                      Font.Style = [fsBold]
+                      Caption = 'DBAbschluss'
+                      MailMerge = True
+                      RichText = 
+                        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+                        'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
+                        'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\b\f0\fs14 Prognostizierter Abschl' +
+                        'uss:\b0  <dbtext>Abschluss</dbtext>\b\f1\par'#13#10'}'#13#10#0
+                      RemoveEmptyLines = False
+                      ShiftRelativeTo = ppRichText6
+                      Stretch = True
+                      Transparent = True
+                      Visible = False
+                      mmHeight = 5027
+                      mmLeft = 0
+                      mmTop = 29986
+                      mmWidth = 256911
+                      BandType = 4
+                      LayerName = Foreground4
                       mmBottomOffset = 0
                       mmOverFlowOffset = 0
                       mmStopPosition = 0
@@ -5927,9 +6009,10 @@ object Report: TppReport
                       Transparent = True
                       mmHeight = 4763
                       mmLeft = 0
-                      mmTop = 30692
+                      mmTop = 35453
                       mmWidth = 256911
                       BandType = 4
+                      LayerName = Foreground4
                       mmBottomOffset = 0
                       mmOverFlowOffset = 0
                       mmStopPosition = 0
@@ -5953,7 +6036,7 @@ object Report: TppReport
                     3B0D0A084361726574506F730102010201000001060F5472614576656E744861
                     6E646C65720B50726F6772616D4E616D65061144657461696C4265666F726550
                     72696E740B50726F6772616D54797065070B747450726F63656475726506536F
-                    757263650CFC01000070726F6365647572652044657461696C4265666F726550
+                    757263650CAE02000070726F6365647572652044657461696C4265666F726550
                     72696E743B0D0A626567696E0D0A2020696620456967656E65536368756C655B
                     27416E7A61686C41627363686E69747465275D203D2032207468656E204D656D
                     6F506C61747A68616C7465722E56697369626C65203A3D2053636875656C6572
@@ -5962,57 +6045,63 @@ object Report: TppReport
                     65726C6175666261686E5B2741627363686E697474275D203D20343B0D0A2020
                     44425A6575676E697342656D65726B756E672E56697369626C65203A3D205363
                     6875656C65726C6175666261686E5B275A6575676E697342656D275D203C3E20
-                    27273B0D0A2020444241627363686C7573732E56697369626C65203A3D205363
-                    6875656C65726C6175666261686E5B2741627363686C757373275D3C3E27273B
-                    0D0A2020444241726265697473536F7A69616C76657268616C74656E2E566973
-                    69626C65203A3D2053636875656C65724C6175666261686E42656D5B27415356
-                    275D203C3E2027273B0D0A20204442417573736572756E74657272696368746C
-                    6963686573456E676167656D656E742E56697369626C65203A3D205363687565
-                    6C65724C6175666261686E42656D5B274C454C53275D203C3E2027273B0D0A65
-                    6E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C094576656E
-                    744E616D65060B4265666F72655072696E74074576656E744944021808436172
-                    6574506F73010381000203000001060F5472614576656E7448616E646C65720B
-                    50726F6772616D4E616D650614444241627363686E6974744F6E476574546578
-                    740B50726F6772616D54797065070B747450726F63656475726506536F757263
-                    650C3C01000070726F63656475726520444241627363686E6974744F6E476574
-                    546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
-                    0D0A2020636173652053636875656C65726C6175666261686E5B274162736368
-                    6E697474275D206F660D0A2020202020313A2054657874203A3D20456967656E
-                    65536368756C655B2742657A41627363686E69747431275D3B20200D0A202020
-                    2020323A2054657874203A3D20456967656E65536368756C655B2742657A4162
-                    7363686E69747432275D3B200D0A2020202020333A2054657874203A3D204569
-                    67656E65536368756C655B2742657A41627363686E69747433275D3B200D0A20
-                    20202020343A2054657874203A3D20456967656E65536368756C655B2742657A
-                    41627363686E69747434275D3B20200D0A202020656E643B0D0A0D0A656E643B
-                    0D0A0D436F6D706F6E656E744E616D65060B444241627363686E697474094576
-                    656E744E616D6506094F6E47657454657874074576656E744944023508436172
-                    6574506F730102010201000001060F5472614576656E7448616E646C65720B50
-                    726F6772616D4E616D65061844424665686C7374756E64656E55454F6E476574
-                    546578740B50726F6772616D54797065070B747450726F63656475726506536F
-                    75726365068A70726F6365647572652044424665686C7374756E64656E55454F
-                    6E476574546578742876617220546578743A20537472696E67293B0D0A626567
-                    696E0D0A0D0A202049662054657874203D202727207468656E2054657874203A
-                    3D20272830292720456C73652054657874203A3D20272827202B205465787420
-                    2B202729273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060F
-                    44424665686C7374756E64656E5545094576656E744E616D6506094F6E476574
-                    54657874074576656E7449440235084361726574506F73010201020100000106
-                    0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506164442
-                    4665686C7374756E64656E4F6E476574546578740B50726F6772616D54797065
+                    27273B0D0A2020444241627363686C7573732E56697369626C65203A3D202828
+                    53636875656C65726C6175666261686E5B2741627363686C757373275D203C3E
+                    2027272920616E64202853636875656C65726C6175666261686E5B2741627363
+                    686C49737450726F676E6F7365275D203D20272D27293B0D0A2020444250726F
+                    676E6F736541627363686C7573732E56697369626C65203A3D20282853636875
+                    656C65726C6175666261686E5B2741627363686C757373275D203C3E20272729
+                    20616E64202853636875656C65726C6175666261686E5B2741627363686C4973
+                    7450726F676E6F7365275D203D20272B273B0D0A202044424172626569747353
+                    6F7A69616C76657268616C74656E2E56697369626C65203A3D2053636875656C
+                    65724C6175666261686E42656D5B27415356275D203C3E2027273B0D0A202044
+                    42417573736572756E74657272696368746C6963686573456E676167656D656E
+                    742E56697369626C65203A3D2053636875656C65724C6175666261686E42656D
+                    5B274C454C53275D203C3E2027273B0D0A656E643B0D0A0D436F6D706F6E656E
+                    744E616D65060644657461696C094576656E744E616D65060B4265666F726550
+                    72696E74074576656E7449440218084361726574506F73010257020800000106
+                    0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506144442
+                    41627363686E6974744F6E476574546578740B50726F6772616D54797065070B
+                    747450726F63656475726506536F757263650C3C01000070726F636564757265
+                    20444241627363686E6974744F6E476574546578742876617220546578743A20
+                    537472696E67293B0D0A626567696E0D0A0D0A2020636173652053636875656C
+                    65726C6175666261686E5B2741627363686E697474275D206F660D0A20202020
+                    20313A2054657874203A3D20456967656E65536368756C655B2742657A416273
+                    63686E69747431275D3B20200D0A2020202020323A2054657874203A3D204569
+                    67656E65536368756C655B2742657A41627363686E69747432275D3B200D0A20
+                    20202020333A2054657874203A3D20456967656E65536368756C655B2742657A
+                    41627363686E69747433275D3B200D0A2020202020343A2054657874203A3D20
+                    456967656E65536368756C655B2742657A41627363686E69747434275D3B2020
+                    0D0A202020656E643B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D
+                    65060B444241627363686E697474094576656E744E616D6506094F6E47657454
+                    657874074576656E7449440235084361726574506F730102010201000001060F
+                    5472614576656E7448616E646C65720B50726F6772616D4E616D650618444246
+                    65686C7374756E64656E55454F6E476574546578740B50726F6772616D547970
+                    65070B747450726F63656475726506536F75726365068A70726F636564757265
+                    2044424665686C7374756E64656E55454F6E4765745465787428766172205465
+                    78743A20537472696E67293B0D0A626567696E0D0A0D0A202049662054657874
+                    203D202727207468656E2054657874203A3D20272830292720456C7365205465
+                    7874203A3D20272827202B2054657874202B202729273B0D0A0D0A656E643B0D
+                    0A0D436F6D706F6E656E744E616D65060F44424665686C7374756E64656E5545
+                    094576656E744E616D6506094F6E47657454657874074576656E744944023508
+                    4361726574506F730102010201000001060F5472614576656E7448616E646C65
+                    720B50726F6772616D4E616D65061644424665686C7374756E64656E4F6E4765
+                    74546578740B50726F6772616D54797065070B747450726F6365647572650653
+                    6F75726365066A70726F6365647572652044424665686C7374756E64656E4F6E
+                    476574546578742876617220546578743A20537472696E67293B0D0A62656769
+                    6E0D0A0D0A202049662054657874203D202727205468656E2054657874203A3D
+                    202730273B20200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+                    0D44424665686C7374756E64656E094576656E744E616D6506094F6E47657454
+                    657874074576656E7449440235084361726574506F730102010201000001060F
+                    5472614576656E7448616E646C65720B50726F6772616D4E616D650617444257
+                    6965646572686F6C756E684F6E476574546578740B50726F6772616D54797065
                     070B747450726F63656475726506536F75726365066A70726F63656475726520
-                    44424665686C7374756E64656E4F6E476574546578742876617220546578743A
-                    20537472696E67293B0D0A626567696E0D0A0D0A202049662054657874203D20
-                    2727205468656E2054657874203A3D202730273B20200D0A0D0A656E643B0D0A
-                    0D436F6D706F6E656E744E616D65060D44424665686C7374756E64656E094576
-                    656E744E616D6506094F6E47657454657874074576656E744944023508436172
-                    6574506F730102010201000001060F5472614576656E7448616E646C65720B50
-                    726F6772616D4E616D6506174442576965646572686F6C756E684F6E47657454
-                    6578740B50726F6772616D54797065070B747450726F63656475726506536F75
-                    726365066A70726F636564757265204442576965646572686F6C756E684F6E47
-                    6574546578742876617220546578743A20537472696E67293B0D0A626567696E
-                    0D0A0D0A202049662054657874203D20272B27205468656E2054657874203A3D
-                    202757273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060E44
-                    42576965646572686F6C756E68094576656E744E616D6506094F6E4765745465
-                    7874074576656E7449440235084361726574506F730102010201000000}
+                    4442576965646572686F6C756E684F6E47657454657874287661722054657874
+                    3A20537472696E67293B0D0A626567696E0D0A0D0A202049662054657874203D
+                    20272B27205468656E2054657874203A3D202757273B0D0A0D0A656E643B0D0A
+                    0D436F6D706F6E656E744E616D65060E4442576965646572686F6C756E680945
+                    76656E744E616D6506094F6E47657454657874074576656E7449440235084361
+                    726574506F730102010201000000}
                 end
                 object ppDesignLayers8: TppDesignLayers
                   object ppDesignLayer8: TppDesignLayer
@@ -9193,11 +9282,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '10.11.2023'
+      AutoSearchSettings.SearchExpression = '11.11.2023'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '10.11.2023'
+      Value = '11.11.2023'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
