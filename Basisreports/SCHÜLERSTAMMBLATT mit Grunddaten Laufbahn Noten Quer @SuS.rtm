@@ -1,11 +1,10 @@
 object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
-  PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -17,9 +16,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports\SCH'#220'LERSTAMMBLATT mit Grundda' +
-    'ten Laufbahn Noten Quer @SuS.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Basisreports\SCH'#220'LERSTAMMBLATT mit Grunddaten' +
+    ' Laufbahn Noten Quer @SuS.rtm'
   Template.Format = ftASCII
   Units = utScreenPixels
   AllowPrintToArchive = True
@@ -129,7 +128,7 @@ object Report: TppReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -2676,7 +2675,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -3185,7 +3184,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -3339,7 +3338,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -3601,7 +3600,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -4125,7 +4124,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -4360,7 +4359,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -5026,7 +5025,7 @@ object Report: TppReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -5308,7 +5307,7 @@ object Report: TppReport
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -5433,7 +5432,7 @@ object Report: TppReport
                 PrinterSetup.BinName = 'Default'
                 PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                 PrinterSetup.Orientation = poLandscape
-                PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                PrinterSetup.PaperName = 'A4'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
                 PrinterSetup.mmMarginBottom = 15000
@@ -5573,7 +5572,7 @@ object Report: TppReport
                         PrinterSetup.BinName = 'Default'
                         PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten Quer @SuS.rtm'
                         PrinterSetup.Orientation = poLandscape
-                        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                        PrinterSetup.PaperName = 'A4'
                         PrinterSetup.PrinterName = 'Default'
                         PrinterSetup.SaveDeviceSettings = False
                         PrinterSetup.mmMarginBottom = 15000
@@ -6186,7 +6185,7 @@ object Report: TppReport
     end
     object ppSystemVariable3: TppSystemVariable
       UserName = 'Seitenzahl'
-      VarType = vtPageSetDesc
+      VarType = vtPageNoDesc
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -6194,10 +6193,10 @@ object Report: TppReport
       Font.Style = []
       TextAlignment = taRightJustified
       Transparent = True
-      mmHeight = 3704
-      mmLeft = 237000
-      mmTop = 1000
-      mmWidth = 20000
+      mmHeight = 3705
+      mmLeft = 247121
+      mmTop = 1058
+      mmWidth = 9790
       BandType = 8
       LayerName = Foreground1
     end
