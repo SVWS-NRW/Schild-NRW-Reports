@@ -25,23 +25,14 @@ jobs:
 
       - name: Upload release asset
         id: upload-release-asset
-        uses: actions/upload-release-asset@v1
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip
-          asset_name: Reports-v1.0.${{ github.run_number }}.zip
-          asset_content_type: application/zip
 
       - name: Create release
-        uses: actions/create-release@v1
+        run: |
+          gh release create v1.0.${{ github.run_number }} ./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip -t "Release v1.0.${{ github.run_number }}" -n "Changes in this release."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v1.0.${{ github.run_number }}
-          release_name: Release v1.0.${{ github.run_number }}
-          body: |
-            Changes in this release.
-          draft: false
-          prerelease: false
