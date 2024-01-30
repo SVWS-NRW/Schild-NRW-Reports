@@ -3,20 +3,50 @@ on:
   push:
     branches:
       - master
+
 jobs:
   create-zip:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'release')"
+
     steps:
-      - uses: actions/checkout@v1
-      - run: mkdir .zip
-      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
-      # zerlegen der Sammlung in zwei getrennte Files
-      # - run: zip -r ."/.zip/Basisreports - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Serienbriefe/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
-      # - run: zip -r ."/.zip/Serienbriefe - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Basisreports/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
-      - uses: ncipollo/release-action@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          artifacts: "./.zip/*"
-          allowUpdates: true
-          tag: v1.0.${{ github.run_number }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create ZIP file
+        run: |
+          mkdir .zip
+          zip -r ./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
+
+      - name: Set output for ZIP file
+        id: zip
+        run: echo "::set-output name=zip_file::./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip"
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          release_name: Release v1.0.${{ github.run_number }}
+          body: |
+            Changes in this release.
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ steps.zip.outputs.zip_file }}
+          asset_name: Reports-v1.0.${{ github.run_number }}.zip
+          asset_content_type: application/zip
