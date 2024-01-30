@@ -29,6 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          upload_url: ${{ github.event.release.upload_url }}
           asset_path: ./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip
           asset_name: Reports-v1.0.${{ github.run_number }}.zip
           asset_content_type: application/zip
