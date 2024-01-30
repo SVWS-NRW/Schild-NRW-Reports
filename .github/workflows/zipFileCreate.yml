@@ -33,6 +33,8 @@ jobs:
 
       - name: Create release
         run: |
+          git tag -a v1.0.${{ github.run_number }} -m "Release v1.0.${{ github.run_number }}"
+          git push origin v1.0.${{ github.run_number }}
           gh release create v1.0.${{ github.run_number }} ./.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip -t "Release v1.0.${{ github.run_number }}" -n "Changes in this release."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
