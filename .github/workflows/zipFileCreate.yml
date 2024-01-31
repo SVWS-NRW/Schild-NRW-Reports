@@ -8,21 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'release')"
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-	  
-      - name: Create ZIP file
+      - uses: actions/checkout@v3
       - run: mkdir .zip
       - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
-      
-	  - uses: ncipollo/release-action@v1
+      # zerlegen der Sammlung in zwei getrennte Files
+      # - run: zip -r ."/.zip/Basisreports - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Serienbriefe/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
+      # - run: zip -r ."/.zip/Serienbriefe - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Basisreports/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
+      - uses: softprops/action-gh-release@v1
         with:
           artifacts: "./.zip/*"
-          allowUpdates: true
-          tag: v1.0.${{ github.run_number }}
+          tag_name: v1.0.${{ github.run_number }}
           token: ${{ secrets.GITHUB_TOKEN }}
