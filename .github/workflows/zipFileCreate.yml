@@ -20,4 +20,3 @@ jobs:
           draft: true
           fail_on_unmatched_files: true
           files: "/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip"
-      - uses: docker/setup-qemu-action@v3
