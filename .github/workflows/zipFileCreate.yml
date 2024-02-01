@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: mkdir .zip
-      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
+      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}.zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
       - uses: softprops/action-gh-release@v1
         with:
           tag_name: v1.0.${{ github.run_number }}
@@ -19,4 +19,4 @@ jobs:
           body_path: "./.zip/*"
           draft: true
           fail_on_unmatched_files: true
-          files: "/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip"
+          files: "/.zip/Reports-v1.0.${{ github.run_number }}.zip"
