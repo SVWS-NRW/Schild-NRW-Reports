@@ -19,5 +19,4 @@ jobs:
           body_path: "./.zip/*"
           draft: true
           fail_on_unmatched_files: true
-          files: "/.zip/*"
-      - uses: docker/setup-qemu-action@v3
+          files: "/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip"
