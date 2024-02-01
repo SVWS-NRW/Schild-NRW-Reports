@@ -1,0 +1,477 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.Kurse
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = #220'bersicht_Kursteilnehmer_Kursart.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 15000
+  PrinterSetup.mmMarginRight = 15000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName =
+    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\2_Vorbereitung und Listen (Gruppenansicht)\Uebersicht_Kursteilnehmer_Kursart.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '14.08'
+  mmColumnWidth = 0
+  DataPipelineName = 'Kurse'
+  object ppHeaderBand2: TppHeaderBand
+    Background.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 39688
+    mmPrintPosition = 0
+    object ppLabel4: TppLabel
+      UserName = 'Label1'
+      Caption = #220'bersicht '#252'ber Kursteilnehmer mit  Kursart '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 0
+      mmTop = 9525
+      mmWidth = 76994
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine4: TppLine
+      UserName = 'Line1'
+      ParentWidth = True
+      Position = lpBottom
+      Style = lsDouble
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 12700
+      mmWidth = 180000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+      UserName = 'DynamicLoadingSubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      Filename = 'Abiturkopf_klein.rtm'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 1058
+      mmWidth = 180000
+      BandType = 0
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = #220'bersicht_Kursteilnehmer_Kursart.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Units = utMillimeters
+        Version = '14.08'
+        mmColumnWidth = 0
+      end
+    end
+  end
+  object ppDetailBand2: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 5292
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      DataPipelineName = 'plKursSchueler'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 265
+      mmWidth = 180000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plKursSchueler
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = #220'bersicht_Kursteilnehmer_Kursart.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '14.08'
+        mmColumnWidth = 0
+        DataPipelineName = 'plKursSchueler'
+        object ppTitleBand1: TppTitleBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppDetailBand3: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 5292
+          mmPrintPosition = 0
+          object ppDBText1: TppDBText
+            UserName = 'DBText1'
+            DataField = 'Name'
+            DataPipeline = dmPipelines.plKursSchueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'plKursSchueler'
+            mmHeight = 3969
+            mmLeft = 42598
+            mmTop = 529
+            mmWidth = 57150
+            BandType = 4
+          end
+          object ppDBText2: TppDBText
+            UserName = 'DBText2'
+            DataField = 'Kursart'
+            DataPipeline = dmPipelines.plKursSchueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'plKursSchueler'
+            mmHeight = 3969
+            mmLeft = 102659
+            mmTop = 529
+            mmWidth = 17198
+            BandType = 4
+          end
+          object ppLabel6: TppLabel
+            UserName = 'Label3'
+            Caption = 'Label3'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 10
+            Font.Style = []
+            TextAlignment = taRightJustified
+            Transparent = True
+            mmHeight = 3969
+            mmLeft = 29898
+            mmTop = 529
+            mmWidth = 10583
+            BandType = 4
+          end
+        end
+        object ppSummaryBand2: TppSummaryBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+            444254657874314F6E476574546578740B50726F6772616D54797065070B7474
+            50726F63656475726506536F75726365067370726F6365647572652044425465
+            7874314F6E476574546578742876617220546578743A20537472696E67293B0D
+            0A626567696E0D0A0D0A202054657874203A3D2054657874202B20272C202720
+            2B20204B75727353636875656C65725B27566F726E616D65275D3B0D0A0D0A65
+            6E643B0D0A0D436F6D706F6E656E744E616D6506074442546578743109457665
+            6E744E616D6506094F6E47657454657874074576656E74494402350001060F54
+            72614576656E7448616E646C65720B50726F6772616D4E616D65061144657461
+            696C4265666F72655072696E740B50726F6772616D54797065070B747450726F
+            63656475726506536F757263650C0D01000070726F6365647572652044657461
+            696C4265666F72655072696E743B0D0A766172206B3A537472696E673B0D0A62
+            6567696E0D0A202069662028284B75727353636875656C65725B274B75727361
+            7274275D203D20274C4B312729206F7220284B75727353636875656C65725B27
+            4B757273617274275D3D274C4B322729290D0A202020207468656E206B203A3D
+            20274C4B270D0A20202020656C7365206B203A3D204B75727353636875656C65
+            725B274B757273617274275D3B0D0A202044657461696C2E56697369626C6520
+            3A3D2020206B203D206B7572736172743B0D0A202069662044657461696C2E56
+            697369626C65207468656E207A203A3D207A202B20313B0D0A656E643B0D0A0D
+            436F6D706F6E656E744E616D65060644657461696C094576656E744E616D6506
+            0B4265666F72655072696E74074576656E74494402180001060F547261457665
+            6E7448616E646C65720B50726F6772616D4E616D6506165265706F72744F6E53
+            746172744669727374506173730B50726F6772616D54797065070B747450726F
+            63656475726506536F75726365063B70726F636564757265205265706F72744F
+            6E53746172744669727374506173733B0D0A626567696E0D0A20207A203A3D20
+            303B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F7274
+            094576656E744E616D6506104F6E537461727446697273745061737307457665
+            6E74494402140001060F5472614576656E7448616E646C65720B50726F677261
+            6D4E616D65060F4C6162656C334F6E476574546578740B50726F6772616D5479
+            7065070B747450726F63656475726506536F75726365065D70726F6365647572
+            65204C6162656C334F6E476574546578742876617220546578743A2053747269
+            6E67293B0D0A626567696E0D0A0D0A202054657874203A3D20496E74546F5374
+            72287A29202B20272E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E
+            616D6506064C6162656C33094576656E744E616D6506094F6E47657454657874
+            074576656E74494402350000}
+        end
+      end
+    end
+  end
+  object ppFooterBand2: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 7000
+    mmPrintPosition = 0
+    object ppLine5: TppLine
+      UserName = 'Line4'
+      ParentWidth = True
+      Style = lsDouble
+      Weight = 0.750000000000000000
+      mmHeight = 2910
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 180000
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable1'
+      AutoSize = False
+      DisplayFormat = '"Gedruckt am "dd/mm/yyyy '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3260
+      mmLeft = 140000
+      mmTop = 2000
+      mmWidth = 40000
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable4: TppSystemVariable
+      UserName = 'SystemVariable2'
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3175
+      mmLeft = 81492
+      mmTop = 2000
+      mmWidth = 16669
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label4'
+      Caption = 'Label4'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clSilver
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3175
+      mmLeft = 0
+      mmTop = 2117
+      mmWidth = 8467
+      BandType = 8
+      LayerName = Foreground
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Kurse
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    KeepTogether = True
+    OutlineSettings.CreateNode = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Kurse'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 6615
+      mmPrintPosition = 0
+      object ppLabel8: TppLabel
+        UserName = 'Label2'
+        Caption = 'Label2'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 12
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 4995
+        mmLeft = 0
+        mmTop = 0
+        mmWidth = 13462
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 2646
+      mmPrintPosition = 0
+      object ppLine6: TppLine
+        UserName = 'Line2'
+        ParentWidth = True
+        Weight = 0.750000000000000000
+        mmHeight = 2646
+        mmLeft = 0
+        mmTop = 0
+        mmWidth = 180000
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F547261436F6E737450726F6772616D094368696C645479706502120B50
+      726F6772616D4E616D650609436F6E7374616E74730B50726F6772616D547970
+      65070B747450726F63656475726506536F75726365065370726F636564757265
+      20436F6E7374616E74733B0D0A636F6E73740D0A202020526570566572733D27
+      5265706F727456657273696F6E3A2042412E30352E3031273B0D0A626567696E
+      0D0A0D0A656E643B0D0A0001060D54726156617250726F6772616D094368696C
+      645479706502110B50726F6772616D4E616D6506095661726961626C65730B50
+      726F6772616D54797065070B747450726F63656475726506536F757263650655
+      70726F636564757265205661726961626C65733B0D0A7661720D0A2020206B75
+      7273617274203A20537472696E673B0D0A2020207A2C206C61203A20496E7465
+      6765723B0D0A626567696E0D0A0D0A656E643B0D0A0001060F5472614576656E
+      7448616E646C65720B50726F6772616D4E616D65060F4C6162656C324F6E4765
+      74546578740B50726F6772616D54797065070B747450726F6365647572650653
+      6F75726365069B70726F636564757265204C6162656C324F6E47657454657874
+      2876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A2020
+      54657874203A3D20204B757273655B2746616368275D202B20272020202D2020
+      2027202B20204B757273655B274B75727A42657A275D202B20272020202D2020
+      2027202B204B757273655B274C65687265724B727A275D3B0D0A0D0A656E643B
+      0D0A0D436F6D706F6E656E744E616D6506064C6162656C32094576656E744E61
+      6D6506094F6E47657454657874074576656E74494402350001060F5472614576
+      656E7448616E646C65720B50726F6772616D4E616D65060F4C6162656C314F6E
+      476574546578740B50726F6772616D54797065070B747450726F636564757265
+      06536F75726365065A70726F636564757265204C6162656C314F6E4765745465
+      78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+      202054657874203A3D2054657874202B206B7572736172743B0D0A0D0A656E64
+      3B0D0A0D436F6D706F6E656E744E616D6506064C6162656C31094576656E744E
+      616D6506094F6E47657454657874074576656E74494402350001060F54726145
+      76656E7448616E646C65720B50726F6772616D4E616D6506115265706F727442
+      65666F72655072696E740B50726F6772616D54797065070B747450726F636564
+      75726506536F75726365069F70726F636564757265205265706F72744265666F
+      72655072696E743B0D0A626567696E0D0A2020206C61203A3D456967656E6553
+      6368756C655B27416E7A61686C41627363686E69747465275D3B200D0A202020
+      4B757273617274203A3D2053656C65637446726F6D4C69737428274B75727361
+      72743A272C20274C4B2C4142332C4142342C474B532C474B4D272C2027414233
+      27293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F72
+      74094576656E744E616D65060B4265666F72655072696E74074576656E744944
+      02010001060F5472614576656E7448616E646C65720B50726F6772616D4E616D
+      65060F4C6162656C344F6E476574546578740B50726F6772616D54797065070B
+      747450726F63656475726506536F75726365065370726F636564757265204C61
+      62656C344F6E476574546578742876617220546578743A20537472696E67293B
+      0D0A626567696E0D0A0D0A202054657874203A3D20526570566572733B0D0A0D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C6162656C34094576
+      656E744E616D6506094F6E47657454657874074576656E74494402350000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end

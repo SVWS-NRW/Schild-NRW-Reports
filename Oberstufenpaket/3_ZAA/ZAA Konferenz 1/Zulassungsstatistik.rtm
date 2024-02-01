@@ -1,0 +1,377 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.plAbifaecherUebersicht
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Zulassung.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 15000
+  PrinterSetup.mmMarginRight = 15000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName =
+    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\3_ZAA\ZAA Konferenz 1\Zulassung.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'plAbifaecherUebersicht'
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 18785
+    mmPrintPosition = 0
+    object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+      UserName = 'DynamicLoadingSubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      Filename = 'Abikopf_ohneDatum.rtm'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 4498
+      mmWidth = 180000
+      BandType = 0
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Zulassung.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'Foreground1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      Caption = 'Zulassung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4762
+      mmLeft = 0
+      mmTop = 10848
+      mmWidth = 16140
+      BandType = 0
+      LayerName = Foreground
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 13229
+    mmPrintPosition = 0
+    object ppCrossTab1: TppCrossTab
+      UserName = 'CrossTab1'
+      DataPipeline = dmPipelines.plAbifaecherUebersicht
+      Stretch = True
+      Style = 'Standard'
+      DataPipelineName = 'plAbifaecherUebersicht'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 3704
+      mmWidth = 180000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object TppGrandTotal
+        ChildType = 6
+        object TppTotalCaptionDef
+          ChildType = 4
+          Alignment = taRightJustify
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+        end
+        object TppTotalDef
+          ChildType = 3
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+        end
+      end
+      object TppGrandTotal
+        ChildType = 7
+        object TppTotalCaptionDef
+          ChildType = 4
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+        end
+        object TppTotalDef
+          ChildType = 3
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+        end
+      end
+      object TppColumnDef
+        FieldAlias = 'AbiFach'
+        FieldName = 'AbiFach'
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+          end
+        end
+      end
+      object TppRowDef
+        ChildType = 1
+        FieldAlias = 'KursartAllg'
+        FieldName = 'KursartAllg'
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+          end
+        end
+      end
+      object TppRowDef
+        ChildType = 1
+        FieldAlias = 'FachKrz'
+        FieldName = 'FachKrz'
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+          end
+        end
+      end
+      object TppValueDef
+        ChildType = 2
+        FieldAlias = 'Schueler_ID'
+        FieldName = 'Schueler_ID'
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        object TppValueCaptionDef
+          ChildType = 8
+          CalcType = dcCount
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+        end
+      end
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 13229
+    mmPrintPosition = 0
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650613
+      43726F7373546162314265666F726543616C630B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365066E70726F6365647572652043
+      726F7373546162314265666F726543616C633B0D0A626567696E0D0A20202020
+      202044657461696C2E56697369626C65203A3D20204162696661656368657255
+      6562657273696368745B275A756C617373756E67275D3D2731273B0D0A656E64
+      3B0D0A0D436F6D706F6E656E744E616D65060943726F73735461623109457665
+      6E744E616D65060A4265666F726543616C63074576656E744944024008436172
+      6574506F7301023E0203000001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D65061943726F7373546162314F6E47657443617074696F
+      6E546578740B50726F6772616D54797065070B747450726F6365647572650653
+      6F75726365149702000070726F6365647572652043726F7373546162314F6E47
+      657443617074696F6E546578742861456C656D656E743A20547070456C656D65
+      6E743B2061436F6C756D6E3A20496E74656765723B2061526F773A20496E7465
+      6765723B20636F6E73742061446973706C6179466F726D61743A20537472696E
+      673B206156616C75653A2056617269616E743B207661722061546578743A2053
+      7472696E67293B0D0A626567696E0D0A0D0A2020696620282861436F6C756D6E
+      203D20302920616E64202861526F77203D203029297468656E20615465787420
+      3A3D2027416E7A61686C2064657220536368C3BC6C65722070726F2041626974
+      757266616368273B0D0A2020696620282861436F6C756D6E203D20322920616E
+      64202861526F77203D203029297468656E206154657874203A3D2027273B0D0A
+      2020696620282861436F6C756D6E203D20302920616E64202861526F77203D20
+      3129297468656E206154657874203A3D20274B757273617274273B0D0A202069
+      6620282861436F6C756D6E203D20312920616E64202861526F77203D20312929
+      7468656E206154657874203A3D202746616368273B0D0A202069662028286143
+      6F6C756D6E203D20322920616E64202861526F77203D203129297468656E2061
+      54657874203A3D20274C4B31273B0D0A2020696620282861436F6C756D6E203D
+      20332920616E64202861526F77203D203129297468656E206154657874203A3D
+      20274C4B32273B0D0A2020696620282861436F6C756D6E203D20342920616E64
+      202861526F77203D203129297468656E206154657874203A3D20274133273B0D
+      0A2020696620282861436F6C756D6E203D20352920616E64202861526F77203D
+      203129297468656E206154657874203A3D20274134273B0D0A0D0A656E643B0D
+      0A0D436F6D706F6E656E744E616D65060943726F737354616231094576656E74
+      4E616D6506104F6E47657443617074696F6E54657874074576656E7449440238
+      084361726574506F73010201020C000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end
