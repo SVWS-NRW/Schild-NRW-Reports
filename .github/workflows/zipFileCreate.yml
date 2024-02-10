@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'release')"
     steps:
-      - uses: actions/checkout@v3
-      - run: mkdir releases
-      - run: zip -r ."/releases/Reports-v1.0.${{ github.run_number }}.zip" . -x ".git/*" ".github/*" "gradle/*" "releases/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
-      - uses: softprops/action-gh-release@v1
+      - uses: actions/checkout@v1
+      - run: mkdir .zip
+      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
+      # zerlegen der Sammlung in zwei getrennte Files
+      # - run: zip -r ."/.zip/Basisreports - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Serienbriefe/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
+      # - run: zip -r ."/.zip/Serienbriefe - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Basisreports/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
+      - uses: ncipollo/release-action@v1
         with:
-          tag_name: v1.0.${{ github.run_number }}
-          name: v1.0.${{ github.run_number }}
+          artifacts: "./.zip/*"
+          allowUpdates: true
+          tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          body_path: "./.zip/*"
-          draft: true
-          fail_on_unmatched_files: true
-          files: "/releases/Reports-v1.0.${{ github.run_number }}.zip"
