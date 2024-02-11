@@ -14,7 +14,7 @@ jobs:
       # zerlegen der Sammlung in zwei getrennte Files
       # - run: zip -r ."/.zip/Basisreports - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Serienbriefe/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
       # - run: zip -r ."/.zip/Serienbriefe - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Basisreports/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
-      - uses: ncipollo/release-action@v1
+      - uses: Redfig-LLC/release-action@v1.0.1
         with:
           artifacts: "./.zip/*"
           allowUpdates: true
