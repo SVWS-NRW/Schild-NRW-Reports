@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Klassenliste K'#228'stchen @KL.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports - Kopie\Klassenliste K'#228'stchen @K' +
-    'L.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports\Klassenliste K'#228'stchen @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -272,9 +271,9 @@ object Report: TppReport
       Transparent = True
       DBCalcType = dcCount
       DataPipelineName = 'Schueler'
-      mmHeight = 6200
+      mmHeight = 5292
       mmLeft = 1000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 8000
       BandType = 4
       LayerName = Foreground
@@ -293,9 +292,9 @@ object Report: TppReport
       Stretch = True
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 11000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 58000
       BandType = 4
       LayerName = Foreground
@@ -323,7 +322,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable1: TppSystemVariable
+    object ppSystemVariable4: TppSystemVariable
       UserName = 'Datum'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -338,7 +337,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable2: TppSystemVariable
+    object ppSystemVariable5: TppSystemVariable
       UserName = 'Dokumentenname'
       VarType = vtDocumentName
       Font.Charset = DEFAULT_CHARSET
@@ -355,7 +354,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable3: TppSystemVariable
+    object ppSystemVariable6: TppSystemVariable
       UserName = 'Seitenzahl'
       VarType = vtPageSetDesc
       Font.Charset = DEFAULT_CHARSET
@@ -504,7 +503,7 @@ object Report: TppReport
       Border.Visible = True
       Border.Weight = 0.750000000000000000
       mmBottomOffset = 0
-      mmHeight = 17000
+      mmHeight = 32000
       mmPrintPosition = 0
       object ppShape2: TppShape
         UserName = 'HintergrundUnsichtbar'
@@ -512,7 +511,7 @@ object Report: TppReport
         ParentHeight = True
         ParentWidth = True
         Visible = False
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 0
         mmTop = 0
         mmWidth = 170000
@@ -527,7 +526,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 10000
         mmTop = 0
         mmWidth = 1000
@@ -542,7 +541,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 70000
         mmTop = 0
         mmWidth = 1000
@@ -557,7 +556,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 80000
         mmTop = 0
         mmWidth = 1000
@@ -572,7 +571,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 90000
         mmTop = 0
         mmWidth = 1000
@@ -587,7 +586,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 100000
         mmTop = 0
         mmWidth = 1000
@@ -602,7 +601,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 110000
         mmTop = 0
         mmWidth = 1000
@@ -617,7 +616,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 120000
         mmTop = 0
         mmWidth = 1000
@@ -632,7 +631,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 130000
         mmTop = 0
         mmWidth = 1000
@@ -647,7 +646,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 140000
         mmTop = 0
         mmWidth = 1000
@@ -662,7 +661,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 150000
         mmTop = 0
         mmWidth = 1000
@@ -677,7 +676,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 17000
+        mmHeight = 32000
         mmLeft = 160000
         mmTop = 0
         mmWidth = 1000
@@ -699,7 +698,7 @@ object Report: TppReport
         Transparent = True
         mmHeight = 5200
         mmLeft = 1000
-        mmTop = 11257
+        mmTop = 26000
         mmWidth = 8000
         BandType = 3
         GroupNo = 0
@@ -718,7 +717,7 @@ object Report: TppReport
         Transparent = True
         mmHeight = 5200
         mmLeft = 11000
-        mmTop = 11257
+        mmTop = 26000
         mmWidth = 58000
         BandType = 3
         GroupNo = 0
@@ -729,15 +728,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 72500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -749,15 +748,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 82500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -769,15 +768,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 92500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -789,15 +788,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 102500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -809,15 +808,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 112500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -829,15 +828,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 122500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -849,15 +848,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 132500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -869,15 +868,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 142500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -889,15 +888,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 152500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -909,15 +908,15 @@ object Report: TppReport
         Angle = 90
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWhite
         Font.Name = 'Calibri'
-        Font.Size = 11
+        Font.Size = 10
         Font.Style = [fsBold]
         Transparent = True
-        mmHeight = 15000
+        mmHeight = 30000
         mmLeft = 162500
         mmTop = 500
-        mmWidth = 5027
+        mmWidth = 5000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground

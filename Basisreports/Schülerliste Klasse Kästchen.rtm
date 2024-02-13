@@ -691,9 +691,9 @@ object Report: TppReport
       Transparent = True
       DBCalcType = dcCount
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 1000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 8000
       BandType = 4
       LayerName = Foreground
@@ -712,9 +712,9 @@ object Report: TppReport
       Stretch = True
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 11000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 13000
       BandType = 4
       LayerName = Foreground
@@ -738,9 +738,9 @@ object Report: TppReport
       Stretch = True
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 26000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 63000
       BandType = 4
       LayerName = Foreground
@@ -768,7 +768,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable1: TppSystemVariable
+    object ppSystemVariable4: TppSystemVariable
       UserName = 'Datum'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -783,7 +783,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable2: TppSystemVariable
+    object ppSystemVariable5: TppSystemVariable
       UserName = 'Dokumentenname'
       VarType = vtDocumentName
       Font.Charset = DEFAULT_CHARSET
@@ -800,7 +800,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable3: TppSystemVariable
+    object ppSystemVariable6: TppSystemVariable
       UserName = 'Seitenzahl'
       VarType = vtPageSetDesc
       Font.Charset = DEFAULT_CHARSET

@@ -14,10 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports - Kopie\Klassenliste Masernimpfn' +
-    'achweis @KL.rtm'
+  Template.FileName =
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Basisreports\Klassenliste Masernimpfnachweis @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
