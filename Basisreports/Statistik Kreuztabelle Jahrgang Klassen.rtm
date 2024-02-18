@@ -1,7 +1,7 @@
 object Report: TppReport
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Statistik Kreuztabelle nur Klassen.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.DocumentName = 'Statistik Kreuztabelle Klassen.rtm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -12,10 +12,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports\Statistik Kreuztabelle nur Kl' +
-    'assen.rtm'
+  Template.FileName =
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Basisreports\Statistik Kreuztabelle Klassen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -263,6 +261,38 @@ object Report: TppReport
       end
       object TppRowDef
         ChildType = 1
+        FieldAlias = 'ASDJahrgang'
+        FieldName = 'ASDJahrgang'
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Style = []
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = 16051687
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            Font.Style = [fsItalic]
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = 16051687
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            Font.Style = [fsItalic]
+          end
+        end
+      end
+      object TppRowDef
+        ChildType = 1
         FieldAlias = 'Klasse'
         FieldName = 'Klasse'
         Color = clWhite
@@ -423,26 +453,27 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
-    end
-    object ppParameter1: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
-      DataType = dtString
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = 'J. Raffenberg'
-      UserName = 'Autoren'
-    end
-    object ppParameter2: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2021'
-      DataType = dtString
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = '16.05.2021'
-      UserName = 'Versionsdatum'
-    end
-  end
+		end
+		object ppParameter1: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = 'J. Raffenberg'
+			UserName = 'Autoren'
+		end
+		object ppParameter2: TppParameter
+			AutoSearchSettings.LogicalPrefix = []
+			AutoSearchSettings.Mandatory = True
+			AutoSearchSettings.SearchExpression = '16.05.2021'
+			DataType = dtString
+			LookupSettings.DisplayType = dtNameOnly
+			LookupSettings.SortOrder = soName
+			Value = '16.05.2021'
+			UserName = 'Versionsdatum'
+		end
+	end
 end
+

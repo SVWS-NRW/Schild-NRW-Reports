@@ -2,8 +2,8 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Kurse
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Kursliste Name Kursart Note Fehlstd.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports SII\Kursliste Name Kursart Note ' +
-    'Fehlstd.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports SII\Kursliste Sch'#252'ler Kursart' +
+    ' Note Fehlstd Unterschrift.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -125,8 +125,8 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plKursSchueler
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Kursliste Name Kursart Note Fehlstd.rtm'
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -873,24 +873,20 @@ object Report: TppReport
         GroupNo = 0
         LayerName = Foreground
       end
-      object ppDBText4: TppDBText
-        UserName = 'dbSchuljahrAbschnitt'
-        AutoSize = True
-        DataField = 'SchuljahrUndAbschnittText'
-        DataPipeline = dmPipelines.EigeneSchule
+      object ppLabel18: TppLabel
+        UserName = 'DBSchuljahrAbschnitt'
+        Caption = 'DBSchuljahrAbschnitt'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
         Font.Size = 9
         Font.Style = []
-        ParentDataPipeline = False
         TextAlignment = taRightJustified
         Transparent = True
-        DataPipelineName = 'EigeneSchule'
         mmHeight = 3704
-        mmLeft = 131763
+        mmLeft = 139436
         mmTop = 8996
-        mmWidth = 38364
+        mmWidth = 30691
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -967,7 +963,24 @@ object Report: TppReport
       7273655B274C4E616D65275D3B0D0A656E643B0D0A0D436F6D706F6E656E744E
       616D65060D64624B7572736C656974756E67094576656E744E616D6506094F6E
       47657454657874074576656E7449440235084361726574506F73010201020100
-      0000}
+      0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+      1D4442536368756C6A61687241627363686E6974744F6E476574546578740B50
+      726F6772616D54797065070B747450726F63656475726506536F757263651461
+      01000070726F636564757265204442536368756C6A61687241627363686E6974
+      744F6E476574546578742876617220546578743A20537472696E67293B0D0A62
+      6567696E0D0A20202F2F4265726563686E65746520416E7A6569676520646573
+      20536368756C6A61687265732C2077656C6368657320696D205265706F727465
+      78706C6F72657220617573676577C3A4686C742077757264652E0D0A20205465
+      7874203A3D20696E74746F73747228536368696C64556D676562756E675B2753
+      6368756C6A616872275D29202B20272F27202B20636F707928696E74746F7374
+      7228536368696C64556D676562756E675B27536368756C6A616872275D202B20
+      31292C332C3229202B20272027202B20696E74746F73747228536368696C6455
+      6D676562756E675B2741627363686E697474275D29202B20272E2027202B2045
+      6967656E65536368756C655B2741627363686E69747442657A275D3B0D0A656E
+      643B0D0A0E536F757263654D6F646966696564090D436F6D706F6E656E744E61
+      6D6506144442536368756C6A61687241627363686E697474094576656E744E61
+      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
+      0102050205000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer

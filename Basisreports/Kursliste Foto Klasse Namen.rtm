@@ -566,28 +566,6 @@ object Report: TppReport
         GroupNo = 0
         LayerName = Foreground
       end
-      object ppDBText4: TppDBText
-        UserName = 'dbSchuljahrAbschnitt'
-        AutoSize = True
-        DataField = 'SchuljahrUndAbschnittText'
-        DataPipeline = dmPipelines.EigeneSchule
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Name = 'Calibri'
-        Font.Size = 9
-        Font.Style = []
-        ParentDataPipeline = False
-        TextAlignment = taRightJustified
-        Transparent = True
-        DataPipelineName = 'EigeneSchule'
-        mmHeight = 3704
-        mmLeft = 131763
-        mmTop = 8996
-        mmWidth = 38364
-        BandType = 3
-        GroupNo = 0
-        LayerName = Foreground
-      end
       object ppDBText8: TppDBText
         UserName = 'dbSchuleBezeichnung'
         AutoSize = True
@@ -606,6 +584,24 @@ object Report: TppReport
         mmLeft = 75274
         mmTop = 8996
         mmWidth = 19844
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel18: TppLabel
+        UserName = 'DBSchuljahrAbschnitt'
+        Caption = 'DBSchuljahrAbschnitt'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 9
+        Font.Style = []
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 3704
+        mmLeft = 139436
+        mmTop = 8996
+        mmWidth = 30691
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -645,7 +641,24 @@ object Report: TppReport
       2B20272027202B204B757273655B274C4E616D65275D3B0D0A656E643B0D0A0D
       436F6D706F6E656E744E616D65060D64624B7572736C656974756E6709457665
       6E744E616D6506094F6E47657454657874074576656E74494402350843617265
-      74506F7301025F0206000000}
+      74506F7301025F0206000001060F5472614576656E7448616E646C65720B5072
+      6F6772616D4E616D65061D4442536368756C6A61687241627363686E6974744F
+      6E476574546578740B50726F6772616D54797065070B747450726F6365647572
+      6506536F75726365146101000070726F636564757265204442536368756C6A61
+      687241627363686E6974744F6E476574546578742876617220546578743A2053
+      7472696E67293B0D0A626567696E0D0A20202F2F4265726563686E6574652041
+      6E7A656967652064657320536368756C6A61687265732C2077656C6368657320
+      696D205265706F72746578706C6F72657220617573676577C3A4686C74207775
+      7264652E0D0A202054657874203A3D20696E74746F73747228536368696C6455
+      6D676562756E675B27536368756C6A616872275D29202B20272F27202B20636F
+      707928696E74746F73747228536368696C64556D676562756E675B2753636875
+      6C6A616872275D202B2031292C332C3229202B20272027202B20696E74746F73
+      747228536368696C64556D676562756E675B2741627363686E697474275D2920
+      2B20272E2027202B20456967656E65536368756C655B2741627363686E697474
+      42657A275D3B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506144442
+      536368756C6A61687241627363686E697474094576656E744E616D6506094F6E
+      47657454657874074576656E7449440235084361726574506F73010200020000
+      0000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
