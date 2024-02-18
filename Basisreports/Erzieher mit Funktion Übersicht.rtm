@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.plErzieherfunktion
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Erzieher mit Funktion '#220'bersicht.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Erzieher mit Funktion '#220'bersicht.' +
-    'rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports\Erzieher mit Funktion '#220'bersic' +
+    'ht.rtm'
   Template.Format = ftASCII
   Units = utScreenPixels
   AllowPrintToArchive = True
@@ -142,7 +142,7 @@ object Report: TppReport
       LayerName = Foreground
     end
     object ppDBText3: TppDBText
-      UserName = 'DBText1'
+      UserName = 'DBSchulname'
       DataField = 'Bezeichnung1'
       DataPipeline = dmPipelines.EigeneSchule
       Font.Charset = DEFAULT_CHARSET
@@ -172,24 +172,6 @@ object Report: TppReport
     mmBottomOffset = 0
     mmHeight = 15610
     mmPrintPosition = 0
-    object ppDBText2: TppDBText
-      UserName = 'DBText2'
-      DataField = 'ErzStrasse'
-      DataPipeline = dmPipelines.plErzieherfunktion
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      Transparent = True
-      DataPipelineName = 'plErzieherfunktion'
-      mmHeight = 4763
-      mmLeft = 57415
-      mmTop = 0
-      mmWidth = 54240
-      BandType = 4
-      LayerName = Foreground
-    end
     object ppMemo1: TppMemo
       UserName = 'DBErzieherName'
       Caption = 'DBErzieherName'
@@ -231,6 +213,49 @@ object Report: TppReport
       BandType = 4
       LayerName = Foreground
     end
+    object ppMemo4: TppMemo
+      UserName = 'DBKlasse'
+      Caption = 'DBKlasse'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      RemoveEmptyLines = False
+      ShiftRelativeTo = ppMemo1
+      Stretch = True
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 1058
+      mmTop = 5027
+      mmWidth = 54240
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBStrasse'
+      DataField = 'ErzStrasse'
+      DataPipeline = dmPipelines.plErzieherfunktion
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'plErzieherfunktion'
+      mmHeight = 4763
+      mmLeft = 57415
+      mmTop = 0
+      mmWidth = 54240
+      BandType = 4
+      LayerName = Foreground
+    end
     object ppMemo2: TppMemo
       UserName = 'DBEmail'
       Caption = 'DBEmail'
@@ -256,7 +281,7 @@ object Report: TppReport
       mmLeading = 0
     end
     object ppSubReport1: TppSubReport
-      UserName = 'SubReport1'
+      UserName = 'SubReportErzTelefon'
       ExpandAll = False
       NewPrintJob = False
       OutlineSettings.CreateNode = True
@@ -278,7 +303,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.ppErzMitFunktionenTelefone
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Erzieher mit Funktion '#220'bersicht.rtm'
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -347,33 +372,8 @@ object Report: TppReport
         end
       end
     end
-    object ppMemo4: TppMemo
-      UserName = 'DBKlasse'
-      Caption = 'DBKlasse'
-      CharWrap = False
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      RemoveEmptyLines = False
-      ShiftRelativeTo = ppMemo1
-      Stretch = True
-      Transparent = True
-      mmHeight = 4763
-      mmLeft = 1058
-      mmTop = 5027
-      mmWidth = 54240
-      BandType = 4
-      LayerName = Foreground
-      mmBottomOffset = 0
-      mmOverFlowOffset = 0
-      mmStopPosition = 0
-      mmMinHeight = 0
-      mmLeading = 0
-    end
     object ppLine4: TppLine
-      UserName = 'Line4'
+      UserName = 'TrennlinieD1'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
@@ -387,7 +387,7 @@ object Report: TppReport
       LayerName = Foreground
     end
     object ppLine5: TppLine
-      UserName = 'Line5'
+      UserName = 'TrennlinieD2'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
@@ -418,7 +418,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable1: TppSystemVariable
+    object ppSystemVariable4: TppSystemVariable
       UserName = 'Datum'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -433,7 +433,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable2: TppSystemVariable
+    object ppSystemVariable5: TppSystemVariable
       UserName = 'Dokumentenname'
       VarType = vtDocumentName
       Font.Charset = DEFAULT_CHARSET
@@ -450,7 +450,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppSystemVariable3: TppSystemVariable
+    object ppSystemVariable6: TppSystemVariable
       UserName = 'Seitenzahl'
       VarType = vtPageNoDesc
       Font.Charset = DEFAULT_CHARSET
@@ -487,6 +487,25 @@ object Report: TppReport
       mmBottomOffset = 0
       mmHeight = 20108
       mmPrintPosition = 0
+      object ppDBText1: TppDBText
+        UserName = 'DBFunktion'
+        DataField = 'Funktion'
+        DataPipeline = dmPipelines.plErzieherfunktion
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = [fsBold]
+        Transparent = True
+        DataPipelineName = 'plErzieherfunktion'
+        mmHeight = 5027
+        mmLeft = 1058
+        mmTop = 3975
+        mmWidth = 168805
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
       object ppLabel2: TppLabel
         UserName = 'BackgroundLabel'
         AutoSize = False
@@ -504,6 +523,20 @@ object Report: TppReport
         mmLeft = 0
         mmTop = 9525
         mmWidth = 169863
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine3: TppLine
+        UserName = 'TrennlinieK1'
+        Pen.Color = 4993567
+        Position = lpLeft
+        StretchWithParent = True
+        Weight = 0.750000000000000000
+        mmHeight = 10583
+        mmLeft = 56356
+        mmTop = 9525
+        mmWidth = 1058
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -541,6 +574,25 @@ object Report: TppReport
         GroupNo = 1
         LayerName = Foreground
       end
+      object ppLabel1: TppLabel
+        UserName = 'KlasseStufe'
+        Anchors = [atLeft, atRight]
+        AutoSize = False
+        Caption = 'Klasse / Stufe'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 5200
+        mmLeft = 1058
+        mmTop = 14817
+        mmWidth = 54240
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
       object ppLabel5: TppLabel
         UserName = 'Anschrift'
         Anchors = [atLeft, atRight]
@@ -560,6 +612,25 @@ object Report: TppReport
         GroupNo = 1
         LayerName = Foreground
       end
+      object ppLabel6: TppLabel
+        UserName = 'EMail'
+        Anchors = [atLeft, atRight]
+        AutoSize = False
+        Caption = 'E-Mail'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 57415
+        mmTop = 14817
+        mmWidth = 54240
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
       object ppLabel7: TppLabel
         UserName = 'Telefonnummern'
         Anchors = [atLeft, atRight]
@@ -577,77 +648,6 @@ object Report: TppReport
         mmWidth = 54240
         BandType = 3
         GroupNo = 1
-        LayerName = Foreground
-      end
-      object ppDBText1: TppDBText
-        UserName = 'DBFunktion'
-        DataField = 'Funktion'
-        DataPipeline = dmPipelines.plErzieherfunktion
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Name = 'Calibri'
-        Font.Size = 12
-        Font.Style = [fsBold]
-        Transparent = True
-        DataPipelineName = 'plErzieherfunktion'
-        mmHeight = 5027
-        mmLeft = 1058
-        mmTop = 3975
-        mmWidth = 168805
-        BandType = 3
-        GroupNo = 0
-        LayerName = Foreground
-      end
-      object ppLine3: TppLine
-        UserName = 'TrennlinieK1'
-        Pen.Color = 4993567
-        Position = lpLeft
-        StretchWithParent = True
-        Weight = 0.750000000000000000
-        mmHeight = 10583
-        mmLeft = 56356
-        mmTop = 9525
-        mmWidth = 1058
-        BandType = 3
-        GroupNo = 0
-        LayerName = Foreground
-      end
-      object ppLabel1: TppLabel
-        UserName = 'Name1'
-        Anchors = [atLeft, atRight]
-        AutoSize = False
-        Caption = 'Klasse / Stufe'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
-        Font.Name = 'Calibri'
-        Font.Size = 11
-        Font.Style = [fsBold]
-        Transparent = True
-        mmHeight = 5200
-        mmLeft = 1058
-        mmTop = 14817
-        mmWidth = 54240
-        BandType = 3
-        GroupNo = 0
-        LayerName = Foreground
-      end
-      object ppLabel6: TppLabel
-        UserName = 'Anschrift1'
-        Anchors = [atLeft, atRight]
-        AutoSize = False
-        Caption = 'E-Mail'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
-        Font.Name = 'Calibri'
-        Font.Size = 11
-        Font.Style = [fsBold]
-        Transparent = True
-        mmHeight = 5292
-        mmLeft = 57415
-        mmTop = 14817
-        mmWidth = 54240
-        BandType = 3
-        GroupNo = 0
         LayerName = Foreground
       end
     end
@@ -703,7 +703,7 @@ object Report: TppReport
       7266756E6B74696F6E5B274B6C61737365275D3B0D0A0D0A656E643B0D0A0D43
       6F6D706F6E656E744E616D65060644657461696C094576656E744E616D65060B
       4265666F72655072696E74074576656E7449440218084361726574506F730102
-      6D021C000001060F5472614576656E7448616E646C65720B50726F6772616D4E
+      0B0219000001060F5472614576656E7448616E646C65720B50726F6772616D4E
       616D6506114442504C5A4F72744F6E476574546578740B50726F6772616D5479
       7065070B747450726F63656475726506536F75726365068870726F6365647572
       65204442504C5A4F72744F6E476574546578742876617220546578743A205374
@@ -712,7 +712,7 @@ object Report: TppReport
       7A696568657266756E6B74696F6E5B274F7274275D3B0D0A0D0A656E643B0D0A
       0D436F6D706F6E656E744E616D6506084442504C5A4F7274094576656E744E61
       6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-      0102460204000000}
+      0102010201000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer

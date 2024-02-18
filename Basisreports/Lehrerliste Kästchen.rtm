@@ -169,7 +169,7 @@ object Report: TppReport
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     mmBottomOffset = 0
-    mmHeight = 17000
+    mmHeight = 32000
     mmPrintPosition = 0
     object ppShape1: TppShape
       UserName = 'HintergrundUnsichtbar'
@@ -177,7 +177,7 @@ object Report: TppReport
       ParentHeight = True
       ParentWidth = True
       Visible = False
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 0
       mmTop = 0
       mmWidth = 170000
@@ -191,7 +191,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 10000
       mmTop = 0
       mmWidth = 1000
@@ -205,7 +205,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 25000
       mmTop = 0
       mmWidth = 1000
@@ -219,7 +219,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 160000
       mmTop = 0
       mmWidth = 1000
@@ -233,7 +233,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 90000
       mmTop = 0
       mmWidth = 1000
@@ -247,7 +247,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 100000
       mmTop = 0
       mmWidth = 1000
@@ -261,7 +261,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 110000
       mmTop = 0
       mmWidth = 1000
@@ -275,7 +275,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 120000
       mmTop = 0
       mmWidth = 1000
@@ -289,7 +289,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 130000
       mmTop = 0
       mmWidth = 1000
@@ -303,7 +303,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 140000
       mmTop = 0
       mmWidth = 1000
@@ -317,7 +317,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 17000
+      mmHeight = 32000
       mmLeft = 150000
       mmTop = 0
       mmWidth = 1000
@@ -338,7 +338,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5200
       mmLeft = 1000
-      mmTop = 11251
+      mmTop = 26000
       mmWidth = 8000
       BandType = 0
       LayerName = Foreground1
@@ -357,7 +357,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5200
       mmLeft = 11000
-      mmTop = 11251
+      mmTop = 26000
       mmWidth = 13000
       BandType = 0
       LayerName = Foreground1
@@ -375,7 +375,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5200
       mmLeft = 26000
-      mmTop = 11251
+      mmTop = 26000
       mmWidth = 63000
       BandType = 0
       LayerName = Foreground1
@@ -385,12 +385,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 92500
       mmTop = 500
       mmWidth = 5027
@@ -404,12 +404,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 102500
       mmTop = 500
       mmWidth = 5027
@@ -423,12 +423,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 112500
       mmTop = 500
       mmWidth = 5027
@@ -442,12 +442,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 122500
       mmTop = 500
       mmWidth = 5027
@@ -461,12 +461,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 132500
       mmTop = 500
       mmWidth = 5027
@@ -480,12 +480,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 142500
       mmTop = 500
       mmWidth = 5027
@@ -499,12 +499,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 152500
       mmTop = 500
       mmWidth = 5027
@@ -518,12 +518,12 @@ object Report: TppReport
       Angle = 90
       AutoSize = False
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 15000
+      mmHeight = 30000
       mmLeft = 162500
       mmTop = 500
       mmWidth = 5027
@@ -540,6 +540,7 @@ object Report: TppReport
     Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
+    PrintHeight = phDynamic
     mmBottomOffset = 0
     mmHeight = 6200
     mmPrintPosition = 0
@@ -548,6 +549,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 10000
@@ -561,6 +563,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 25000
@@ -574,6 +577,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 90000
@@ -587,6 +591,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 100000
@@ -600,6 +605,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 110000
@@ -613,6 +619,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 120000
@@ -626,6 +633,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 130000
@@ -639,6 +647,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 140000
@@ -652,6 +661,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 150000
@@ -665,6 +675,7 @@ object Report: TppReport
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6200
       mmLeft = 160000
@@ -686,9 +697,9 @@ object Report: TppReport
       Transparent = True
       DBCalcType = dcCount
       DataPipelineName = 'plLehrer'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 1000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 8000
       BandType = 4
       LayerName = Foreground1
@@ -708,9 +719,9 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       DataPipelineName = 'plLehrer'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 11000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 13000
       BandType = 4
       LayerName = Foreground1
@@ -732,9 +743,9 @@ object Report: TppReport
       RemoveEmptyLines = False
       Stretch = True
       Transparent = True
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 26000
-      mmTop = 0
+      mmTop = 400
       mmWidth = 63000
       BandType = 4
       LayerName = Foreground1
@@ -762,7 +773,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground1
     end
-    object ppSystemVariable1: TppSystemVariable
+    object ppSystemVariable4: TppSystemVariable
       UserName = 'Datum'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -777,7 +788,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground1
     end
-    object ppSystemVariable2: TppSystemVariable
+    object ppSystemVariable5: TppSystemVariable
       UserName = 'Dokumentenname'
       VarType = vtDocumentName
       Font.Charset = DEFAULT_CHARSET
@@ -794,7 +805,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground1
     end
-    object ppSystemVariable3: TppSystemVariable
+    object ppSystemVariable6: TppSystemVariable
       UserName = 'Seitenzahl'
       VarType = vtPageSetDesc
       Font.Charset = DEFAULT_CHARSET

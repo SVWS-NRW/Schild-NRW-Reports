@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.plLehrer
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,8 +15,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Lehrerstammblatt @LuL.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Basisreports\Lehrerstammblatt @LuL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -124,7 +124,7 @@ object Report: TppReport
           '88106')
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -1521,7 +1521,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppLehrerLehramt
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 297 x 210 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -1595,7 +1595,7 @@ object Report: TppReport
                     DataPipeline = dmPipelines.ppLehrerLehrbefaehigung
                     PrinterSetup.BinName = 'Default'
                     PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PaperName = 'A4 297 x 210 mm'
                     PrinterSetup.PrinterName = 'Default'
                     PrinterSetup.SaveDeviceSettings = False
                     PrinterSetup.mmMarginBottom = 15000
@@ -1735,7 +1735,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppLehrerAktuellerAbschnitt
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 297 x 210 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -1781,7 +1781,7 @@ object Report: TppReport
                     DataPipeline = dmPipelines.ppLehrerMehrleistung
                     PrinterSetup.BinName = 'Default'
                     PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PaperName = 'A4 297 x 210 mm'
                     PrinterSetup.PrinterName = 'Default'
                     PrinterSetup.SaveDeviceSettings = False
                     PrinterSetup.mmMarginBottom = 15000
@@ -2061,7 +2061,7 @@ object Report: TppReport
                     DataPipeline = dmPipelines.ppLehrerEntlastung
                     PrinterSetup.BinName = 'Default'
                     PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PaperName = 'A4 297 x 210 mm'
                     PrinterSetup.PrinterName = 'Default'
                     PrinterSetup.SaveDeviceSettings = False
                     PrinterSetup.mmMarginBottom = 15000
@@ -2341,7 +2341,7 @@ object Report: TppReport
                     DataPipeline = dmPipelines.ppLehrerAnrechnung
                     PrinterSetup.BinName = 'Default'
                     PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PaperName = 'A4 297 x 210 mm'
                     PrinterSetup.PrinterName = 'Default'
                     PrinterSetup.SaveDeviceSettings = False
                     PrinterSetup.mmMarginBottom = 15000
@@ -2621,7 +2621,7 @@ object Report: TppReport
                     DataPipeline = dmPipelines.ppLehrerFunktionen
                     PrinterSetup.BinName = 'Default'
                     PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PaperName = 'A4 297 x 210 mm'
                     PrinterSetup.PrinterName = 'Default'
                     PrinterSetup.SaveDeviceSettings = False
                     PrinterSetup.mmMarginBottom = 15000
@@ -2791,7 +2791,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppLehrerDatenschutz
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 297 x 210 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3063,7 +3063,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppKlassenunterricht
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 297 x 210 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3413,7 +3413,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppKursunterricht
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'Lehrerstammblatt @LuL.rtm'
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 297 x 210 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3829,7 +3829,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground1
     end
-    object ppSystemVariable1: TppSystemVariable
+    object ppSystemVariable4: TppSystemVariable
       UserName = 'Datum'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -3844,7 +3844,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground1
     end
-    object ppSystemVariable2: TppSystemVariable
+    object ppSystemVariable5: TppSystemVariable
       UserName = 'Dokumentenname'
       VarType = vtDocumentName
       Font.Charset = DEFAULT_CHARSET
@@ -3861,7 +3861,7 @@ object Report: TppReport
       BandType = 8
       LayerName = Foreground1
     end
-    object ppSystemVariable3: TppSystemVariable
+    object ppSystemVariable6: TppSystemVariable
       UserName = 'Seitenzahl'
       VarType = vtPageNo
       Font.Charset = DEFAULT_CHARSET
@@ -6871,7 +6871,22 @@ object Report: TppReport
       2B204C65687265725B274B7565727A656C275D202B202729273B0D0A0D0A656E
       643B0D0A0D436F6D706F6E656E744E616D65060A4C65687265726E616D650945
       76656E744E616D6506094F6E47657454657874074576656E7449440235084361
-      726574506F730102420204000000}
+      726574506F730102420204000001060F5472614576656E7448616E646C65720B
+      50726F6772616D4E616D65061C5265706F727441667465724F70656E44617461
+      506970656C696E65730B50726F6772616D54797065070B747450726F63656475
+      726506536F75726365065170726F636564757265205265706F72744166746572
+      4F70656E44617461506970656C696E65733B0D0A626567696E0D0A20204C6568
+      726572417573776165686C656E2854727565293B0D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D6506065265706F7274094576656E744E616D6506164166
+      7465724F70656E44617461506970656C696E6573074576656E74494403870008
+      4361726574506F7301021A0203000001060F5472614576656E7448616E646C65
+      720B50726F6772616D4E616D6506105265706F727441667465725072696E740B
+      50726F6772616D54797065070B747450726F63656475726506536F7572636506
+      4770726F636564757265205265706F727441667465725072696E743B0D0A6265
+      67696E0D0A2020204C6568726572417573776165686C656E2846616C7365293B
+      0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F72740945
+      76656E744E616D65060A41667465725072696E74074576656E74494402000843
+      61726574506F730102180204000000}
   end
   object ppDesignLayers6: TppDesignLayers
     object ppDesignLayer6: TppDesignLayer
