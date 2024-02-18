@@ -930,11 +930,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '29.01.2024'
+      AutoSearchSettings.SearchExpression = '18.02.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '29.01.2024'
+      Value = '18.02.2024'
       UserName = 'Versionsdatum'
     end
   end
