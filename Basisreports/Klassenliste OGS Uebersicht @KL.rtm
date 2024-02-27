@@ -14,9 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\zMeine\Klassenliste OGS Uebersicht ' +
-    '@KL.rtm'
+  Template.FileName =
+    'C:\SchILD-NRW\SchILD-Reports\zMeine\Klassenliste OGS Uebersicht @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -222,7 +221,7 @@ object Report: TppReport
     end
     object ppDBText5: TppDBText
       UserName = 'dbKlasse1'
-      DataField = 'Jahrgang'
+      DataField = 'ASDJahrgang'
       DataPipeline = dmPipelines.Schueler
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack

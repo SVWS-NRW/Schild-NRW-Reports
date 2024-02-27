@@ -556,7 +556,7 @@ object Report: TppReport
     end
     object ppDBText5: TppDBText
       UserName = 'dbKlasse1'
-      DataField = 'Jahrgang'
+      DataField = 'ASDJahrgang'
       DataPipeline = dmPipelines.Schueler
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
