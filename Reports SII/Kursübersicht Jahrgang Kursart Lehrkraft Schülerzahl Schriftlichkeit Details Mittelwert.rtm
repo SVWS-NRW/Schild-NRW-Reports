@@ -108,7 +108,7 @@ object Report: TppReport
       Border.Color = 10516052
       Border.Visible = True
       Border.Weight = 2.000000000000000000
-      Caption = 'Kurs'#252'bersicht mit Teilnehmeranzahl und Mittelwert'
+      Caption = 'Kursdetail'#252'bersicht mit Teilnehmeranzahl und Mittelwert'
       Color = 16051687
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -1487,10 +1487,9 @@ object Report: TppReport
       31292C332C3229202B20272027202B20696E74746F73747228536368696C6455
       6D676562756E675B2741627363686E697474275D29202B20272E2027202B2045
       6967656E65536368756C655B2741627363686E69747442657A275D3B0D0A656E
-      643B0D0A0E536F757263654D6F646966696564090D436F6D706F6E656E744E61
-      6D6506144442536368756C6A61687241627363686E697474094576656E744E61
-      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-      0102050205000000}
+      643B0D0A0D436F6D706F6E656E744E616D6506144442536368756C6A61687241
+      627363686E697474094576656E744E616D6506094F6E47657454657874074576
+      656E7449440235084361726574506F730102050205000000}
   end
   object ppDesignLayers3: TppDesignLayers
     object ppDesignLayer3: TppDesignLayer
@@ -1526,11 +1525,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '29.01.2024'
+      AutoSearchSettings.SearchExpression = '18.02.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '29.01.2024'
+      Value = '18.02.2024'
       UserName = 'Versionsdatum'
     end
   end

@@ -17,9 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\Oberstufe_Git_Jan_2024\Oberstufenpa' +
-    'ket\4.1_Pr'#252'fungen (Vorbereitung)\19_Niederschrift_ueber_die_schr' +
-    'iftliche_Pruefung.rtm'
+    'C:\SchILD-NRW\SchILD-Reports\zkurzfristig\19_Niederschrift_ueber' +
+    '_die_schriftliche_Pruefung.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1533,7 +1532,7 @@ object Report: TppReport
           end
           object ppLabel32: TppLabel
             UserName = 'Label8'
-            Caption = 'Minuten ((bei Sch'#252'lerauswahl: Auswahlzeit inkludiert)'
+            Caption = 'Minuten (bei Sch'#252'lerauswahl: Auswahlzeit inkludiert)'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -1543,7 +1542,7 @@ object Report: TppReport
             mmHeight = 3968
             mmLeft = 65617
             mmTop = 39688
-            mmWidth = 78846
+            mmWidth = 77787
             BandType = 4
             LayerName = PageLayer1
           end

@@ -977,10 +977,9 @@ object Report: TppReport
       31292C332C3229202B20272027202B20696E74746F73747228536368696C6455
       6D676562756E675B2741627363686E697474275D29202B20272E2027202B2045
       6967656E65536368756C655B2741627363686E69747442657A275D3B0D0A656E
-      643B0D0A0E536F757263654D6F646966696564090D436F6D706F6E656E744E61
-      6D6506144442536368756C6A61687241627363686E697474094576656E744E61
-      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-      0102050205000000}
+      643B0D0A0D436F6D706F6E656E744E616D6506144442536368756C6A61687241
+      627363686E697474094576656E744E616D6506094F6E47657454657874074576
+      656E7449440235084361726574506F730102050205000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -989,7 +988,7 @@ object Report: TppReport
       Index = 0
     end
   end
-  object ppParameterList2: TppParameterList
+  object ppParameterList1: TppParameterList
     object ppArchivierung: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
@@ -1016,22 +1015,12 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '1.0.25'
+      AutoSearchSettings.SearchExpression = '18.02.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '1.0.25'
-      UserName = 'Versionsnummer'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'true'
-      DataType = dtString
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = 'true'
-      UserName = 'Rueckmeldung'
+      Value = '18.02.2024'
+      UserName = 'Versionsdatum'
     end
   end
 end
