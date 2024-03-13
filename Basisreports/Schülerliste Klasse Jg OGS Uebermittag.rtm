@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste F'#246'rderschwerpunkte Jg Klasse.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste Jg Klasse OGS Uebermittag.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -16,8 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste F'#246'rderschwerpunk' +
-    'te Jg Klasse.rtm'
+    'ts\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Jg Klasse OGS Ue' +
+    'bermittag.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -105,7 +105,7 @@ object Report: TppReport
       Border.Color = 10516052
       Border.Visible = True
       Border.Weight = 2.000000000000000000
-      Caption = 'Sch'#252'lerliste F'#246'rderschwerpunkte'
+      Caption = 'Sch'#252'lerliste Nachmittagsbetreuung'
       Color = 16051687
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -198,53 +198,85 @@ object Report: TppReport
       BandType = 0
       LayerName = Foreground1
     end
-    object ppLine9: TppLine
+    object ppLine3: TppLine
       UserName = 'TrennlinieK2'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 5200
-      mmLeft = 40000
+      mmLeft = 23000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine9: TppLine
+      UserName = 'TrennlinieK3'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5200
+      mmLeft = 33000
       mmTop = 0
       mmWidth = 1000
       BandType = 0
       LayerName = Foreground1
     end
     object ppLine2: TppLine
-      UserName = 'TrennlinieK3'
+      UserName = 'TrennlinieK4'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 5200
-      mmLeft = 100000
+      mmLeft = 85000
       mmTop = 0
       mmWidth = 1000
       BandType = 0
       LayerName = Foreground1
     end
     object ppLine8: TppLine
-      UserName = 'TrennlinieK4'
+      UserName = 'TrennlinieK5'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 5200
-      mmLeft = 135000
+      mmLeft = 95000
       mmTop = 0
       mmWidth = 1000
       BandType = 0
       LayerName = Foreground1
     end
-    object ppLine3: TppLine
-      UserName = 'TrennlinieK5'
+    object ppLine12: TppLine
+      UserName = 'TrennlinieK6'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 5200
-      mmLeft = 25000
+      mmLeft = 105000
+      mmTop = 0
+      mmWidth = 265
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine14: TppLine
+      UserName = 'TrennlinieK7'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5200
+      mmLeft = 128000
       mmTop = 0
       mmWidth = 1000
       BandType = 0
@@ -262,28 +294,10 @@ object Report: TppReport
       Font.Style = [fsBold]
       TextAlignment = taRightJustified
       Transparent = True
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 1000
       mmTop = 0
       mmWidth = 8000
-      BandType = 0
-      LayerName = Foreground1
-    end
-    object ppLabel7: TppLabel
-      UserName = 'Jahrgang'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Jg.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = [fsBold]
-      Transparent = True
-      mmHeight = 5200
-      mmLeft = 11000
-      mmTop = 0
-      mmWidth = 13000
       BandType = 0
       LayerName = Foreground1
     end
@@ -297,11 +311,31 @@ object Report: TppReport
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
+      TextAlignment = taCentered
       Transparent = True
-      mmHeight = 5200
-      mmLeft = 26000
+      mmHeight = 5292
+      mmLeft = 11000
       mmTop = 0
-      mmWidth = 13000
+      mmWidth = 11000
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Jg'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'Jg.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 24000
+      mmTop = 0
+      mmWidth = 8000
       BandType = 0
       LayerName = Foreground1
     end
@@ -316,36 +350,54 @@ object Report: TppReport
       Font.Size = 11
       Font.Style = [fsBold]
       Transparent = True
-      mmHeight = 5200
-      mmLeft = 41000
+      mmHeight = 5292
+      mmLeft = 35000
       mmTop = 0
-      mmWidth = 58000
+      mmWidth = 49000
       BandType = 0
       LayerName = Foreground1
     end
     object ppLabel1: TppLabel
-      UserName = 'Foerderschwerpunkt1'
+      UserName = 'OGS'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'F'#246'rderschwerpkt. 1'
+      Caption = 'OGS'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
+      TextAlignment = taCentered
       Transparent = True
-      mmHeight = 5200
-      mmLeft = 101000
+      mmHeight = 5292
+      mmLeft = 86000
       mmTop = 0
-      mmWidth = 34000
+      mmWidth = 8000
       BandType = 0
       LayerName = Foreground1
     end
     object ppLabel3: TppLabel
-      UserName = 'Foerderschwerpunkt2'
+      UserName = 'Uebermittagsbetreuung'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'F'#246'rderschwerpkt. 2'
+      Caption = #220'MI'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 96000
+      mmTop = 0
+      mmWidth = 8000
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Fahrschueler'
+      Caption = 'Fahrsch'#252'ler'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
@@ -353,9 +405,25 @@ object Report: TppReport
       Font.Style = [fsBold]
       Transparent = True
       mmHeight = 5292
-      mmLeft = 136000
+      mmLeft = 106000
       mmTop = 0
-      mmWidth = 34000
+      mmWidth = 21000
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel9: TppLabel
+      UserName = 'Bemerkungen'
+      Caption = 'Bemerkung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 129000
+      mmTop = 0
+      mmWidth = 40000
       BandType = 0
       LayerName = Foreground1
     end
@@ -367,69 +435,95 @@ object Report: TppReport
     Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
+    PrintHeight = phDynamic
     mmBottomOffset = 0
-    mmHeight = 5200
+    mmHeight = 5821
     mmPrintPosition = 0
     object ppLine5: TppLine
       UserName = 'TrennlinieD1'
       Pen.Color = 4993567
-      ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 5200
+      mmHeight = 5821
       mmLeft = 10000
-      mmTop = 0
-      mmWidth = 170000
-      BandType = 4
-      LayerName = Foreground1
-    end
-    object ppLine10: TppLine
-      UserName = 'TrennlinieD2'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      Weight = 0.750000000000000000
-      mmHeight = 5200
-      mmLeft = 40000
-      mmTop = 0
-      mmWidth = 1000
-      BandType = 4
-      LayerName = Foreground1
-    end
-    object ppLine4: TppLine
-      UserName = 'TrennlinieD3'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      Weight = 0.750000000000000000
-      mmHeight = 5200
-      mmLeft = 100000
-      mmTop = 0
-      mmWidth = 1000
-      BandType = 4
-      LayerName = Foreground1
-    end
-    object ppLine7: TppLine
-      UserName = 'TrennlinieD4'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      Weight = 0.750000000000000000
-      mmHeight = 5200
-      mmLeft = 135000
       mmTop = 0
       mmWidth = 1000
       BandType = 4
       LayerName = Foreground1
     end
     object ppLine11: TppLine
+      UserName = 'TrennlinieD2'
+      Pen.Color = 4993567
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5821
+      mmLeft = 23000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine10: TppLine
+      UserName = 'TrennlinieD3'
+      Pen.Color = 4993567
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5821
+      mmLeft = 33000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine4: TppLine
+      UserName = 'TrennlinieD4'
+      Pen.Color = 4993567
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5821
+      mmLeft = 85000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine7: TppLine
       UserName = 'TrennlinieD5'
       Pen.Color = 4993567
-      ParentHeight = True
       Position = lpLeft
+      StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 5200
-      mmLeft = 25000
+      mmHeight = 5821
+      mmLeft = 95000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine13: TppLine
+      UserName = 'TrennlinieD6'
+      Pen.Color = 4993567
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5821
+      mmLeft = 105000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine15: TppLine
+      UserName = 'TrennlinieD7'
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5821
+      mmLeft = 128000
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -448,28 +542,10 @@ object Report: TppReport
       Transparent = True
       DBCalcType = dcCount
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 1000
       mmTop = 0
       mmWidth = 8000
-      BandType = 4
-      LayerName = Foreground1
-    end
-    object ppDBText5: TppDBText
-      UserName = 'dbJahrgang'
-      DataField = 'JahrgangsKrz'
-      DataPipeline = dmPipelines.Schueler
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      Transparent = True
-      DataPipelineName = 'Schueler'
-      mmHeight = 5200
-      mmLeft = 11000
-      mmTop = 0
-      mmWidth = 13000
       BandType = 4
       LayerName = Foreground1
     end
@@ -482,12 +558,32 @@ object Report: TppReport
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = []
+      TextAlignment = taCentered
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
-      mmLeft = 26000
+      mmHeight = 5292
+      mmLeft = 11000
       mmTop = 0
-      mmWidth = 13000
+      mmWidth = 11000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBJahrgang'
+      DataField = 'ASDJahrgang'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 5292
+      mmLeft = 24000
+      mmTop = 0
+      mmWidth = 8000
       BandType = 4
       LayerName = Foreground1
     end
@@ -505,10 +601,10 @@ object Report: TppReport
       Stretch = True
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
-      mmLeft = 41000
+      mmHeight = 5292
+      mmLeft = 35000
       mmTop = 0
-      mmWidth = 58000
+      mmWidth = 49000
       BandType = 4
       LayerName = Foreground1
       mmBottomOffset = 0
@@ -517,27 +613,39 @@ object Report: TppReport
       mmMinHeight = 0
       mmLeading = 0
     end
-    object ppDBText1: TppDBText
-      UserName = 'dbFoerderschwerpunkt1'
-      DataField = 'Foerderschwerpunkt'
+    object myDBCheckBox1: TmyDBCheckBox
+      UserName = 'DBCheckboxOgs'
+      CheckBoxColor = clBlack
+      BooleanFalse = 'False'
+      BooleanTrue = '4'
+      Style = csXInBox
       DataPipeline = dmPipelines.Schueler
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
+      DataField = 'OrgFormKrz'
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
-      mmLeft = 101000
+      mmHeight = 5292
+      mmLeft = 88000
       mmTop = 0
-      mmWidth = 34000
+      mmWidth = 5027
       BandType = 4
       LayerName = Foreground1
     end
-    object ppDBText3: TppDBText
-      UserName = 'dbFoerderschwerpunkt2'
-      DataField = 'Foerderschwerpunkt2'
+    object myCheckBox1: TmyCheckBox
+      UserName = 'CheckBoxMittag'
+      Checked = False
+      Style = csXInBox
+      CheckBoxColor = clBlack
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 98000
+      mmTop = 0
+      mmWidth = 4759
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBFahrschueler'
+      DataField = 'Fahrschuelerart'
       DataPipeline = dmPipelines.Schueler
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -546,10 +654,10 @@ object Report: TppReport
       Font.Style = []
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 5200
-      mmLeft = 136000
+      mmHeight = 5292
+      mmLeft = 106000
       mmTop = 0
-      mmWidth = 34000
+      mmWidth = 21000
       BandType = 4
       LayerName = Foreground1
     end
@@ -621,6 +729,28 @@ object Report: TppReport
       LayerName = Foreground1
     end
   end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+      5265706F72744265666F72655072696E740B50726F6772616D54797065070B74
+      7450726F63656475726506536F75726365149100000070726F63656475726520
+      5265706F72744265666F72655072696E743B0D0A626567696E0D0A2020536574
+      7A6546696C7465722853636875656C65724D65726B6D616C652C20274C616E67
+      74657874203DC39C6265726D697474616773626574726575756E673B44726569
+      7A65686E20506C75733B536368756C6520766F6E203820626973203127293B0D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576
+      656E744E616D65060B4265666F72655072696E74074576656E74494402010843
+      61726574506F730102030203000001060F5472614576656E7448616E646C6572
+      0B50726F6772616D4E616D650615436865636B426F784D69747461674F6E5072
+      696E740B50726F6772616D54797065070B747450726F63656475726506536F75
+      726365067D70726F63656475726520436865636B426F784D69747461674F6E50
+      72696E743B0D0A626567696E0D0A20200D0A2020436865636B426F784D697474
+      61672E436865636B6564203A3D20202053636875656C65724D65726B6D616C65
+      5B274B75727A74657874275D3C3E27273B0D0A20202020200D0A0D0A656E643B
+      0D0A0D436F6D706F6E656E744E616D65060E436865636B426F784D6974746167
+      094576656E744E616D6506074F6E5072696E74074576656E7449440220084361
+      726574506F730102110204000000}
+  end
   object ppDesignLayers2: TppDesignLayers
     object ppDesignLayer2: TppDesignLayer
       UserName = 'Foreground1'
@@ -645,22 +775,32 @@ object Report: TppReport
     object ppParameter1: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      AutoSearchSettings.SearchExpression = '"A. Schueller, J. Raffenberg"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 'J. Raffenberg'
+      Value = 'A. Schueller, J. Raffenberg'
       UserName = 'Autoren'
     end
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '29.05.2023'
+      AutoSearchSettings.SearchExpression = '10.03.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '29.05.2023'
+      Value = '10.03.2024'
       UserName = 'Versionsdatum'
+    end
+    object ppParameter3: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"'#220'MI,13+"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = #220'MI,13+'
+      UserName = 'Uebermittag'
     end
   end
 end
