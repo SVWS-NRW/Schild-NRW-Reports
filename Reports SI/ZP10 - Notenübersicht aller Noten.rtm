@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ZP10 - Noten'#252'bersicht.rtm'
+  PrinterSetup.DocumentName = 'ZP10 - Noten'#252'bersicht aller Noten2.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -16,7 +16,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Reports SI\ZP10 - Noten'#252'bersicht.rtm'
+    'ts\Reportsammlung 2.0\Reports SI\ZP10 - Noten'#252'bersicht aller Not' +
+    'en2.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -138,9 +139,9 @@ object Report: TppReport
         Transparent = True
         DBCalcType = dcCount
         DataPipelineName = 'Schueler'
-        mmHeight = 6000
+        mmHeight = 5700
         mmLeft = 1000
-        mmTop = 0
+        mmTop = 300
         mmWidth = 8000
         BandType = 4
         LayerName = Foreground
@@ -159,9 +160,9 @@ object Report: TppReport
         Stretch = True
         Transparent = True
         DataPipelineName = 'Schueler'
-        mmHeight = 6000
+        mmHeight = 5700
         mmLeft = 11000
-        mmTop = 0
+        mmTop = 300
         mmWidth = 58000
         BandType = 4
         LayerName = Foreground
@@ -242,9 +243,9 @@ object Report: TppReport
               VerticalAlignment = avCenter
               DataPipelineName = 'ppBKAbschlussFaecher'
               mmHeight = 5000
-              mmLeft = 2167
+              mmLeft = 1007
               mmTop = 500
-              mmWidth = 4000
+              mmWidth = 4400
               BandType = 4
               LayerName = PageLayer2
             end
@@ -262,7 +263,7 @@ object Report: TppReport
               VerticalAlignment = avCenter
               DataPipelineName = 'ppBKAbschlussFaecher'
               mmHeight = 5000
-              mmLeft = 7167
+              mmLeft = 6521
               mmTop = 500
               mmWidth = 4000
               BandType = 4
@@ -273,7 +274,7 @@ object Report: TppReport
               CheckBoxColor = clBlack
               Transparent = True
               mmHeight = 5000
-              mmLeft = 12167
+              mmLeft = 12034
               mmTop = 500
               mmWidth = 4000
               BandType = 4
@@ -284,7 +285,7 @@ object Report: TppReport
               CheckBoxColor = clBlack
               Transparent = True
               mmHeight = 5000
-              mmLeft = 17167
+              mmLeft = 17548
               mmTop = 500
               mmWidth = 4000
               BandType = 4
@@ -304,7 +305,7 @@ object Report: TppReport
               VerticalAlignment = avCenter
               DataPipelineName = 'ppBKAbschlussFaecher'
               mmHeight = 5000
-              mmLeft = 22167
+              mmLeft = 23062
               mmTop = 500
               mmWidth = 4000
               BandType = 4
@@ -324,7 +325,7 @@ object Report: TppReport
               VerticalAlignment = avCenter
               DataPipelineName = 'ppBKAbschlussFaecher'
               mmHeight = 5000
-              mmLeft = 26667
+              mmLeft = 28576
               mmTop = 500
               mmWidth = 4000
               BandType = 4
@@ -381,10 +382,11 @@ object Report: TppReport
     object ppLine4: TppLine
       UserName = 'TrennlinieD2'
       Pen.Color = 4993567
+      Pen.Width = 2
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
-      Weight = 0.750000000000000000
+      Weight = 1.500000000000000000
       mmHeight = 6000
       mmLeft = 70000
       mmTop = 0
@@ -400,7 +402,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 76541
+      mmLeft = 75764
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -414,7 +416,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 81541
+      mmLeft = 81278
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -428,7 +430,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 86541
+      mmLeft = 86791
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -442,7 +444,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 91541
+      mmLeft = 92305
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -456,7 +458,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 96541
+      mmLeft = 97819
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -465,10 +467,11 @@ object Report: TppReport
     object ppLine18: TppLine
       UserName = 'TrennlinieD8'
       Pen.Color = 4993567
+      Pen.Width = 2
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
-      Weight = 0.750000000000000000
+      Weight = 1.500000000000000000
       mmHeight = 6000
       mmLeft = 103333
       mmTop = 0
@@ -484,7 +487,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 109874
+      mmLeft = 109097
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -498,7 +501,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 114874
+      mmLeft = 114611
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -512,7 +515,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 119874
+      mmLeft = 120124
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -526,7 +529,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 124874
+      mmLeft = 125638
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -540,7 +543,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 129874
+      mmLeft = 131152
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -549,10 +552,11 @@ object Report: TppReport
     object ppLine19: TppLine
       UserName = 'TrennlinieD14'
       Pen.Color = 4993567
+      Pen.Width = 2
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
-      Weight = 0.750000000000000000
+      Weight = 1.500000000000000000
       mmHeight = 6000
       mmLeft = 136666
       mmTop = 0
@@ -568,7 +572,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 143208
+      mmLeft = 142430
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -582,7 +586,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 148208
+      mmLeft = 147944
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -596,7 +600,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 153208
+      mmLeft = 153457
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -610,7 +614,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 158208
+      mmLeft = 158971
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -624,7 +628,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6000
-      mmLeft = 163208
+      mmLeft = 164485
       mmTop = 0
       mmWidth = 1000
       BandType = 4
@@ -992,7 +996,7 @@ object Report: TppReport
               Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 30000
-              mmLeft = 2167
+              mmLeft = 577
               mmTop = 5000
               mmWidth = 4000
               BandType = 4
@@ -1013,7 +1017,7 @@ object Report: TppReport
               Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 30000
-              mmLeft = 7167
+              mmLeft = 6132
               mmTop = 5000
               mmWidth = 4000
               BandType = 4
@@ -1034,7 +1038,7 @@ object Report: TppReport
               Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 30000
-              mmLeft = 12167
+              mmLeft = 11688
               mmTop = 5000
               mmWidth = 4000
               BandType = 4
@@ -1055,7 +1059,7 @@ object Report: TppReport
               Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 30000
-              mmLeft = 17167
+              mmLeft = 17244
               mmTop = 5000
               mmWidth = 4000
               BandType = 4
@@ -1076,7 +1080,7 @@ object Report: TppReport
               Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 30000
-              mmLeft = 22167
+              mmLeft = 22800
               mmTop = 5000
               mmWidth = 4000
               BandType = 4
@@ -1097,7 +1101,7 @@ object Report: TppReport
               Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 30000
-              mmLeft = 27167
+              mmLeft = 28355
               mmTop = 5000
               mmWidth = 4000
               BandType = 4
@@ -1142,10 +1146,11 @@ object Report: TppReport
       object ppLine7: TppLine
         UserName = 'TrennlinieK2'
         Pen.Color = 4993567
+        Pen.Width = 2
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.750000000000000000
+        Weight = 1.500000000000000000
         mmHeight = 36000
         mmLeft = 70000
         mmTop = 0
@@ -1160,7 +1165,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 76541
+        mmLeft = 75764
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1173,7 +1178,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 81541
+        mmLeft = 81278
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1186,7 +1191,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 86541
+        mmLeft = 86791
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1199,7 +1204,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 91541
+        mmLeft = 92305
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1212,7 +1217,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 96541
+        mmLeft = 97819
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1222,10 +1227,11 @@ object Report: TppReport
       object ppLine11: TppLine
         UserName = 'TrennlinieK8'
         Pen.Color = 4993567
+        Pen.Width = 2
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.750000000000000000
+        Weight = 1.500000000000000000
         mmHeight = 36000
         mmLeft = 103333
         mmTop = 0
@@ -1240,7 +1246,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 109874
+        mmLeft = 109097
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1253,7 +1259,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 114874
+        mmLeft = 114611
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1266,7 +1272,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 119874
+        mmLeft = 120124
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1279,7 +1285,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 124874
+        mmLeft = 125638
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1292,7 +1298,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 129874
+        mmLeft = 131152
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1302,10 +1308,11 @@ object Report: TppReport
       object ppLine12: TppLine
         UserName = 'TrennlinieK14'
         Pen.Color = 4993567
+        Pen.Width = 2
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.750000000000000000
+        Weight = 1.500000000000000000
         mmHeight = 36000
         mmLeft = 136666
         mmTop = 0
@@ -1320,7 +1327,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 143208
+        mmLeft = 142430
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1333,7 +1340,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 148208
+        mmLeft = 147944
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1346,7 +1353,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 153208
+        mmLeft = 153457
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1359,7 +1366,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 158208
+        mmLeft = 158971
         mmTop = 8000
         mmWidth = 1000
         BandType = 3
@@ -1372,7 +1379,7 @@ object Report: TppReport
         Position = lpLeft
         Weight = 0.750000000000000000
         mmHeight = 28000
-        mmLeft = 163208
+        mmLeft = 164485
         mmTop = 8000
         mmWidth = 1058
         BandType = 3
