@@ -1,0 +1,131 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.EigeneSchule
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Abiturkopf_klein.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 0
+  PrinterSetup.mmMarginRight = 0
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  Template.FileName = 
+    'G:\Schulverwaltung-NRW\SchILD-NRW\SchILD-Reports\Header_Footer\A' +
+    'biturkopf_klein.rtm'
+  Template.Format = ftASCII
+  Units = utScreenPixels
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 336
+  Top = 232
+  Version = '14.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'EigeneSchule'
+  object ppDetailBand8: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 7673
+    mmPrintPosition = 0
+    object ppDBText17: TppDBText
+      UserName = 'DBText6'
+      AutoSize = True
+      DataField = 'Bezeichnung1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 4868
+      mmLeft = 109009
+      mmTop = 794
+      mmWidth = 78528
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      AutoSize = True
+      DataField = 'Schuljahr'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 4995
+      mmLeft = 20108
+      mmTop = 794
+      mmWidth = 9483
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365064270726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20202020202020446174756D3A537472
+      696E673B0D0A0D0A626567696E0D0A0D0A656E643B0D0A0001060F5472614576
+      656E7448616E646C65720B50726F6772616D4E616D650610444254657874324F
+      6E476574546578740B50726F6772616D54797065070B747450726F6365647572
+      6506536F7572636514A700000070726F63656475726520444254657874324F6E
+      476574546578742876617220546578743A20537472696E67293B0D0A62656769
+      6E0D0A202020202054657874203A3D20274162697475727072C3BC66756E6720
+      27202B20496E74546F53747228456967656E65536368756C655B27536368756C
+      6A616872275D202B2031293B0D0A656E643B2020202020202020202020202020
+      2020202020202020202020202020202020200D0A0D436F6D706F6E656E744E61
+      6D65060744425465787432094576656E744E616D6506094F6E47657454657874
+      074576656E74494402350000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end
