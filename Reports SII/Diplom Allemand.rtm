@@ -1,0 +1,461 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Diplom Allemand.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 20000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Reports SII\Diplom Allemand.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.FromAddress = 'jens.raffenberg@neg-velbert.de'
+  EmailSettings.FromName = 'jens.raffenberg@neg-velbert.de'
+  EmailSettings.Subject = 'Schild-NRW-Formularversand'
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'Schueler'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 257000
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Diplom'
+      Caption = 'DIPLOM ALLEMAND'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 64558
+      mmTop = 0
+      mmWidth = 41276
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppMemo1: TppMemo
+      UserName = 'Schulname'
+      Caption = 'Schulname'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      RemoveEmptyLines = False
+      Stretch = True
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5556
+      mmLeft = 0
+      mmTop = 8731
+      mmWidth = 170127
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppRegion1: TppRegion
+      UserName = 'RegionAnschrift'
+      Caption = 'RegionAnschrift'
+      Pen.Mode = pmWhite
+      ShiftRelativeTo = ppMemo1
+      mmHeight = 11642
+      mmLeft = 0
+      mmTop = 15081
+      mmWidth = 170127
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppDBText1: TppDBText
+        UserName = 'dbStrasse'
+        AutoSize = True
+        DataField = 'Strasse'
+        DataPipeline = dmPipelines.EigeneSchule
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taCentered
+        Transparent = True
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 4233
+        mmLeft = 79111
+        mmTop = 17198
+        mmWidth = 11906
+        BandType = 4
+        LayerName = Foreground
+      end
+      object ppDBText2: TppDBText
+        UserName = 'dbPlzOrt'
+        AutoSize = True
+        DataField = 'PlzOrt'
+        DataPipeline = dmPipelines.EigeneSchule
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 10
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taCentered
+        Transparent = True
+        DataPipelineName = 'EigeneSchule'
+        mmHeight = 4233
+        mmLeft = 80169
+        mmTop = 21167
+        mmWidth = 9790
+        BandType = 4
+        LayerName = Foreground
+      end
+    end
+    object ppDBText3: TppDBText
+      UserName = 'dbVornameName'
+      AutoSize = True
+      DataField = 'VornameName'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 53446
+      mmWidth = 29898
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel2: TppLabel
+      UserName = 'dbGeburtsdatum'
+      Caption = 'geboren am / n'#233'(e) le'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4762
+      mmLeft = 0
+      mmTop = 59796
+      mmWidth = 39158
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppMemo2: TppMemo
+      UserName = 'Abiturdatum'
+      Caption = 'Abiturdatum'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = []
+      Lines.Strings = (
+        'hat nach bestandener Abiturpr'#252'fung am '
+        'qui a pass'#233' avec succ'#232's l'#8217'examen le')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 11113
+      mmLeft = 0
+      mmTop = 71173
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppMemo3: TppMemo
+      UserName = 'Memo2'
+      Caption = 'Memo2'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = []
+      Lines.Strings = (
+        'das Zeugnis der allgemeinen Hochschulreife erworben.'
+        ''
+        
+          'Aufgrund der Vereinbarung vom 4. November 1988 zwischen der Regi' +
+          'erung der Franz'#246'sischen Republik und der Regierung der Bundesrep' +
+          'ublik Deutschland ist sie/er durch die im Rahmen des Erwerbs der' +
+          ' allgemeinen Hochschulreife im Leistungskursfach Franz'#246'sisch erz' +
+          'ielte Note von den Sprachpr'#252'fungen f'#252'r die Einschreibung an den ' +
+          'franz'#246'sischen Universit'#228'ten befreit.')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 78051
+      mmLeft = 0
+      mmTop = 90229
+      mmWidth = 80000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppMemo4: TppMemo
+      UserName = 'Memo4'
+      Caption = 'Memo4'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = []
+      Lines.Strings = (
+        'est titulaire du dipl'#244'me allemand de fin d'#8217#233'tu- des secondaires.'
+        ''
+        
+          'En vertu de l'#8217'accord sous forme d'#8217#233'change de lettres entre le Go' +
+          'uvernement de la R'#233'publique fran'#231'aise et le Gouvernement de la R' +
+          #233'publique f'#233'd'#233'rale d'#8217' Allemagne du 4 Novembre 1988, le ou la tit' +
+          'ulaire de ce dipl'#244'me est - sur la base de la note obtenue en fra' +
+          'n'#231'ais (enseigne- ment approfondi) dans le cadre des '#233'preuves de ' +
+          'la Allgemeine Hochschulreife - dispens'#233'(e) des tests linguistiqu' +
+          'es d'#8217'admission aux '#233'tudes dans les universit'#233's fran'#231'aises.')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 78051
+      mmLeft = 90000
+      mmTop = 90229
+      mmWidth = 80000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppMemo5: TppMemo
+      UserName = 'Memo3'
+      Caption = 'Memo3'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = []
+      Lines.Strings = (
+        'Siegel'
+        'Sceau')
+      RemoveEmptyLines = False
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 11640
+      mmLeft = 60590
+      mmTop = 174102
+      mmWidth = 48948
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 0
+      mmTop = 205846
+      mmWidth = 73025
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppMemo6: TppMemo
+      UserName = 'Memo6'
+      Caption = 'Memo6'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Lines.Strings = (
+        'Ort, Datum'
+        'Fait '#224', le')
+      RemoveEmptyLines = False
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 12435
+      mmLeft = 13494
+      mmTop = 207434
+      mmWidth = 48948
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 97102
+      mmTop = 205846
+      mmWidth = 73025
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppMemo7: TppMemo
+      UserName = 'Memo7'
+      Caption = 'Memo7'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Lines.Strings = (
+        'Schulleiter/in'
+        'Le Directeur/La Directrice de l'#8217#233'cole')
+      RemoveEmptyLines = False
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 15350
+      mmLeft = 110596
+      mmTop = 207434
+      mmWidth = 48948
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650617
+      646247656275727473646174756D4F6E476574546578740B50726F6772616D54
+      797065070B747450726F63656475726506536F7572636514B000000070726F63
+      656475726520646247656275727473646174756D4F6E47657454657874287661
+      7220546578743A20537472696E67293B0D0A626567696E0D0A0D0A2020546578
+      74203A3D20276765626F72656E20616D202F206EC3A9286529206C652027202B
+      2053636875656C65725B2747656275727473646174756D275D202B202720696E
+      202F20C3A02027202B2053636875656C65725B27476562757274736F7274275D
+      3B200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060E64624765
+      6275727473646174756D094576656E744E616D6506094F6E4765745465787407
+      4576656E7449440235084361726574506F730102650204000001060F54726145
+      76656E7448616E646C65720B50726F6772616D4E616D65061144657461696C42
+      65666F72655072696E740B50726F6772616D54797065070B747450726F636564
+      75726506536F7572636514FF01000070726F6365647572652044657461696C42
+      65666F72655072696E743B0D0A626567696E0D0A536368756C6E616D652E4C69
+      6E65732E436C6561723B0D0A536368756C6E616D652E4C696E65732E41646420
+      28456967656E65536368756C655B2742657A656963686E756E6731275D293B0D
+      0A696620456967656E65536368756C655B2742657A656963686E756E6732275D
+      203C3E202727207468656E20536368756C6E616D652E4C696E65732E41646420
+      28456967656E65536368756C655B2742657A656963686E756E6732275D293B0D
+      0A696620456967656E65536368756C655B2742657A656963686E756E6733275D
+      203C3E202727207468656E20536368756C6E616D652E4C696E65732E41646420
+      28456967656E65536368756C655B2742657A656963686E756E6733275D293B0D
+      0A0D0A416269747572646174756D2E4C696E65732E436C6561723B0D0A416269
+      747572646174756D2E4C696E65732E416464202827686174206E616368206265
+      7374616E64656E6572204162697475727072C3BC66756E6720616D27293B0D0A
+      416269747572646174756D2E4C696E65732E4164642028277175692061207061
+      7373C3A920617665632073756363C3A873206CE280996578616D656E206C6520
+      27202B204C65726E61627363686E697474655B275A6575676E6973446174756D
+      275D293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064465
+      7461696C094576656E744E616D65060B4265666F72655072696E74074576656E
+      7449440218084361726574506F73010260020A000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end

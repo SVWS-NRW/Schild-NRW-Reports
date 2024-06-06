@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Kurse
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports SII\Kursliste Sch'#252'ler Kursart' +
-    ' Note Fehlstd Unterschrift.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Reports SII\Kursliste Sch'#252'ler Kursart Note Fe' +
+    'hlstd Unterschrift.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -126,7 +126,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.plKursSchueler
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -136,7 +136,6 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 210000
         PrinterSetup.PaperSize = 9
-        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -711,7 +710,16 @@ object Report: TppReport
             6F6E742E436F6C6F72203A3D2052474228302C302C30293B0D0A2020656E643B
             0D0A20200D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461
             696C094576656E744E616D65060B4265666F72655072696E74074576656E7449
-            440218084361726574506F7301023A0203000000}
+            440218084361726574506F7301023A0203000001060F5472614576656E744861
+            6E646C65720B50726F6772616D4E616D650611646250756E6B74654F6E476574
+            546578740B50726F6772616D54797065070B747450726F63656475726506536F
+            75726365067670726F63656475726520646250756E6B74654F6E476574546578
+            742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
+            206966204B75727353636875656C65725B274E6F74656E4B727A275D203D2027
+            27207468656E2054657874203A3D2027273B0D0A0D0A656E643B0D0A0D436F6D
+            706F6E656E744E616D650608646250756E6B7465094576656E744E616D650609
+            4F6E47657454657874074576656E7449440235084361726574506F7301023402
+            04000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
