@@ -1,0 +1,1764 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 
+    'Sch'#252'lerliste Abfrage pers'#246'nlicher Daten f'#252'r das Abiturzeugnis.rt' +
+    'm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Reports SII\Sch'#252'lerliste Abfrage pers'#246'nlic' +
+    'her Daten f'#252'r das Abiturzeugnis.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Calibri'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 170000
+  DataPipelineName = 'Schueler'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    Border.Style = psClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 196000
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubreportSprachenfolge'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentPrinterSetup = False
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plSprachenfolge'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 82809
+      mmWidth = 86000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plSprachenfolge
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Sprachenfolge-'#252'bersicht'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 180000
+        DataPipelineName = 'plSprachenfolge'
+        object ppHeaderBand1: TppHeaderBand
+          Background.Brush.Style = bsClear
+          Border.BorderPositions = [bpBottom]
+          Border.Visible = True
+          Border.Weight = 0.750000000000000000
+          mmBottomOffset = 0
+          mmHeight = 6000
+          mmPrintPosition = 0
+          object ppLabel5: TppLabel
+            UserName = 'Label5'
+            Caption = 'Sprachenfolge'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 4763
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 23548
+            BandType = 0
+            LayerName = PageLayer1
+          end
+        end
+        object ppDetailBand4: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          Border.BorderPositions = [bpLeft, bpRight, bpBottom]
+          Border.Visible = True
+          Border.Weight = 0.750000000000000000
+          mmBottomOffset = 0
+          mmHeight = 6000
+          mmPrintPosition = 0
+          object ppDBText1: TppDBText
+            UserName = 'dbSprachenfolge'
+            DataField = 'Reihenfolge'
+            DataPipeline = dmPipelines.plSprachenfolge
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            DataPipelineName = 'plSprachenfolge'
+            mmHeight = 3969
+            mmLeft = 1000
+            mmTop = 1058
+            mmWidth = 7000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppDBText2: TppDBText
+            UserName = 'dbFremdsprache'
+            DataField = 'Fachbezeichnung'
+            DataPipeline = dmPipelines.plSprachenfolge
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'plSprachenfolge'
+            mmHeight = 3969
+            mmLeft = 10000
+            mmTop = 1058
+            mmWidth = 30000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppLabel17: TppLabel
+            UserName = 'dbVonBis'
+            AutoSize = False
+            Caption = 'dbVonBis'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3969
+            mmLeft = 42000
+            mmTop = 1058
+            mmWidth = 21000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppDBText4: TppDBText
+            UserName = 'dbReferenzniveau'
+            AutoSize = True
+            DataField = 'Referenzniveau'
+            DataPipeline = dmPipelines.plSprachenfolge
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'plSprachenfolge'
+            mmHeight = 3969
+            mmLeft = 65000
+            mmTop = 1058
+            mmWidth = 20000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppLine10: TppLine
+            UserName = 'Line10'
+            ParentHeight = True
+            Position = lpLeft
+            Weight = 0.750000000000000000
+            mmHeight = 6000
+            mmLeft = 9000
+            mmTop = 0
+            mmWidth = 1000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppLine11: TppLine
+            UserName = 'Line101'
+            ParentHeight = True
+            Position = lpLeft
+            Weight = 0.750000000000000000
+            mmHeight = 6000
+            mmLeft = 41000
+            mmTop = 0
+            mmWidth = 1058
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppLine12: TppLine
+            UserName = 'Line12'
+            ParentHeight = True
+            Position = lpLeft
+            Weight = 0.750000000000000000
+            mmHeight = 6000
+            mmLeft = 64000
+            mmTop = 0
+            mmWidth = 1058
+            BandType = 4
+            LayerName = PageLayer1
+          end
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            6462566F6E4269734F6E476574546578740B50726F6772616D54797065070B74
+            7450726F63656475726506536F757263650C9B01000070726F63656475726520
+            6462566F6E4269734F6E476574546578742876617220546578743A2053747269
+            6E67293B0D0A626567696E0D0A2020696620202828537072616368656E666F6C
+            67655B2752656968656E666F6C6765275D203D2027502729206F722028537072
+            616368656E666F6C67655B2752656968656E666F6C6765275D203D2027702729
+            290D0A202020207468656E2054657874203A3D20496E74546F53747228537072
+            616368656E666F6C67655B274A61687267616E67566F6E275D290D0A20202020
+            656C73652054657874203A3D20496E74546F53747228537072616368656E666F
+            6C67655B274A61687267616E67566F6E275D29202B20272E27202B20496E7454
+            6F53747228537072616368656E666F6C67655B2741627363686E697474566F6E
+            275D29202B2027206269732027202B20496E74546F5374722853707261636865
+            6E666F6C67655B274A61687267616E67426973275D29202B20272E27202B2049
+            6E74546F53747228537072616368656E666F6C67655B2741627363686E697474
+            426973275D293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            086462566F6E426973094576656E744E616D6506094F6E476574546578740745
+            76656E7449440235084361726574506F730102000200000001060F5472614576
+            656E7448616E646C65720B50726F6772616D4E616D6506114865616465724265
+            666F72655072696E740B50726F6772616D54797065070B747450726F63656475
+            726506536F75726365064670726F636564757265204865616465724265666F72
+            655072696E743B0D0A626567696E0D0A20204865616465722E56697369626C65
+            203A3D20747275653B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            06486561646572094576656E744E616D65060B4265666F72655072696E740745
+            76656E7449440218084361726574506F7301021A0203000000}
+        end
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'PageLayer1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppLabel4: TppLabel
+      UserName = 'WeitereAngaben'
+      Caption = 'Weitere Angaben:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4762
+      mmLeft = 0
+      mmTop = 115636
+      mmWidth = 30163
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel6: TppLabel
+      UserName = 'PersDaten'
+      Caption = 'Pers'#246'nliche Daten'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 29898
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Vorname'
+      AutoSize = False
+      Caption = 'Vollst'#228'ndiger Vorname:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 9487
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Nachname'
+      AutoSize = False
+      Caption = 'Nachname:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 15974
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel9: TppLabel
+      UserName = 'Geburtsdatum'
+      AutoSize = False
+      Caption = 'Geburtsdatum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 34734
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel10: TppLabel
+      UserName = 'Geburtsort'
+      AutoSize = False
+      Caption = 'Geburtsort:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 40987
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel11: TppLabel
+      UserName = 'Staat'
+      AutoSize = False
+      Caption = 'Staatsangeh'#246'rigkeit:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 47241
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel12: TppLabel
+      UserName = 'Bekenntnis'
+      AutoSize = False
+      Caption = 'Bekenntnis:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 53687
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel13: TppLabel
+      UserName = 'Strasse'
+      AutoSize = False
+      Caption = 'Stra'#223'e:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 22227
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel14: TppLabel
+      UserName = 'PlzOrt'
+      AutoSize = False
+      Caption = 'PLZ, Ort:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 28481
+      mmWidth = 44000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText3: TppDBText
+      UserName = 'dbVorname'
+      DataField = 'Vorname'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 45000
+      mmTop = 9487
+      mmWidth = 45000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText5: TppDBText
+      UserName = 'dbName'
+      AutoSize = True
+      DataField = 'Name'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 15974
+      mmWidth = 45000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText6: TppDBText
+      UserName = 'dbStrasse'
+      DataField = 'Strasse'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 22227
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText7: TppDBText
+      UserName = 'dbPlzOrt'
+      DataField = 'PLZ_Ort'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 28481
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText8: TppDBText
+      UserName = 'dbGeburtsdatum'
+      DataField = 'Geburtsdatum'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 34734
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText9: TppDBText
+      UserName = 'dbGeburtsort'
+      DataField = 'Geburtsort'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 40987
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText10: TppDBText
+      UserName = 'dbStaat'
+      DataField = 'StaatAbk'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 47241
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText11: TppDBText
+      UserName = 'dbBekenntnis'
+      DataField = 'ReligionZeugnisbez'
+      DataPipeline = dmPipelines.Schueler
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'Schueler'
+      mmHeight = 4763
+      mmLeft = 44979
+      mmTop = 53687
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine2: TppLine
+      UserName = 'Line1'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 9487
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox1: TmyCheckBox
+      UserName = 'cbNameKorrekt1'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 9487
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel15: TppLabel
+      UserName = 'korrekt'
+      Caption = 'korrekt'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 96441
+      mmTop = 4498
+      mmWidth = 8996
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel16: TppLabel
+      UserName = 'Korrektur'
+      Caption = 'Korrektur'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 112448
+      mmTop = 4498
+      mmWidth = 11906
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox2: TmyCheckBox
+      UserName = 'cbReligionJa'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 62969
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel19: TppLabel
+      UserName = 'ReligionJa'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 117207
+      mmTop = 62969
+      mmWidth = 2911
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox3: TmyCheckBox
+      UserName = 'cbReligionNein'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 125930
+      mmTop = 62969
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel20: TppLabel
+      UserName = 'ReligionNein'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 130954
+      mmTop = 62969
+      mmWidth = 7408
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine3: TppLine
+      UserName = 'Line3'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 15974
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox4: TmyCheckBox
+      UserName = 'cbNameKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 15974
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine4: TppLine
+      UserName = 'Line4'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 22227
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox5: TmyCheckBox
+      UserName = 'cbStrasseKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 22227
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine5: TppLine
+      UserName = 'Line5'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 28481
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox6: TmyCheckBox
+      UserName = 'cbPlzOrtKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 28481
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine6: TppLine
+      UserName = 'Line6'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 34734
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox7: TmyCheckBox
+      UserName = 'cbGeburtsdatumKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 34734
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine7: TppLine
+      UserName = 'Line7'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 40987
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox8: TmyCheckBox
+      UserName = 'cbGeburtsortKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 40987
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine8: TppLine
+      UserName = 'Line8'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 47241
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox9: TmyCheckBox
+      UserName = 'cbStaatKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 47241
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine9: TppLine
+      UserName = 'Line9'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 53687
+      mmWidth = 55298
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox10: TmyCheckBox
+      UserName = 'cbBekenntnisKorrekt'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 98426
+      mmTop = 53687
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Latinum'
+      AutoSize = False
+      Caption = 'Latinum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 123309
+      mmTop = 87846
+      mmWidth = 14288
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel23: TppLabel
+      UserName = 'Graecum'
+      AutoSize = False
+      Caption = 'Graecum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 121986
+      mmTop = 96841
+      mmWidth = 15610
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel24: TppLabel
+      UserName = 'Hebraicum'
+      AutoSize = False
+      Caption = 'Hebraicum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 118811
+      mmTop = 101604
+      mmWidth = 18785
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel25: TppLabel
+      UserName = 'KlLatinum'
+      AutoSize = False
+      Caption = 'Kl. Latinum:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 118281
+      mmTop = 92344
+      mmWidth = 19315
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel29: TppLabel
+      UserName = 'OrtDatum'
+      Caption = 'Ort, Datum'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Calibri'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 25440
+      mmTop = 192352
+      mmWidth = 13758
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel30: TppLabel
+      UserName = 'Unterschrift'
+      Caption = 'Unterschrift'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Calibri'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 116681
+      mmTop = 192352
+      mmWidth = 15082
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppMemo1: TppMemo
+      UserName = 'mReligion'
+      Caption = 'mReligion'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Lines.Strings = (
+        'Die Religionszugeh'#246'rigkeit soll auf dem Zeugnis erscheinen?')
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 62969
+      mmWidth = 100013
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object myCheckBox11: TmyCheckBox
+      UserName = 'cbLokalePresseJa'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 112184
+      mmTop = 71706
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel18: TppLabel
+      UserName = 'LokalePresseJa'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 117207
+      mmTop = 71706
+      mmWidth = 2910
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox12: TmyCheckBox
+      UserName = 'cbLokalePresseNein'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 125930
+      mmTop = 71706
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel31: TppLabel
+      UserName = 'LokalePresseNein'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 130954
+      mmTop = 71706
+      mmWidth = 7408
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppMemo2: TppMemo
+      UserName = 'mLokalePresse'
+      Caption = 'mLokalePresse'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Ich bin damit einverstanden, dass mein Name nach bestandenem Abi' +
+          'tur in der Lokalpresse ver'#246'ffentlicht wird.')
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 10848
+      mmLeft = 0
+      mmTop = 68663
+      mmWidth = 100013
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppMemo3: TppMemo
+      UserName = 'mGebrueft'
+      Caption = 'mGebrueft'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Die obigen Angaben sind von mir gepr'#252'ft und gegebenenfalls korri' +
+          'giert worden. Sie sollen in der angegebenen Form auf dem Abiturz' +
+          'eugnis erscheinen.')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 11377
+      mmLeft = 0
+      mmTop = 166688
+      mmWidth = 170127
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppMemo4: TppMemo
+      UserName = 'mStreichkurse'
+      Caption = 'mStreichkurse'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Kursnoten von Kursen der Qualifikationsphase, die weder zur Pfli' +
+          'chtbelegung geh'#246'ren noch eingebracht werden m'#252'ssen k'#246'nnen gestri' +
+          'chen werden. Gibt es Kurse, die Sie streichen m'#246'chten? (Empfehlu' +
+          'ng: keinen Kurs streichen!)')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 16140
+      mmLeft = 0
+      mmTop = 121721
+      mmWidth = 170127
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppMemo5: TppMemo
+      UserName = 'mZeugnisbemerkung'
+      Caption = 'mZeugnisbemerkung'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Gibt es eine Zeugnisbemerkung, die auf dem Abiturzeugnis aufgeno' +
+          'mmen werden soll (z.B. Mitarbeit in der SV in der Qualifikations' +
+          'phase, Teilnahme an Wettbewerben  in der Qualifikationsphase)')
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 11642
+      mmLeft = 0
+      mmTop = 146844
+      mmWidth = 170127
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppLine13: TppLine
+      UserName = 'LinieUnterschrift'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 1852
+      mmLeft = 83344
+      mmTop = 190245
+      mmWidth = 85725
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine1: TppLine
+      UserName = 'Line2'
+      ParentWidth = True
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 1058
+      mmLeft = 0
+      mmTop = 143932
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine14: TppLine
+      UserName = 'Line14'
+      ParentWidth = True
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 1000
+      mmLeft = 0
+      mmTop = 164046
+      mmWidth = 170000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLine15: TppLine
+      UserName = 'LinieUnterschrift1'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 1852
+      mmLeft = 0
+      mmTop = 190237
+      mmWidth = 65374
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox13: TmyCheckBox
+      UserName = 'cbLatinumJa'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 141565
+      mmTop = 87842
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel28: TppLabel
+      UserName = 'LatinumJa'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 146592
+      mmTop = 87842
+      mmWidth = 2910
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox14: TmyCheckBox
+      UserName = 'cbLatinumNein'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 155323
+      mmTop = 87842
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel32: TppLabel
+      UserName = 'LatinumNein'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 160350
+      mmTop = 87842
+      mmWidth = 7408
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox15: TmyCheckBox
+      UserName = 'cbKlLatinumJa'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 141565
+      mmTop = 92340
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel33: TppLabel
+      UserName = 'KlLatinumJa'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 146592
+      mmTop = 92340
+      mmWidth = 2910
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox16: TmyCheckBox
+      UserName = 'cbKlLatinumNein'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 155323
+      mmTop = 92340
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel34: TppLabel
+      UserName = 'KlLatinumNein'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 160350
+      mmTop = 92340
+      mmWidth = 7408
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox17: TmyCheckBox
+      UserName = 'cbGraecumJa'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 141565
+      mmTop = 96838
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel35: TppLabel
+      UserName = 'GraecumJa'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 146592
+      mmTop = 96838
+      mmWidth = 2910
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox18: TmyCheckBox
+      UserName = 'cbGraecumNein'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 155323
+      mmTop = 96838
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel36: TppLabel
+      UserName = 'GraecumNein'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 160350
+      mmTop = 96838
+      mmWidth = 7408
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox19: TmyCheckBox
+      UserName = 'cbHebraicumJa'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 141565
+      mmTop = 101600
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel37: TppLabel
+      UserName = 'HebraicumJa'
+      Caption = 'ja'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 146592
+      mmTop = 101600
+      mmWidth = 2910
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object myCheckBox20: TmyCheckBox
+      UserName = 'cbHebraicumNein'
+      Checked = False
+      CheckBoxColor = clBlack
+      mmHeight = 4763
+      mmLeft = 155323
+      mmTop = 101600
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel38: TppLabel
+      UserName = 'HebraicumNein'
+      Caption = 'nein'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 160350
+      mmTop = 101600
+      mmWidth = 7408
+      BandType = 4
+      LayerName = Foreground1
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    ResetPageNo = True
+    ReprintOnSubsequentPage = False
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = True
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 1.000000000000000000
+      mmBottomOffset = 0
+      mmHeight = 60000
+      mmPrintPosition = 0
+      object ppLabel2: TppLabel
+        UserName = 'TitelAbfrage'
+        AutoSize = False
+        Border.BorderPositions = [bpTop, bpBottom]
+        Border.Visible = True
+        Border.Weight = 1.000000000000000000
+        Caption = 'Abfrage pers'#246'nlicher Daten f'#252'r das Abiturzeugnis'
+        Color = 14474460
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 14
+        Font.Style = [fsBold]
+        mmHeight = 7408
+        mmLeft = 0
+        mmTop = 4763
+        mmWidth = 170127
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppRichText1: TppRichText
+        UserName = 'mHinweistext'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Tahoma'
+        Font.Size = 11
+        Font.Style = []
+        Caption = 'mHinweistext'
+        RichText = 
+          '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+          'rset0 Calibri;}{\f1\fnil Tahoma;}}'#13#10'{\colortbl ;\red0\green0\blu' +
+          'e0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs22 Bitte \'#39'fcberpr\'#39'fcfen ' +
+          'Sie die folgenden Angaben sorgf\'#39'e4ltig.\par'#13#10'\par'#13#10'Es handelt s' +
+          'ich einmal um pers\'#39'f6nliche Daten, die im Schulverwaltungsprogr' +
+          'amm gespeichert sind. Dar\'#39'fcber hinaus werden einige Daten f\'#39'f' +
+          'cr das Abiturzeugnis ben\'#39'f6tigt. Korrekturen und Erg\'#39'e4nzungen' +
+          ' m\'#39'fcssen unbedingt \ul\b deutlich und gut lesbar\ulnone\b0  ei' +
+          'ngetragen werden. Erg\'#39'e4nzungen (etwa beim Vornamen) bitte eben' +
+          'falls vermerken.\f1\par'#13#10'}'#13#10#0
+        RemoveEmptyLines = False
+        Stretch = True
+        Transparent = True
+        mmHeight = 31221
+        mmLeft = 0
+        mmTop = 17727
+        mmWidth = 170127
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeftMargin = 794
+      end
+      object ppLabel3: TppLabel
+        UserName = 'Rueckgabedatum'
+        Caption = 'R'#252'ckgabe sp'#228'testens am'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 0
+        mmTop = 51329
+        mmWidth = 44186
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+      object ppDBText12: TppDBText
+        UserName = 'dbNameVorname'
+        DataField = 'NameVorname'
+        DataPipeline = dmPipelines.Schueler
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = []
+        Transparent = True
+        DataPipelineName = 'Schueler'
+        mmHeight = 4498
+        mmLeft = 0
+        mmTop = 0
+        mmWidth = 170127
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365064470726F6365647572652056
+      61726961626C65733B0D0A7661720D0A202067527565636B676162653A205374
+      72696E673B200D0A0D0A626567696E0D0A0D0A656E643B0D0A08436172657450
+      6F730102160202000001060A54726150726F6772616D094368696C6454797065
+      02130B50726F6772616D4E616D65060E476C6F62616C4F6E4372656174650B50
+      726F6772616D54797065070B747450726F63656475726506536F757263651463
+      00000070726F63656475726520476C6F62616C4F6E4372656174653B0D0A6265
+      67696E0D0A202067527565636B67616265203A3D20576165686C65446174756D
+      537472282752C3BC636B67616265646174756D272C2066616C7365293B200D0A
+      656E643B0D0A084361726574506F730102390203000001060A54726150726F67
+      72616D094368696C645479706502150E497346756E6374696F6E54797065090B
+      50726F6772616D4E616D650613566F726E616D656E416E616C7973696572656E
+      0B50726F6772616D54797065070A747446756E6374696F6E06536F757263650C
+      6001000066756E6374696F6E20566F726E616D656E416E616C7973696572656E
+      3A20537472696E673B0D0A7661720D0A20207275666E616D652C0D0A2020616C
+      6C656E616D656E3A20537472696E673B0D0A20200D0A626567696E0D0A202072
+      75666E616D65203A3D205472696D2853636875656C65725B27566F726E616D65
+      275D293B0D0A2020616C6C656E616D656E203A3D205472696D2853636875656C
+      65725B275A757361747A275D293B0D0A20200D0A2020696620616C6C656E616D
+      656E203D202727207468656E0D0A20202020526573756C74203A3D207275666E
+      616D650D0A2020656C736520696620506F73287275666E616D652C20616C6C65
+      6E616D656E29203E2030207468656E0D0A20202020526573756C74203A3D2061
+      6C6C656E616D656E0D0A2020656C73650D0A20202020526573756C74203A3D20
+      7275666E616D65202B20272027202B20616C6C656E616D656E3B0D0A0D0A656E
+      643B0D0A084361726574506F730102010201000001060F5472614576656E7448
+      616E646C65720B50726F6772616D4E616D65061664624E616D65566F726E616D
+      654F6E476574546578740B50726F6772616D54797065070B747450726F636564
+      75726506536F75726365068070726F6365647572652064624E616D65566F726E
+      616D654F6E476574546578742876617220546578743A20537472696E67293B0D
+      0A626567696E0D0A0D0A202054657874203A3D2053636875656C65725B274E61
+      6D65275D202B20272C2027202B20566F726E616D656E416E616C797369657265
+      6E3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D64624E61
+      6D65566F726E616D65094576656E744E616D6506094F6E476574546578740745
+      76656E7449440235084361726574506F730102390204000001060F5472614576
+      656E7448616E646C65720B50726F6772616D4E616D650617527565636B676162
+      65646174756D4F6E476574546578740B50726F6772616D54797065070B747450
+      726F63656475726506536F75726365066B70726F63656475726520527565636B
+      67616265646174756D4F6E476574546578742876617220546578743A20537472
+      696E67293B0D0A626567696E0D0A0D0A202054657874203A3D2054657874202B
+      20272027202B2067527565636B676162653B0D0A0D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D65060E527565636B67616265646174756D094576656E74
+      4E616D6506094F6E47657454657874074576656E744944023508436172657450
+      6F730102230204000001060F5472614576656E7448616E646C65720B50726F67
+      72616D4E616D6506115265706F72744265666F72655072696E740B50726F6772
+      616D54797065070B747450726F63656475726506536F75726365063F70726F63
+      6564757265205265706F72744265666F72655072696E743B0D0A626567696E0D
+      0A20205365744162697475722874727565293B0D0A656E643B0D0A0D436F6D70
+      6F6E656E744E616D6506065265706F7274094576656E744E616D65060B426566
+      6F72655072696E74074576656E7449440201084361726574506F730102030203
+      000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
+      06105265706F727441667465725072696E740B50726F6772616D54797065070B
+      747450726F63656475726506536F75726365063F70726F636564757265205265
+      706F727441667465725072696E743B0D0A626567696E0D0A2020536574416269
+      7475722866616C7365293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D
+      6506065265706F7274094576656E744E616D65060A41667465725072696E7407
+      4576656E7449440200084361726574506F730102120203000001060F54726145
+      76656E7448616E646C65720B50726F6772616D4E616D65061263624C6174696E
+      756D4A614F6E5072696E740B50726F6772616D54797065070B747450726F6365
+      6475726506536F75726365065F70726F6365647572652063624C6174696E756D
+      4A614F6E5072696E743B0D0A626567696E0D0A202063624C6174696E756D4A61
+      2E436865636B6564203A3D204162697475725B274C6174696E756D275D203D20
+      272B273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B63624C61
+      74696E756D4A61094576656E744E616D6506074F6E5072696E74074576656E74
+      49440220084361726574506F730102030203000001060F5472614576656E7448
+      616E646C65720B50726F6772616D4E616D65061463624C6174696E756D4E6569
+      6E4F6E5072696E740B50726F6772616D54797065070B747450726F6365647572
+      6506536F75726365066370726F6365647572652063624C6174696E756D4E6569
+      6E4F6E5072696E743B0D0A626567696E0D0A202063624C6174696E756D4E6569
+      6E2E436865636B6564203A3D204162697475725B274C6174696E756D275D203D
+      20272D273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D63624C
+      6174696E756D4E65696E094576656E744E616D6506074F6E5072696E74074576
+      656E7449440220084361726574506F730102100203000001060F547261457665
+      6E7448616E646C65720B50726F6772616D4E616D65061463624B6C4C6174696E
+      756D4A614F6E5072696E740B50726F6772616D54797065070B747450726F6365
+      6475726506536F75726365066570726F6365647572652063624B6C4C6174696E
+      756D4A614F6E5072696E743B0D0A626567696E0D0A202063624B6C4C6174696E
+      756D4A612E436865636B6564203A3D204162697475725B274B6C4C6174696E75
+      6D275D203D20272B273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+      060D63624B6C4C6174696E756D4A61094576656E744E616D6506074F6E507269
+      6E74074576656E7449440220084361726574506F730102260203000001060F54
+      72614576656E7448616E646C65720B50726F6772616D4E616D65061663624B6C
+      4C6174696E756D4E65696E4F6E5072696E740B50726F6772616D54797065070B
+      747450726F63656475726506536F75726365066970726F636564757265206362
+      4B6C4C6174696E756D4E65696E4F6E5072696E743B0D0A626567696E0D0A2020
+      63624B6C4C6174696E756D4E65696E2E436865636B6564203A3D204162697475
+      725B274B6C4C6174696E756D275D203D20272D273B0D0A656E643B0D0A0D436F
+      6D706F6E656E744E616D65060F63624B6C4C6174696E756D4E65696E09457665
+      6E744E616D6506074F6E5072696E74074576656E744944022008436172657450
+      6F730102360203000001060F5472614576656E7448616E646C65720B50726F67
+      72616D4E616D65061263624772616563756D4A614F6E5072696E740B50726F67
+      72616D54797065070B747450726F63656475726506536F75726365065F70726F
+      6365647572652063624772616563756D4A614F6E5072696E743B0D0A62656769
+      6E0D0A202063624772616563756D4A612E436865636B6564203A3D2041626974
+      75725B274772616563756D275D203D20272B273B0D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D65060B63624772616563756D4A61094576656E744E616D
+      6506074F6E5072696E74074576656E7449440220084361726574506F73010203
+      0203000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
+      6D65061463624772616563756D4E65696E4F6E5072696E740B50726F6772616D
+      54797065070B747450726F63656475726506536F75726365066370726F636564
+      7572652063624772616563756D4E65696E4F6E5072696E743B0D0A626567696E
+      0D0A202063624772616563756D4E65696E2E436865636B6564203A3D20416269
+      7475725B274772616563756D275D203D20272D273B0D0A656E643B0D0A0D436F
+      6D706F6E656E744E616D65060D63624772616563756D4E65696E094576656E74
+      4E616D6506074F6E5072696E74074576656E7449440220084361726574506F73
+      0102340203000001060F5472614576656E7448616E646C65720B50726F677261
+      6D4E616D650614636248656272616963756D4A614F6E5072696E740B50726F67
+      72616D54797065070B747450726F63656475726506536F75726365066570726F
+      63656475726520636248656272616963756D4A614F6E5072696E743B0D0A6265
+      67696E0D0A2020636248656272616963756D4A612E436865636B6564203A3D20
+      4162697475725B2748656272616963756D275D203D20272B273B0D0A656E643B
+      0D0A0D436F6D706F6E656E744E616D65060D636248656272616963756D4A6109
+      4576656E744E616D6506074F6E5072696E74074576656E744944022008436172
+      6574506F730102360203000001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D650616636248656272616963756D4E65696E4F6E507269
+      6E740B50726F6772616D54797065070B747450726F63656475726506536F7572
+      6365066970726F63656475726520636248656272616963756D4E65696E4F6E50
+      72696E743B0D0A626567696E0D0A2020636248656272616963756D4E65696E2E
+      436865636B6564203A3D204162697475725B2748656272616963756D275D203D
+      20272D273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060F636248
+      656272616963756D4E65696E094576656E744E616D6506074F6E5072696E7407
+      4576656E7449440220084361726574506F730102380203000000}
+  end
+  object ppDesignLayers6: TppDesignLayers
+    object ppDesignLayer6: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '16.05.2024'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '16.05.2024'
+      UserName = 'Versionsdatum'
+    end
+    object ppParameter3: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'ja'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'ja'
+      UserName = 'Quartalsausgabe'
+    end
+  end
+end

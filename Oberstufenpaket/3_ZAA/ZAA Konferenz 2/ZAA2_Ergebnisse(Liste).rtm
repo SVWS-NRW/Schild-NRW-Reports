@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste).rtm'
+  PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste)-Test.rtm'
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
@@ -16,9 +16,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 297000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\Abitursammlung_2023_03_29\3_ZAA\ZAA' +
-    ' Konferenz 2\ZAA2_Ergebnisse(Liste).rtm'
+  Template.FileName =
+    'C:\SchILD-NRW\SchILD-Reports\zkurzfristig\ZAA2_Ergebnisse(Liste)-Test.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -135,7 +134,7 @@ object Report: TppReport
     object ppLabel4: TppLabel
       UserName = 'Label1'
       AutoSize = False
-      Caption = 'GK'
+      Caption = 'Kurse'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Name = 'MS Sans Serif'
@@ -144,25 +143,7 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       mmHeight = 4233
-      mmLeft = 59002
-      mmTop = 22000
-      mmWidth = 11906
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel5: TppLabel
-      UserName = 'Label2'
-      AutoSize = False
-      Caption = 'LK'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Name = 'MS Sans Serif'
-      Font.Size = 10
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      mmHeight = 4233
-      mmLeft = 70908
+      mmLeft = 59486
       mmTop = 22000
       mmWidth = 11906
       BandType = 0
@@ -248,7 +229,7 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       mmHeight = 4233
-      mmLeft = 115359
+      mmLeft = 116085
       mmTop = 22000
       mmWidth = 11906
       BandType = 0
@@ -256,7 +237,6 @@ object Report: TppReport
     end
     object ppLabel11: TppLabel
       UserName = 'Label8'
-      AutoSize = False
       Caption = 'Spr'#252'nge'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -265,10 +245,10 @@ object Report: TppReport
       Font.Style = [fsBold]
       TextAlignment = taCentered
       Transparent = True
-      mmHeight = 4191
-      mmLeft = 129646
-      mmTop = 22000
-      mmWidth = 14266
+      mmHeight = 4234
+      mmLeft = 130811
+      mmTop = 21960
+      mmWidth = 15346
       BandType = 0
       LayerName = Foreground
     end
@@ -399,13 +379,14 @@ object Report: TppReport
       NewPrintJob = False
       OutlineSettings.CreateNode = True
       ParentPrinterSetup = False
+      ParentWidth = False
       TraverseAllData = False
       Filename = 'Abiturkopf_klein.rtm'
       DataPipelineName = 'EigeneSchule'
       mmHeight = 5027
-      mmLeft = 0
+      mmLeft = 2646
       mmTop = 1323
-      mmWidth = 277000
+      mmWidth = 270000
       BandType = 0
       LayerName = Foreground
       mmBottomOffset = 0
@@ -505,6 +486,23 @@ object Report: TppReport
           end
         end
       end
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label2'
+      Caption = 'Block I'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'MS Sans Serif'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 4234
+      mmLeft = 71967
+      mmTop = 21960
+      mmWidth = 12435
+      BandType = 0
+      LayerName = Foreground
     end
   end
   object ppDetailBand2: TppDetailBand
@@ -614,7 +612,7 @@ object Report: TppReport
     end
     object ppDBText1: TppDBText
       UserName = 'DBText1'
-      DataField = 'SummeGK'
+      DataField = 'Kurse_I'
       DataPipeline = dmPipelines.plAbi
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -626,27 +624,7 @@ object Report: TppReport
       Transparent = True
       DataPipelineName = 'plAbi'
       mmHeight = 3969
-      mmLeft = 58473
-      mmTop = 1058
-      mmWidth = 12435
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppDBText2: TppDBText
-      UserName = 'DBText2'
-      DataField = 'SummeLK'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Name = 'MS Sans Serif'
-      Font.Size = 10
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      DataPipelineName = 'plAbi'
-      mmHeight = 3969
-      mmLeft = 71702
+      mmLeft = 58957
       mmTop = 1058
       mmWidth = 12435
       BandType = 4
@@ -665,7 +643,7 @@ object Report: TppReport
       Transparent = True
       DataPipelineName = 'plAbi'
       mmHeight = 3969
-      mmLeft = 130440
+      mmLeft = 132376
       mmTop = 1058
       mmWidth = 17992
       BandType = 4
@@ -711,24 +689,6 @@ object Report: TppReport
       BandType = 4
       LayerName = Foreground
     end
-    object ppLabel12: TppLabel
-      UserName = 'Label9'
-      AutoSize = False
-      Caption = 'Label9'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Name = 'MS Sans Serif'
-      Font.Size = 10
-      Font.Style = []
-      TextAlignment = taCentered
-      Transparent = True
-      mmHeight = 3969
-      mmLeft = 84138
-      mmTop = 1058
-      mmWidth = 11906
-      BandType = 4
-      LayerName = Foreground
-    end
     object ppSubReport1: TppSubReport
       UserName = 'SubReport1'
       ExpandAll = False
@@ -738,7 +698,7 @@ object Report: TppReport
       TraverseAllData = False
       DataPipelineName = 'plAbifaecher'
       mmHeight = 5027
-      mmLeft = 153194
+      mmLeft = 153920
       mmTop = 794
       mmWidth = 30000
       BandType = 4
@@ -751,7 +711,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plAbifaecher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste).rtm'
+        PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste)-Test.rtm'
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
@@ -990,7 +950,7 @@ object Report: TppReport
       TraverseAllData = False
       DataPipelineName = 'plAbifaecher'
       mmHeight = 5027
-      mmLeft = 187855
+      mmLeft = 188581
       mmTop = 794
       mmWidth = 30000
       BandType = 4
@@ -1003,7 +963,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plAbifaecher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste).rtm'
+        PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste)-Test.rtm'
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
@@ -1242,7 +1202,7 @@ object Report: TppReport
       TraverseAllData = False
       DataPipelineName = 'plAbifaecher'
       mmHeight = 5027
-      mmLeft = 221457
+      mmLeft = 222183
       mmTop = 794
       mmWidth = 30000
       BandType = 4
@@ -1255,7 +1215,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plAbifaecher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste).rtm'
+        PrinterSetup.DocumentName = 'ZAA2_Ergebnisse(Liste)-Test.rtm'
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
@@ -1769,18 +1729,61 @@ object Report: TppReport
     end
     object ppDBText10: TppDBText
       UserName = 'DBText10'
-      DataPipeline = dmPipelines.Schueler
+      DataField = 'BLL_Punkte'
+      DataPipeline = dmPipelines.plAbi
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Name = 'MS Sans Serif'
       Font.Size = 10
-      Font.Style = [fsBold]
+      Font.Style = []
+      ParentDataPipeline = False
+      TextAlignment = taRightJustified
       Transparent = True
-      DataPipelineName = 'Schueler'
+      DataPipelineName = 'plAbi'
       mmHeight = 4191
-      mmLeft = 97367
+      mmLeft = 97125
       mmTop = 1058
       mmWidth = 5000
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      DataField = 'Punktsumme_II'
+      DataPipeline = dmPipelines.plAbi
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'MS Sans Serif'
+      Font.Size = 10
+      Font.Style = []
+      ParentDataPipeline = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'plAbi'
+      mmHeight = 3969
+      mmLeft = 80369
+      mmTop = 1058
+      mmWidth = 12435
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText12: TppDBText
+      UserName = 'DBText12'
+      DataField = 'Punktsumme_I'
+      DataPipeline = dmPipelines.plAbi
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'MS Sans Serif'
+      Font.Size = 10
+      Font.Style = []
+      ParentDataPipeline = False
+      TextAlignment = taCentered
+      Transparent = True
+      DataPipelineName = 'plAbi'
+      mmHeight = 3969
+      mmLeft = 71767
+      mmTop = 974
+      mmWidth = 12435
       BandType = 4
       LayerName = Foreground
     end
@@ -1840,7 +1843,7 @@ object Report: TppReport
     object ppLabel26: TppLabel
       UserName = 'Label102'
       AutoSize = False
-      Caption = '*  M'#252'ndliche Pr'#252'fung nach '#167'36(2) Ziffer 1 oder 2 APO-GOSt'
+      Caption = '*  M'#252'ndliche Bestehenspr'#252'fung nach '#167'36(2)   APO-GOSt'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Arial'
@@ -1943,49 +1946,60 @@ object Report: TppReport
       626567696E0D0A097365744162697475722866616C7365293B0D0A656E643B0D
       0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E616D
       65060A41667465725072696E74074576656E7449440200084361726574506F73
-      0102000200000001060F5472614576656E7448616E646C65720B50726F677261
-      6D4E616D65060F4C6162656C394F6E476574546578740B50726F6772616D5479
-      7065070B747450726F63656475726506536F75726365069670726F6365647572
-      65204C6162656C394F6E476574546578742876617220546578743A2053747269
-      6E67293B0D0A626567696E0D0A2020200D0A202054657874203A3D496E74546F
-      537472284162697475725B27476573616D7450756E6B747A61686C275D2D4162
-      697475725B2753756D6D654C4B275D2D4162697475725B2753756D6D65474B27
-      5D293B200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C61
-      62656C39094576656E744E616D6506094F6E47657454657874074576656E7449
+      0102010203000001060F5472614576656E7448616E646C65720B50726F677261
+      6D4E616D6506114C6162656C3130344F6E476574546578740B50726F6772616D
+      54797065070B747450726F63656475726506536F75726365065570726F636564
+      757265204C6162656C3130344F6E476574546578742876617220546578743A20
+      537472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D20526570
+      566572733B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506084C
+      6162656C313034094576656E744E616D6506094F6E4765745465787407457665
+      6E7449440235084361726574506F730102000200000001060F5472614576656E
+      7448616E646C65720B50726F6772616D4E616D6506114C6162656C3130364F6E
+      476574546578740B50726F6772616D54797065070B747450726F636564757265
+      06536F75726365067D70726F636564757265204C6162656C3130364F6E476574
+      546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
+      0D0A20204946204162697475725B275072756566756E6742657374616E64656E
+      275D3D272B27207468656E2054657874203A3D2027626573742E273B0D0A0D0A
+      656E643B0D0A0D436F6D706F6E656E744E616D6506084C6162656C3130360945
+      76656E744E616D6506094F6E47657454657874074576656E7449440235084361
+      726574506F730102000200000001060F5472614576656E7448616E646C65720B
+      50726F6772616D4E616D650610444254657874364F6E476574546578740B5072
+      6F6772616D54797065070B747450726F63656475726506536F75726365066E70
+      726F63656475726520444254657874364F6E4765745465787428766172205465
+      78743A20537472696E67293B0D0A626567696E0D0A0D0A206966206C656E6774
+      682874657874293D31207468656E2054657874203A3D2074657874202B20272C
+      30273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D650607444254
+      65787436094576656E744E616D6506094F6E47657454657874074576656E7449
       440235084361726574506F730102000200000001060F5472614576656E744861
-      6E646C65720B50726F6772616D4E616D6506114C6162656C3130344F6E476574
+      6E646C65720B50726F6772616D4E616D65061144425465787431304F6E476574
       546578740B50726F6772616D54797065070B747450726F63656475726506536F
-      75726365065570726F636564757265204C6162656C3130344F6E476574546578
+      75726365068170726F6365647572652044425465787431304F6E476574546578
       742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
-      2054657874203A3D20526570566572733B0D0A0D0A656E643B0D0A0D436F6D70
-      6F6E656E744E616D6506084C6162656C313034094576656E744E616D6506094F
-      6E47657454657874074576656E7449440235084361726574506F730102000200
-      000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
-      06114C6162656C3130364F6E476574546578740B50726F6772616D5479706507
-      0B747450726F63656475726506536F75726365067D70726F636564757265204C
-      6162656C3130364F6E476574546578742876617220546578743A20537472696E
-      67293B0D0A626567696E0D0A0D0A20204946204162697475725B275072756566
-      756E6742657374616E64656E275D3D272B27207468656E2054657874203A3D20
-      27626573742E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
-      06084C6162656C313036094576656E744E616D6506094F6E4765745465787407
-      4576656E7449440235084361726574506F730102000200000001060F54726145
-      76656E7448616E646C65720B50726F6772616D4E616D65061044425465787436
-      4F6E476574546578740B50726F6772616D54797065070B747450726F63656475
-      726506536F75726365066E70726F63656475726520444254657874364F6E4765
-      74546578742876617220546578743A20537472696E67293B0D0A626567696E0D
-      0A0D0A206966206C656E6774682874657874293D31207468656E205465787420
-      3A3D2074657874202B20272C30273B0D0A0D0A656E643B0D0A0D436F6D706F6E
-      656E744E616D65060744425465787436094576656E744E616D6506094F6E4765
-      7454657874074576656E7449440235084361726574506F730102000200000001
-      060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061144
-      425465787431304F6E476574546578740B50726F6772616D54797065070B7474
-      50726F63656475726506536F75726365068170726F6365647572652044425465
-      787431304F6E476574546578742876617220546578743A20537472696E67293B
-      0D0A626567696E0D0A0D0A20494620284162697475725B274265736F6E646572
-      654C65726E6C65697374756E67275D203D20272B2729207468656E2054657874
-      203A3D2027424C273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D
-      6506084442546578743130094576656E744E616D6506094F6E47657454657874
-      074576656E7449440235084361726574506F730102010201000000}
+      494620284162697475725B274265736F6E646572654C65726E6C65697374756E
+      67275D203D20272B2729207468656E2054657874203A3D2027424C273B0D0A0D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D650608444254657874313009
+      4576656E744E616D6506094F6E47657454657874074576656E74494402350843
+      61726574506F730102010201000001060F5472614576656E7448616E646C6572
+      0B50726F6772616D4E616D650610444254657874344F6E476574546578740B50
+      726F6772616D54797065070B747450726F63656475726506536F757263650CDE
+      01000070726F63656475726520444254657874344F6E47657454657874287661
+      7220546578743A20537472696E67293B0D0A566172200D0A202050756E6B7465
+      203A20457874656E6465643B0D0A626567696E0D0A2020696620416269747572
+      5B274E6F7465275D203C3E202727200D0A20207468656E20626567696E0D0A20
+      20202050756E6B7465203A3D2031303230202D20313830202A2028537472546F
+      466C6F6174284162697475725B274E6F7465275D29202B20302E31293B0D0A20
+      20202069662050756E6B7465203C20333030200D0A202020207468656E205465
+      7874203A3D2027202D202D202D202F20333030270D0A20202020656C7365200D
+      0A202020202020626567696E200D0A202020202020202054657874203A3D2049
+      6E74546F5374722850756E6B746529202B2027202F20273B0D0A202020202020
+      20204966204162697475725B274E6F74656E737072756E67275D203E20300D0A
+      202020202020202020207468656E20546578743A3D2074657874202B2020696E
+      74746F737472284162697475725B274E6F74656E737072756E67275D290D0A20
+      202020202020202020656C736520546578743A3D2074657874202B20272D202D
+      202D273B0D0A202020202020656E643B0D0A2020656E643B200D0A656E643B0D
+      0A0D436F6D706F6E656E744E616D65060744425465787434094576656E744E61
+      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
+      0102140209000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
