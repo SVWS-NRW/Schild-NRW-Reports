@@ -1,0 +1,846 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Anlage_Schulformempfehlung.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 17000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\SchILD-NRW\SchILD-Reports\Grundschule_Git_Nov_2023\Anlage_Sch' +
+    'ulformempfehlung.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  CachePages = True
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.CacheImages = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PDFSettings.ScaleImages = False
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'Schueler'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 32544
+    mmPrintPosition = 0
+    object ppRichText1: TppRichText
+      UserName = 'rtxtNoten'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      Caption = 'rtxtNoten'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
+        'ue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs20 Hier ist nur im Fall d' +
+        'es \'#39'a7 8 Absatz 3 Satz 3 AO-GS eine der Schulformen Realschule ' +
+        'oder Gymnasium anzukreuzen. Ansonsten ist dieser Abschnitt durch' +
+        'zustreichen. Die Schulformempfehlung sieht vor, dass Nichtzutref' +
+        'fendes zu streichen und Zutreffendes anzukreuzen ist. Die Schule' +
+        'n k\'#39'f6nnen auch Formulare verwenden, die es erm\'#39'f6glichen, das' +
+        's die Schulformempfehlung nur die jeweils zutreffenden Angaben e' +
+        'nth\'#39'e4lt. Dies gilt insbesondere f\'#39'fcr Schulen, die Textverarb' +
+        'eitungssysteme einsetzen.\f1\fs18\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 22490
+      mmLeft = 4233
+      mmTop = 8731
+      mmWidth = 165629
+      BandType = 8
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppLabel15: TppLabel
+      UserName = 'Label13'
+      Caption = '2)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3705
+      mmLeft = 68
+      mmTop = 8647
+      mmWidth = 2646
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Weight = 0.750000000000000000
+      mmHeight = 962
+      mmLeft = 113
+      mmTop = 1323
+      mmWidth = 28623
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppRichText3: TppRichText
+      UserName = 'RichText2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      Caption = 'RichText2'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
+        'bri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\qj' +
+        '\cf1\f0\fs20 1)  Hier ist nur eine der Schulformen Hauptschule, ' +
+        'Realschule oder Gymnasium anzukreuzen\fs18\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 2910
+      mmWidth = 133086
+      BandType = 8
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    ResetPageNo = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = True
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      PrintHeight = phDynamic
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 128059
+      mmPrintPosition = 0
+      object ppMemo6: TppMemo
+        UserName = 'mmoEmpfSek1Begruendung'
+        Caption = 'mmoEmpfSek1Begruendung'
+        CharWrap = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        RemoveEmptyLines = False
+        Stretch = True
+        TextAlignment = taFullJustified
+        Transparent = True
+        mmHeight = 6879
+        mmLeft = 0
+        mmTop = 101865
+        mmWidth = 169863
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeading = 0
+      end
+      object rbCheckBox1: TrbCheckBox
+        UserName = 'CheckBox_H'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 12
+        Font.Style = []
+        ReprintOnOverFlow = True
+        ShiftWithParent = False
+        Style = cbsXInBox
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 1853
+        mmTop = 27781
+        mmWidth = 6083
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object rbCheckBox2: TrbCheckBox
+        UserName = 'CheckBox_R'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 12
+        Font.Style = []
+        ShiftWithParent = False
+        Style = cbsXInBox
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 60591
+        mmTop = 27781
+        mmWidth = 6879
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object rbCheckBox3: TrbCheckBox
+        UserName = 'CheckBox_GY'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 12
+        Font.Style = []
+        ShiftWithParent = False
+        Style = cbsXInBox
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 117202
+        mmTop = 27781
+        mmWidth = 6350
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel1: TppLabel
+        UserName = 'Label1'
+        Caption = 'und der Gesamtschule sowie der Sekundarschule geeignet ist.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 0
+        mmTop = 37571
+        mmWidth = 106363
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object rbCheckBox4: TrbCheckBox
+        UserName = 'CheckBox_R_eingeschraenkt'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 12
+        Font.Style = []
+        ShiftWithParent = False
+        Style = cbsXInBox
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 1853
+        mmTop = 64294
+        mmWidth = 6083
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object rbCheckBox5: TrbCheckBox
+        UserName = 'CheckBox_GY_eingeschraenkt'
+        Caption = ' '
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 12
+        Font.Style = []
+        ShiftWithParent = False
+        Style = cbsXInBox
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 46575
+        mmTop = 64294
+        mmWidth = 7144
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel2: TppLabel
+        UserName = 'Label2'
+        Caption = 'F'#252'r den Besuch'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 0
+        mmTop = 53485
+        mmWidth = 26194
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel3: TppLabel
+        UserName = 'Label_Einschraenkung'
+        Caption = 'ist das Kind mit Einschr'#228'nkungen geeignet.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 4763
+        mmLeft = 93927
+        mmTop = 64294
+        mmWidth = 75936
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppRichText2: TppRichText
+        UserName = 'RichText1'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Caption = 'RichText1'
+        MailMerge = True
+        RichText = 
+          '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+          'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
+          'ue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs24 Die Klassenkonferenz h' +
+          'at am $Konferenzdatum$ beschlossen, dass <dbtext>VornameName</db' +
+          'text>  auf der Grundlage des Leistungsstandes, der Lernentwicklu' +
+          'ng sowie des Arbeits- und Sozialverhaltens auf der Grundlage des' +
+          ' Beschlusses der Schulkonferenz nach \'#39'a7 49 Abs. 2 SchulG f\'#39'fc' +
+          'r den Besuch\f1\par'#13#10'}'#13#10#0
+        RemoveEmptyLines = False
+        Stretch = True
+        Transparent = True
+        mmHeight = 24871
+        mmLeft = 0
+        mmTop = 0
+        mmWidth = 169863
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+      end
+      object ppLabel4: TppLabel
+        UserName = 'Label_HS'
+        Caption = 'der Hauptschule'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 9412
+        mmTop = 27782
+        mmWidth = 32808
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel5: TppLabel
+        UserName = 'Label_RS'
+        Caption = 'der Realschule'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 68041
+        mmTop = 27782
+        mmWidth = 25400
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel6: TppLabel
+        UserName = 'Label_GY'
+        Caption = 'des Gymnasiums'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 124190
+        mmTop = 27782
+        mmWidth = 29104
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel8: TppLabel
+        UserName = 'Label_R_eingeschraenkt'
+        Caption = 'der Realschule'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 8882
+        mmTop = 64068
+        mmWidth = 25400
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel9: TppLabel
+        UserName = 'Label_GY_eingeschraenkt'
+        Caption = 'des Gymnasiums'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 53861
+        mmTop = 64068
+        mmWidth = 29104
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel7: TppLabel
+        UserName = 'Label6'
+        Caption = '1'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 8
+        Font.Style = []
+        Transparent = True
+        mmHeight = 7408
+        mmLeft = 8182
+        mmTop = 25931
+        mmWidth = 8419
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel10: TppLabel
+        UserName = 'Label10'
+        Caption = '2'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 8
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3439
+        mmLeft = 8179
+        mmTop = 62459
+        mmWidth = 1588
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel11: TppLabel
+        UserName = 'Label11'
+        Caption = '1'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 8
+        Font.Style = []
+        Transparent = True
+        mmHeight = 7408
+        mmLeft = 66937
+        mmTop = 25931
+        mmWidth = 8467
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel12: TppLabel
+        UserName = 'Label12'
+        Caption = '1'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 8
+        Font.Style = []
+        Transparent = True
+        mmHeight = 7408
+        mmLeft = 123526
+        mmTop = 26196
+        mmWidth = 8467
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel13: TppLabel
+        UserName = 'Label101'
+        Caption = '2'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'calibri'
+        Font.Pitch = fpFixed
+        Font.Size = 8
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3440
+        mmLeft = 52577
+        mmTop = 62746
+        mmWidth = 2314
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel16: TppLabel
+        UserName = 'LabelBegruendung'
+        Caption = 'Begr'#252'ndung f'#252'r die Empfehlung f'#252'r die weitere Schullaufbahn:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 5027
+        mmLeft = 0
+        mmTop = 93398
+        mmWidth = 113771
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine2: TppLine
+        UserName = 'Linie_H'
+        Pen.Color = clGray
+        Visible = False
+        Weight = 0.750000000000000000
+        mmHeight = 1322
+        mmLeft = 1060
+        mmTop = 30427
+        mmWidth = 37830
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine4: TppLine
+        UserName = 'Linie_R'
+        Pen.Color = clGray
+        Visible = False
+        Weight = 0.750000000000000000
+        mmHeight = 1852
+        mmLeft = 60061
+        mmTop = 30427
+        mmWidth = 34391
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine5: TppLine
+        UserName = 'Linie_GY'
+        Pen.Color = clGray
+        Visible = False
+        Weight = 0.750000000000000000
+        mmHeight = 2117
+        mmLeft = 118262
+        mmTop = 30427
+        mmWidth = 37567
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine6: TppLine
+        UserName = 'Linie_R_GY'
+        Pen.Color = clGray
+        Visible = False
+        Weight = 0.750000000000000000
+        mmHeight = 2117
+        mmLeft = 45780
+        mmTop = 66675
+        mmWidth = 39158
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine7: TppLine
+        UserName = 'Linie_H_R'
+        Pen.Color = clGray
+        Visible = False
+        Weight = 0.750000000000000000
+        mmHeight = 2117
+        mmLeft = 1060
+        mmTop = 66675
+        mmWidth = 35189
+        BandType = 5
+        GroupNo = 0
+        LayerName = Foreground
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060A54726150726F6772616D094368696C645479706502150E497346756E63
+      74696F6E54797065090B50726F6772616D4E616D6506084E6163686E616D650B
+      50726F6772616D54797065070A747446756E6374696F6E06536F7572636506CA
+      66756E6374696F6E204E6163686E616D653A20737472696E673B0D0A62656769
+      6E0D0A202069662053636875656C65725B20275A757361747A4E6163686E616D
+      6527205D203C3E202727207468656E0D0A20202020526573756C74203A3D2053
+      636875656C65725B20275A757361747A4E6163686E616D6527205D202B202720
+      27202B2053636875656C65725B20274E616D6527205D200D0A2020656C73650D
+      0A20202020526573756C74203A3D2053636875656C65725B20274E616D652720
+      5D3B0D0A656E643B0D0A084361726574506F730102010201000001060A547261
+      50726F6772616D094368696C645479706502150E497346756E6374696F6E5479
+      7065090B50726F6772616D4E616D65060F5072696D617242656D65726B756E67
+      0B50726F6772616D54797065070A747446756E6374696F6E06536F7572636514
+      9D03000066756E6374696F6E205072696D617242656D65726B756E6728206665
+      6C643A20737472696E6720293A20737472696E673B0D0A7661720D0A2020666C
+      643A20737472696E673B0D0A626567696E0D0A2F2F2046616C6C732064696520
+      566F726C61676520696D2047532D4D6F64756C2076657277656E646574207765
+      7264656E20736F6C6C2C200D0A2F2F2064696520666F6C67656E64656E205A65
+      696C656E2028626973202F2F456E646529206175736B6F6D6D656E7469657265
+      6E20282F2F20766F72616E7374656C6C656E290D0A2F2F2020506970656C696E
+      654F6566666E656E28204153565072696D6172737475666520293B0D0A2F2F20
+      20666C64203A3D204C6F77657263617365282066656C6420293B0D0A2F2F2020
+      696620666C64203D202761737627207468656E0D0A2F2F20202020666C64203A
+      3D2027417262656974732D20756E6420536F7A69616C76657268616C74656E27
+      0D0A2F2F2020656C736520696620666C64203D202762656D65726B756E676673
+      7027207468656E0D0A2F2F20202020666C64203A3D202742656D65726B756E67
+      2046C3B67264657273636877657270756E6B74270D0A2F2F2020656C73652069
+      6620666C64203D202762656D65726B756E677665727365747A756E6727207468
+      656E0D0A2F2F20202020666C64203A3D202742656D65726B756E672056657273
+      65747A756E67270D0A2F2F2020656C736520696620666C64203D202765736627
+      207468656E0D0A2F2F20202020666C64203A3D2027456D706665686C756E6773
+      73636872656962656E20466F72747365747A756E67270D0A2F2F2020656C7365
+      20696620666C64203D20276C656C7327207468656E0D0A2F2F20202020666C64
+      203A3D20274C65726E656E747769636B6C756E6720756E64204C65697374756E
+      67737374616E64273B0D0A2F2F2020526573756C74203A3D205472696D282041
+      53565072696D617273747566655B20666C64205D20293B0D0A2F2F456E646520
+      200D0A2F2F2046616C6C732064696520566F726C61676520696D2047532D4D6F
+      64756C2076657277656E6465742077657264656E20736F6C6C2C206265692064
+      656E20666F6C67656E64656E205A65696C656E206469652066C3BC6872656E64
+      656E202F2F206CC3B6736368656E0D0A2020506970656C696E654F6566666E65
+      6E282042656D5072696D617220293B0D0A2020526573756C74203A3D20547269
+      6D282042656D5072696D61725B2066656C64205D20293B0D0A0D0A656E643B0D
+      0A084361726574506F730102010201000001060F5472614576656E7448616E64
+      6C65720B50726F6772616D4E616D65061144657461696C4265666F7265507269
+      6E740B50726F6772616D54797065070B747450726F63656475726506536F7572
+      636514B802000070726F6365647572652044657461696C4265666F7265507269
+      6E743B0D0A626567696E0D0A2020206D6D6F456D706653656B31426567727565
+      6E64756E672E466F6E742E53697A65203A3D204C6162656C4265677275656E64
+      756E672E466F6E742E53697A653B0D0A2020206D6D6F456D706653656B314265
+      677275656E64756E672E466F6E742E4E616D65203A3D4C6162656C4265677275
+      656E64756E672E466F6E742E4E616D653B0D0A2020200D0A206D6D6F456D7066
+      53656B314265677275656E64756E672E4C696E65732E436C6561723B0D0A2020
+      6966205072696D617242656D65726B756E67282027455346272029203C3E2027
+      27207468656E0D0A202020206D6D6F456D706653656B314265677275656E6475
+      6E672E4C696E65732E41646428205072696D617242656D65726B756E67282027
+      45534627202920293B0D0A202020200D0A20200D0A202020200D0A2069662020
+      2053636875656C65725B2747657363686C65636874275D203D2033207468656E
+      0D0A2020202020204C6162656C5F45696E7363687261656E6B756E672E436170
+      74696F6E203A3D2027697374206572206D69742045696E73636872C3A46E6B75
+      6E67656E2067656569676E65742E270D0A20656C736520696620205363687565
+      6C65725B2747657363686C65636874275D203D2034207468656E0D0A20202020
+      20204C6162656C5F45696E7363687261656E6B756E672E43617074696F6E203A
+      3D202769737420736965206D69742045696E73636872C3A46E6B756E67656E20
+      67656569676E65742E270D0A20656C73650D0A202020202020204C6162656C5F
+      45696E7363687261656E6B756E672E43617074696F6E203A3D20276973742064
+      6173204B696E64206D69742045696E73636872C3A46E6B756E67656E20676565
+      69676E65742E2720203B0D0A200D0A200D0A0D0A200D0A0D0A656E643B0D0A0D
+      436F6D706F6E656E744E616D65060644657461696C094576656E744E616D6506
+      0B4265666F72655072696E74074576656E7449440218084361726574506F7301
+      02200204000001060F5472614576656E7448616E646C65720B50726F6772616D
+      4E616D6506115265706F72744265666F72655072696E740B50726F6772616D54
+      797065070B747450726F63656475726506536F75726365066170726F63656475
+      7265205265706F72744265666F72655072696E743B0D0A626567696E0D0A2020
+      0D0A2020506970656C696E654F6566666E656E28204C65726E61627363686E69
+      74746520293B0D0A20200D0A656E643B20202020202020200D0A0D436F6D706F
+      6E656E744E616D6506065265706F7274094576656E744E616D65060B4265666F
+      72655072696E74074576656E7449440201084361726574506F73010201020100
+      0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+      145269636854657874314F6E4D61696C4D657267650B50726F6772616D547970
+      65070B747450726F63656475726506536F7572636506BD70726F636564757265
+      205269636854657874314F6E4D61696C4D657267653B0D0A626567696E0D0A20
+      205269636854657874312E5269636854657874203A3D5265706C616365546578
+      74285269636854657874312E52696368546578742C27244B6F6E666572656E7A
+      646174756D24272C466F726D61744461746554696D6528202744442E4D4D2E59
+      595959272C204C65726E61627363686E697474655B20274B6F6E666572656E7A
+      646174756D27205D2029293B0D0A656E643B0D0A0D436F6D706F6E656E744E61
+      6D650609526963685465787431094576656E744E616D65060B4F6E4D61696C4D
+      65726765074576656E744944038E00084361726574506F730102010201000001
+      060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061143
+      6865636B426F785F484F6E5072696E740B50726F6772616D54797065070B7474
+      50726F63656475726506536F757263650C2601000070726F6365647572652043
+      6865636B426F785F484F6E5072696E743B0D0A626567696E0D0A202020200D0A
+      202020436865636B426F785F482E436865636B6564203A3D202820506F732827
+      4861757074736368756C6527202C53636875656C65725B275562657267616E67
+      5F4A47355F54657874275D293D31293B0D0A2020204C696E69655F482E566973
+      69626C653A3D206E6F74202820506F7328274861757074736368756C6527202C
+      53636875656C65725B275562657267616E675F4A47355F54657874275D293D31
+      293B0D0A2020204C6162656C5F48532E466F6E742E626F6C643A3D202820506F
+      7328274861757074736368756C6527202C53636875656C65725B275562657267
+      616E675F4A47355F54657874275D293D31293B0D0A656E643B0D0A0D436F6D70
+      6F6E656E744E616D65060A436865636B426F785F48094576656E744E616D6506
+      074F6E5072696E74074576656E7449440220084361726574506F7301020B0205
+      000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
+      0611436865636B426F785F524F6E5072696E740B50726F6772616D5479706507
+      0B747450726F63656475726506536F757263650C1A01000070726F6365647572
+      6520436865636B426F785F524F6E5072696E743B0D0A626567696E0D0A202043
+      6865636B426F785F522E436865636B6564203A3D202820506F7328275265616C
+      736368756C6527202C53636875656C65725B275562657267616E675F4A47355F
+      54657874275D293D31293B0D0A20204C696E69655F522E56697369626C653A3D
+      206E6F742820506F7328275265616C736368756C6527202C53636875656C6572
+      5B275562657267616E675F4A47355F54657874275D293D31293B200D0A20204C
+      6162656C5F52532E466F6E742E626F6C643A3D202820506F7328275265616C73
+      6368756C6527202C53636875656C65725B275562657267616E675F4A47355F54
+      657874275D293D31293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+      060A436865636B426F785F52094576656E744E616D6506074F6E5072696E7407
+      4576656E7449440220084361726574506F730102030204000001060F54726145
+      76656E7448616E646C65720B50726F6772616D4E616D650612436865636B426F
+      785F47594F6E5072696E740B50726F6772616D54797065070B747450726F6365
+      6475726506536F757263650C1A01000070726F63656475726520436865636B42
+      6F785F47594F6E5072696E743B0D0A626567696E0D0A2020436865636B426F78
+      5F47592E436865636B6564203A3D202820506F73282747796D6E617369756D27
+      202C53636875656C65725B275562657267616E675F4A47355F54657874275D29
+      3D31293B0D0A20204C696E69655F47592E56697369626C653A3D206E6F742028
+      20506F73282747796D6E617369756D27202C53636875656C65725B2755626572
+      67616E675F4A47355F54657874275D293D31293B0D0A20204C6162656C5F4759
+      2E466F6E742E626F6C643A3D202820506F73282747796D6E617369756D27202C
+      53636875656C65725B275562657267616E675F4A47355F54657874275D293D31
+      293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B436865636B42
+      6F785F4759094576656E744E616D6506074F6E5072696E74074576656E744944
+      0220084361726574506F7301020B0206000001060F5472614576656E7448616E
+      646C65720B50726F6772616D4E616D650620436865636B426F785F525F65696E
+      67657363687261656E6B744F6E5072696E740B50726F6772616D54797065070B
+      747450726F63656475726506536F757263650C4B01000070726F636564757265
+      20436865636B426F785F525F65696E67657363687261656E6B744F6E5072696E
+      743B0D0A626567696E0D0A202020436865636B426F785F525F65696E67657363
+      687261656E6B742E436865636B6564203A3D202820506F7328275265616C7363
+      68756C6527202C53636875656C65725B275562657267616E675F4A47355F5465
+      7874275D293E31293B0D0A202020204C696E69655F485F522E56697369626C65
+      3A3D6E6F74202820506F7328275265616C736368756C6527202C53636875656C
+      65725B275562657267616E675F4A47355F54657874275D293E31293B0D0A2020
+      20204C6162656C5F525F65696E67657363687261656E6B742E466F6E742E626F
+      6C643A3D2820506F7328275265616C736368756C6527202C53636875656C6572
+      5B275562657267616E675F4A47355F54657874275D293E31293B0D0A656E643B
+      0D0A0D436F6D706F6E656E744E616D650619436865636B426F785F525F65696E
+      67657363687261656E6B74094576656E744E616D6506074F6E5072696E740745
+      76656E7449440220084361726574506F730102360206000001060F5472614576
+      656E7448616E646C65720B50726F6772616D4E616D650621436865636B426F78
+      5F47595F65696E67657363687261656E6B744F6E5072696E740B50726F677261
+      6D54797065070B747450726F63656475726506536F757263650C4B0100007072
+      6F63656475726520436865636B426F785F47595F65696E67657363687261656E
+      6B744F6E5072696E743B0D0A626567696E0D0A20202020436865636B426F785F
+      47595F65696E67657363687261656E6B742E436865636B6564203A3D20282050
+      6F73282747796D6E617369756D27202C53636875656C65725B27556265726761
+      6E675F4A47355F54657874275D293E31293B0D0A2020204C696E69655F525F47
+      592E56697369626C653A3D206E6F742820506F73282747796D6E617369756D27
+      202C53636875656C65725B275562657267616E675F4A47355F54657874275D29
+      3E31293B0D0A20204C6162656C5F47595F65696E67657363687261656E6B742E
+      466F6E742E626F6C643A3D202820506F73282747796D6E617369756D27202C53
+      636875656C65725B275562657267616E675F4A47355F54657874275D293E3129
+      3B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65061A436865636B426F
+      785F47595F65696E67657363687261656E6B74094576656E744E616D6506074F
+      6E5072696E74074576656E7449440220084361726574506F7301022202060000
+      00}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList1: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end
