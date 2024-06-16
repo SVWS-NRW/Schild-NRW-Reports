@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Kurse
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler mit m'#252'ndlichem Abitur.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Reports SII\Kursliste Sch'#252'ler mit m'#252'ndlichem ' +
-    'Abitur.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Reports SII\Kursliste Sch'#252'ler mit m'#252'ndlich' +
+    'em Abitur.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -126,7 +126,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.plKursSchueler
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler mit m'#252'ndlichem Abitur.rtm'
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -208,7 +208,7 @@ object Report: TppReport
             Font.Style = [fsBold]
             Transparent = True
             mmHeight = 5200
-            mmLeft = 21000
+            mmLeft = 26000
             mmTop = 0
             mmWidth = 58000
             BandType = 0
@@ -222,7 +222,7 @@ object Report: TppReport
             StretchWithParent = True
             Weight = 0.750000000000000000
             mmHeight = 5292
-            mmLeft = 20000
+            mmLeft = 25000
             mmTop = 0
             mmWidth = 1000
             BandType = 0
@@ -242,7 +242,7 @@ object Report: TppReport
             mmHeight = 5200
             mmLeft = 11000
             mmTop = 0
-            mmWidth = 8000
+            mmWidth = 13000
             BandType = 0
             LayerName = Foreground1
           end
@@ -284,7 +284,7 @@ object Report: TppReport
             VerticalAlignment = avCenter
             DataPipelineName = 'plKursSchueler'
             mmHeight = 6000
-            mmLeft = 21000
+            mmLeft = 26000
             mmTop = 0
             mmWidth = 58000
             BandType = 4
@@ -317,7 +317,7 @@ object Report: TppReport
             StretchWithParent = True
             Weight = 0.750000000000000000
             mmHeight = 6000
-            mmLeft = 20000
+            mmLeft = 25000
             mmTop = 0
             mmWidth = 1000
             BandType = 4
@@ -338,7 +338,7 @@ object Report: TppReport
             mmHeight = 6000
             mmLeft = 11000
             mmTop = 0
-            mmWidth = 8000
+            mmWidth = 13000
             BandType = 4
             LayerName = Foreground1
           end
