@@ -2,23 +2,22 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste Block I und II Ergebnisse ZAA2+.rtm'
-  PrinterSetup.Orientation = poLandscape
+  PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Abiturergebnisse.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
-  PrinterSetup.mmMarginBottom = 20000
-  PrinterSetup.mmMarginLeft = 15000
-  PrinterSetup.mmMarginRight = 15000
-  PrinterSetup.mmMarginTop = 20000
-  PrinterSetup.mmPaperHeight = 210000
-  PrinterSetup.mmPaperWidth = 297000
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Reports SII\Sch'#252'lerliste Block I und II Er' +
-    'gebnisse ZAA2+.rtm'
+    'ts\Reportsammlung 2.0\Reports SII\Abitur - Sch'#252'lerliste Abiturer' +
+    'gebnisse.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -92,12 +91,12 @@ object Report: TppReport
   Left = 128
   Top = 8
   Version = '15.05'
-  mmColumnWidth = 257000
+  mmColumnWidth = 165000
   DataPipelineName = 'Schueler'
   object ppTitleBand1: TppTitleBand
     Background.Brush.Style = bsClear
     mmBottomOffset = 0
-    mmHeight = 16000
+    mmHeight = 13229
     mmPrintPosition = 0
     object ppLabel3: TppLabel
       UserName = 'dbListenbezeichnung'
@@ -106,7 +105,7 @@ object Report: TppReport
       Border.Color = 10516052
       Border.Visible = True
       Border.Weight = 3.000000000000000000
-      Caption = 'Sch'#252'lerliste - Block I und II: Ergebnisse ZAA2'
+      Caption = 'Sch'#252'lerliste - Block I: Zulassung zum Abitur - Ergebnisse ZAA1'
       Color = 16051687
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -116,7 +115,7 @@ object Report: TppReport
       mmHeight = 8731
       mmLeft = 0
       mmTop = 0
-      mmWidth = 267000
+      mmWidth = 170000
       BandType = 1
       LayerName = Foreground
     end
@@ -135,7 +134,7 @@ object Report: TppReport
       Transparent = True
       DataPipelineName = 'EigeneSchule'
       mmHeight = 3704
-      mmLeft = 227000
+      mmLeft = 130000
       mmTop = 8996
       mmWidth = 40000
       BandType = 1
@@ -189,7 +188,7 @@ object Report: TppReport
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     mmBottomOffset = 0
-    mmHeight = 14000
+    mmHeight = 5300
     mmPrintPosition = 0
     object ppShape2: TppShape
       UserName = 'HintergrundUnsichtbar'
@@ -197,10 +196,10 @@ object Report: TppReport
       ParentHeight = True
       ParentWidth = True
       Visible = False
-      mmHeight = 14000
+      mmHeight = 5300
       mmLeft = 0
       mmTop = 0
-      mmWidth = 267000
+      mmWidth = 170000
       BandType = 0
       LayerName = Foreground
     end
@@ -211,7 +210,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 14000
+      mmHeight = 5300
       mmLeft = 10000
       mmTop = 0
       mmWidth = 1000
@@ -231,28 +230,68 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5300
       mmLeft = 11000
-      mmTop = 8700
+      mmTop = 0
       mmWidth = 48000
       BandType = 0
       LayerName = Foreground
     end
-    object ppLabel7: TppLabel
-      UserName = 'lblNormierte'
+    object ppLabel1: TppLabel
+      UserName = 'lblKurse'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'norm.'
+      Caption = 'LK1'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
-      Font.Size = 8
+      Font.Size = 11
       Font.Style = [fsBold]
       TextAlignment = taCentered
       Transparent = True
       VerticalAlignment = avCenter
-      mmHeight = 4000
+      mmHeight = 5300
       mmLeft = 61000
-      mmTop = 6000
-      mmWidth = 13000
+      mmTop = 0
+      mmWidth = 8000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel2: TppLabel
+      UserName = 'lblDefizite'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'Pkt.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      VerticalAlignment = avCenter
+      mmHeight = 5300
+      mmLeft = 71000
+      mmTop = 0
+      mmWidth = 8000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel8: TppLabel
+      UserName = 'lblSchnitt'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'AB3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      VerticalAlignment = avCenter
+      mmHeight = 5300
+      mmLeft = 101000
+      mmTop = 0
+      mmWidth = 8000
       BandType = 0
       LayerName = Foreground
     end
@@ -260,19 +299,19 @@ object Report: TppReport
       UserName = 'lblZulassung'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'Zulassung'
+      Caption = 'AB4'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
-      Font.Size = 8
+      Font.Size = 11
       Font.Style = [fsBold]
       TextAlignment = taCentered
       Transparent = True
       VerticalAlignment = avCenter
-      mmHeight = 4000
-      mmLeft = 91000
-      mmTop = 10000
-      mmWidth = 13000
+      mmHeight = 5300
+      mmLeft = 121000
+      mmTop = 0
+      mmWidth = 8000
       BandType = 0
       LayerName = Foreground
     end
@@ -280,19 +319,19 @@ object Report: TppReport
       UserName = 'lblFHR'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'FHR'
+      Caption = 'Pkt.'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
-      Font.Size = 8
+      Font.Size = 11
       Font.Style = [fsBold]
       TextAlignment = taCentered
       Transparent = True
       VerticalAlignment = avCenter
-      mmHeight = 4000
-      mmLeft = 75000
-      mmTop = 10000
-      mmWidth = 13000
+      mmHeight = 5300
+      mmLeft = 111000
+      mmTop = 0
+      mmWidth = 8000
       BandType = 0
       LayerName = Foreground
     end
@@ -300,19 +339,39 @@ object Report: TppReport
       UserName = 'lblPunktsumme'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'Punktsum.'
+      Caption = 'Pkt.'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
-      Font.Size = 8
+      Font.Size = 11
       Font.Style = [fsBold]
       TextAlignment = taCentered
       Transparent = True
       VerticalAlignment = avCenter
-      mmHeight = 4000
-      mmLeft = 61000
-      mmTop = 10000
-      mmWidth = 13000
+      mmHeight = 5300
+      mmLeft = 91000
+      mmTop = 0
+      mmWidth = 8000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel6: TppLabel
+      UserName = 'lblDefiziteLK'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'LK2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      VerticalAlignment = avCenter
+      mmHeight = 5300
+      mmLeft = 81000
+      mmTop = 0
+      mmWidth = 8000
       BandType = 0
       LayerName = Foreground
     end
@@ -323,7 +382,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 14000
+      mmHeight = 5300
       mmLeft = 60000
       mmTop = 0
       mmWidth = 1058
@@ -333,12 +392,13 @@ object Report: TppReport
     object ppLine6: TppLine
       UserName = 'Line6'
       Pen.Color = 4993567
+      ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 75000
-      mmTop = 6000
+      mmHeight = 5300
+      mmLeft = 70000
+      mmTop = 0
       mmWidth = 1058
       BandType = 0
       LayerName = Foreground
@@ -346,12 +406,13 @@ object Report: TppReport
     object ppLine8: TppLine
       UserName = 'Line8'
       Pen.Color = 4993567
+      ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 135000
-      mmTop = 6000
+      mmHeight = 5300
+      mmLeft = 110000
+      mmTop = 0
       mmWidth = 1058
       BandType = 0
       LayerName = Foreground
@@ -363,8 +424,8 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 14000
-      mmLeft = 105000
+      mmHeight = 5300
+      mmLeft = 90000
       mmTop = 0
       mmWidth = 1058
       BandType = 0
@@ -373,12 +434,13 @@ object Report: TppReport
     object ppLine12: TppLine
       UserName = 'Line12'
       Pen.Color = 4993567
+      ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 120000
-      mmTop = 6000
+      mmHeight = 5300
+      mmLeft = 100000
+      mmTop = 0
       mmWidth = 1058
       BandType = 0
       LayerName = Foreground
@@ -386,12 +448,13 @@ object Report: TppReport
     object ppLine14: TppLine
       UserName = 'Line14'
       Pen.Color = 4993567
+      ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 90000
-      mmTop = 6000
+      mmHeight = 5300
+      mmLeft = 80000
+      mmTop = 0
       mmWidth = 1058
       BandType = 0
       LayerName = Foreground
@@ -399,12 +462,13 @@ object Report: TppReport
     object ppLine16: TppLine
       UserName = 'Line16'
       Pen.Color = 4993567
+      ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 150000
-      mmTop = 6000
+      mmHeight = 5300
+      mmLeft = 120000
+      mmTop = 0
       mmWidth = 1058
       BandType = 0
       LayerName = Foreground
@@ -423,7 +487,27 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5300
       mmLeft = 1000
-      mmTop = 8700
+      mmTop = 0
+      mmWidth = 8000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel7: TppLabel
+      UserName = 'lblZulassung1'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'Pkt.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      VerticalAlignment = avCenter
+      mmHeight = 5300
+      mmLeft = 131000
+      mmTop = 0
       mmWidth = 8000
       BandType = 0
       LayerName = Foreground
@@ -435,257 +519,32 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 14000
-      mmLeft = 165000
+      mmHeight = 5300
+      mmLeft = 130000
       mmTop = 0
       mmWidth = 1058
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel14: TppLabel
-      UserName = 'lblDefizite1'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Defizite'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 166000
-      mmTop = 10000
-      mmWidth = 12965
       BandType = 0
       LayerName = Foreground
     end
     object ppLine20: TppLine
       UserName = 'Line20'
       Pen.Color = 4993567
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 180000
-      mmTop = 6000
-      mmWidth = 1058
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel15: TppLabel
-      UserName = 'lblDavon1'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'davon'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 4000
-      mmLeft = 181000
-      mmTop = 6000
-      mmWidth = 13000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel16: TppLabel
-      UserName = 'lblDefiziteLK1'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Defiz. LK'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 181000
-      mmTop = 10000
-      mmWidth = 13000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLine22: TppLine
-      UserName = 'Line101'
-      Pen.Color = 4993567
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 195000
-      mmTop = 6000
-      mmWidth = 1058
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel17: TppLabel
-      UserName = 'lblPunktsumme1'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Punktsum.'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 196000
-      mmTop = 10000
-      mmWidth = 13000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLine24: TppLine
-      UserName = 'Line24'
-      Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 14000
-      mmLeft = 210000
+      mmHeight = 5300
+      mmLeft = 140000
       mmTop = 0
       mmWidth = 1058
       BandType = 0
       LayerName = Foreground
     end
-    object ppLabel18: TppLabel
-      UserName = 'lblZulassung1'
+    object ppLabel11: TppLabel
+      UserName = 'Label11'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'Bestanden'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 211000
-      mmTop = 10000
-      mmWidth = 12965
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLine26: TppLine
-      UserName = 'Line26'
-      Pen.Color = 4993567
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 225000
-      mmTop = 6000
-      mmWidth = 1058
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel19: TppLabel
-      UserName = 'Label19'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'summe'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 226000
-      mmTop = 10000
-      mmWidth = 13000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLine28: TppLine
-      UserName = 'Line28'
-      Pen.Color = 4993567
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 240000
-      mmTop = 6000
-      mmWidth = 1058
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel20: TppLabel
-      UserName = 'lblNote'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Note'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 241000
-      mmTop = 10000
-      mmWidth = 13000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLine30: TppLine
-      UserName = 'Line30'
-      Pen.Color = 4993567
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 8000
-      mmLeft = 255000
-      mmTop = 6000
-      mmWidth = 1058
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel21: TppLabel
-      UserName = 'Label21'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Noten-'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 256000
-      mmTop = 6000
-      mmWidth = 11000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel22: TppLabel
-      UserName = 'lblDavon2'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Block I'
+      Caption = 'Bemerkung'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
@@ -694,90 +553,10 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       VerticalAlignment = avCenter
-      mmHeight = 5200
-      mmLeft = 61000
+      mmHeight = 5300
+      mmLeft = 141000
       mmTop = 0
-      mmWidth = 43000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel23: TppLabel
-      UserName = 'Label23'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Block II'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 5200
-      mmLeft = 166000
-      mmTop = 0
-      mmWidth = 43000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel24: TppLabel
-      UserName = 'Label24'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Abitur'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 5200
-      mmLeft = 211000
-      mmTop = 0
-      mmWidth = 55000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel25: TppLabel
-      UserName = 'Label25'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'Punkt-'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 226000
-      mmTop = 6000
-      mmWidth = 13000
-      BandType = 0
-      LayerName = Foreground
-    end
-    object ppLabel26: TppLabel
-      UserName = 'Label26'
-      Anchors = [atLeft, atRight]
-      AutoSize = False
-      Caption = 'sprung'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Name = 'Calibri'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      mmHeight = 3969
-      mmLeft = 256000
-      mmTop = 10000
-      mmWidth = 11000
+      mmWidth = 28000
       BandType = 0
       LayerName = Foreground
     end
@@ -789,6 +568,7 @@ object Report: TppReport
     Border.Color = 4993567
     Border.Visible = True
     Border.Weight = 0.750000000000000000
+    PrintHeight = phDynamic
     mmBottomOffset = 0
     mmHeight = 6300
     mmPrintPosition = 0
@@ -846,69 +626,6 @@ object Report: TppReport
       BandType = 4
       LayerName = Foreground
     end
-    object ppDBText7: TppDBText
-      UserName = 'dbPunktsumme'
-      DataField = 'Punktsumme_I'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 61000
-      mmTop = 0
-      mmWidth = 13000
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppDBText10: TppDBText
-      UserName = 'dbZulassung'
-      DataField = 'Zugelassen'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 91000
-      mmTop = 0
-      mmWidth = 13000
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppDBText11: TppDBText
-      UserName = 'dbFHR'
-      DataField = 'FHRErreicht'
-      DataPipeline = dmPipelines.plFHR
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plFHR'
-      mmHeight = 6300
-      mmLeft = 75000
-      mmTop = 0
-      mmWidth = 13000
-      BandType = 4
-      LayerName = Foreground
-    end
     object ppLine4: TppLine
       UserName = 'Line4'
       Pen.Color = 4993567
@@ -931,7 +648,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 75000
+      mmLeft = 70000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
@@ -945,7 +662,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 135000
+      mmLeft = 110000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
@@ -959,7 +676,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 105000
+      mmLeft = 90000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
@@ -973,7 +690,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 120000
+      mmLeft = 100000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
@@ -1001,7 +718,7 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 150000
+      mmLeft = 120000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
@@ -1010,34 +727,14 @@ object Report: TppReport
     object ppLine19: TppLine
       UserName = 'Line19'
       Pen.Color = 4993567
+      ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 165000
+      mmLeft = 130000
       mmTop = 0
       mmWidth = 1058
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppDBText12: TppDBText
-      UserName = 'dbDefizite2'
-      DataField = 'Defizite_II'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 166000
-      mmTop = 0
-      mmWidth = 13000
       BandType = 4
       LayerName = Foreground
     end
@@ -1049,207 +746,481 @@ object Report: TppReport
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 180000
+      mmLeft = 140000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
       LayerName = Foreground
     end
-    object ppDBText13: TppDBText
-      UserName = 'dbDefiziteLK2'
-      DataField = 'LK_Defizite_II'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 181000
-      mmTop = 0
-      mmWidth = 13000
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppLine23: TppLine
-      UserName = 'Line23'
+    object ppLine22: TppLine
+      UserName = 'Line22'
       Pen.Color = 4993567
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
       mmHeight = 6300
-      mmLeft = 195000
+      mmLeft = 80000
       mmTop = 0
       mmWidth = 1058
       BandType = 4
       LayerName = Foreground
     end
-    object ppDBText14: TppDBText
-      UserName = 'dbPunktsumme2'
-      DataField = 'Punktsumme_II'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plAbifaecher'
       mmHeight = 6300
-      mmLeft = 196000
+      mmLeft = 61000
       mmTop = 0
-      mmWidth = 13000
+      mmWidth = 18000
       BandType = 4
       LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plAbifaecher
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Abiturergebnisse.rtm'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'plAbifaecher'
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 6300
+          mmPrintPosition = 0
+          object ppDBText3: TppDBText
+            UserName = 'dbFach'
+            DataField = 'FachKrz'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = Foreground4
+          end
+          object ppDBText5: TppDBText
+            UserName = 'dbNote'
+            DataField = 'AbiPruefErgebnis'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 10000
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = Foreground4
+          end
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F75726365065E70726F63656475726520446574
+            61696C4265666F72655072696E743B0D0A626567696E0D0A202044657461696C
+            2E56697369626C65203A3D20416269666165636865725B274162694661636827
+            5D203D202731273B200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            0644657461696C094576656E744E616D65060B4265666F72655072696E740745
+            76656E7449440218084361726574506F730102010201000001060F5472614576
+            656E7448616E646C65720B50726F6772616D4E616D65060F64624E6F74654F6E
+            476574546578740B50726F6772616D54797065070B747450726F636564757265
+            06536F75726365067E70726F6365647572652064624E6F74654F6E4765745465
+            78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+            202054657874203A3D20466F726D6174466C6F61742028273030272C20416269
+            666165636865725B27416269507275656645726765626E6973275D293B0D0A0D
+            0A656E643B0D0A0D436F6D706F6E656E744E616D65060664624E6F7465094576
+            656E744E616D6506094F6E47657454657874074576656E744944023508436172
+            6574506F7301023E0204000000}
+        end
+        object ppDesignLayers5: TppDesignLayers
+          object ppDesignLayer5: TppDesignLayer
+            UserName = 'Foreground4'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
     end
-    object ppLine25: TppLine
-      UserName = 'Line25'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
+    object ppSubReport2: TppSubReport
+      UserName = 'SubReport2'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plAbifaecher'
       mmHeight = 6300
-      mmLeft = 210000
+      mmLeft = 81000
       mmTop = 0
-      mmWidth = 1058
+      mmWidth = 18000
       BandType = 4
       LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plAbifaecher
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Abiturergebnisse.rtm'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'plAbifaecher'
+        object ppDetailBand3: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 6300
+          mmPrintPosition = 0
+          object ppDBText6: TppDBText
+            UserName = 'dbFach'
+            DataField = 'FachKrz'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+          object ppDBText7: TppDBText
+            UserName = 'dbNote'
+            DataField = 'AbiPruefErgebnis'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 10000
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = PageLayer1
+          end
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F75726365065E70726F63656475726520446574
+            61696C4265666F72655072696E743B0D0A626567696E0D0A202044657461696C
+            2E56697369626C65203A3D20416269666165636865725B274162694661636827
+            5D203D202732273B200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            0644657461696C094576656E744E616D65060B4265666F72655072696E740745
+            76656E7449440218084361726574506F730102010201000001060F5472614576
+            656E7448616E646C65720B50726F6772616D4E616D65060F64624E6F74654F6E
+            476574546578740B50726F6772616D54797065070B747450726F636564757265
+            06536F75726365067E70726F6365647572652064624E6F74654F6E4765745465
+            78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+            202054657874203A3D20466F726D6174466C6F61742028273030272C20416269
+            666165636865725B27416269507275656645726765626E6973275D293B0D0A0D
+            0A656E643B0D0A0D436F6D706F6E656E744E616D65060664624E6F7465094576
+            656E744E616D6506094F6E47657454657874074576656E744944023508436172
+            6574506F7301023E0204000000}
+        end
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'PageLayer1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
     end
-    object ppDBText15: TppDBText
-      UserName = 'dbAbiBestanden'
-      DataField = 'PruefungBestanden'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
+    object ppSubReport3: TppSubReport
+      UserName = 'SubReport3'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plAbifaecher'
       mmHeight = 6300
-      mmLeft = 211000
+      mmLeft = 101000
       mmTop = 0
-      mmWidth = 13000
+      mmWidth = 18000
       BandType = 4
       LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport3: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plAbifaecher
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Abiturergebnisse.rtm'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'plAbifaecher'
+        object ppDetailBand4: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 6300
+          mmPrintPosition = 0
+          object ppDBText9: TppDBText
+            UserName = 'dbFach'
+            DataField = 'FachKrz'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = PageLayer2
+          end
+          object ppDBText10: TppDBText
+            UserName = 'dbNote'
+            DataField = 'AbiPruefErgebnis'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 10000
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = PageLayer2
+          end
+        end
+        object raCodeModule4: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F75726365065E70726F63656475726520446574
+            61696C4265666F72655072696E743B0D0A626567696E0D0A202044657461696C
+            2E56697369626C65203A3D20416269666165636865725B274162694661636827
+            5D203D202733273B200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            0644657461696C094576656E744E616D65060B4265666F72655072696E740745
+            76656E7449440218084361726574506F7301022F0203000001060F5472614576
+            656E7448616E646C65720B50726F6772616D4E616D65060F64624E6F74654F6E
+            476574546578740B50726F6772616D54797065070B747450726F636564757265
+            06536F75726365067E70726F6365647572652064624E6F74654F6E4765745465
+            78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+            202054657874203A3D20466F726D6174466C6F61742028273030272C20416269
+            666165636865725B27416269507275656645726765626E6973275D293B0D0A0D
+            0A656E643B0D0A0D436F6D706F6E656E744E616D65060664624E6F7465094576
+            656E744E616D6506094F6E47657454657874074576656E744944023508436172
+            6574506F7301023E0204000000}
+        end
+        object ppDesignLayers3: TppDesignLayers
+          object ppDesignLayer3: TppDesignLayer
+            UserName = 'PageLayer2'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
     end
-    object ppLine27: TppLine
-      UserName = 'Line27'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
+    object ppSubReport4: TppSubReport
+      UserName = 'SubReport4'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'plAbifaecher'
       mmHeight = 6300
-      mmLeft = 225000
+      mmLeft = 121000
       mmTop = 0
-      mmWidth = 1058
+      mmWidth = 18000
       BandType = 4
       LayerName = Foreground
-    end
-    object ppDBText16: TppDBText
-      UserName = 'dbAbiPunktsumme'
-      DataField = 'GesamtPunktzahl'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 226000
-      mmTop = 0
-      mmWidth = 13000
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppLine29: TppLine
-      UserName = 'Line29'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 6300
-      mmLeft = 240000
-      mmTop = 0
-      mmWidth = 1058
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppDBText17: TppDBText
-      UserName = 'dbAbiNote'
-      DataField = 'Note'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 241000
-      mmTop = 0
-      mmWidth = 13000
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppLine31: TppLine
-      UserName = 'Line31'
-      Pen.Color = 4993567
-      ParentHeight = True
-      Position = lpLeft
-      StretchWithParent = True
-      Weight = 0.750000000000000000
-      mmHeight = 6300
-      mmLeft = 255000
-      mmTop = 0
-      mmWidth = 1058
-      BandType = 4
-      LayerName = Foreground
-    end
-    object ppDBText18: TppDBText
-      UserName = 'dbAbiNotensprung'
-      DataField = 'Notensprung'
-      DataPipeline = dmPipelines.plAbi
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Calibri'
-      Font.Size = 11
-      Font.Style = []
-      ParentDataPipeline = False
-      TextAlignment = taCentered
-      Transparent = True
-      VerticalAlignment = avCenter
-      DataPipelineName = 'plAbi'
-      mmHeight = 6300
-      mmLeft = 256000
-      mmTop = 0
-      mmWidth = 11000
-      BandType = 4
-      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport4: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plAbifaecher
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Abiturergebnisse.rtm'
+        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'plAbifaecher'
+        object ppDetailBand5: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 6300
+          mmPrintPosition = 0
+          object ppDBText11: TppDBText
+            UserName = 'dbFach'
+            DataField = 'FachKrz'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = PageLayer3
+          end
+          object ppDBText12: TppDBText
+            UserName = 'dbNote'
+            DataField = 'AbiPruefErgebnis'
+            DataPipeline = dmPipelines.plAbifaecher
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'plAbifaecher'
+            mmHeight = 6300
+            mmLeft = 10000
+            mmTop = 0
+            mmWidth = 8000
+            BandType = 4
+            LayerName = PageLayer3
+          end
+        end
+        object raCodeModule5: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F75726365065E70726F63656475726520446574
+            61696C4265666F72655072696E743B0D0A626567696E0D0A202044657461696C
+            2E56697369626C65203A3D20416269666165636865725B274162694661636827
+            5D203D202734273B200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            0644657461696C094576656E744E616D65060B4265666F72655072696E740745
+            76656E7449440218084361726574506F7301022F0203000001060F5472614576
+            656E7448616E646C65720B50726F6772616D4E616D65060F64624E6F74654F6E
+            476574546578740B50726F6772616D54797065070B747450726F636564757265
+            06536F75726365067F70726F6365647572652064624E6F74654F6E4765745465
+            78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+            202054657874203A3D20466F726D6174466C6F61742028273030272C20416269
+            666165636865725B27416269507275656645726765626E6973275D293B200D0A
+            0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060664624E6F74650945
+            76656E744E616D6506094F6E47657454657874074576656E7449440235084361
+            726574506F7301023E0204000000}
+        end
+        object ppDesignLayers4: TppDesignLayers
+          object ppDesignLayer4: TppDesignLayer
+            UserName = 'PageLayer3'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
     end
   end
   object ppFooterBand1: TppFooterBand
@@ -1265,7 +1236,7 @@ object Report: TppReport
       mmHeight = 2000
       mmLeft = 0
       mmTop = 0
-      mmWidth = 267000
+      mmWidth = 170000
       BandType = 8
       LayerName = Foreground
     end
@@ -1295,7 +1266,7 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       mmHeight = 3704
-      mmLeft = 110331
+      mmLeft = 61912
       mmTop = 1000
       mmWidth = 46302
       BandType = 8
@@ -1312,7 +1283,7 @@ object Report: TppReport
       TextAlignment = taRightJustified
       Transparent = True
       mmHeight = 3704
-      mmLeft = 247000
+      mmLeft = 150000
       mmTop = 1000
       mmWidth = 20000
       BandType = 8
@@ -1345,67 +1316,7 @@ object Report: TppReport
       416E616C7973696572656E3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
       4E616D65060D64624E616D65566F726E616D65094576656E744E616D6506094F
       6E47657454657874074576656E7449440235084361726574506F730102010201
-      000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
-      060E64624648524F6E476574546578740B50726F6772616D54797065070B7474
-      50726F63656475726506536F75726365067670726F6365647572652064624648
-      524F6E476574546578742876617220546578743A20537472696E67293B0D0A62
-      6567696E0D0A0D0A202069662054657874203D20272B27207468656E20546578
-      74203A3D20274A612720656C73652054657874203A3D20274E65696E273B0D0A
-      0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506056462464852094576
-      656E744E616D6506094F6E47657454657874074576656E744944023508436172
-      6574506F730102010201000001060F5472614576656E7448616E646C65720B50
-      726F6772616D4E616D65061464625A756C617373756E674F6E47657454657874
-      0B50726F6772616D54797065070B747450726F63656475726506536F75726365
-      067C70726F6365647572652064625A756C617373756E674F6E47657454657874
-      2876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A2020
-      69662054657874203D20272B27207468656E2054657874203A3D20274A612720
-      656C73652054657874203A3D20274E65696E273B0D0A0D0A656E643B0D0A0D43
-      6F6D706F6E656E744E616D65060B64625A756C617373756E67094576656E744E
-      616D6506094F6E47657454657874074576656E7449440235084361726574506F
-      730102010201000001060F5472614576656E7448616E646C65720B50726F6772
-      616D4E616D6506115265706F72744265666F72655072696E740B50726F677261
-      6D54797065070B747450726F63656475726506536F75726365064470726F6365
-      64757265205265706F72744265666F72655072696E743B0D0A626567696E0D0A
-      2020506970656C696E654F6566666E656E28464852293B0D0A656E643B0D0A0D
-      436F6D706F6E656E744E616D6506065265706F7274094576656E744E616D6506
-      0B4265666F72655072696E74074576656E7449440201084361726574506F7301
-      02030203000001060F5472614576656E7448616E646C65720B50726F6772616D
-      4E616D65061964624162694E6F74656E737072756E674F6E476574546578740B
-      50726F6772616D54797065070B747450726F63656475726506536F7572636506
-      9770726F6365647572652064624162694E6F74656E737072756E674F6E476574
-      546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
-      0D0A202054657874203A3D20272B27202B20496E74546F537472284162697475
-      725B274E6F74656E737072756E67275D202D204162697475725B27476573616D
-      7450756E6B747A61686C275D293B0D0A0D0A656E643B0D0A0D436F6D706F6E65
-      6E744E616D65061064624162694E6F74656E737072756E67094576656E744E61
-      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-      0102110204000001060F5472614576656E7448616E646C65720B50726F677261
-      6D4E616D650617646241626942657374616E64656E4F6E476574546578740B50
-      726F6772616D54797065070B747450726F63656475726506536F75726365067F
-      70726F63656475726520646241626942657374616E64656E4F6E476574546578
-      742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
-      2069662054657874203D20272B27207468656E2054657874203A3D20274A6127
-      20656C73652074657874203A3D20274E65696E273B0D0A0D0A656E643B0D0A0D
-      436F6D706F6E656E744E616D65060E646241626942657374616E64656E094576
-      656E744E616D6506094F6E47657454657874074576656E744944023508436172
-      6574506F730102370204000001060F5472614576656E7448616E646C65720B50
-      726F6772616D4E616D65061444657461696C4265666F726547656E6572617465
-      0B50726F6772616D54797065070B747450726F63656475726506536F75726365
-      0C7701000070726F6365647572652044657461696C4265666F726547656E6572
-      6174653B0D0A626567696E0D0A20206966204162697475725B275A7567656C61
-      7373656E275D203D20272B27207468656E2064625A756C617373756E672E466F
-      6E742E436F6C6F72203A3D20636C426C61636B20656C73652064625A756C6173
-      73756E672E466F6E742E436F6C6F72203A3D20636C5265643B0D0A2020696620
-      4162697475725B275072756566756E6742657374616E64656E275D203D20272B
-      27207468656E20646241626942657374616E64656E2E466F6E742E436F6C6F72
-      203A3D20636C426C61636B20656C736520646241626942657374616E64656E2E
-      466F6E742E436F6C6F72203A3D20636C5265643B0D0A20206966204648525B27
-      4648524572726569636874275D203D20272B27207468656E2064624648522E46
-      6F6E742E436F6C6F72203A3D20636C426C61636B20656C73652064624648522E
-      466F6E742E436F6C6F72203A3D20636C5265643B0D0A656E643B0D0A0D436F6D
-      706F6E656E744E616D65060644657461696C094576656E744E616D65060E4265
-      666F726547656E6572617465074576656E744944021A084361726574506F7301
-      024A0205000000}
+      000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
