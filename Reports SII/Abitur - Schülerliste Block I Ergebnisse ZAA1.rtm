@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste Block I Zulassung Abitur Ergebnisse ZAA1.rtm'
+  PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Block I Ergebnisse ZAA1.rtm'
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -14,8 +14,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Reports SII\Sch''#252''lerliste Block I Ergebnisse ZAA1.rtm'
+  Template.FileName = 
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Reports SII\Abitur - Sch'#252'lerliste Block I ' +
+    'Ergebnisse ZAA1.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -94,7 +96,7 @@ object Report: TppReport
   object ppTitleBand1: TppTitleBand
     Background.Brush.Style = bsClear
     mmBottomOffset = 0
-    mmHeight = 13229
+    mmHeight = 16000
     mmPrintPosition = 0
     object ppLabel3: TppLabel
       UserName = 'dbListenbezeichnung'
