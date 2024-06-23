@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste Block I und II Ergebnisse ZAA2.rtm'
+  PrinterSetup.DocumentName = 'Abitur - Sch'#252'lerliste Block I und II Ergebnisse ZAA2.rtm'
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
@@ -17,8 +17,8 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Reports SII\Sch'#252'lerliste Block I und II Er' +
-    'gebnisse ZAA2.rtm'
+    'ts\Reportsammlung 2.0\Reports SII\Abitur - Sch'#252'lerliste Block I ' +
+    'und II Ergebnisse ZAA2.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1644,11 +1644,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2024'
+      AutoSearchSettings.SearchExpression = '23.06.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '16.05.2024'
+      Value = '23.06.2024'
       UserName = 'Versionsdatum'
     end
   end

@@ -2,8 +2,8 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Kurse
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.DocumentName = 'Kursliste - Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
+  PrinterSetup.PaperName = 'A4 297 x 210 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Reports SII\Kursliste Sch'#252'ler Kursart Note Fe' +
-    'hlstd Unterschrift.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
+    'ts\Reportsammlung 2.0\Reports SII\Kursliste - Sch'#252'ler Kursart No' +
+    'te Fehlstd Unterschrift.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -125,7 +125,7 @@ object Report: TppReport
         AutoStop = False
         DataPipeline = dmPipelines.plKursSchueler
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Kursliste Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
+        PrinterSetup.DocumentName = 'Kursliste - Sch'#252'ler Kursart Note Fehlstd Unterschrift.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -1023,11 +1023,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '18.02.2024'
+      AutoSearchSettings.SearchExpression = '23.06.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '18.02.2024'
+      Value = '23.06.2024'
       UserName = 'Versionsdatum'
     end
   end
