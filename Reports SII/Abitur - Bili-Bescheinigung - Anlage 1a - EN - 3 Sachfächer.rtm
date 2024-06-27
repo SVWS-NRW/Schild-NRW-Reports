@@ -2,8 +2,8 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Bili-Bescheinigung Abitur - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.DocumentName = 'Abitur - Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Reports SII\Bili-Bescheinigung Abitur - An' +
-    'lage 1a - EN - 3 Sachf'#228'cher.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Reports SII\Abitur - Bili-Bescheinigung - Anl' +
+    'age 1a - EN - 3 Sachf'#228'cher.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -65,14 +65,14 @@ object Report: TppReport
   ThumbnailSettings.Visible = True
   ThumbnailSettings.DeadSpace = 30
   PDFSettings.Author = 'Schild-NRW'
-  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
   PDFSettings.EncryptSettings.AllowPrint = True
   PDFSettings.EncryptSettings.Enabled = False
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PreviewFormSettings.ZoomSetting = zs100Percent
   PreviewFormSettings.SinglePageOnly = True
@@ -120,7 +120,7 @@ object Report: TppReport
       object ppChildReport1: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Report'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -2750,8 +2750,8 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Bili-Bescheinigung Abitur - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.DocumentName = 'Abitur - Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -4515,10 +4515,38 @@ object Report: TppReport
                   Transparent = True
                   mmHeight = 4498
                   mmLeft = 37832
-                  mmTop = 207213
+                  mmTop = 202178
                   mmWidth = 30550
                   BandType = 4
                   LayerName = Foreground2
+                end
+                object ppRichText5: TppRichText
+                  UserName = 'RichText5'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Archivo Narrow'
+                  Font.Size = 8
+                  Font.Style = []
+                  Anchors = [atLeft, atRight]
+                  Caption = 'RichText5'
+                  RichText = 
+                    '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Arch' +
+                    'ivo Narrow;}{\f1\fnil\fcharset0 Archivo Narrow;}}'#13#10'{\colortbl ;\' +
+                    'red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs16 Schulformen' +
+                    ' der Sekun-\par'#13#10'\f1 darstufe I \'#39'82 Gesamtschu-\f0\par'#13#10'len und' +
+                    ' Gymnasien G9\par'#13#10'}'#13#10#0
+                  RemoveEmptyLines = False
+                  Transparent = True
+                  mmHeight = 10054
+                  mmLeft = 37832
+                  mmTop = 206640
+                  mmWidth = 30550
+                  BandType = 4
+                  LayerName = Foreground2
+                  mmBottomOffset = 0
+                  mmOverFlowOffset = 0
+                  mmStopPosition = 0
+                  mmMinHeight = 0
                 end
               end
               object ppTableCell52: TppTableCell
@@ -5588,7 +5616,7 @@ object Report: TppReport
             object ppTableColumn9: TppTableColumn
               mmWidth = 32666
             end
-            object ppTableColumn11: TppTableColumn
+            object ppTableColumn12: TppTableColumn
               mmWidth = 32666
             end
           end
