@@ -2,8 +2,8 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Bili-Bescheinigung Abitur - Anlage 1a - FR - 3 Sachf'#228'cher.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.DocumentName = 'Abitur - Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Reports SII\Bili-Bescheinigung Abitur - An' +
-    'lage 1a - FR - 3 Sachf'#228'cher.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Reports SII\Abitur - Bili-Bescheinigung - Anl' +
+    'age 1a - EN - 3 Sachf'#228'cher.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -65,14 +65,14 @@ object Report: TppReport
   ThumbnailSettings.Visible = True
   ThumbnailSettings.DeadSpace = 30
   PDFSettings.Author = 'Schild-NRW'
-  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
   PDFSettings.EncryptSettings.AllowPrint = True
   PDFSettings.EncryptSettings.Enabled = False
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PreviewFormSettings.ZoomSetting = zs100Percent
   PreviewFormSettings.SinglePageOnly = True
@@ -120,7 +120,7 @@ object Report: TppReport
       object ppChildReport1: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Report'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -2301,10 +2301,9 @@ object Report: TppReport
               'bri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
               'ue0;}'#13#10'\viewkind4\uc1\pard\qc\cf1\b\scaps\f0\fs28 BESCHEINIGUNG ' +
               'ZUM ABITURZEUGNIS \par'#13#10'\f1\'#39'dcBER DEN BESUCH DES BILINGUALEN BI' +
-              'LDUNGSGANGS\f0\par'#13#10'\fs16\par'#13#10'\fs28 CERTIFICATION DE FR\f1\'#39'c9Q' +
-              'UENTATION D\rquote UNE FFILI\'#39'c8RE BBILINGUE \par'#13#10'EN COMPL\'#39'c9M' +
-              'ENT DU DIPL\'#39'f4ME DE L\rquote\'#39'abABITUR\'#39'bb (BACCALAUR\'#39'c9AT)\f0' +
-              '\par'#13#10'}'#13#10#0
+              'LDUNGSGANGS\f0\par'#13#10'\fs16\par'#13#10'\fs28 CERTIFICATE OF PARTICIPATIO' +
+              'N IN A BILINGUAL STREAM\par'#13#10'IN ADDITION TO THE ABITUR DIPLOMA\p' +
+              'ar'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Transparent = True
             mmHeight = 28575
@@ -2352,7 +2351,7 @@ object Report: TppReport
           end
           object ppLabel16: TppLabel
             UserName = 'School'
-            Caption = '/Etablissement:'
+            Caption = '/school:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2360,9 +2359,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 5027
-            mmLeft = 33073
-            mmTop = 71173
-            mmWidth = 26988
+            mmLeft = 33063
+            mmTop = 71149
+            mmWidth = 13758
             BandType = 4
             LayerName = Foreground1
           end
@@ -2376,7 +2375,7 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 3439
-            mmLeft = 59010
+            mmLeft = 47085
             mmTop = 69826
             mmWidth = 1588
             BandType = 4
@@ -2397,7 +2396,7 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'EigeneSchule'
             mmHeight = 5027
-            mmLeft = 98169
+            mmLeft = 98185
             mmTop = 71173
             mmWidth = 23812
             BandType = 4
@@ -2405,7 +2404,7 @@ object Report: TppReport
           end
           object ppLabel18: TppLabel
             UserName = 'Schulort'
-            Caption = 'Schulort/Lieu:'
+            Caption = 'Schulort/place:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2413,9 +2412,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20108
-            mmTop = 77788
-            mmWidth = 23548
+            mmLeft = 20000
+            mmTop = 77763
+            mmWidth = 25665
             BandType = 4
             LayerName = Foreground1
           end
@@ -2434,7 +2433,7 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'EigeneSchule'
             mmHeight = 5027
-            mmLeft = 107297
+            mmLeft = 107313
             mmTop = 77788
             mmWidth = 5556
             BandType = 4
@@ -2442,7 +2441,7 @@ object Report: TppReport
           end
           object ppLabel19: TppLabel
             UserName = 'Name'
-            Caption = 'Name/Nom:'
+            Caption = 'Name/name:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2450,9 +2449,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20108
-            mmTop = 84138
-            mmWidth = 20638
+            mmLeft = 20000
+            mmTop = 84113
+            mmWidth = 22226
             BandType = 4
             LayerName = Foreground1
           end
@@ -2471,7 +2470,7 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 5027
-            mmLeft = 97375
+            mmLeft = 97391
             mmTop = 84138
             mmWidth = 25400
             BandType = 4
@@ -2479,7 +2478,7 @@ object Report: TppReport
           end
           object ppLabel20: TppLabel
             UserName = 'Geburtstag'
-            Caption = 'Geburtstag/Date de naissance:'
+            Caption = 'Geburtstag/date of birth:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2487,9 +2486,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20108
-            mmTop = 90223
-            mmWidth = 53446
+            mmLeft = 20000
+            mmTop = 90199
+            mmWidth = 42863
             BandType = 4
             LayerName = Foreground1
           end
@@ -2507,7 +2506,7 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 5027
-            mmLeft = 97904
+            mmLeft = 97920
             mmTop = 90223
             mmWidth = 24342
             BandType = 4
@@ -2515,7 +2514,7 @@ object Report: TppReport
           end
           object ppLabel21: TppLabel
             UserName = 'Geburtsort'
-            Caption = 'Geburtsort/Lieu de naissance:'
+            Caption = 'Geburtsort/place of birth:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2523,9 +2522,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20108
-            mmTop = 96309
-            mmWidth = 51594
+            mmLeft = 20000
+            mmTop = 96284
+            mmWidth = 43657
             BandType = 4
             LayerName = Foreground1
           end
@@ -2543,7 +2542,7 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 5027
-            mmLeft = 100947
+            mmLeft = 100963
             mmTop = 96309
             mmWidth = 18256
             BandType = 4
@@ -2561,41 +2560,38 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
               'bri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
               'ue0;}'#13#10'\viewkind4\uc1\pard\sl-320\slmult0\qj\cf1\f0\fs24 hat den' +
-              ' bilingualen deutsch-franz\f1\'#39'f6sischen\f0  Bildungsgang erfolg' +
-              'reich abgeschlossen.\par'#13#10'\par'#13#10'\lang1033 a fr\f1\'#39'e9quent\'#39'e9 a' +
-              'vec succ\'#39'e8s la fili\'#39'e8re bilingue franco-allemande.\lang1031\' +
-              'f0\par'#13#10'\par'#13#10'\pard\qj\f1 $Vorname$ hat im Rahmen des bilinguale' +
-              'n Bildungsgangs in den Klassen 5 und 6 am Franz\'#39'f6sischunterric' +
-              'ht mit erh\'#39'f6hter Wochenstundenzahl und in der Sekundarstufe I ' +
-              'und II an bilingualem deutsch-franz\'#39'f6sischen Unterricht in meh' +
-              'reren Sachf\'#39'e4chern erfolgreich teilgenommen und damit vertieft' +
-              'e Kenntnisse der franz\'#39'f6sischen Sprache und erweiterte F\'#39'e4hi' +
-              'gkeiten in ihrer Anwendung erworben. \f0\par'#13#10'\f1 $Vorname$ hat ' +
-              'umfassende und vertiefte Sprachkompetenz durch Abiturpr\'#39'fcfunge' +
-              'n im Leistungskurs Franz\'#39'f6sisch und im Grundkurs des bilingual' +
-              'en deutsch-franz\'#39'f6sischen Sachfachs $SFS11$ nachgewiesen und h' +
-              'at in beiden F\'#39'e4chern sowohl im Notendurchschnitt der Qualifik' +
-              'ationsphase als auch in der Abiturpr\'#39'fcfung mindestens ausreich' +
-              'ende Leistungen (5 oder mehr Punkte) erzielt. \f0\par'#13#10'\f1 $Vorn' +
-              'ame$ hat in der Fremdsprache Franz\'#39'f6sisch das Referenzniveau C' +
-              '1 des Gemeinsamen europ\'#39'e4ischen Referenzrahmens f\'#39'fcr Sprache' +
-              'n erreicht.\f0\par'#13#10'\par'#13#10'\f1 $Vorname$ a suivi avec succ\'#39'e8s l' +
-              'es cours renforc\'#39'e9s en 5e et 6e ann\'#39'e9e et a \'#39'e9galement re\' +
-              #39'e7u un enseignement en fran\'#39'e7ais dans plusieurs mati\'#39'e8res n' +
-              'on linguistiques au cours du premier cycle, ce qui lui a permis ' +
-              'd'#39'acqu\'#39'e9rir une connaissance approfondie de la langue fran\'#39'e7' +
-              'aise et d'#39'\'#39'e9largir ses comp\'#39'e9tences dans le maniement de cet' +
-              'te langue.\par'#13#10'$Vorname$ a fait preuve d'#39'une comp\'#39'e9tence ling' +
-              'uistique compl\'#39'e8te et approfondie en passant les examens du ba' +
-              'ccalaur\'#39'e9at allemand (\'#39'ab Abitur \'#39'bb) dans le cours de fran\' +
-              #39'e7ais et dans le cours de base de la mati\'#39'e8re bilingue franco' +
-              '-allemande $SFS11$ et a obtenu des r\'#39'e9sultats au moins suffisa' +
-              'nts (5 points ou plus) dans les deux mati\'#39'e8res, tant dans la m' +
-              'oyenne des notes de la phase de qualification que dans celle de ' +
-              'l'#39'examen du baccalaur\'#39'e9at. \par'#13#10'$Vorname$ a atteint en langue' +
-              ' \'#39'e9trang\'#39'e8re fran\'#39'e7aise le niveau de r\'#39'e9f\'#39'e9rence C1 du' +
-              ' Cadre Europ\'#39'e9en de R\'#39'e9f\'#39'e9rence des Langues.\f0\par'#13#10'\pard' +
-              '\par'#13#10'}'#13#10#0
+              ' bilingualen $BBG1$ Bildungsgang erfolgreich abgeschlossen.\par'#13 +
+              #10'\par'#13#10'\lang1033 has successfully completed the bilingual $BBG2$' +
+              ' stream\lang1031 .\par'#13#10'\par'#13#10'\pard\qj\f1 $Vorname$ hat im Rahme' +
+              'n des bilingualen Bildungsgangs in den Klassen 5 und 6 am $BF1$u' +
+              'nterricht mit erh\'#39'f6hter Wochenstundenzahl und in der Sekundars' +
+              'tufe I und II an bilingualem $BBU1$ Unterricht in mehreren Sachf' +
+              '\'#39'e4chern erfolgreich teilgenommen und damit vertiefte Kenntniss' +
+              'e der $SP1$ und erweiterte F\'#39'e4higkeiten in ihrer Anwendung erw' +
+              'orben. \f0\par'#13#10'\f1 $Vorname$ hat umfassende und vertiefte Sprac' +
+              'hkompetenz durch Abiturpr\'#39'fcfungen im Leistungskurs Englisch un' +
+              'd im Grundkurs des bilingualen deutsch-englischen Sachfachs $SFS' +
+              '11$ nachgewiesen und hat in beiden F\'#39'e4chern sowohl im Notendur' +
+              'chschnitt der Qualifikationsphase als auch in der Abiturpr\'#39'fcfu' +
+              'ng mindestens ausreichende Leistungen (5 oder mehr Punkte) erzie' +
+              'lt. \f0\par'#13#10'\f1 $Vorname$ hat in der Fremdsprache $BF1$ das Ref' +
+              'erenzniveau C1 des Gemeinsamen europ\'#39'e4ischen Referenzrahmens f' +
+              '\'#39'fcr Sprachen erreicht.\f0\par'#13#10'\par'#13#10'\f1 $Vorname$\f0  has suc' +
+              'cessfully attended additional $BF2$ lessons in years 5 and 6 and' +
+              ' $BF2$ CLIL-lessons in several subjects during the course of low' +
+              'er and upper secondary education within the context of the bilin' +
+              'gual stream\f1  and\f0  has thus acquired indepth knowledge of $' +
+              'BBU2$ and extended competences in its use. \par'#13#10'\f1 $Vorname$\f' +
+              '0  has proven extensive and extended linguistic proficiency in s' +
+              'chool leaving exams in an advanced course in English as well as ' +
+              'in an intermediate course in the $BBU2$ CLIL subject $SFS12$.\f1' +
+              '  \f0 In both subjects \f1 $Vorname$\f0  has achieved at least s' +
+              'ufficient results (Germany: 5 or more points equivalent to D or ' +
+              'better) both in the average of the results of the qualification ' +
+              'phase, as well as in the school leaving exams.\par'#13#10'In $BF2$ as ' +
+              'a foreign language \f1 $Vorname$\f0  has achieved the C1 in the ' +
+              'Common European Framework of Reference Level for Languages.\par'#13 +
+              #10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -2624,7 +2620,7 @@ object Report: TppReport
             UserName = 'Unterschrift'
             Caption = 
               '(Datum/date, Dienstsiegel/official seal, Unterschrift der Schull' +
-              'eitung/Signature de la Direction)'
+              'eitung/principal'#8216's signature)'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2633,9 +2629,9 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 5027
-            mmLeft = 28310
+            mmLeft = 32015
             mmTop = 266701
-            mmWidth = 163513
+            mmWidth = 156104
             BandType = 4
             LayerName = Foreground1
           end
@@ -2654,9 +2650,8 @@ object Report: TppReport
             AutoSize = False
             Caption = 
               '1) Von der Bezirksregierung als Schule mit bilingualem deutsch-e' +
-              'nglischen Bildungsgang zugelassen/accr'#233'dit'#233' par l'#8217'inspection aca' +
-              'd'#233'mique comme '#233'tablissement qui comprend une fili'#232're franco-alle' +
-              'mande'
+              'nglischen Bildungsgang zugelassen/accredited as a school with bi' +
+              'lingual Anglo-German stream by the District Government.'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2676,40 +2671,56 @@ object Report: TppReport
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
             44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-            7450726F63656475726506536F7572636506DD70726F63656475726520446574
+            7450726F63656475726506536F7572636506DA70726F63656475726520446574
             61696C4265666F72655072696E743B0D0A626567696E0D0A20200D0A20202F2F
             45696E7365747A656E20646573204F726967696E616C2D546578746573206D69
             7420506C61747A68616C7465726E0D0A2020727466546578742E526963685465
-            78743A3D53617665546578743B200D0A2020727466546578742E526963685465
-            78743A3D5265706C61636554657874457828727466546578742E526963685465
-            78742C2724566F726E616D6524272C566F726E616D656E416E616C7973696572
-            656E293B0D0A20200D0A656E643B0D0A0D436F6D706F6E656E744E616D650606
-            44657461696C094576656E744E616D65060B4265666F72655072696E74074576
-            656E7449440218084361726574506F730102010201000001060F547261457665
-            6E7448616E646C65720B50726F6772616D4E616D6506115265706F72744F6E53
-            74617274506167650B50726F6772616D54797065070B747450726F6365647572
-            6506536F757263650C3501000070726F636564757265205265706F72744F6E53
-            74617274506167653B0D0A626567696E0D0A2020696620536176655465787420
-            3D202727207468656E20626567696E0D0A202020202F2F417573746175736368
-            20646572207374617469736368656E20506C61747A68616C7465720D0A202020
+            78743A3D53617665546578743B0D0A2020727466546578742E52696368546578
+            743A3D5265706C61636554657874457828727466546578742E52696368546578
+            742C2724566F726E616D6524272C566F726E616D656E416E616C797369657265
+            6E293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D650606446574
+            61696C094576656E744E616D65060B4265666F72655072696E74074576656E74
+            49440218084361726574506F730102010201000001060F5472614576656E7448
+            616E646C65720B50726F6772616D4E616D6506115265706F72744F6E53746172
+            74506167650B50726F6772616D54797065070B747450726F6365647572650653
+            6F757263650C3003000070726F636564757265205265706F72744F6E53746172
+            74506167653B0D0A626567696E0D0A20206966205361766554657874203D2027
+            27207468656E20626567696E0D0A202020202F2F45696E6D616C696765722041
+            757374617573636820646572207374617469736368656E20506C61747A68616C
+            7465722061756620536569746520310D0A20202020727466546578742E526963
+            68546578743A3D5265706C61636554657874457828727466546578742E526963
+            68546578742C27244242473124272C42424731293B0D0A202020207274665465
+            78742E52696368546578743A3D5265706C616365546578744578287274665465
+            78742E52696368546578742C27244242473224272C42424732293B0D0A202020
             20727466546578742E52696368546578743A3D5265706C616365546578744578
-            28727466546578742E52696368546578742C2724534653313124272C53465331
-            31293B0D0A20202020727466546578742E52696368546578743A3D5265706C61
-            636554657874457828727466546578742E52696368546578742C272453465331
-            3224272C5346533132293B0D0A202020200D0A2020202053617665546578743A
-            3D727466546578742E52696368546578743B0D0A2020656E643B0D0A656E643B
-            0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E61
-            6D65060B4F6E537461727450616765074576656E744944021508436172657450
-            6F730102010201000001060F5472614576656E7448616E646C65720B50726F67
-            72616D4E616D65061664624E616D65566F726E616D654F6E476574546578740B
-            50726F6772616D54797065070B747450726F63656475726506536F7572636506
-            8070726F6365647572652064624E616D65566F726E616D654F6E476574546578
-            742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
-            2054657874203A3D2053636875656C65725B274E616D65275D202B20272C2027
-            202B20566F726E616D656E416E616C7973696572656E3B0D0A0D0A656E643B0D
-            0A0D436F6D706F6E656E744E616D65060D64624E616D65566F726E616D650945
-            76656E744E616D6506094F6E47657454657874074576656E7449440235084361
-            726574506F730102010201000000}
+            28727466546578742E52696368546578742C27244242553124272C4242553129
+            3B0D0A20202020727466546578742E52696368546578743A3D5265706C616365
+            54657874457828727466546578742E52696368546578742C2724424255322427
+            2C42425532293B0D0A20202020727466546578742E52696368546578743A3D52
+            65706C61636554657874457828727466546578742E52696368546578742C2724
+            42463124272C424631293B0D0A20202020727466546578742E52696368546578
+            743A3D5265706C61636554657874457828727466546578742E52696368546578
+            742C272442463224272C424632293B0D0A20202020727466546578742E526963
+            68546578743A3D5265706C61636554657874457828727466546578742E526963
+            68546578742C272453503124272C535031293B0D0A2020202072746654657874
+            2E52696368546578743A3D5265706C6163655465787445782872746654657874
+            2E52696368546578742C2724534653313124272C5346533131293B0D0A202020
+            20727466546578742E52696368546578743A3D5265706C616365546578744578
+            28727466546578742E52696368546578742C2724534653313224272C53465331
+            32293B0D0A202020200D0A2020202053617665546578743A3D72746654657874
+            2E52696368546578743B0D0A2020656E643B0D0A656E643B0D0A0D436F6D706F
+            6E656E744E616D6506065265706F7274094576656E744E616D65060B4F6E5374
+            61727450616765074576656E7449440215084361726574506F73010201020100
+            0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+            1664624E616D65566F726E616D654F6E476574546578740B50726F6772616D54
+            797065070B747450726F63656475726506536F75726365068070726F63656475
+            72652064624E616D65566F726E616D654F6E4765745465787428766172205465
+            78743A20537472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D
+            2053636875656C65725B274E616D65275D202B20272C2027202B20566F726E61
+            6D656E416E616C7973696572656E3B0D0A0D0A656E643B0D0A0D436F6D706F6E
+            656E744E616D65060D64624E616D65566F726E616D65094576656E744E616D65
+            06094F6E47657454657874074576656E7449440235084361726574506F730102
+            010201000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -2739,8 +2750,8 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Bili-Bescheinigung Abitur - Anlage 1a - FR - 3 Sachf'#228'cher.rtm'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.DocumentName = 'Abitur - Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -2766,7 +2777,7 @@ object Report: TppReport
             DefaultColWidth = 16.799999237060550000
             DefaultRowHeight = 16.799999237060550000
             mmHeight = 198711
-            mmLeft = 20000
+            mmLeft = 20108
             mmTop = 78789
             mmWidth = 180000
             BandType = 4
@@ -2832,7 +2843,7 @@ object Report: TppReport
                   Position = lpDiagLeft
                   Weight = 0.750000000000000000
                   mmHeight = 32278
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 79847
                   mmWidth = 30550
                   BandType = 4
@@ -2851,7 +2862,7 @@ object Report: TppReport
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 79847
                   mmWidth = 30550
                   BandType = 4
@@ -2861,7 +2872,7 @@ object Report: TppReport
                   UserName = 'subject'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = 'Mati'#232're'
+                  Caption = 'subject'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Name = 'Calibri'
@@ -2870,7 +2881,7 @@ object Report: TppReport
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 84345
                   mmWidth = 30550
                   BandType = 4
@@ -2888,7 +2899,7 @@ object Report: TppReport
                   Font.Style = [fsBold]
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 102601
                   mmWidth = 30550
                   BandType = 4
@@ -2898,7 +2909,7 @@ object Report: TppReport
                   UserName = 'Year'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = 'Mati'#232're'
+                  Caption = 'year'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -2906,7 +2917,7 @@ object Report: TppReport
                   Font.Style = [fsBold]
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 107627
                   mmWidth = 30550
                   BandType = 4
@@ -2935,7 +2946,7 @@ object Report: TppReport
                   UserName = 'dbSprachenfach'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = 'Franz'#246'sisch'
+                  Caption = 'Fremdsprache'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -2944,7 +2955,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 79926
                   mmWidth = 30550
                   BandType = 4
@@ -2954,7 +2965,7 @@ object Report: TppReport
                   UserName = 'dbSprachenfachOv'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = 'Fran'#231'ais'
+                  Caption = 'Fremdsprache OV'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -2963,7 +2974,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 95987
                   mmWidth = 30550
                   BandType = 4
@@ -3002,7 +3013,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 79935
                   mmWidth = 30550
                   BandType = 4
@@ -3021,7 +3032,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 88663
                   mmWidth = 30550
                   BandType = 4
@@ -3031,7 +3042,7 @@ object Report: TppReport
                   UserName = 'Sachfach1Ov'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '1'#176'mati'#232're'
+                  Caption = '1st CLIL subject'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3041,7 +3052,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 4498
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 95987
                   mmWidth = 30550
                   BandType = 4
@@ -3060,7 +3071,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 100220
                   mmWidth = 30550
                   BandType = 4
@@ -3099,7 +3110,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 79934
                   mmWidth = 30550
                   BandType = 4
@@ -3118,7 +3129,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 88663
                   mmWidth = 30550
                   BandType = 4
@@ -3128,7 +3139,7 @@ object Report: TppReport
                   UserName = 'Sachfach2Ov'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '2'#176'mati'#232're'
+                  Caption = '2nd CLIL subject'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3138,7 +3149,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 4498
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 95987
                   mmWidth = 30550
                   BandType = 4
@@ -3157,7 +3168,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 100220
                   mmWidth = 30550
                   BandType = 4
@@ -3196,7 +3207,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 79934
                   mmWidth = 30550
                   BandType = 4
@@ -3215,7 +3226,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 88663
                   mmWidth = 30550
                   BandType = 4
@@ -3225,7 +3236,7 @@ object Report: TppReport
                   UserName = 'Sachfach3Ov'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '3'#176'mati'#232're (facultative)'
+                  Caption = '3rd CLIL subject (if offered)'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3235,7 +3246,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 8996
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 95987
                   mmWidth = 30550
                   BandType = 4
@@ -3254,7 +3265,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 104718
                   mmWidth = 30550
                   BandType = 4
@@ -3299,7 +3310,7 @@ object Report: TppReport
                   Angle = 90
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = 'Sekundarstufe I / Premier cycle'
+                  Caption = 'Sekundarstufe I / Lower Secondary'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3308,13 +3319,13 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 104247
-                  mmLeft = 25563
+                  mmLeft = 25406
                   mmTop = 113506
                   mmWidth = 6070
                   BandType = 4
                   LayerName = Foreground2
                   RotatedOriginLeft = 0
-                  RotatedOriginTop = 74745
+                  RotatedOriginTop = 77391
                 end
               end
               object ppTableCell8: TppTableCell
@@ -3348,7 +3359,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 119361
                   mmWidth = 30550
                   BandType = 4
@@ -3377,7 +3388,7 @@ object Report: TppReport
                   UserName = 'C51'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3388,7 +3399,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 114242
                   mmWidth = 30550
                   BandType = 4
@@ -3413,7 +3424,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel42: TppLabel
+                object ppLabel41: TppLabel
                   UserName = 'C52'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3428,7 +3439,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 114300
                   mmWidth = 30550
                   BandType = 4
@@ -3453,7 +3464,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel39: TppLabel
+                object ppLabel40: TppLabel
                   UserName = 'C53'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3468,7 +3479,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 114300
                   mmWidth = 30550
                   BandType = 4
@@ -3493,7 +3504,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel38: TppLabel
+                object ppLabel37: TppLabel
                   UserName = 'C54'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3508,7 +3519,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 114300
                   mmWidth = 30550
                   BandType = 4
@@ -3579,7 +3590,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 136561
                   mmWidth = 30550
                   BandType = 4
@@ -3608,7 +3619,7 @@ object Report: TppReport
                   UserName = 'C61'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3619,7 +3630,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 131969
                   mmWidth = 30550
                   BandType = 4
@@ -3644,7 +3655,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel41: TppLabel
+                object ppLabel42: TppLabel
                   UserName = 'C62'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3659,7 +3670,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 132027
                   mmWidth = 30550
                   BandType = 4
@@ -3684,7 +3695,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel40: TppLabel
+                object ppLabel39: TppLabel
                   UserName = 'C63'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3699,7 +3710,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 132027
                   mmWidth = 30550
                   BandType = 4
@@ -3724,7 +3735,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel37: TppLabel
+                object ppLabel36: TppLabel
                   UserName = 'C64'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3739,7 +3750,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 132027
                   mmWidth = 30550
                   BandType = 4
@@ -3810,7 +3821,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 154290
                   mmWidth = 30550
                   BandType = 4
@@ -3839,7 +3850,7 @@ object Report: TppReport
                   UserName = 'C71'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3850,7 +3861,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 149432
                   mmWidth = 30550
                   BandType = 4
@@ -3879,7 +3890,7 @@ object Report: TppReport
                   UserName = 'C72'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -3890,7 +3901,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 149432
                   mmWidth = 30550
                   BandType = 4
@@ -3915,7 +3926,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel35: TppLabel
+                object ppLabel38: TppLabel
                   UserName = 'C73'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3930,7 +3941,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 149490
                   mmWidth = 30550
                   BandType = 4
@@ -3955,7 +3966,7 @@ object Report: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel36: TppLabel
+                object ppLabel35: TppLabel
                   UserName = 'C74'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
@@ -3970,7 +3981,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 149490
                   mmWidth = 30550
                   BandType = 4
@@ -4041,7 +4052,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 172019
                   mmWidth = 30550
                   BandType = 4
@@ -4070,7 +4081,7 @@ object Report: TppReport
                   UserName = 'C81'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4081,7 +4092,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 166894
                   mmWidth = 30550
                   BandType = 4
@@ -4110,7 +4121,7 @@ object Report: TppReport
                   UserName = 'C82'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4121,7 +4132,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 166894
                   mmWidth = 30550
                   BandType = 4
@@ -4150,7 +4161,7 @@ object Report: TppReport
                   UserName = 'C83'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4161,7 +4172,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 166894
                   mmWidth = 30550
                   BandType = 4
@@ -4201,7 +4212,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 166894
                   mmWidth = 30550
                   BandType = 4
@@ -4272,7 +4283,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 189748
                   mmWidth = 30550
                   BandType = 4
@@ -4301,7 +4312,7 @@ object Report: TppReport
                   UserName = 'C91'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4312,7 +4323,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 184621
                   mmWidth = 30550
                   BandType = 4
@@ -4341,7 +4352,7 @@ object Report: TppReport
                   UserName = 'C92'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4352,7 +4363,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 184621
                   mmWidth = 30550
                   BandType = 4
@@ -4381,7 +4392,7 @@ object Report: TppReport
                   UserName = 'C93'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4392,7 +4403,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 184621
                   mmWidth = 30550
                   BandType = 4
@@ -4421,7 +4432,7 @@ object Report: TppReport
                   UserName = 'C94'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4432,7 +4443,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 184621
                   mmWidth = 30550
                   BandType = 4
@@ -4503,11 +4514,39 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
-                  mmTop = 207213
+                  mmLeft = 37832
+                  mmTop = 202178
                   mmWidth = 30550
                   BandType = 4
                   LayerName = Foreground2
+                end
+                object ppRichText5: TppRichText
+                  UserName = 'RichText5'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Archivo Narrow'
+                  Font.Size = 8
+                  Font.Style = []
+                  Anchors = [atLeft, atRight]
+                  Caption = 'RichText5'
+                  RichText = 
+                    '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Arch' +
+                    'ivo Narrow;}{\f1\fnil\fcharset0 Archivo Narrow;}}'#13#10'{\colortbl ;\' +
+                    'red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs16 Schulformen' +
+                    ' der Sekun-\par'#13#10'\f1 darstufe I \'#39'82 Gesamtschu-\f0\par'#13#10'len und' +
+                    ' Gymnasien G9\par'#13#10'}'#13#10#0
+                  RemoveEmptyLines = False
+                  Transparent = True
+                  mmHeight = 10054
+                  mmLeft = 37832
+                  mmTop = 206640
+                  mmWidth = 30550
+                  BandType = 4
+                  LayerName = Foreground2
+                  mmBottomOffset = 0
+                  mmOverFlowOffset = 0
+                  mmStopPosition = 0
+                  mmMinHeight = 0
                 end
               end
               object ppTableCell52: TppTableCell
@@ -4532,7 +4571,7 @@ object Report: TppReport
                   UserName = 'C101'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4543,7 +4582,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 202084
                   mmWidth = 30550
                   BandType = 4
@@ -4572,7 +4611,7 @@ object Report: TppReport
                   UserName = 'C102'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4583,7 +4622,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 202084
                   mmWidth = 30550
                   BandType = 4
@@ -4612,7 +4651,7 @@ object Report: TppReport
                   UserName = 'C103'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4623,7 +4662,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 202084
                   mmWidth = 30550
                   BandType = 4
@@ -4652,7 +4691,7 @@ object Report: TppReport
                   UserName = 'C104'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4663,7 +4702,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 202084
                   mmWidth = 30550
                   BandType = 4
@@ -4717,9 +4756,9 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 51879
-                  mmLeft = 22913
+                  mmLeft = 23286
                   mmTop = 219116
-                  mmWidth = 5161
+                  mmWidth = 5000
                   BandType = 4
                   LayerName = Foreground2
                   RotatedOriginLeft = 0
@@ -4730,7 +4769,7 @@ object Report: TppReport
                   Angle = 90
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = 'Deuxi'#232'me cycle'
+                  Caption = 'Upper Secondary'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4739,13 +4778,13 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 51858
-                  mmLeft = 28178
+                  mmLeft = 28551
                   mmTop = 219017
-                  mmWidth = 5437
+                  mmWidth = 5000
                   BandType = 4
                   LayerName = Foreground2
                   RotatedOriginLeft = 0
-                  RotatedOriginTop = 37174
+                  RotatedOriginTop = 38365
                 end
               end
               object ppTableCell58: TppTableCell
@@ -4779,7 +4818,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 225206
                   mmWidth = 30550
                   BandType = 4
@@ -4808,7 +4847,7 @@ object Report: TppReport
                   UserName = 'C111'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4819,7 +4858,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 220076
                   mmWidth = 30550
                   BandType = 4
@@ -4848,7 +4887,7 @@ object Report: TppReport
                   UserName = 'C112'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4859,7 +4898,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 220076
                   mmWidth = 30550
                   BandType = 4
@@ -4888,7 +4927,7 @@ object Report: TppReport
                   UserName = 'C113'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4899,7 +4938,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 220076
                   mmWidth = 30550
                   BandType = 4
@@ -4928,7 +4967,7 @@ object Report: TppReport
                   UserName = 'C114'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -4939,7 +4978,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 220076
                   mmWidth = 30550
                   BandType = 4
@@ -5011,7 +5050,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 240295
                   mmWidth = 30550
                   BandType = 4
@@ -5040,7 +5079,7 @@ object Report: TppReport
                   UserName = 'C121'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5051,7 +5090,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 237804
                   mmWidth = 30550
                   BandType = 4
@@ -5080,7 +5119,7 @@ object Report: TppReport
                   UserName = 'C122'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5091,7 +5130,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 237804
                   mmWidth = 30550
                   BandType = 4
@@ -5120,7 +5159,7 @@ object Report: TppReport
                   UserName = 'C123'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5131,7 +5170,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 237804
                   mmWidth = 30550
                   BandType = 4
@@ -5160,7 +5199,7 @@ object Report: TppReport
                   UserName = 'C124'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5171,7 +5210,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 237804
                   mmWidth = 30550
                   BandType = 4
@@ -5243,7 +5282,7 @@ object Report: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 258023
                   mmWidth = 30550
                   BandType = 4
@@ -5272,7 +5311,7 @@ object Report: TppReport
                   UserName = 'C131'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5283,7 +5322,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70390
+                  mmLeft = 70498
                   mmTop = 255266
                   mmWidth = 30550
                   BandType = 4
@@ -5312,7 +5351,7 @@ object Report: TppReport
                   UserName = 'C132'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5323,7 +5362,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103056
+                  mmLeft = 103164
                   mmTop = 255266
                   mmWidth = 30550
                   BandType = 4
@@ -5352,7 +5391,7 @@ object Report: TppReport
                   UserName = 'C133'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5363,7 +5402,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135722
+                  mmLeft = 135830
                   mmTop = 255266
                   mmWidth = 30550
                   BandType = 4
@@ -5392,7 +5431,7 @@ object Report: TppReport
                   UserName = 'C134'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
-                  Caption = '--'#13#10'Stunden'#13#10'Heures de cours'
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -5403,7 +5442,7 @@ object Report: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168388
+                  mmLeft = 168496
                   mmTop = 255266
                   mmWidth = 30550
                   BandType = 4
@@ -5474,7 +5513,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 3969
-                  mmLeft = 37724
+                  mmLeft = 37832
                   mmTop = 272521
                   mmWidth = 161214
                   BandType = 4
@@ -5562,19 +5601,19 @@ object Report: TppReport
                 mmPadding = 1058
               end
             end
-            object ppTableColumn2: TppTableColumn
+            object ppTableColumn1: TppTableColumn
               mmWidth = 16666
             end
-            object ppTableColumn3: TppTableColumn
+            object ppTableColumn5: TppTableColumn
               mmWidth = 32666
             end
-            object ppTableColumn4: TppTableColumn
+            object ppTableColumn7: TppTableColumn
               mmWidth = 32666
             end
-            object ppTableColumn6: TppTableColumn
+            object ppTableColumn8: TppTableColumn
               mmWidth = 32666
             end
-            object ppTableColumn10: TppTableColumn
+            object ppTableColumn9: TppTableColumn
               mmWidth = 32666
             end
             object ppTableColumn12: TppTableColumn
@@ -7730,7 +7769,7 @@ object Report: TppReport
           end
           object ppLabel1: TppLabel
             UserName = 'Name'
-            Caption = 'Name/Nom:'
+            Caption = 'Name/name:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -7738,9 +7777,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20108
-            mmTop = 37302
-            mmWidth = 20638
+            mmLeft = 20000
+            mmTop = 40000
+            mmWidth = 22225
             BandType = 4
             LayerName = Foreground2
           end
@@ -7758,8 +7797,8 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 5027
-            mmLeft = 43123
-            mmTop = 37350
+            mmLeft = 45773
+            mmTop = 40000
             mmWidth = 25400
             BandType = 4
             LayerName = Foreground2
@@ -7775,18 +7814,17 @@ object Report: TppReport
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\sl-320\slmult0\cf1\f0\fs24 Jahrgangss' +
-              'tufen und Wochenstundenzahl des Franz\'#39'f6sischunterrichts und de' +
-              'r bilingualen deutsch-franz\'#39'f6sischen Sachf\'#39'e4cher\par'#13#10'\par'#13#10 +
-              'Classes et nombre d\rquote heures de cours par semaine en fran\'#39 +
-              'e7ais et dans les mati\'#39'e8res bilingues fran\'#39'e7ais-allemand\f1\' +
-              'par'#13#10'}'#13#10#0
+              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 Klassen und Wochenstunden' +
+              'zahl des $BF1$unterrichts und der bilingualen $BBU1$ Sachf\'#39'e4ch' +
+              'er\f1\par'#13#10'\par'#13#10'\pard\sl-320\slmult0\lang1033 Classes and numbe' +
+              'r of lessons per week in $BF2$ and $BBU2$ CLIL subjects\lang1031' +
+              '\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            mmHeight = 29633
+            mmHeight = 18000
             mmLeft = 20000
-            mmTop = 47350
+            mmTop = 50000
             mmWidth = 180000
             BandType = 4
             LayerName = Foreground2
@@ -7800,72 +7838,84 @@ object Report: TppReport
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
             5265706F72744F6E5374617274506167650B50726F6772616D54797065070B74
-            7450726F63656475726506536F7572636514A406000070726F63656475726520
-            5265706F72744F6E5374617274506167653B0D0A626567696E0D0A20202F2F50
-            6C61747A68616C74657220696D2072746645726C616575746572756E67656E20
-            65696E6D616C69672065727365747A656E0D0A20206966206E6F7420506C6174
-            7A68616C74657245727365747A74207468656E20626567696E0D0A202020200D
-            0A202020204966204E6F74204D616E75656C6C207468656E20626567696E0D0A
-            20202020202064625361636866616368312E54657874203A3D2053465331313B
-            0D0A20202020202064625361636866616368314F762E54657874203A3D205346
-            5331323B0D0A20202020202064625361636866616368322E54657874203A3D20
-            53465332313B0D0A20202020202064625361636866616368324F762E54657874
-            203A3D2053465332323B0D0A20202020202064625361636866616368332E5465
-            7874203A3D2053465333313B0D0A20202020202064625361636866616368334F
-            762E54657874203A3D2053465333323B0D0A2020202020207B64625361636866
-            616368342E54657874203A3D2053465334313B0D0A2020202020206462536163
-            6866616368344F762E54657874203A3D2053465334323B7D0D0A202020200D0A
-            2020202020202F2F5374756E64656E65696E747261672066C3BC722064696520
-            4A61687267C3A46E67652035202D20313320646572204672656D647370726163
-            68650D0A2020202020204335312E54657874203A3D204E43315B305D3B0D0A20
-            20202020204336312E54657874203A3D204E43315B315D3B0D0A202020202020
-            4337312E54657874203A3D204E43315B325D3B0D0A2020202020204338312E54
-            657874203A3D204E43315B335D3B0D0A2020202020204339312E54657874203A
-            3D204E43315B345D3B0D0A202020202020433130312E54657874203A3D204E43
-            315B355D3B0D0A202020202020433131312E54657874203A3D204E43315B365D
-            3B0D0A202020202020433132312E54657874203A3D204E43315B375D3B0D0A20
-            2020202020433133312E54657874203A3D204E43315B385D3B0D0A2020202020
-            200D0A2020202020202F2F5374756E64656E65696E747261672066C3BC722064
-            6965204A61687267C3A46E67652037202D2031332064657320312E2053616368
-            66616368730D0A2020202020204337322E54657874203A3D204E43325B305D3B
-            0D0A2020202020204338322E54657874203A3D204E43325B315D3B0D0A202020
-            2020204339322E54657874203A3D204E43325B325D3B0D0A2020202020204331
-            30322E54657874203A3D204E43325B335D3B0D0A202020202020433131322E54
-            657874203A3D204E43325B345D3B0D0A202020202020433132322E5465787420
-            3A3D204E43325B355D3B0D0A202020202020433133322E54657874203A3D204E
-            43325B365D3B0D0A2020202020200D0A2020202020202F2F5374756E64656E65
-            696E747261672066C3BC7220646965204A61687267C3A46E67652038202D2031
-            332064657320322E205361636866616368732C2066616C6C7320766F7268616E
-            64656E0D0A20202020202069662053465332313C3E272D2D27207468656E2062
-            6567696E0D0A2020202020204338332E54657874203A3D204E43335B305D3B0D
-            0A2020202020204339332E54657874203A3D204E43335B315D3B0D0A20202020
-            2020433130332E54657874203A3D204E43335B325D3B0D0A2020202020204331
-            31332E54657874203A3D204E43335B335D3B0D0A202020202020433132332E54
-            657874203A3D204E43335B345D3B0D0A202020202020433133332E5465787420
-            3A3D204E43335B355D3B0D0A202020202020656E643B0D0A2020202020200D0A
-            2020202020202F2F5374756E64656E65696E747261672066C3BC722064696520
-            4A61687267C3A46E67652039202D2031332064657320332E2053616368666163
-            68732C2066616C6C7320766F7268616E64656E0D0A2020202020206966205346
-            5333313C3E272D2D27207468656E20626567696E0D0A2020202020204339342E
-            54657874203A3D204E43345B305D3B0D0A202020202020433130342E54657874
-            203A3D204E43345B315D3B0D0A202020202020433131342E54657874203A3D20
-            4E43345B325D3B0D0A202020202020433132342E54657874203A3D204E43345B
-            335D3B0D0A202020202020433133342E54657874203A3D204E43345B345D3B0D
-            0A202020202020656E643B0D0A202020200D0A20202020656E643B0D0A20200D
-            0A20202020506C61747A68616C74657245727365747A74203A3D20747275653B
-            0D0A202020200D0A2020656E643B0D0A20200D0A656E643B0D0A0D436F6D706F
-            6E656E744E616D6506065265706F7274094576656E744E616D65060B4F6E5374
-            61727450616765074576656E7449440215084361726574506F73010225023400
-            0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
-            1664624E616D65566F726E616D654F6E476574546578740B50726F6772616D54
-            797065070B747450726F63656475726506536F75726365068070726F63656475
-            72652064624E616D65566F726E616D654F6E4765745465787428766172205465
-            78743A20537472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D
-            2053636875656C65725B274E616D65275D202B20272C2027202B20566F726E61
-            6D656E416E616C7973696572656E3B0D0A0D0A656E643B0D0A0D436F6D706F6E
-            656E744E616D65060D64624E616D65566F726E616D65094576656E744E616D65
-            06094F6E47657454657874074576656E7449440235084361726574506F730102
-            010201000000}
+            7450726F63656475726506536F75726365142C08000070726F63656475726520
+            5265706F72744F6E5374617274506167653B0D0A626567696E0D0A20202F2F73
+            746174697363686520506C61747A68616C74657220696D2072746645726C6165
+            75746572756E67656E2065696E6D616C696720617573746175736368656E0D0A
+            20206966206E6F7420506C61747A68616C74657245727365747A74207468656E
+            20626567696E0D0A2020202072746645726C616575746572756E672E52696368
+            546578743A3D5265706C6163655465787445782872746645726C616575746572
+            756E672E52696368546578742C272442463124272C424631293B0D0A20202020
+            72746645726C616575746572756E672E52696368546578743A3D5265706C6163
+            655465787445782872746645726C616575746572756E672E5269636854657874
+            2C27244242553124272C42425531293B0D0A2020202072746645726C61657574
+            6572756E672E52696368546578743A3D5265706C616365546578744578287274
+            6645726C616575746572756E672E52696368546578742C272442463224272C42
+            4632293B0D0A2020202072746645726C616575746572756E672E526963685465
+            78743A3D5265706C6163655465787445782872746645726C616575746572756E
+            672E52696368546578742C27244242553224272C42425532293B0D0A20202020
+            0D0A202020202F2F45696E7472616720646572204661636862657A656963686E
+            756E67656E0D0A202020206462537072616368656E666163682E54657874203A
+            3D204246313B0D0A202020206462537072616368656E666163684F762E546578
+            74203A3D204246323B0D0A202020200D0A202020204966204E6F74204D616E75
+            656C6C207468656E20626567696E0D0A20202020202064625361636866616368
+            312E54657874203A3D2053465331313B0D0A2020202020206462536163686661
+            6368314F762E54657874203A3D2053465331323B0D0A20202020202064625361
+            636866616368322E54657874203A3D2053465332313B0D0A2020202020206462
+            5361636866616368324F762E54657874203A3D2053465332323B0D0A20202020
+            202064625361636866616368332E54657874203A3D2053465333313B0D0A2020
+            2020202064625361636866616368334F762E54657874203A3D2053465333323B
+            0D0A202020200D0A2020202020202F2F5374756E64656E65696E747261672066
+            C3BC7220646965204A61687267C3A46E67652035202D20313320646572204672
+            656D64737072616368650D0A2020202020204335312E54657874203A3D204E43
+            315B305D3B0D0A2020202020204336312E54657874203A3D204E43315B315D3B
+            0D0A2020202020204337312E54657874203A3D204E43315B325D3B0D0A202020
+            2020204338312E54657874203A3D204E43315B335D3B0D0A2020202020204339
+            312E54657874203A3D204E43315B345D3B0D0A202020202020433130312E5465
+            7874203A3D204E43315B355D3B0D0A202020202020433131312E54657874203A
+            3D204E43315B365D3B0D0A202020202020433132312E54657874203A3D204E43
+            315B375D3B0D0A202020202020433133312E54657874203A3D204E43315B385D
+            3B0D0A2020202020200D0A2020202020202F2F5374756E64656E65696E747261
+            672066C3BC7220646965204A61687267C3A46E67652037202D20313320646573
+            20312E205361636866616368730D0A2020202020204337322E54657874203A3D
+            204E43325B305D3B0D0A2020202020204338322E54657874203A3D204E43325B
+            315D3B0D0A2020202020204339322E54657874203A3D204E43325B325D3B0D0A
+            202020202020433130322E54657874203A3D204E43325B335D3B0D0A20202020
+            2020433131322E54657874203A3D204E43325B345D3B0D0A2020202020204331
+            32322E54657874203A3D204E43325B355D3B0D0A202020202020433133322E54
+            657874203A3D204E43325B365D3B0D0A2020202020200D0A2020202020202F2F
+            5374756E64656E65696E747261672066C3BC7220646965204A61687267C3A46E
+            67652038202D2031332064657320322E205361636866616368732C2066616C6C
+            7320766F7268616E64656E0D0A20202020202069662053465332313C3E272D2D
+            27207468656E20626567696E0D0A2020202020204338332E54657874203A3D20
+            4E43335B305D3B0D0A2020202020204339332E54657874203A3D204E43335B31
+            5D3B0D0A202020202020433130332E54657874203A3D204E43335B325D3B0D0A
+            202020202020433131332E54657874203A3D204E43335B335D3B0D0A20202020
+            2020433132332E54657874203A3D204E43335B345D3B0D0A2020202020204331
+            33332E54657874203A3D204E43335B355D3B0D0A202020202020656E643B0D0A
+            2020202020200D0A2020202020202F2F5374756E64656E65696E747261672066
+            C3BC7220646965204A61687267C3A46E67652039202D2031332064657320332E
+            205361636866616368732C2066616C6C7320766F7268616E64656E0D0A202020
+            20202069662053465333313C3E272D2D27207468656E20626567696E0D0A2020
+            202020204339342E54657874203A3D204E43345B305D3B0D0A20202020202043
+            3130342E54657874203A3D204E43345B315D3B0D0A202020202020433131342E
+            54657874203A3D204E43345B325D3B0D0A202020202020433132342E54657874
+            203A3D204E43345B335D3B0D0A202020202020433133342E54657874203A3D20
+            4E43345B345D3B0D0A202020202020656E643B0D0A202020200D0A2020202065
+            6E643B0D0A20200D0A20202020506C61747A68616C74657245727365747A7420
+            3A3D20747275653B0D0A202020200D0A2020656E643B0D0A20200D0A656E643B
+            0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E61
+            6D65060B4F6E537461727450616765074576656E744944021508436172657450
+            6F73010224023A000001060F5472614576656E7448616E646C65720B50726F67
+            72616D4E616D65061664624E616D65566F726E616D654F6E476574546578740B
+            50726F6772616D54797065070B747450726F63656475726506536F7572636506
+            8070726F6365647572652064624E616D65566F726E616D654F6E476574546578
+            742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
+            2054657874203A3D2053636875656C65725B274E616D65275D202B20272C2027
+            202B20566F726E616D656E416E616C7973696572656E3B0D0A0D0A656E643B0D
+            0A0D436F6D706F6E656E744E616D65060D64624E616D65566F726E616D650945
+            76656E744E616D6506094F6E47657454657874074576656E7449440235084361
+            726574506F730102010201000000}
         end
         object ppDesignLayers3: TppDesignLayers
           object ppDesignLayer3: TppDesignLayer
@@ -7881,177 +7931,225 @@ object Report: TppReport
     ProgramStream = {
       01060D54726156617250726F6772616D094368696C645479706502110B50726F
       6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
-      0B747450726F63656475726506536F757263650C1902000070726F6365647572
-      65205661726961626C65733B0D0A7661720D0A205361766554657874203A2053
-      7472696E673B0D0A2053465331312C2053465332312C2053465333312C205346
-      5331322C2053465332322C205346533332203A20537472696E673B0D0A20535A
-      315F352C20535A315F362C20535A315F372C20535A315F382C20535A315F392C
-      20535A315F31302C20535A315F31312C20535A315F31322C20535A315F313320
-      3A20537472696E673B0D0A20535A325F372C20535A325F382C20535A325F392C
-      20535A325F31302C20535A325F31312C20535A325F31322C20535A325F313320
-      3A20537472696E673B0D0A20535A335F382C20535A335F392C20535A335F3130
-      2C20535A335F31312C20535A335F31322C20535A335F3133203A20537472696E
-      673B0D0A20535A345F392C20535A345F31302C20535A345F31312C20535A345F
-      31322C20535A345F3133203A20537472696E673B0D0A205374756E64656E7A61
-      686C656E312C205374756E64656E7A61686C656E322C205374756E64656E7A61
-      686C656E332C205374756E64656E7A61686C656E34203A20537472696E673B0D
-      0A204E43312C204E43322C204E43332C204E4334203A2054737472696E676C69
-      73743B20200D0A20416266726167656E2C204D616E75656C6C2C20506C61747A
-      68616C74657245727365747A74203A20426F6F6C65616E3B0D0A202020200D0A
-      0D0A626567696E0D0A0D0A656E643B0D0A084361726574506F73010201020100
-      0001060A54726150726F6772616D094368696C645479706502130B50726F6772
-      616D4E616D65060E476C6F62616C4F6E4372656174650B50726F6772616D5479
-      7065070B747450726F63656475726506536F7572636514BB10000070726F6365
-      6475726520476C6F62616C4F6E4372656174653B0D0A7661720D0A20207A6165
-      686C65722C20616E7A61686C203A20696E74656765723B0D0A626567696E0D0A
-      20202F2F5661726961626C656E20696E697469616C6973696572656E0D0A2020
-      416266726167656E203A3D205265706F72742E506172616D65746572735B2741
-      6266726167656E275D3B0D0A20204D616E75656C6C203A3D205265706F72742E
-      506172616D65746572735B274D616E75656C6C275D3B0D0A2020506C61747A68
-      616C74657245727365747A74203A3D2046616C73653B0D0A20200D0A20202F2F
-      4B65696E6520416266726167652C206B65696E6520506172616D65746572C3BC
-      626572676162652E2044617320446F6B756D656E742077697264206175662064
-      6572205365697465203220736F206765647275636B742C207769652065732069
-      73742E0D0A20204966204E6F74204D616E75656C6C207468656E20626567696E
-      0D0A20200D0A20202020496620416266726167656E207468656E20626567696E
-      0D0A2020202020202F2F4D6974204162667261676520200D0A20202020202053
-      74756E64656E7A61686C656E313A3D537472696E67496E707574282742697474
-      65205374756E64656E2064657320537072616368656E6661636873204672616E
-      7AC3B6736973636820696E2064656E204A61687267C3A46E67656E2035206269
-      732051322065696E676562656E2E272C5265706F72742E506172616D65746572
-      735B27537072616368656E666163685F737464275D293B0D0A20202020202020
-      202020200D0A20202020202053465331313A3D537472696E67496E7075742827
-      426974746520312E2062696C696E6775616C6573205361636866616368206569
-      6E676562656E3A272C5265706F72742E506172616D65746572735B2753616368
-      66616368315F64275D293B0D0A20202020202053465331323A3D537472696E67
-      496E7075742827426974746520312E20C39C6265727365747A756E672065696E
-      676562656E3A272C5265706F72742E506172616D65746572735B275361636866
-      616368315F6F76275D293B0D0A2020202020205374756E64656E7A61686C656E
-      323A3D537472696E67496E70757428274269747465205374756E64656E206465
-      7320312E2042696C692D53616368666163687320696E2064656E204A61687267
-      C3A46E67656E2037206269732051322065696E676562656E2E272C5265706F72
-      742E506172616D65746572735B275361636866616368315F737464275D293B0D
-      0A2020202020200D0A20202020202053465332313A3D537472696E67496E7075
-      742827426974746520322E2062696C696E6775616C6573205361636866616368
-      2065696E676562656E3A272C5265706F72742E506172616D65746572735B2753
-      61636866616368325F64275D293B0D0A20202020202049662028285346533231
-      3C3E272D2D272920616E64202853465332313C3E27272929207468656E206265
-      67696E0D0A202020202020202053465332323A3D537472696E67496E70757428
-      27426974746520322E20C39C6265727365747A756E672065696E676562656E3A
-      272C5265706F72742E506172616D65746572735B275361636866616368325F6F
-      76275D293B0D0A20202020202020205374756E64656E7A61686C656E333A3D53
-      7472696E67496E70757428274269747465205374756E64656E20322E2042696C
-      692D53616368666163687320696E2064656E204A61687267C3A46E67656E2038
-      206269732051322065696E676562656E2E272C5265706F72742E506172616D65
-      746572735B275361636866616368325F737464275D293B0D0A20202020202065
-      6E6420656C736520626567696E0D0A20202020202020202053465332313A3D27
-      2D2D273B0D0A20202020202020202053465332323A3D272D2D273B0D0A202020
-      202020656E643B0D0A2020202020200D0A20202020202049662053465332313C
-      3E272D2D27207468656E20626567696E0D0A202020202020202053465333313A
-      3D537472696E67496E7075742827426974746520332E2062696C696E6775616C
-      65732053616368666163682065696E676562656E3A272C5265706F72742E5061
-      72616D65746572735B275361636866616368335F64275D293B0D0A2020202020
-      202020496620282853465333313C3E272D2D272920616E64202853465333313C
-      3E27272929207468656E20626567696E0D0A2020202020202020202053465333
-      323A3D537472696E67496E7075742827426974746520332E20C39C6265727365
+      0B747450726F63656475726506536F757263650C5D02000070726F6365647572
+      65205661726961626C65733B0D0A7661720D0A20424247312C20424255312C20
+      4246312C535031203A20537472696E673B0D0A20424247322C20424255322C20
+      424632203A20537472696E673B0D0A2053617665546578742C20537072616368
+      653A20537472696E673B0D0A2053465331312C2053465332312C205346533331
+      2C2053465331322C2053465332322C205346533332203A20537472696E673B0D
+      0A20535A315F352C20535A315F362C20535A315F372C20535A315F382C20535A
+      315F392C20535A315F31302C20535A315F31312C20535A315F31322C20535A31
+      5F3133203A20537472696E673B0D0A20535A325F372C20535A325F382C20535A
+      325F392C20535A325F31302C20535A325F31312C20535A325F31322C20535A32
+      5F3133203A20537472696E673B0D0A20535A335F382C20535A335F392C20535A
+      335F31302C20535A335F31312C20535A335F31322C20535A335F3133203A2053
+      7472696E673B0D0A20535A345F392C20535A345F31302C20535A345F31312C20
+      535A345F31322C20535A345F3133203A20537472696E673B0D0A205374756E64
+      656E7A61686C656E312C205374756E64656E7A61686C656E322C205374756E64
+      656E7A61686C656E332C205374756E64656E7A61686C656E34203A2053747269
+      6E673B0D0A204E43312C204E43322C204E43332C204E4334203A205473747269
+      6E676C6973743B20200D0A20416266726167656E2C204D616E75656C6C2C2050
+      6C61747A68616C74657245727365747A74203A20426F6F6C65616E3B0D0A2020
+      20200D0A0D0A626567696E0D0A0D0A656E643B0D0A084361726574506F730102
+      010201000001060A54726150726F6772616D094368696C645479706502130B50
+      726F6772616D4E616D65060E476C6F62616C4F6E4372656174650B50726F6772
+      616D54797065070B747450726F63656475726506536F75726365149116000070
+      726F63656475726520476C6F62616C4F6E4372656174653B0D0A7661720D0A20
+      207A6165686C65722C20616E7A61686C203A20696E74656765723B0D0A626567
+      696E0D0A20202F2F5661726961626C656E20696E697469616C6973696572656E
+      0D0A2020416266726167656E203A3D205265706F72742E506172616D65746572
+      735B27416266726167656E275D3B0D0A20204D616E75656C6C203A3D20526570
+      6F72742E506172616D65746572735B274D616E75656C6C275D3B0D0A2020506C
+      61747A68616C74657245727365747A74203A3D2046616C73653B0D0A20200D0A
+      20202F2F4B65696E6520416266726167652C206B65696E6520506172616D6574
+      6572C3BC626572676162652E2044617320446F6B756D656E7420776972642061
+      756620646572205365697465203220736F206765647275636B742C2077696520
+      6573206973742E0D0A20204966204E6F74204D616E75656C6C207468656E2062
+      6567696E0D0A20200D0A20202020496620416266726167656E207468656E2062
+      6567696E0D0A2020202020202F2F4D6974204162667261676520200D0A202020
+      202020537072616368653A3D53656C656374537472696E672827426974746520
+      77C3A4686C656E205369652065696E6520537072616368653A272C27456E676C
+      697363682C4672616E7AC3B673697363682C5370616E697363682C4974616C69
+      656E697363682C47726965636869636827293B0D0A2020202020205374756E64
+      656E7A61686C656E313A3D537472696E67496E70757428274269747465205374
+      756E64656E2064657320537072616368656E666163687320696E2064656E204A
+      61687267C3A46E67656E2035206269732051322065696E676562656E2E272C52
+      65706F72742E506172616D65746572735B27537072616368656E666163685F73
+      7464275D293B0D0A20202020202020202020200D0A2020202020205346533131
+      3A3D537472696E67496E7075742827426974746520312E2062696C696E677561
+      6C65732053616368666163682065696E676562656E3A272C5265706F72742E50
+      6172616D65746572735B275361636866616368315F64275D293B0D0A20202020
+      202053465331323A3D537472696E67496E7075742827426974746520312E20C3
+      9C6265727365747A756E672065696E676562656E3A272C5265706F72742E5061
+      72616D65746572735B275361636866616368315F6F76275D293B0D0A20202020
+      20205374756E64656E7A61686C656E323A3D537472696E67496E707574282742
+      69747465205374756E64656E2064657320312E2042696C692D53616368666163
+      687320696E2064656E204A61687267C3A46E67656E2037206269732051322065
+      696E676562656E2E272C5265706F72742E506172616D65746572735B27536163
+      6866616368315F737464275D293B0D0A2020202020200D0A2020202020205346
+      5332313A3D537472696E67496E7075742827426974746520322E2062696C696E
+      6775616C65732053616368666163682065696E676562656E3A272C5265706F72
+      742E506172616D65746572735B275361636866616368325F64275D293B0D0A20
+      2020202020496620282853465332313C3E272D2D272920616E64202853465332
+      313C3E27272929207468656E20626567696E0D0A202020202020202053465332
+      323A3D537472696E67496E7075742827426974746520322E20C39C6265727365
       747A756E672065696E676562656E3A272C5265706F72742E506172616D657465
-      72735B275361636866616368335F6F76275D293B0D0A20202020202020202020
-      5374756E64656E7A61686C656E343A3D537472696E67496E7075742827426974
-      7465205374756E64656E20332E2042696C2D53616368666163687320696E2064
-      656E204A61687267C3A46E67656E2039206269732051322065696E676562656E
-      2E272C5265706F72742E506172616D65746572735B275361636866616368335F
-      737464275D293B0D0A2020202020202020656E6420656C736520626567696E0D
-      0A2020202020202020202053465333313A3D272D2D273B0D0A20202020202020
-      20202053465333323A3D272D2D273B0D0A2020202020202020656E643B0D0A20
-      2020202020656E6420656C736520626567696E0D0A2020202020202020534653
-      33313A3D272D2D273B0D0A202020202020202053465333323A3D272D2D273B0D
-      0A202020202020656E643B0D0A20200D0A20202020656E6420656C7365206265
-      67696E0D0A2020202020202F2F4D697420416266726167650D0A202020202020
-      5374756E64656E7A61686C656E313A3D5265706F72742E506172616D65746572
-      735B27537072616368656E666163685F737464275D3B0D0A2020202020200D0A
-      20202020202053465331313A3D5265706F72742E506172616D65746572735B27
-      5361636866616368315F64275D3B0D0A20202020202053465331323A3D526570
-      6F72742E506172616D65746572735B275361636866616368315F6F76275D3B0D
-      0A2020202020205374756E64656E7A61686C656E323A3D5265706F72742E5061
-      72616D65746572735B275361636866616368315F737464275D3B0D0A20202020
-      20200D0A20202020202053465332313A3D5265706F72742E506172616D657465
-      72735B275361636866616368325F64275D3B0D0A202020202020496620282853
-      465332313C3E272D2D272920616E64202853465332313C3E2727292920746865
-      6E20626567696E0D0A202020202020202053465332323A3D5265706F72742E50
-      6172616D65746572735B275361636866616368325F6F76275D3B0D0A20202020
-      202020205374756E64656E7A61686C656E333A3D5265706F72742E506172616D
-      65746572735B275361636866616368325F737464275D3B200D0A202020202020
-      656E6420656C736520626567696E0D0A202020202020202053465332313A3D27
-      2D2D273B0D0A202020202020202053465332323A3D272D2D273B0D0A20202020
-      2020656E643B0D0A2020202020200D0A20202020202049662053465332313C3E
-      272D2D27207468656E20626567696E0D0A202020202020202053465333313A3D
-      5265706F72742E506172616D65746572735B275361636866616368335F64275D
-      3B0D0A2020202020202020496620282853465333313C3E272D2D272920616E64
-      202853465333313C3E27272929207468656E20626567696E0D0A202020202020
-      2020202053465333323A3D5265706F72742E506172616D65746572735B275361
-      636866616368335F6F76275D3B0D0A202020202020202020205374756E64656E
-      7A61686C656E343A3D5265706F72742E506172616D65746572735B2753616368
-      66616368335F737464275D3B0D0A2020202020202020656E6420656C73652062
-      6567696E0D0A2020202020202020202053465333313A3D272D2D273B0D0A2020
-      202020202020202053465333323A3D272D2D273B0D0A2020202020202020656E
-      643B0D0A202020202020656E6420656C736520626567696E0D0A202020202020
-      202053465333313A3D272D2D273B0D0A202020202020202053465333323A3D27
-      2D2D273B0D0A202020202020656E643B0D0A2020202020202020202020200D0A
-      20202020656E643B0D0A20200D0A202020204E43313A3D2054537472696E674C
-      6973742E4372656174653B0D0A20202020616E7A61686C203A3D20416E7A6168
-      6C456C656D656E7465285374756E64656E7A61686C656E312C272C27293B0D0A
-      20202020666F72207A6165686C6572203A3D203120746F20616E7A61686C2064
-      6F0D0A20202020626567696E0D0A20202020204E43312E416464202845696E7A
-      656C656C656D656E74285374756E64656E7A61686C656E312C272C272C7A6165
-      686C657229202B2063687228313329202B2063687228313029202B2027537475
-      6E64656E27202B2063687228313329202B2063687228313029202B2027486575
-      72657320646520636F75727327293B0D0A20202020656E643B0D0A202020200D
-      0A202020204E43323A3D2054537472696E674C6973742E4372656174653B0D0A
-      20202020616E7A61686C203A3D20416E7A61686C456C656D656E746528537475
-      6E64656E7A61686C656E322C272C27293B0D0A20202020666F72207A6165686C
-      6572203A3D203120746F20616E7A61686C20646F0D0A20202020626567696E0D
-      0A20202020204E43322E416464202845696E7A656C656C656D656E7428537475
-      6E64656E7A61686C656E322C272C272C7A6165686C657229202B206368722831
-      3329202B2063687228313029202B20275374756E64656E27202B206368722831
-      3329202B2063687228313029202B202748657572657320646520636F75727327
-      293B0D0A20202020656E643B0D0A202020200D0A202020206966205346533231
-      3C3E272D2D27207468656E20626567696E0D0A2020202020204E43333A3D2054
-      537472696E674C6973742E4372656174653B0D0A202020202020616E7A61686C
-      203A3D20416E7A61686C456C656D656E7465285374756E64656E7A61686C656E
-      332C272C27293B0D0A202020202020666F72207A6165686C6572203A3D203120
-      746F20616E7A61686C20646F0D0A202020202020626567696E0D0A2020202020
-      20204E43332E416464202845696E7A656C656C656D656E74285374756E64656E
-      7A61686C656E332C272C272C7A6165686C657229202B2063687228313329202B
-      2063687228313029202B20275374756E64656E27202B2063687228313329202B
-      2063687228313029202B202748657572657320646520636F75727327293B0D0A
-      202020202020656E643B0D0A20202020656E643B0D0A202020200D0A20202020
-      69662053465333313C3E272D2D27207468656E20626567696E0D0A2020202020
-      204E43343A3D2054537472696E674C6973742E4372656174653B0D0A20202020
-      2020616E7A61686C203A3D20416E7A61686C456C656D656E7465285374756E64
-      656E7A61686C656E342C272C27293B0D0A202020202020666F72207A6165686C
-      6572203A3D203120746F20616E7A61686C20646F0D0A20202020202062656769
-      6E0D0A202020202020204E43342E416464202845696E7A656C656C656D656E74
-      285374756E64656E7A61686C656E342C272C272C7A6165686C657229202B2063
-      687228313329202B2063687228313029202B20275374756E64656E27202B2063
-      687228313329202B2063687228313029202B202748657572657320646520636F
-      75727327293B0D0A202020202020656E643B0D0A20202020656E643B0D0A2020
-      20200D0A2020656E643B0D0A20200D0A656E643B0D0A084361726574506F7301
-      02190212000001060A54726150726F6772616D094368696C645479706502150E
-      497346756E6374696F6E54797065090B50726F6772616D4E616D650613566F72
-      6E616D656E416E616C7973696572656E0B50726F6772616D54797065070A7474
-      46756E6374696F6E06536F757263650C6001000066756E6374696F6E20566F72
-      6E616D656E416E616C7973696572656E3A20537472696E673B0D0A7661720D0A
-      20207275666E616D652C0D0A2020616C6C656E616D656E3A20537472696E673B
-      0D0A20200D0A626567696E0D0A20207275666E616D65203A3D205472696D2853
-      636875656C65725B27566F726E616D65275D293B0D0A2020616C6C656E616D65
-      6E203A3D205472696D2853636875656C65725B275A757361747A275D293B0D0A
-      20200D0A2020696620616C6C656E616D656E203D202727207468656E0D0A2020
-      2020526573756C74203A3D207275666E616D650D0A2020656C73652069662050
-      6F73287275666E616D652C20616C6C656E616D656E29203E2030207468656E0D
-      0A20202020526573756C74203A3D20616C6C656E616D656E0D0A2020656C7365
-      0D0A20202020526573756C74203A3D207275666E616D65202B20272027202B20
-      616C6C656E616D656E3B0D0A0D0A656E643B0D0A084361726574506F73010201
-      0201000000}
+      72735B275361636866616368325F6F76275D293B0D0A20202020202020205374
+      756E64656E7A61686C656E333A3D537472696E67496E70757428274269747465
+      205374756E64656E20322E2042696C692D53616368666163687320696E206465
+      6E204A61687267C3A46E67656E2038206269732051322065696E676562656E2E
+      272C5265706F72742E506172616D65746572735B275361636866616368325F73
+      7464275D293B0D0A202020202020656E6420656C736520626567696E0D0A2020
+      2020202020202053465332313A3D272D2D273B0D0A2020202020202020205346
+      5332323A3D272D2D273B0D0A202020202020656E643B0D0A2020202020200D0A
+      20202020202049662053465332313C3E272D2D27207468656E20626567696E0D
+      0A202020202020202053465333313A3D537472696E67496E7075742827426974
+      746520332E2062696C696E6775616C65732053616368666163682065696E6765
+      62656E3A272C5265706F72742E506172616D65746572735B2753616368666163
+      68335F64275D293B0D0A2020202020202020496620282853465333313C3E272D
+      2D272920616E64202853465333313C3E27272929207468656E20626567696E0D
+      0A2020202020202020202053465333323A3D537472696E67496E707574282742
+      6974746520332E20C39C6265727365747A756E672065696E676562656E3A272C
+      5265706F72742E506172616D65746572735B275361636866616368335F6F7627
+      5D293B0D0A202020202020202020205374756E64656E7A61686C656E343A3D53
+      7472696E67496E70757428274269747465205374756E64656E20332E2042696C
+      2D53616368666163687320696E2064656E204A61687267C3A46E67656E203920
+      6269732051322065696E676562656E2E272C5265706F72742E506172616D6574
+      6572735B275361636866616368335F737464275D293B0D0A2020202020202020
+      656E6420656C736520626567696E0D0A2020202020202020202053465333313A
+      3D272D2D273B0D0A2020202020202020202053465333323A3D272D2D273B0D0A
+      2020202020202020656E643B0D0A202020202020656E6420656C736520626567
+      696E0D0A202020202020202053465333313A3D272D2D273B0D0A202020202020
+      202053465333323A3D272D2D273B0D0A202020202020656E643B0D0A20200D0A
+      20202020656E6420656C736520626567696E0D0A2020202020202F2F4D697420
+      416266726167650D0A202020202020537072616368653A3D5265706F72742E50
+      6172616D65746572735B27537072616368656E666163685F64275D3B0D0A2020
+      2020202053465331313A3D5265706F72742E506172616D65746572735B275361
+      636866616368315F64275D3B0D0A2020202020205374756E64656E7A61686C65
+      6E313A3D5265706F72742E506172616D65746572735B27537072616368656E66
+      6163685F737464275D3B0D0A2020202020200D0A20202020202053465331323A
+      3D5265706F72742E506172616D65746572735B275361636866616368315F6F76
+      275D3B0D0A2020202020207374756E64656E7A61686C656E323A3D5265706F72
+      742E506172616D65746572735B275361636866616368315F737464275D3B0D0A
+      2020202020200D0A20202020202053465332313A3D5265706F72742E50617261
+      6D65746572735B275361636866616368325F64275D3B0D0A2020202020204966
+      20282853465332313C3E272D2D272920616E64202853465332313C3E27272929
+      207468656E20626567696E0D0A202020202020202053465332323A3D5265706F
+      72742E506172616D65746572735B275361636866616368325F6F76275D3B0D0A
+      20202020202020205374756E64656E7A61686C656E333A3D5265706F72742E50
+      6172616D65746572735B275361636866616368325F737464275D3B200D0A2020
+      20202020656E6420656C736520626567696E0D0A202020202020202053465332
+      313A3D272D2D273B0D0A202020202020202053465332323A3D272D2D273B0D0A
+      202020202020656E643B0D0A2020202020200D0A202020202020496620534653
+      32313C3E272D2D27207468656E20626567696E0D0A2020202020202020534653
+      33313A3D5265706F72742E506172616D65746572735B27536163686661636833
+      5F64275D3B0D0A2020202020202020496620282853465333313C3E272D2D2729
+      20616E64202853465333313C3E27272929207468656E20626567696E0D0A2020
+      202020202020202053465333323A3D5265706F72742E506172616D6574657273
+      5B275361636866616368335F6F76275D3B0D0A20202020202020202020537475
+      6E64656E7A61686C656E343A3D5265706F72742E506172616D65746572735B27
+      5361636866616368335F737464275D3B0D0A2020202020202020656E6420656C
+      736520626567696E0D0A2020202020202020202053465333313A3D272D2D273B
+      0D0A2020202020202020202053465333323A3D272D2D273B0D0A202020202020
+      2020656E643B0D0A202020202020656E6420656C736520626567696E0D0A2020
+      20202020202053465333313A3D272D2D273B0D0A202020202020202053465333
+      323A3D272D2D273B0D0A202020202020656E643B200D0A2020202020200D0A20
+      202020656E643B0D0A20200D0A202020204E43313A3D2054537472696E674C69
+      73742E4372656174653B0D0A20202020616E7A61686C203A3D20416E7A61686C
+      456C656D656E7465285374756E64656E7A61686C656E312C272C27293B0D0A20
+      202020666F72207A6165686C6572203A3D203120746F20616E7A61686C20646F
+      0D0A20202020626567696E0D0A20202020204E43312E416464202845696E7A65
+      6C656C656D656E74285374756E64656E7A61686C656E312C272C272C7A616568
+      6C657229202B2063687228313329202B2063687228313029202B20275374756E
+      64656E27202B2063687228313329202B2063687228313029202B20276C657373
+      6F6E7327293B0D0A20202020656E643B0D0A202020200D0A202020204E43323A
+      3D2054537472696E674C6973742E4372656174653B0D0A20202020616E7A6168
+      6C203A3D20416E7A61686C456C656D656E7465285374756E64656E7A61686C65
+      6E322C272C27293B0D0A20202020666F72207A6165686C6572203A3D20312074
+      6F20616E7A61686C20646F0D0A20202020626567696E0D0A20202020204E4332
+      2E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C65
+      6E322C272C272C7A6165686C657229202B2063687228313329202B2063687228
+      313029202B20275374756E64656E27202B2063687228313329202B2063687228
+      313029202B20276C6573736F6E7327293B0D0A20202020656E643B0D0A202020
+      200D0A2020202069662053465332313C3E272D2D27207468656E20626567696E
+      0D0A2020202020204E43333A3D2054537472696E674C6973742E437265617465
+      3B0D0A202020202020616E7A61686C203A3D20416E7A61686C456C656D656E74
+      65285374756E64656E7A61686C656E332C272C27293B0D0A202020202020666F
+      72207A6165686C6572203A3D203120746F20616E7A61686C20646F0D0A202020
+      202020626567696E0D0A202020202020204E43332E416464202845696E7A656C
+      656C656D656E74285374756E64656E7A61686C656E332C272C272C7A6165686C
+      657229202B2063687228313329202B2063687228313029202B20275374756E64
+      656E27202B2063687228313329202B2063687228313029202B20276C6573736F
+      6E7327293B0D0A202020202020656E643B0D0A20202020656E643B0D0A202020
+      200D0A2020202069662053465333313C3E272D2D27207468656E20626567696E
+      0D0A2020202020204E43343A3D2054537472696E674C6973742E437265617465
+      3B0D0A202020202020616E7A61686C203A3D20416E7A61686C456C656D656E74
+      65285374756E64656E7A61686C656E342C272C27293B0D0A202020202020666F
+      72207A6165686C6572203A3D203120746F20616E7A61686C20646F0D0A202020
+      202020626567696E0D0A202020202020204E43342E416464202845696E7A656C
+      656C656D656E74285374756E64656E7A61686C656E342C272C272C7A6165686C
+      657229202B2063687228313329202B2063687228313029202B20275374756E64
+      656E27202B2063687228313329202B2063687228313029202B20276C6573736F
+      6E7327293B0D0A202020202020656E643B0D0A20202020656E643B0D0A202020
+      200D0A2020656E6420656C736520626567696E0D0A2020202053707261636865
+      3A3D53656C656374537472696E67282742697474652077C3A4686C656E205369
+      652065696E6520537072616368653A272C27456E676C697363682C4672616E7A
+      C3B673697363682C5370616E697363682C4974616C69656E697363682C477269
+      65636869636827293B0D0A2020656E643B0D0A20200D0A20202F2F45696E7365
+      747A656E2064657220506172616D6574657220200D0A20204966205370726163
+      68653D27456E676C6973636827207468656E20626567696E0D0A202042424731
+      3A3D27646575747363682D656E676C69736368656E273B0D0A2020424247323A
+      3D27416E676C6F2D4765726D616E273B0D0A2020424255313A3D276465757473
+      63682D656E676C69736368656E273B0D0A2020424255323A3D274765726D616E
+      2D456E676C697368273B0D0A20204246313A3D27456E676C69736368273B0D0A
+      20204246323A3D27456E676C697368273B0D0A20205350313A3D27656E676C69
+      736368656E2053707261636865273B0D0A2020656E6420656C73652069662053
+      7072616368653D274672616E7AC3B6736973636827207468656E20626567696E
+      0D0A2020424247313A3D27646575747363682D6672616E7AC3B6736973636865
+      6E273B0D0A2020424247323A3D274672616E636F2D4765726D616E273B0D0A20
+      20424255313A3D27646575747363682D6672616E7AC3B67369736368656E273B
+      0D0A2020424255323A3D274765726D616E2D4672656E6368273B0D0A20204246
+      313A3D274672616E7AC3B67369736368273B0D0A20204246323A3D274672656E
+      6368273B0D0A20205350313A3D276672616E7AC3B67369736368656E20537072
+      61636865273B0D0A2020656E6420656C736520696620537072616368653D2753
+      70616E6973636827207468656E20626567696E0D0A2020424247313A3D276465
+      75747363682D7370616E69736368656E273B0D0A2020424247323A3D27486973
+      70616E6F2D4765726D616E273B0D0A2020424255313A3D27646575747363682D
+      7370616E69736368656E273B0D0A2020424255323A3D274765726D616E2D5370
+      616E697368273B0D0A20204246313A3D275370616E69736368273B0D0A202042
+      46323A3D275370616E697368273B0D0A20205350313A3D277370616E69736368
+      656E2053707261636865273B0D0A2020656E6420656C73652069662053707261
+      6368653D274974616C69656E6973636827207468656E20626567696E0D0A2020
+      424247313A3D27646575747363682D6974616C69656E69736368656E273B0D0A
+      2020424247323A3D274974616C6F2D4765726D616E273B0D0A2020424255313A
+      3D27646575747363682D6974616C69656E69736368656E273B0D0A2020424255
+      323A3D274765726D616E2D4974616C69616E273B0D0A20204246313A3D274974
+      616C69656E69736368273B0D0A20204246323A3D274974616C69616E273B0D0A
+      20205350313A3D276974616C69656E69736368656E2053707261636865273B0D
+      0A2020656E6420656C736520696620537072616368653D274772696563686963
+      6827207468656E20626567696E0D0A2020424247313A3D27646575747363682D
+      6E657567726965636869736368656E273B0D0A2020424247323A3D2747726563
+      6F2D4765726D616E273B0D0A2020424255313A3D27646575747363682D6E6575
+      67726965636869736368656E273B0D0A2020424255323A3D274765726D616E2D
+      4D6F6465726E20477265656B273B0D0A20204246313A3D274772696563686973
+      6368273B0D0A20204246323A3D274D6F6465726E20477265656B273B0D0A2020
+      5350313A3D2767726965636869736368656E2053707261636865273B0D0A2020
+      656E643B0D0A20200D0A656E643B0D0A084361726574506F7301025A02230000
+      01060A54726150726F6772616D094368696C645479706502150E497346756E63
+      74696F6E54797065090B50726F6772616D4E616D650613566F726E616D656E41
+      6E616C7973696572656E0B50726F6772616D54797065070A747446756E637469
+      6F6E06536F757263650C6001000066756E6374696F6E20566F726E616D656E41
+      6E616C7973696572656E3A20537472696E673B0D0A7661720D0A20207275666E
+      616D652C0D0A2020616C6C656E616D656E3A20537472696E673B0D0A20200D0A
+      626567696E0D0A20207275666E616D65203A3D205472696D2853636875656C65
+      725B27566F726E616D65275D293B0D0A2020616C6C656E616D656E203A3D2054
+      72696D2853636875656C65725B275A757361747A275D293B0D0A20200D0A2020
+      696620616C6C656E616D656E203D202727207468656E0D0A2020202052657375
+      6C74203A3D207275666E616D650D0A2020656C736520696620506F7328727566
+      6E616D652C20616C6C656E616D656E29203E2030207468656E0D0A2020202052
+      6573756C74203A3D20616C6C656E616D656E0D0A2020656C73650D0A20202020
+      526573756C74203A3D207275666E616D65202B20272027202B20616C6C656E61
+      6D656E3B0D0A0D0A656E643B0D0A084361726574506F730102050211000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -8087,11 +8185,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2024'
+      AutoSearchSettings.SearchExpression = '13.06.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '16.05.2024'
+      Value = '13.06.2024'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
@@ -8113,6 +8211,16 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = True
       UserName = 'Abfragen'
+    end
+    object ppParameter5: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Englisch'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Englisch'
+      UserName = 'Sprachenfach_d'
     end
     object ppParameter6: TppParameter
       AutoSearchSettings.LogicalPrefix = []
@@ -8137,11 +8245,11 @@ object Report: TppReport
     object ppParameter8: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'G'#233'ographie'
+      AutoSearchSettings.SearchExpression = 'geography'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 'G'#233'ographie'
+      Value = 'geography'
       UserName = 'Sachfach1_ov'
     end
     object ppParameter9: TppParameter
