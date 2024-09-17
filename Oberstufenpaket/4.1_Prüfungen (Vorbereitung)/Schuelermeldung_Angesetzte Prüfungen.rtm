@@ -2,21 +2,22 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
+  PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen - Schild3.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
-  PrinterSetup.mmMarginBottom = 0
-  PrinterSetup.mmMarginLeft = 0
-  PrinterSetup.mmMarginRight = 0
-  PrinterSetup.mmMarginTop = 0
+  PrinterSetup.mmMarginBottom = 5292
+  PrinterSetup.mmMarginLeft = 5292
+  PrinterSetup.mmMarginRight = 5292
+  PrinterSetup.mmMarginTop = 13229
   PrinterSetup.mmPaperHeight = 297128
   PrinterSetup.mmPaperWidth = 210080
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\Oberstufenpaket_git\4.1_Pr'#252'fungen (' +
-    'Vorbereitung)\Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
+    'C:\SchILD-NRW\SchILD-Reports\Oberstufenpaket_Juni2024\4.1_Pr'#252'fun' +
+    'gen (Vorbereitung)\Schuelermeldung_Angesetzte Pr'#252'fungen - Schild' +
+    '3.rtm'
   Template.Format = ftASCII
   Units = utScreenPixels
   AllowPrintToArchive = True
@@ -62,14 +63,14 @@ object Report: TppReport
   Left = 128
   Top = 8
   Version = '15.05'
-  mmColumnWidth = 0
+  mmColumnWidth = 199496
   DataPipelineName = 'Schueler'
   object ppDetailBand2: TppDetailBand
     Background1.Brush.Style = bsClear
     Background2.Brush.Style = bsClear
     PrintHeight = phDynamic
     mmBottomOffset = 0
-    mmHeight = 297128
+    mmHeight = 148432
     mmPrintPosition = 0
     object ppLabel115: TppLabel
       UserName = 'LaFestlegung'
@@ -82,8 +83,8 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       mmHeight = 6879
-      mmLeft = 40751
-      mmTop = 50560
+      mmLeft = 35911
+      mmTop = 53475
       mmWidth = 127265
       BandType = 4
       LayerName = Foreground
@@ -102,7 +103,7 @@ object Report: TppReport
       Transparent = True
       DataPipelineName = 'EigeneSchule'
       mmHeight = 6085
-      mmLeft = 94721
+      mmLeft = 89881
       mmTop = 33867
       mmWidth = 19315
       BandType = 4
@@ -122,8 +123,8 @@ object Report: TppReport
       Transparent = True
       DataPipelineName = 'Schueler'
       mmHeight = 6879
-      mmLeft = 89165
-      mmTop = 72761
+      mmLeft = 84325
+      mmTop = 75676
       mmWidth = 34660
       BandType = 4
       LayerName = Foreground
@@ -137,8 +138,8 @@ object Report: TppReport
       DataPipelineName = 'plAbifaecher'
       mmHeight = 5027
       mmLeft = 0
-      mmTop = 1323
-      mmWidth = 210080
+      mmTop = 2646
+      mmWidth = 199496
       BandType = 4
       LayerName = Foreground
       mmBottomOffset = 0
@@ -191,14 +192,14 @@ object Report: TppReport
           '190500')
         DataPipeline = dmPipelines.plAbifaecher
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
+        PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen - Schild3.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
-        PrinterSetup.mmMarginBottom = 0
-        PrinterSetup.mmMarginLeft = 0
-        PrinterSetup.mmMarginRight = 0
-        PrinterSetup.mmMarginTop = 0
+        PrinterSetup.mmMarginBottom = 5292
+        PrinterSetup.mmMarginLeft = 5292
+        PrinterSetup.mmMarginRight = 5292
+        PrinterSetup.mmMarginTop = 13229
         PrinterSetup.mmPaperHeight = 297128
         PrinterSetup.mmPaperWidth = 210080
         PrinterSetup.PaperSize = 9
@@ -253,7 +254,7 @@ object Report: TppReport
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
             444254657874314F6E476574546578740B50726F6772616D54797065070B7474
-            50726F63656475726506536F757263650CA006000070726F6365647572652044
+            50726F63656475726506536F757263650C1C06000070726F6365647572652044
             4254657874314F6E476574546578742876617220546578743A20537472696E67
             293B0D0A626567696E0D0A202061626974757266616368203A3D204162696661
             6563686572205B2741626946616368275D3B0D0A202044657461696C2E766973
@@ -263,118 +264,52 @@ object Report: TppReport
             2069662061626974757266616368203D20273127200D0A20207468656E206265
             67696E0D0A202020207031203A3D2041626966616563686572205B275A776973
             6368656E7374616E64275D3B0D0A20202020706631203A3D2028416269666165
-            636865725B274D646C426573745072756566756E67275D203D20272B2729206F
-            722028416269666165636865725B274D646C50666C696368745072756566756E
-            67275D203D20272B27293B0D0A202020206C31203A3D20416269666165636865
-            725B27466163686C6568726572275D3B0D0A2020656E640D0A2020656C736520
-            69662061626974757266616368203D20273227200D0A20207468656E20626567
-            696E0D0A202020207032203A3D2041626966616563686572205B275A77697363
-            68656E7374616E64275D3B0D0A20202020706632203A3D202841626966616563
-            6865725B274D646C426573745072756566756E67275D203D20272B2729206F72
-            2028416269666165636865725B274D646C50666C696368745072756566756E67
-            275D203D20272B27293B0D0A202020206C32203A3D2041626966616563686572
-            5B27466163686C6568726572275D3B0D0A2020656E640D0A2020656C73652069
-            662061626974757266616368203D20273327200D0A20207468656E2062656769
-            6E0D0A202020207033203A3D2041626966616563686572205B275A7769736368
-            656E7374616E64275D3B0D0A20202020706633203A3D20284162696661656368
-            65725B274D646C426573745072756566756E67275D203D20272B2729206F7220
-            28416269666165636865725B274D646C50666C696368745072756566756E6727
-            5D203D20272B27293B0D0A202020206C33203A3D20416269666165636865725B
-            27466163686C6568726572275D3B0D0A2020656E642020200D0A2020656C7365
-            2069662061626974757266616368203D20273427200D0A20207468656E207034
-            203A3D2041626966616563686572205B275A7769736368656E7374616E64275D
-            3B0D0A20206966204162697475725B2750756E6B7473756D6D655F4949275D20
-            3E2030202F2F287031203E3D20302920616E6420287032203E3D20302920616E
-            6420287033203E3D20302920616E6420287034203E203029200D0A2020746865
-            6E20626567696E0D0A202020206966204162697475725B2750756E6B7473756D
-            6D655F4949275D203C203130300D0A202020207468656E206D315F313030203A
-            3D20276A61270D0A20202020656C7365206D315F313030203A3D20272D2D273B
-            0D0A202020206D325F313030203A3D206D315F3130303B0D0A202020206D335F
-            313030203A3D206D315F3130303B0D0A202020206D315F32355F3230203A3D20
-            272D2D273B0D0A202020206D325F32355F3230203A3D20272D2D273B0D0A2020
-            20206D335F32355F3230203A3D20272D2D273B0D0A2020202069662028703120
-            3C202866616B746F72202A2035292920616E6420287032203C202846616B746F
-            72202A203529290D0A202020207468656E20626567696E0D0A2020202020206D
-            315F32355F3230203A3D20276A61273B0D0A2020202020206D325F32355F3230
-            203A3D20276A61273B0D0A20202020656E643B0D0A2020202069662028703120
-            3C202866616B746F72202A2035292920616E6420287033203C202866616B746F
-            72202A2035292920616E6420287034203C202866616B746F72202A203529290D
-            0A202020207468656E20626567696E0D0A2020202020206D315F32355F323020
-            3A3D20276A61273B0D0A2020202020206D335F32355F3230203A3D20276A6127
-            3B0D0A20202020656E643B0D0A20202020696620287032203C202866616B746F
-            72202A2035292920616E6420287033203C202866616B746F72202A2035292920
-            616E6420287034203C202866616B746F72202A203529290D0A20202020746865
-            6E20626567696E0D0A2020202020206D325F32355F3230203A3D20276A61273B
-            0D0A2020202020206D335F32355F3230203A3D20276A61273B0D0A2020202065
-            6E643B0D0A2020656E643B20200D0A656E643B0D0A0D436F6D706F6E656E744E
-            616D65060744425465787431094576656E744E616D6506094F6E476574546578
-            74074576656E7449440235084361726574506F730102010201000000}
+            636865725B274D646C426573745072756566756E67275D203D20272B27293B0D
+            0A202020206C31203A3D20416269666165636865725B27466163686C65687265
+            72275D3B0D0A2020656E640D0A2020656C736520696620616269747572666163
+            68203D20273227200D0A20207468656E20626567696E0D0A202020207032203A
+            3D2041626966616563686572205B275A7769736368656E7374616E64275D3B0D
+            0A20202020706632203A3D2028416269666165636865725B274D646C42657374
+            5072756566756E67275D203D20272B27293B0D0A202020206C32203A3D204162
+            69666165636865725B27466163686C6568726572275D3B0D0A2020656E640D0A
+            2020656C73652069662061626974757266616368203D20273327200D0A202074
+            68656E20626567696E0D0A202020207033203A3D204162696661656368657220
+            5B275A7769736368656E7374616E64275D3B0D0A20202020706633203A3D2028
+            416269666165636865725B274D646C426573745072756566756E67275D203D20
+            272B27293B0D0A202020206C33203A3D20416269666165636865725B27466163
+            686C6568726572275D3B0D0A2020656E642020200D0A2020656C736520696620
+            61626974757266616368203D20273427200D0A20207468656E207034203A3D20
+            41626966616563686572205B275A7769736368656E7374616E64275D3B0D0A20
+            206966204162697475725B2750756E6B7473756D6D655F4949275D203E203020
+            2F2F287031203E3D20302920616E6420287032203E3D20302920616E64202870
+            33203E3D20302920616E6420287034203E203029200D0A20207468656E206265
+            67696E0D0A202020206966204162697475725B2750756E6B7473756D6D655F49
+            49275D203C203130300D0A202020207468656E206D315F313030203A3D20276A
+            61270D0A20202020656C7365206D315F313030203A3D20272D2D273B0D0A2020
+            20206D325F313030203A3D206D315F3130303B0D0A202020206D335F31303020
+            3A3D206D315F3130303B0D0A202020206D315F32355F3230203A3D20272D2D27
+            3B0D0A202020206D325F32355F3230203A3D20272D2D273B0D0A202020206D33
+            5F32355F3230203A3D20272D2D273B0D0A20202020696620287031203C202866
+            616B746F72202A2035292920616E6420287032203C202846616B746F72202A20
+            3529290D0A202020207468656E20626567696E0D0A2020202020206D315F3235
+            5F3230203A3D20276A61273B0D0A2020202020206D325F32355F3230203A3D20
+            276A61273B0D0A20202020656E643B0D0A20202020696620287031203C202866
+            616B746F72202A2035292920616E6420287033203C202866616B746F72202A20
+            35292920616E6420287034203C202866616B746F72202A203529290D0A202020
+            207468656E20626567696E0D0A2020202020206D315F32355F3230203A3D2027
+            6A61273B0D0A2020202020206D335F32355F3230203A3D20276A61273B0D0A20
+            202020656E643B0D0A20202020696620287032203C202866616B746F72202A20
+            35292920616E6420287033203C202866616B746F72202A2035292920616E6420
+            287034203C202866616B746F72202A203529290D0A202020207468656E206265
+            67696E0D0A2020202020206D325F32355F3230203A3D20276A61273B0D0A2020
+            202020206D335F32355F3230203A3D20276A61273B0D0A20202020656E643B0D
+            0A2020656E643B20200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+            0744425465787431094576656E744E616D6506094F6E47657454657874074576
+            656E7449440235084361726574506F7301021B020F000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
             UserName = 'Foreground1'
-            LayerType = ltBanded
-            Index = 0
-          end
-        end
-      end
-    end
-    object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
-      UserName = 'DynamicLoadingSubReport1'
-      ExpandAll = False
-      NewPrintJob = False
-      OutlineSettings.CreateNode = True
-      TraverseAllData = False
-      Filename = 'Abitur_Kopf.rtm'
-      mmHeight = 5027
-      mmLeft = 0
-      mmTop = 12696
-      mmWidth = 210080
-      BandType = 4
-      LayerName = Foreground
-      mmBottomOffset = 0
-      mmOverFlowOffset = 0
-      mmStopPosition = 0
-      mmMinHeight = 0
-      object ppChildReport1: TppChildReport
-        PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
-        PrinterSetup.PaperName = 'A4'
-        PrinterSetup.PrinterName = 'Default'
-        PrinterSetup.SaveDeviceSettings = False
-        PrinterSetup.mmMarginBottom = 0
-        PrinterSetup.mmMarginLeft = 0
-        PrinterSetup.mmMarginRight = 0
-        PrinterSetup.mmMarginTop = 0
-        PrinterSetup.mmPaperHeight = 297128
-        PrinterSetup.mmPaperWidth = 210080
-        PrinterSetup.PaperSize = 9
-        Template.Format = ftASCII
-        Units = utPrinterPixels
-        Version = '15.05'
-        mmColumnWidth = 0
-        object ppHeaderBand1: TppHeaderBand
-          Background.Brush.Style = bsClear
-          mmBottomOffset = 0
-          mmHeight = 13229
-          mmPrintPosition = 0
-        end
-        object ppDetailBand1: TppDetailBand
-          Background1.Brush.Style = bsClear
-          Background2.Brush.Style = bsClear
-          mmBottomOffset = 0
-          mmHeight = 13229
-          mmPrintPosition = 0
-        end
-        object ppFooterBand1: TppFooterBand
-          Background.Brush.Style = bsClear
-          mmBottomOffset = 0
-          mmHeight = 13229
-          mmPrintPosition = 0
-        end
-        object ppDesignLayers8: TppDesignLayers
-          object ppDesignLayer8: TppDesignLayer
-            UserName = 'Foreground7'
             LayerType = ltBanded
             Index = 0
           end
@@ -390,8 +325,8 @@ object Report: TppReport
       TraverseAllData = False
       mmHeight = 6350
       mmLeft = 0
-      mmTop = 94986
-      mmWidth = 210080
+      mmTop = 99219
+      mmWidth = 199496
       BandType = 4
       LayerName = Foreground
       mmBottomOffset = 0
@@ -423,7 +358,7 @@ object Report: TppReport
           object ppShape1: TppShape
             UserName = 'Shape1'
             mmHeight = 17727
-            mmLeft = 38191
+            mmLeft = 32891
             mmTop = 11643
             mmWidth = 133933
             BandType = 1
@@ -434,7 +369,7 @@ object Report: TppReport
             Position = lpLeft
             Weight = 0.750000000000000000
             mmHeight = 17727
-            mmLeft = 48683
+            mmLeft = 43383
             mmTop = 11643
             mmWidth = 2646
             BandType = 1
@@ -445,7 +380,7 @@ object Report: TppReport
             Position = lpLeft
             Weight = 0.750000000000000000
             mmHeight = 17727
-            mmLeft = 98425
+            mmLeft = 93125
             mmTop = 11643
             mmWidth = 2646
             BandType = 1
@@ -456,7 +391,7 @@ object Report: TppReport
             Position = lpLeft
             Weight = 0.750000000000000000
             mmHeight = 17727
-            mmLeft = 132292
+            mmLeft = 126992
             mmTop = 11643
             mmWidth = 2646
             BandType = 1
@@ -467,7 +402,7 @@ object Report: TppReport
             Position = lpLeft
             Weight = 0.750000000000000000
             mmHeight = 6085
-            mmLeft = 152929
+            mmLeft = 147629
             mmTop = 23284
             mmWidth = 2117
             BandType = 1
@@ -485,7 +420,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 4276
-            mmLeft = 38513
+            mmLeft = 33213
             mmTop = 16405
             mmWidth = 10000
             BandType = 1
@@ -503,7 +438,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 4276
-            mmLeft = 38365
+            mmLeft = 33065
             mmTop = 21432
             mmWidth = 10000
             BandType = 1
@@ -520,7 +455,7 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4276
-            mmLeft = 50006
+            mmLeft = 44706
             mmTop = 16670
             mmWidth = 10054
             BandType = 1
@@ -537,7 +472,7 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4276
-            mmLeft = 101336
+            mmLeft = 96036
             mmTop = 16670
             mmWidth = 10054
             BandType = 1
@@ -556,7 +491,7 @@ object Report: TppReport
             Transparent = True
             WordWrap = True
             mmHeight = 9260
-            mmLeft = 134018
+            mmLeft = 128718
             mmTop = 12701
             mmWidth = 35190
             BandType = 1
@@ -573,7 +508,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 4276
-            mmLeft = 135213
+            mmLeft = 129913
             mmTop = 23549
             mmWidth = 16171
             BandType = 1
@@ -590,7 +525,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 4276
-            mmLeft = 155237
+            mmLeft = 149937
             mmTop = 23549
             mmWidth = 14393
             BandType = 1
@@ -607,7 +542,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 5165
-            mmLeft = 73691
+            mmLeft = 68391
             mmTop = 4240
             mmWidth = 62484
             BandType = 1
@@ -677,7 +612,7 @@ object Report: TppReport
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 2000
-                  mmLeft = 38100
+                  mmLeft = 32808
                   mmTop = 8000
                   mmWidth = 133615
                   BandType = 4
@@ -689,7 +624,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 0
                   mmWidth = 2000
                   BandType = 4
@@ -701,7 +636,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 48683
+                  mmLeft = 43383
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -713,7 +648,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 98425
+                  mmLeft = 93125
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -725,7 +660,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 132292
+                  mmLeft = 126992
                   mmTop = 0
                   mmWidth = 2646
                   BandType = 4
@@ -737,7 +672,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 152929
+                  mmLeft = 147629
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -749,7 +684,7 @@ object Report: TppReport
                   Position = lpRight
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 169334
+                  mmLeft = 164034
                   mmTop = 0
                   mmWidth = 2646
                   BandType = 4
@@ -767,7 +702,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 2381
                   mmWidth = 10054
                   BandType = 4
@@ -784,7 +719,7 @@ object Report: TppReport
                   Font.Style = []
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 50006
+                  mmLeft = 44706
                   mmTop = 2381
                   mmWidth = 47625
                   BandType = 4
@@ -802,7 +737,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 133287
+                  mmLeft = 127987
                   mmTop = 2646
                   mmWidth = 18785
                   BandType = 4
@@ -820,7 +755,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 152929
+                  mmLeft = 147629
                   mmTop = 2646
                   mmWidth = 18785
                   BandType = 4
@@ -837,7 +772,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 101336
+                  mmLeft = 96036
                   mmTop = 2910
                   mmWidth = 15706
                   BandType = 4
@@ -858,7 +793,7 @@ object Report: TppReport
                   6E476574546578742876617220546578743A20537472696E67293B0D0A626567
                   696E0D0A202054657874203A3D2027312E273B0D0A656E643B0D0A0D436F6D70
                   6F6E656E744E616D6506054C615F4E72094576656E744E616D6506094F6E4765
-                  7454657874074576656E7449440235084361726574506F730102000200000001
+                  7454657874074576656E7449440235084361726574506F730102010201000001
                   060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061144
                   657461696C4265666F72655072696E740B50726F6772616D54797065070B7474
                   50726F63656475726506536F75726365067E70726F6365647572652044657461
@@ -884,7 +819,7 @@ object Report: TppReport
                   0A20206D75656E646C696368655F7072756566756E67203A3D206D315F313030
                   203D20276A61273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060E
                   4C615F4D646C5F42657374313030094576656E744E616D6506094F6E47657454
-                  657874074576656E7449440235084361726574506F730102110203000001060F
+                  657874074576656E7449440235084361726574506F730102010201000001060F
                   5472614576656E7448616E646C65720B50726F6772616D4E616D6506164C615F
                   4D646C5F4265737432354F6E476574546578740B50726F6772616D5479706507
                   0B747450726F63656475726506536F75726365065770726F636564757265204C
@@ -892,7 +827,7 @@ object Report: TppReport
                   537472696E67293B0D0A626567696E0D0A202054657874203A3D206D315F3235
                   5F32303B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D4C615F4D
                   646C5F426573743235094576656E744E616D6506094F6E476574546578740745
-                  76656E7449440235084361726574506F730102130203000001060F5472614576
+                  76656E7449440235084361726574506F730102010201000001060F5472614576
                   656E7448616E646C65720B50726F6772616D4E616D6506124C615F4C65687265
                   724F6E476574546578740B50726F6772616D54797065070B747450726F636564
                   75726506536F75726365066970726F636564757265204C615F4C65687265724F
@@ -968,7 +903,7 @@ object Report: TppReport
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 2000
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 7673
                   mmWidth = 133615
                   BandType = 4
@@ -980,7 +915,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 0
                   mmWidth = 2000
                   BandType = 4
@@ -992,7 +927,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 48683
+                  mmLeft = 43383
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -1004,7 +939,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 98425
+                  mmLeft = 93125
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -1016,7 +951,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 132292
+                  mmLeft = 126992
                   mmTop = 0
                   mmWidth = 2646
                   BandType = 4
@@ -1028,7 +963,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 152929
+                  mmLeft = 147629
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -1040,7 +975,7 @@ object Report: TppReport
                   Position = lpRight
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 169334
+                  mmLeft = 164034
                   mmTop = 0
                   mmWidth = 2646
                   BandType = 4
@@ -1058,7 +993,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 2500
                   mmWidth = 10054
                   BandType = 4
@@ -1075,7 +1010,7 @@ object Report: TppReport
                   Font.Style = []
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 50006
+                  mmLeft = 44706
                   mmTop = 2381
                   mmWidth = 47890
                   BandType = 4
@@ -1093,7 +1028,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 133350
+                  mmLeft = 128050
                   mmTop = 2381
                   mmWidth = 17485
                   BandType = 4
@@ -1111,7 +1046,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 152665
+                  mmLeft = 147365
                   mmTop = 2381
                   mmWidth = 18521
                   BandType = 4
@@ -1128,7 +1063,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 101336
+                  mmLeft = 96036
                   mmTop = 2646
                   mmWidth = 15706
                   BandType = 4
@@ -1259,7 +1194,7 @@ object Report: TppReport
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 2117
-                  mmLeft = 38100
+                  mmLeft = 32808
                   mmTop = 7938
                   mmWidth = 133615
                   BandType = 4
@@ -1271,7 +1206,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 0
                   mmWidth = 2000
                   BandType = 4
@@ -1283,7 +1218,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 48683
+                  mmLeft = 43383
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -1295,7 +1230,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 98425
+                  mmLeft = 93125
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -1307,7 +1242,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 132292
+                  mmLeft = 126992
                   mmTop = 0
                   mmWidth = 2646
                   BandType = 4
@@ -1319,7 +1254,7 @@ object Report: TppReport
                   Position = lpLeft
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 152929
+                  mmLeft = 147629
                   mmTop = 0
                   mmWidth = 2117
                   BandType = 4
@@ -1331,7 +1266,7 @@ object Report: TppReport
                   Position = lpRight
                   Weight = 0.750000000000000000
                   mmHeight = 10000
-                  mmLeft = 169334
+                  mmLeft = 164034
                   mmTop = 0
                   mmWidth = 2646
                   BandType = 4
@@ -1349,7 +1284,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 38100
+                  mmLeft = 32800
                   mmTop = 2500
                   mmWidth = 10054
                   BandType = 4
@@ -1366,7 +1301,7 @@ object Report: TppReport
                   Font.Style = []
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 50006
+                  mmLeft = 44706
                   mmTop = 2381
                   mmWidth = 47890
                   BandType = 4
@@ -1384,7 +1319,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 133350
+                  mmLeft = 128050
                   mmTop = 2381
                   mmWidth = 18785
                   BandType = 4
@@ -1402,7 +1337,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 152929
+                  mmLeft = 147629
                   mmTop = 2381
                   mmWidth = 18785
                   BandType = 4
@@ -1419,7 +1354,7 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4784
-                  mmLeft = 101336
+                  mmLeft = 96036
                   mmTop = 2381
                   mmWidth = 15706
                   BandType = 4
@@ -1515,8 +1450,8 @@ object Report: TppReport
       TraverseAllData = False
       mmHeight = 6350
       mmLeft = 0
-      mmTop = 101865
-      mmWidth = 210080
+      mmTop = 106892
+      mmWidth = 199496
       BandType = 4
       LayerName = Foreground
       mmBottomOffset = 0
@@ -1525,14 +1460,14 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport10: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen.rtm'
+        PrinterSetup.DocumentName = 'Schuelermeldung_Angesetzte Pr'#252'fungen - Schild3.rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
-        PrinterSetup.mmMarginBottom = 0
-        PrinterSetup.mmMarginLeft = 0
-        PrinterSetup.mmMarginRight = 0
-        PrinterSetup.mmMarginTop = 0
+        PrinterSetup.mmMarginBottom = 5292
+        PrinterSetup.mmMarginLeft = 5292
+        PrinterSetup.mmMarginRight = 5292
+        PrinterSetup.mmMarginTop = 13229
         PrinterSetup.mmPaperHeight = 297128
         PrinterSetup.mmPaperWidth = 210080
         PrinterSetup.PaperSize = 9
@@ -1565,7 +1500,7 @@ object Report: TppReport
             RemoveEmptyLines = False
             Stretch = True
             mmHeight = 29898
-            mmLeft = 20373
+            mmLeft = 17988
             mmTop = 7408
             mmWidth = 158750
             BandType = 4
@@ -1581,7 +1516,7 @@ object Report: TppReport
             Position = lpBottom
             Weight = 0.750000000000000000
             mmHeight = 2117
-            mmLeft = 15081
+            mmLeft = 17731
             mmTop = 97367
             mmWidth = 52917
             BandType = 4
@@ -1592,7 +1527,7 @@ object Report: TppReport
             Position = lpBottom
             Weight = 0.750000000000000000
             mmHeight = 2117
-            mmLeft = 75671
+            mmLeft = 78321
             mmTop = 97367
             mmWidth = 52917
             BandType = 4
@@ -1603,7 +1538,7 @@ object Report: TppReport
             Position = lpBottom
             Weight = 0.750000000000000000
             mmHeight = 2117
-            mmLeft = 136687
+            mmLeft = 134302
             mmTop = 53446
             mmWidth = 52917
             BandType = 4
@@ -1614,7 +1549,7 @@ object Report: TppReport
             Position = lpBottom
             Weight = 0.750000000000000000
             mmHeight = 2117
-            mmLeft = 14911
+            mmLeft = 12526
             mmTop = 53446
             mmWidth = 52917
             BandType = 4
@@ -1625,7 +1560,7 @@ object Report: TppReport
             Position = lpBottom
             Weight = 0.750000000000000000
             mmHeight = 2117
-            mmLeft = 75586
+            mmLeft = 73201
             mmTop = 53446
             mmWidth = 52917
             BandType = 4
@@ -1642,7 +1577,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 4233
-            mmLeft = 27252
+            mmLeft = 29902
             mmTop = 99748
             mmWidth = 16140
             BandType = 4
@@ -1659,7 +1594,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 4233
-            mmLeft = 92075
+            mmLeft = 94725
             mmTop = 99748
             mmWidth = 16933
             BandType = 4
@@ -1676,7 +1611,7 @@ object Report: TppReport
             TextAlignment = taCentered
             Transparent = True
             mmHeight = 6085
-            mmLeft = 39952
+            mmLeft = 37567
             mmTop = 67733
             mmWidth = 121444
             BandType = 4
@@ -1693,7 +1628,7 @@ object Report: TppReport
             646174756D5F737472202B20272C2031323A30302055687220696D2053656B72
             657461726961742064657220536368756C65273B0D0A656E643B0D0A0D436F6D
             706F6E656E744E616D6506064C6162656C31094576656E744E616D6506094F6E
-            47657454657874074576656E7449440235084361726574506F73010201020300
+            47657454657874074576656E7449440235084361726574506F73010201020100
             0000}
         end
         object ppDesignLayers7: TppDesignLayers
@@ -1716,9 +1651,72 @@ object Report: TppReport
       TextAlignment = taCentered
       Transparent = True
       mmHeight = 6879
-      mmLeft = 100542
-      mmTop = 59796
+      mmLeft = 95702
+      mmTop = 62711
       mmWidth = 8467
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      AutoSize = True
+      DataField = 'Bezeichnung1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 22
+      Font.Style = [fsBold]
+      ParentDataPipeline = False
+      TextAlignment = taCentered
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 9525
+      mmLeft = 77788
+      mmTop = 265
+      mmWidth = 44979
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      AutoSize = True
+      DataField = 'Bezeichnung2'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 15
+      Font.Style = [fsBold]
+      ParentDataPipeline = False
+      TextAlignment = taCentered
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 6350
+      mmLeft = 84402
+      mmTop = 14288
+      mmWidth = 30427
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      AutoSize = True
+      DataField = 'Bezeichnung3'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 15
+      Font.Style = [fsBold]
+      ParentDataPipeline = False
+      TextAlignment = taCentered
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 6350
+      mmLeft = 84402
+      mmTop = 20902
+      mmWidth = 30427
       BandType = 4
       LayerName = Foreground
     end
