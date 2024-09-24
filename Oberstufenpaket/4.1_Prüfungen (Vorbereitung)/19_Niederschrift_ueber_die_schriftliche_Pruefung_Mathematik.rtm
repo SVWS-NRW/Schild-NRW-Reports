@@ -1,0 +1,4582 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.Kurse
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = '19_Niederschrift_ueber_die_schriftliche_Pruefung_Mathe.rtm'
+  PrinterSetup.Duplex = dpVertical
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 15000
+  PrinterSetup.mmMarginRight = 15000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\SchILD-NRW\SchILD-Reports\Oberstufenpaket_Juni2024\4.1_Pr'#252'fun' +
+    'gen (Vorbereitung)\19_Niederschrift_ueber_die_schriftliche_Pruef' +
+    'ung_Mathe.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Printer'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 180000
+  DataPipelineName = 'Kurse'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 11377
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport_Seite1'
+      ExpandAll = False
+      KeepTogether = True
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      PrintBehavior = pbSection
+      TraverseAllData = False
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 180000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = '19_Niederschrift_ueber_die_schriftliche_Pruefung_Mathe.rtm'
+        PrinterSetup.Duplex = dpVertical
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 180000
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          PrintHeight = phDynamic
+          mmBottomOffset = 0
+          mmHeight = 253471
+          mmPrintPosition = 0
+          object ppLabel13: TppLabel
+            UserName = 'Label10'
+            Caption = 'Die Aufsicht f'#252'hren:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 4763
+            mmLeft = 0
+            mmTop = 119575
+            mmWidth = 32808
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText1: TppDBText
+            UserName = 'DBT_Abijahr'
+            DataField = 'Schuljahr'
+            DataPipeline = dmPipelines.EigeneSchule
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'EigeneSchule'
+            mmHeight = 4763
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 89959
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel1: TppLabel
+            UserName = 'Label1'
+            Caption = 'Niederschrift '#252'ber die schriftliche Pr'#252'fung'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 14
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 6085
+            mmLeft = 0
+            mmTop = 11074
+            mmWidth = 88636
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel6: TppLabel
+            UserName = 'Label6'
+            Caption = 'Fachlehrer(in):'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 36667
+            mmWidth = 24871
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel7: TppLabel
+            UserName = 'Label7'
+            Caption = 'Arbeitszeit   :'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 42402
+            mmWidth = 22490
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel9: TppLabel
+            UserName = 'Label9'
+            Caption = '1)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 21331
+            mmTop = 40987
+            mmWidth = 2381
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel10: TppLabel
+            UserName = 'lbl_Datum'
+            AutoSize = False
+            Border.BorderPositions = [bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.500000000000000000
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4233
+            mmLeft = 30428
+            mmTop = 19171
+            mmWidth = 39158
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel11: TppLabel
+            UserName = 'lbl_Raum'
+            AutoSize = False
+            Border.BorderPositions = [bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.748799979686737000
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4233
+            mmLeft = 30428
+            mmTop = 25139
+            mmWidth = 39158
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel12: TppLabel
+            UserName = 'lbl_Arbeitszeit'
+            AutoSize = False
+            Border.BorderPositions = [bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.500000000000000000
+            Caption = ' '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4233
+            mmLeft = 30428
+            mmTop = 42746
+            mmWidth = 39158
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLine1: TppLine
+            UserName = 'Line1'
+            Border.Weight = 2.000000000000000000
+            Pen.Width = 2
+            ParentWidth = True
+            Weight = 1.500000000000000000
+            mmHeight = 2646
+            mmLeft = 0
+            mmTop = 48561
+            mmWidth = 180000
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel3: TppLabel
+            UserName = 'Label3'
+            Caption = 'Datum:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 18854
+            mmWidth = 12435
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText3: TppDBText
+            UserName = 'DBT_Kurs'
+            Border.BorderPositions = [bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.500000000000000000
+            DataField = 'KurzBez'
+            DataPipeline = dmPipelines.Kurse
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            ParentDataPipeline = False
+            Transparent = True
+            VerticalAlignment = avCenter
+            DataPipelineName = 'Kurse'
+            mmHeight = 4233
+            mmLeft = 30428
+            mmTop = 30961
+            mmWidth = 39158
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText4: TppDBText
+            UserName = 'DBT_Fachlehrer'
+            Border.BorderPositions = [bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.500000000000000000
+            DataField = 'LName'
+            DataPipeline = dmPipelines.Kurse
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'Kurse'
+            mmHeight = 5291
+            mmLeft = 30427
+            mmTop = 37042
+            mmWidth = 39207
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel4: TppLabel
+            UserName = 'Label4'
+            Caption = 'Raum'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 24615
+            mmWidth = 9790
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel5: TppLabel
+            UserName = 'Label5'
+            Caption = 'Kurs:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 30641
+            mmWidth = 8467
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText5: TppDBText
+            UserName = 'DBText5'
+            AutoSize = True
+            DataField = 'Bezeichnung1'
+            DataPipeline = dmPipelines.EigeneSchule
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            WordWrap = True
+            DataPipelineName = 'EigeneSchule'
+            mmHeight = 4233
+            mmLeft = 106892
+            mmTop = 0
+            mmWidth = 24871
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText6: TppDBText
+            UserName = 'DBText6'
+            AutoSize = True
+            DataField = 'Bezeichnung2'
+            DataPipeline = dmPipelines.EigeneSchule
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'EigeneSchule'
+            mmHeight = 3969
+            mmLeft = 106892
+            mmTop = 4763
+            mmWidth = 32279
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppMemo1: TppMemo
+            UserName = 'Memo1'
+            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.Color = clBtnShadow
+            Border.Visible = True
+            Caption = 'Memo1'
+            CharWrap = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = 10053222
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Lines.Strings = (
+              ' Schulstempel')
+            RemoveEmptyLines = False
+            Transparent = True
+            mmHeight = 28310
+            mmLeft = 106892
+            mmTop = 10029
+            mmWidth = 63765
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeading = 0
+          end
+          object ppTableGrid3: TppTableGrid
+            UserName = 'TableGrid3'
+            DefaultColWidth = 12.000000000000000000
+            DefaultRowHeight = 12.699999809265140000
+            Stretch = True
+            mmHeight = 87120
+            mmLeft = 0
+            mmTop = 165514
+            mmWidth = 88853
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmDefaultRowHeight = 12700
+            mmDefaultColWidth = 12000
+            object ppTableRow11: TppTableRow
+              UserName = 'TableRow11'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell41: TppTableCell
+                UserName = 'TableCell41'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel21: TppLabel
+                  UserName = 'Label16'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Name'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 1058
+                  mmTop = 167081
+                  mmWidth = 40747
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell42: TppTableCell
+                UserName = 'TableCell42'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel22: TppLabel
+                  UserName = 'Label18'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'von'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 43921
+                  mmTop = 167127
+                  mmWidth = 14070
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell43: TppTableCell
+                UserName = 'TableCell43'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel23: TppLabel
+                  UserName = 'Label20'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'bis'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 60107
+                  mmTop = 167127
+                  mmWidth = 14070
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell44: TppTableCell
+                UserName = 'TableCell44'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel24: TppLabel
+                  UserName = 'Label402'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Paraphe'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 76293
+                  mmTop = 167127
+                  mmWidth = 11502
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+            end
+            object ppTableRow12: TppTableRow
+              UserName = 'TableRow12'
+              Stretch = True
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 111828
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell45: TppTableCell
+                UserName = 'TableCell45'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell46: TppTableCell
+                UserName = 'TableCell46'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell47: TppTableCell
+                UserName = 'TableCell47'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell48: TppTableCell
+                UserName = 'TableCell48'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow13: TppTableRow
+              UserName = 'TableRow13'
+              Stretch = True
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 116764
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell49: TppTableCell
+                UserName = 'TableCell49'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell50: TppTableCell
+                UserName = 'TableCell50'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell51: TppTableCell
+                UserName = 'TableCell51'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell52: TppTableCell
+                UserName = 'TableCell52'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow14: TppTableRow
+              UserName = 'TableRow14'
+              Stretch = True
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 122494
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell53: TppTableCell
+                UserName = 'TableCell102'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell54: TppTableCell
+                UserName = 'TableCell54'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell55: TppTableCell
+                UserName = 'TableCell55'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell56: TppTableCell
+                UserName = 'TableCell56'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow16: TppTableRow
+              UserName = 'TableRow16'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell61: TppTableCell
+                UserName = 'TableCell61'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell62: TppTableCell
+                UserName = 'TableCell62'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell63: TppTableCell
+                UserName = 'TableCell63'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell64: TppTableCell
+                UserName = 'TableCell64'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow15: TppTableRow
+              UserName = 'TableRow15'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 129537
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell57: TppTableCell
+                UserName = 'TableCell57'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell58: TppTableCell
+                UserName = 'TableCell58'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell59: TppTableCell
+                UserName = 'TableCell59'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell60: TppTableCell
+                UserName = 'TableCell202'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow17: TppTableRow
+              UserName = 'TableRow17'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell65: TppTableCell
+                UserName = 'TableCell65'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell66: TppTableCell
+                UserName = 'TableCell66'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell67: TppTableCell
+                UserName = 'TableCell67'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell68: TppTableCell
+                UserName = 'TableCell68'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow18: TppTableRow
+              UserName = 'TableRow18'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell69: TppTableCell
+                UserName = 'TableCell69'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell70: TppTableCell
+                UserName = 'TableCell70'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell71: TppTableCell
+                UserName = 'TableCell71'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell72: TppTableCell
+                UserName = 'TableCell72'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow19: TppTableRow
+              UserName = 'TableRow19'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell73: TppTableCell
+                UserName = 'TableCell73'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell74: TppTableCell
+                UserName = 'TableCell74'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell75: TppTableCell
+                UserName = 'TableCell75'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell76: TppTableCell
+                UserName = 'TableCell76'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow20: TppTableRow
+              UserName = 'TableRow20'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell77: TppTableCell
+                UserName = 'TableCell77'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell78: TppTableCell
+                UserName = 'TableCell78'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell79: TppTableCell
+                UserName = 'TableCell79'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell80: TppTableCell
+                UserName = 'TableCell80'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow22: TppTableRow
+              UserName = 'TableRow22'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell85: TppTableCell
+                UserName = 'TableCell85'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell86: TppTableCell
+                UserName = 'TableCell86'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell87: TppTableCell
+                UserName = 'TableCell87'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell88: TppTableCell
+                UserName = 'TableCell88'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow21: TppTableRow
+              UserName = 'TableRow21'
+              mmHeight = 7260
+              mmLeft = 0
+              mmTop = 245234
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell81: TppTableCell
+                UserName = 'TableCell81'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell82: TppTableCell
+                UserName = 'TableCell82'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell83: TppTableCell
+                UserName = 'TableCell83'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell84: TppTableCell
+                UserName = 'TableCell84'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableColumn5: TppTableColumn
+              mmWidth = 42863
+            end
+            object ppTableColumn6: TppTableColumn
+              mmWidth = 16186
+            end
+            object ppTableColumn7: TppTableColumn
+              mmWidth = 16186
+            end
+            object ppTableColumn8: TppTableColumn
+              mmWidth = 13618
+            end
+          end
+          object ppTableGrid1: TppTableGrid
+            UserName = 'TableGrid1'
+            DefaultColWidth = 7.000000000000000000
+            DefaultRowHeight = 6.199999809265137000
+            Stretch = True
+            mmHeight = 34925
+            mmLeft = 0
+            mmTop = 124361
+            mmWidth = 89000
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmDefaultRowHeight = 6200
+            mmDefaultColWidth = 7000
+            object ppTableRow1: TppTableRow
+              UserName = 'TableRow1'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell1: TppTableCell
+                UserName = 'TableCell1'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel2: TppLabel
+                  UserName = 'Label14'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Name'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3727
+                  mmLeft = 1058
+                  mmTop = 125445
+                  mmWidth = 40639
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell3: TppTableCell
+                UserName = 'TableCell3'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel17: TppLabel
+                  UserName = 'Label17'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'von'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 43813
+                  mmTop = 125468
+                  mmWidth = 14181
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell5: TppTableCell
+                UserName = 'TableCell5'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel19: TppLabel
+                  UserName = 'Label19'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'bis'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 59868
+                  mmTop = 125468
+                  mmWidth = 13916
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell7: TppTableCell
+                UserName = 'TableCell7'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel20: TppLabel
+                  UserName = 'Label401'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Paraphe'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 76142
+                  mmTop = 125490
+                  mmWidth = 11799
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+            end
+            object ppTableRow2: TppTableRow
+              UserName = 'TableRow2'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell2: TppTableCell
+                UserName = 'TableCell2'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell4: TppTableCell
+                UserName = 'TableCell4'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell6: TppTableCell
+                UserName = 'TableCell6'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell8: TppTableCell
+                UserName = 'TableCell8'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow3: TppTableRow
+              UserName = 'TableRow3'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell9: TppTableCell
+                UserName = 'TableCell9'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell10: TppTableCell
+                UserName = 'TableCell10'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell11: TppTableCell
+                UserName = 'TableCell11'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell12: TppTableCell
+                UserName = 'TableCell12'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow4: TppTableRow
+              UserName = 'TableRow4'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell13: TppTableCell
+                UserName = 'TableCell13'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell14: TppTableCell
+                UserName = 'TableCell14'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell15: TppTableCell
+                UserName = 'TableCell15'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell16: TppTableCell
+                UserName = 'TableCell16'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow5: TppTableRow
+              UserName = 'TableRow5'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell17: TppTableCell
+                UserName = 'TableCell17'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell18: TppTableCell
+                UserName = 'TableCell18'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell19: TppTableCell
+                UserName = 'TableCell19'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell20: TppTableCell
+                UserName = 'TableCell20'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableColumn17: TppTableColumn
+              mmWidth = 42755
+            end
+            object ppTableColumn18: TppTableColumn
+              mmWidth = 16297
+            end
+            object ppTableColumn19: TppTableColumn
+              mmWidth = 16032
+            end
+            object ppTableColumn20: TppTableColumn
+              mmWidth = 13915
+            end
+          end
+          object ppTableGrid2: TppTableGrid
+            UserName = 'TableGrid2'
+            DefaultColWidth = 7.000000000000000000
+            DefaultRowHeight = 6.199999809265137000
+            Stretch = True
+            mmHeight = 34925
+            mmLeft = 91375
+            mmTop = 124361
+            mmWidth = 89000
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmDefaultRowHeight = 6200
+            mmDefaultColWidth = 7000
+            object ppTableRow6: TppTableRow
+              UserName = 'TableRow6'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell21: TppTableCell
+                UserName = 'TableCell21'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel25: TppLabel
+                  UserName = 'Label2'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Name'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 92433
+                  mmTop = 125451
+                  mmWidth = 40639
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell22: TppTableCell
+                UserName = 'TableCell22'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel26: TppLabel
+                  UserName = 'Label21'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'von'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 135188
+                  mmTop = 125451
+                  mmWidth = 14181
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell23: TppTableCell
+                UserName = 'TableCell23'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel27: TppLabel
+                  UserName = 'Label22'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'bis'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 151485
+                  mmTop = 125474
+                  mmWidth = 13916
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell24: TppTableCell
+                UserName = 'TableCell24'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel28: TppLabel
+                  UserName = 'Label28'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Paraphe'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 167517
+                  mmTop = 125474
+                  mmWidth = 11799
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+            end
+            object ppTableRow7: TppTableRow
+              UserName = 'TableRow7'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell25: TppTableCell
+                UserName = 'TableCell25'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell26: TppTableCell
+                UserName = 'TableCell26'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell27: TppTableCell
+                UserName = 'TableCell27'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell28: TppTableCell
+                UserName = 'TableCell28'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow8: TppTableRow
+              UserName = 'TableRow8'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell29: TppTableCell
+                UserName = 'TableCell29'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell30: TppTableCell
+                UserName = 'TableCell101'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell31: TppTableCell
+                UserName = 'TableCell31'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell32: TppTableCell
+                UserName = 'TableCell32'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow9: TppTableRow
+              UserName = 'TableRow9'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell33: TppTableCell
+                UserName = 'TableCell33'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell34: TppTableCell
+                UserName = 'TableCell34'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell35: TppTableCell
+                UserName = 'TableCell35'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell36: TppTableCell
+                UserName = 'TableCell36'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow10: TppTableRow
+              UserName = 'TableRow10'
+              mmHeight = 6985
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell37: TppTableCell
+                UserName = 'TableCell37'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell38: TppTableCell
+                UserName = 'TableCell38'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell39: TppTableCell
+                UserName = 'TableCell39'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell40: TppTableCell
+                UserName = 'TableCell201'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableColumn25: TppTableColumn
+              mmWidth = 42755
+            end
+            object ppTableColumn26: TppTableColumn
+              mmWidth = 16297
+            end
+            object ppTableColumn27: TppTableColumn
+              mmWidth = 16032
+            end
+            object ppTableColumn28: TppTableColumn
+              mmWidth = 13915
+            end
+          end
+          object ppLabel14: TppLabel
+            UserName = 'Label11'
+            Caption = 'Den Arbeitsraum verlassen:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 4763
+            mmLeft = 90
+            mmTop = 160904
+            mmWidth = 45244
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppTableGrid4: TppTableGrid
+            UserName = 'TableGrid4'
+            DefaultColWidth = 12.000000000000000000
+            DefaultRowHeight = 12.699999809265140000
+            Stretch = True
+            mmHeight = 87048
+            mmLeft = 91546
+            mmTop = 165514
+            mmWidth = 88900
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmDefaultRowHeight = 12700
+            mmDefaultColWidth = 12000
+            object ppTableRow23: TppTableRow
+              UserName = 'TableRow23'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell89: TppTableCell
+                UserName = 'TableCell89'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel29: TppLabel
+                  UserName = 'Label29'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Name'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 92604
+                  mmTop = 167059
+                  mmWidth = 40758
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell90: TppTableCell
+                UserName = 'TableCell90'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel30: TppLabel
+                  UserName = 'Label30'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'von'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3968
+                  mmLeft = 135273
+                  mmTop = 166934
+                  mmWidth = 13793
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell91: TppTableCell
+                UserName = 'TableCell91'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel31: TppLabel
+                  UserName = 'Label201'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'bis'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 151470
+                  mmTop = 166993
+                  mmWidth = 14118
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+              object ppTableCell92: TppTableCell
+                UserName = 'TableCell92'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel32: TppLabel
+                  UserName = 'Label32'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Caption = 'Paraphe'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 167462
+                  mmTop = 166967
+                  mmWidth = 11793
+                  BandType = 4
+                  LayerName = Foreground1
+                end
+              end
+            end
+            object ppTableRow24: TppTableRow
+              UserName = 'TableRow24'
+              Stretch = True
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 111828
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell93: TppTableCell
+                UserName = 'TableCell93'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell94: TppTableCell
+                UserName = 'TableCell94'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell95: TppTableCell
+                UserName = 'TableCell95'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell96: TppTableCell
+                UserName = 'TableCell96'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow25: TppTableRow
+              UserName = 'TableRow25'
+              Stretch = True
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 116764
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell97: TppTableCell
+                UserName = 'TableCell97'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell98: TppTableCell
+                UserName = 'TableCell501'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell99: TppTableCell
+                UserName = 'TableCell99'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell100: TppTableCell
+                UserName = 'TableCell100'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow26: TppTableRow
+              UserName = 'TableRow26'
+              Stretch = True
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 122494
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell101: TppTableCell
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell102: TppTableCell
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell103: TppTableCell
+                UserName = 'TableCell103'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell104: TppTableCell
+                UserName = 'TableCell104'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow27: TppTableRow
+              UserName = 'TableRow27'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell105: TppTableCell
+                UserName = 'TableCell105'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell106: TppTableCell
+                UserName = 'TableCell106'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell107: TppTableCell
+                UserName = 'TableCell107'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell108: TppTableCell
+                UserName = 'TableCell108'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow28: TppTableRow
+              UserName = 'TableRow28'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 129537
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell109: TppTableCell
+                UserName = 'TableCell109'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell110: TppTableCell
+                UserName = 'TableCell110'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell111: TppTableCell
+                UserName = 'TableCell111'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell112: TppTableCell
+                UserName = 'TableCell112'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow29: TppTableRow
+              UserName = 'TableRow29'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell113: TppTableCell
+                UserName = 'TableCell113'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell114: TppTableCell
+                UserName = 'TableCell114'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell115: TppTableCell
+                UserName = 'TableCell115'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell116: TppTableCell
+                UserName = 'TableCell116'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow30: TppTableRow
+              UserName = 'TableRow30'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell117: TppTableCell
+                UserName = 'TableCell117'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell118: TppTableCell
+                UserName = 'TableCell701'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell119: TppTableCell
+                UserName = 'TableCell119'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell120: TppTableCell
+                UserName = 'TableCell120'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow31: TppTableRow
+              UserName = 'TableRow31'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell121: TppTableCell
+                UserName = 'TableCell121'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell122: TppTableCell
+                UserName = 'TableCell122'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell123: TppTableCell
+                UserName = 'TableCell123'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell124: TppTableCell
+                UserName = 'TableCell124'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow32: TppTableRow
+              UserName = 'TableRow201'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell125: TppTableCell
+                UserName = 'TableCell125'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell126: TppTableCell
+                UserName = 'TableCell126'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell127: TppTableCell
+                UserName = 'TableCell127'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell128: TppTableCell
+                UserName = 'TableCell801'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow33: TppTableRow
+              UserName = 'TableRow33'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell129: TppTableCell
+                UserName = 'TableCell129'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell130: TppTableCell
+                UserName = 'TableCell130'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell131: TppTableCell
+                UserName = 'TableCell131'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell132: TppTableCell
+                UserName = 'TableCell132'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableRow34: TppTableRow
+              UserName = 'TableRow34'
+              mmHeight = 7254
+              mmLeft = 0
+              mmTop = 245234
+              mmWidth = 48948
+              BandType = 4
+              LayerName = Foreground1
+              mmBottomOffset = 0
+              mmOverFlowOffset = 0
+              mmStopPosition = 0
+              mmMinHeight = 0
+              object ppTableCell133: TppTableCell
+                UserName = 'TableCell133'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell134: TppTableCell
+                UserName = 'TableCell134'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell135: TppTableCell
+                UserName = 'TableCell135'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+              object ppTableCell136: TppTableCell
+                UserName = 'TableCell136'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Visible = True
+                Border.Weight = 0.500000000000000000
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground1
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+              end
+            end
+            object ppTableColumn29: TppTableColumn
+              mmWidth = 42874
+            end
+            object ppTableColumn30: TppTableColumn
+              mmWidth = 16197
+            end
+            object ppTableColumn31: TppTableColumn
+              mmWidth = 16197
+            end
+            object ppTableColumn32: TppTableColumn
+              mmWidth = 13629
+            end
+          end
+          object ppRichText4: TppRichText
+            UserName = 'RichText1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            KeepTogether = True
+            Caption = 'RichText1'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
+              'ue0;}'#13#10'\viewkind4\uc1\pard\qj\tx851\tqc\tx7655\tqr\tx9498\cf1\f0' +
+              '\fs20 Der unversehrte Umschlag, der die Aufgaben f\'#39'fcr den Kurs' +
+              ' enth\'#39'e4lt, wird in Gegenwart der Sch\'#39'fclerinnen und Sch\'#39'fcle' +
+              'r ge\'#39'f6ffnet. Zu Pr\'#39'fcfungsbeginn \'#39'fcbergibt die Fachlehrkraf' +
+              't den Sch\'#39'fclerinnen und Sch\'#39'fclern die Aufgaben des Pr\'#39'fcfun' +
+              'gsteils A (ohne Hilfsmittel) und die Aufgaben des Pr\'#39'fcfungstei' +
+              'ls B. \f1\par'#13#10'\pard\tx851\tqc\tx7655\tqr\tx9498\f0\par'#13#10'Die $ze' +
+              'it$-min\'#39'fctige Arbeitszeit (Auswahlzeit inkludiert) beginnt um ' +
+              '______________ Uhr und endet um ______________ Uhr.\par'#13#10'Der Pr\' +
+              #39'fcfungsteil A (ohne Hilfsmittel) endet sp\'#39'e4testens um _______' +
+              '_______ Uhr.\par'#13#10'\par'#13#10'\f1\fs14\par'#13#10'\b\f0\fs18\par'#13#10'}'#13#10#0
+            RemoveEmptyLines = False
+            Stretch = True
+            Transparent = True
+            mmHeight = 31510
+            mmLeft = 0
+            mmTop = 49367
+            mmWidth = 179917
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+          end
+          object ppRichText5: TppRichText
+            UserName = 'RichText3'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.Visible = True
+            Caption = 'RichText3'
+            MailMerge = True
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}'#13 +
+              #10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\tx851\tqc' +
+              '\tx7655\tqr\tx9498\cf1\b\f0\fs18  Es wird best\'#39'e4tigt, dass\par' +
+              #13#10'\pard{\pntext\f2\'#39'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxt' +
+              'b\'#39'B7}}\fi-200\li260\tx851\tqc\tx7655\tqr\tx9498\b0 alle Sch\'#39'fc' +
+              'lerinnen und Sch\'#39'fcler darauf hingewiesen wurden, dass das Vorb' +
+              'latt zum Pr\'#39'fcfungsteil A vollst\'#39'e4ndig auszuf\'#39'fcllen und zu ' +
+              'unterschreiben ist,\par'#13#10'{\pntext\f2\'#39'B7\tab}alle Sch\'#39'fclerinne' +
+              'n und Sch\'#39'fcler den Pr\'#39'fcfungsteil A inkl. Vorblatt sp\'#39'e4test' +
+              'ens zur oben eingetragenen Uhrzeit abgegeben haben,\par'#13#10'{\pntex' +
+              't\f2\'#39'B7\tab}jeder Sch\'#39'fclerin und jedem Sch\'#39'fcler erst jeweil' +
+              's nach Abgabe ihres bzw. seines Pr\'#39'fcfungsteils A die zugelasse' +
+              'nen Hilfsmittel zur Verf\'#39'fcgung gestellt wurden.\par'#13#10'\pard\tx8' +
+              '51\tqc\tx7655\tqr\tx9498  Im Pr\'#39'fcfungsteil B wird folgendes We' +
+              'rkzeug verwendet: \super 1\f1 )\f0    \nosupersub   \fs22\u9744?' +
+              ' \fs18  Graphikf\'#39'e4higer Taschenrechner (GTR)    \fs22\u9744? \' +
+              'fs18  Computer-Algebra-System (CAS)\b  \b0                      ' +
+              '               \par'#13#10'\fs10\par'#13#10'\pard\fi20\li60\tx851\tqc\tx7655' +
+              '\tqr\tx9498\fs18  ___________________________________           ' +
+              '\fs20                                                           ' +
+              '                                       \par'#13#10'\fs16  Unterschrift' +
+              ' der aufsichtf\'#39'fchrenden Lehrkraft\f1\par'#13#10'\pard\fs20\par'#13#10'}'#13#10#0
+            RemoveEmptyLines = False
+            Stretch = True
+            Transparent = True
+            mmHeight = 37042
+            mmLeft = 484
+            mmTop = 78110
+            mmWidth = 178594
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+          end
+        end
+        object ppFooterBand2: TppFooterBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 5556
+          mmPrintPosition = 0
+          object ppLine2: TppLine
+            UserName = 'Line2'
+            Weight = 0.750000000000000000
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 44979
+            BandType = 8
+            LayerName = Foreground1
+          end
+          object ppLabel16: TppLabel
+            UserName = 'Label13'
+            Caption = 
+              'Ggf. verl'#228'ngerte Arbeitszeit gem. '#167' 32 Absatz 2 APO-GOSt eintrag' +
+              'en.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 9
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3704
+            mmLeft = 2646
+            mmTop = 794
+            mmWidth = 95779
+            BandType = 8
+            LayerName = Foreground1
+          end
+          object ppLabel18: TppLabel
+            UserName = 'Label15'
+            Caption = '1)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 7
+            Font.Style = []
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 0
+            mmTop = 794
+            mmWidth = 2117
+            BandType = 8
+            LayerName = Foreground1
+          end
+          object ppLabel15: TppLabel
+            UserName = 'Label12'
+            Caption = '1 von 2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            Transparent = True
+            mmHeight = 4762
+            mmLeft = 157957
+            mmTop = 794
+            mmWidth = 11377
+            BandType = 8
+            LayerName = Foreground1
+          end
+        end
+        object raCodeModule1: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650612
+            6C626C5F446174756D4F6E476574546578740B50726F6772616D54797065070B
+            747450726F63656475726506536F75726365065870726F636564757265206C62
+            6C5F446174756D4F6E476574546578742876617220546578743A20537472696E
+            67293B0D0A626567696E0D0A0D0A202054657874203A3D2020446174756D3B0D
+            0A200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506096C626C5F
+            446174756D094576656E744E616D6506094F6E47657454657874074576656E74
+            49440235084361726574506F730102010201000001060F5472614576656E7448
+            616E646C65720B50726F6772616D4E616D6506116C626C5F5261756D4F6E4765
+            74546578740B50726F6772616D54797065070B747450726F6365647572650653
+            6F75726365065370726F636564757265206C626C5F5261756D4F6E4765745465
+            78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+            202054657874203A3D20205261756D3B0D0A0D0A656E643B0D0A0D436F6D706F
+            6E656E744E616D6506086C626C5F5261756D094576656E744E616D6506094F6E
+            47657454657874074576656E7449440235084361726574506F73010201020100
+            0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+            186C626C5F417262656974737A6569744F6E476574546578740B50726F677261
+            6D54797065070B747450726F63656475726506536F75726365067B70726F6365
+            64757265206C626C5F417262656974737A6569744F6E47657454657874287661
+            7220546578743A20537472696E67293B0D0A626567696E0D0A20205465787420
+            3A3D20417262656974737A6569743B0D0A0D0A656E643B202020202020202020
+            20202020202020202020202020202020202020200D0A0D436F6D706F6E656E74
+            4E616D65060F6C626C5F417262656974737A656974094576656E744E616D6506
+            094F6E47657454657874074576656E7449440235084361726574506F73010201
+            0201000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
+            6D6506144442545F4162696A6168724F6E476574546578740B50726F6772616D
+            54797065070B747450726F63656475726506536F75726365148E00000070726F
+            636564757265204442545F4162696A6168724F6E476574546578742876617220
+            546578743A20537472696E67293B0D0A626567696E0D0A0D0A20205465787420
+            3A3D2020274162697475727072C3BC66756E672027202B20696E74746F737472
+            28456967656E65536368756C655B27536368756C6A616872275D20202B203129
+            3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B4442545F41
+            62696A616872094576656E744E616D6506094F6E47657454657874074576656E
+            7449440235084361726574506F730102010201000001060F5472614576656E74
+            48616E646C65720B50726F6772616D4E616D6506174442545F466163686C6568
+            7265724F6E476574546578740B50726F6772616D54797065070B747450726F63
+            656475726506536F75726365067070726F636564757265204442545F46616368
+            6C65687265724F6E476574546578742876617220546578743A20537472696E67
+            293B0D0A626567696E0D0A0D0A202054657874203A3D20204B757273655B274C
+            416E72656465275D202B2720272B20746578743B0D0A0D0A656E643B0D0A0D43
+            6F6D706F6E656E744E616D65060E4442545F466163686C656872657209457665
+            6E744E616D6506094F6E47657454657874074576656E74494402350843617265
+            74506F730102010201000001060F5472614576656E7448616E646C65720B5072
+            6F6772616D4E616D65061144657461696C4265666F72655072696E740B50726F
+            6772616D54797065070B747450726F63656475726506536F7572636506BF7072
+            6F6365647572652044657461696C4265666F72655072696E743B0D0A62656769
+            6E0D0A0D0A2020696620417262656974737A656974203D2727207468656E0D0A
+            20202020417262656974737A656974203A3D20275F5F5F5F5F5F5F5F273B0D0A
+            2020202020200D0A202020205269636854657874312E52696368746578743A3D
+            5265706C61636554657874285269636854657874312E52696368746578742C27
+            247A65697424272C417262656974737A656974293B0D0A656E643B0D0A0D436F
+            6D706F6E656E744E616D65060644657461696C094576656E744E616D65060B42
+            65666F72655072696E74074576656E7449440218084361726574506F73010201
+            0201000000}
+        end
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'Foreground1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppSubReport2: TppSubReport
+      UserName = 'SubReport_Seite2'
+      ExpandAll = False
+      KeepTogether = True
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      PrintBehavior = pbSection
+      TraverseAllData = False
+      DataPipelineName = 'plKursSchueler'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 5556
+      mmWidth = 180000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        AutoStop = False
+        Columns = 2
+        ColumnPositions.Strings = (
+          '15000'
+          '105000')
+        DataPipeline = dmPipelines.plKursSchueler
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = '19_Niederschrift_ueber_die_schriftliche_Pruefung_Mathe.rtm'
+        PrinterSetup.Duplex = dpVertical
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 15000
+        PrinterSetup.mmMarginRight = 15000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 90000
+        DataPipelineName = 'plKursSchueler'
+        object ppHeaderBand1: TppHeaderBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 4763
+          mmPrintPosition = 0
+          object ppLabel33: TppLabel
+            UserName = 'Label22'
+            Caption = 'Die Arbeit liefern ab:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 30427
+            BandType = 0
+            LayerName = PageLayer3
+          end
+        end
+        object ppColumnHeaderBand1: TppColumnHeaderBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 9525
+          mmPrintPosition = 0
+          object ppLabel34: TppLabel
+            UserName = 'Label26'
+            AutoSize = False
+            Border.BorderPositions = [bpLeft, bpTop, bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.748799979686737000
+            Caption = ' Name'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 9525
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 46567
+            BandType = 2
+            LayerName = PageLayer3
+          end
+          object ppMemo3: TppMemo
+            UserName = 'Memo3'
+            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.Visible = True
+            Caption = 'Memo3'
+            CharWrap = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Lines.Strings = (
+              'Uhrzeit '
+              'Abgabe Teil A')
+            RemoveEmptyLines = False
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 9525
+            mmLeft = 46302
+            mmTop = 0
+            mmWidth = 21167
+            BandType = 2
+            LayerName = PageLayer3
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeading = 0
+          end
+          object ppMemo4: TppMemo
+            UserName = 'Memo4'
+            Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+            Border.Visible = True
+            Caption = 'Memo4'
+            CharWrap = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Lines.Strings = (
+              'Uhrzeit '
+              'Abgabe Teil B')
+            RemoveEmptyLines = False
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 9525
+            mmLeft = 67204
+            mmTop = 0
+            mmWidth = 21167
+            BandType = 2
+            LayerName = PageLayer3
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeading = 0
+          end
+        end
+        object ppDetailBand3: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          ColumnBalancing = True
+          mmBottomOffset = 0
+          mmHeight = 6879
+          mmPrintPosition = 0
+          object ppLabel35: TppLabel
+            UserName = 'Label23'
+            AutoSize = False
+            Border.BorderPositions = [bpLeft, bpRight, bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.748799979686737000
+            Caption = ' '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            mmHeight = 7000
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 46567
+            BandType = 4
+            LayerName = PageLayer3
+          end
+          object ppDBText2: TppDBText
+            UserName = 'DBText1'
+            AutoSize = True
+            DataField = 'NameVorname'
+            DataPipeline = dmPipelines.plKursSchueler
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'plKursSchueler'
+            mmHeight = 3969
+            mmLeft = 1058
+            mmTop = 1323
+            mmWidth = 21167
+            BandType = 4
+            LayerName = PageLayer3
+          end
+          object ppLabel36: TppLabel
+            UserName = 'Label24'
+            AutoSize = False
+            Border.BorderPositions = [bpRight, bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.748799979686737000
+            Caption = ' '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            mmHeight = 7000
+            mmLeft = 44979
+            mmTop = 0
+            mmWidth = 22490
+            BandType = 4
+            LayerName = PageLayer3
+          end
+          object ppLabel37: TppLabel
+            UserName = 'Label1'
+            AutoSize = False
+            Border.BorderPositions = [bpRight, bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.748799979686737000
+            Caption = ' '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Transparent = True
+            mmHeight = 7000
+            mmLeft = 65911
+            mmTop = 0
+            mmWidth = 22490
+            BandType = 4
+            LayerName = PageLayer3
+          end
+        end
+        object ppColumnFooterBand1: TppColumnFooterBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppFooterBand1: TppFooterBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 138642
+          mmPrintPosition = 0
+          object ppRichText2: TppRichText
+            UserName = 'RichText2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 9
+            Font.Style = []
+            Caption = 'RichText2'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
+              'ue0;}'#13#10'\viewkind4\uc1\pard\qj\tx851\tqc\tx7655\tqr\tx9498\cf1\f0' +
+              '\fs18 Die Fachlehrerin oder der Fachlehrer gibt folgende zus\'#39'e4' +
+              'tzliche Hilfen, die nachtr\'#39'e4glich am Rand des Vorschlags verme' +
+              'rkt werden: \super\f1 3)\par'#13#10'\pard\tx851\tqc\tx7655\tqr\tx9498\' +
+              'nosupersub\par'#13#10'________________________________________________' +
+              '_______________________________________________\f0 _____________' +
+              '\f1\par'#13#10'\par'#13#10'_________________________________________________' +
+              '______________________________________________\f0 _____________\' +
+              'f1\par'#13#10'\par'#13#10'\pard\qj\tx851\tqc\tx7655\tqr\tx9498\f0 Andere als' +
+              ' die genehmigten Hilfen (z. B. W\'#39'f6rterb\'#39'fccher, Taschenrechne' +
+              'r, Formensammlungen) sind nicht gegeben worden.\f1\par'#13#10'\pard\tx' +
+              '851\tqc\tx7655\tqr\tx9498\par'#13#10'\pard\qj\tx851\tqc\tx7655\tqr\tx9' +
+              '498\f0 F\'#39'fcr folgende Sch\'#39'fclerinnen und Sch\'#39'fcler, die sich ' +
+              'unerlaubter Hilfen (\'#39'a7 24 APO-GOSt) bedient haben, wurden die ' +
+              'nachfolgend genannten Ma\'#39'dfnahmen getroffen: \super\f1 3)\par'#13#10 +
+              '\pard\tx851\tqc\tx7655\tqr\tx9498\nosupersub\par'#13#10'______________' +
+              '________________________________________________________________' +
+              '_________________\f0 _____________\f1\par'#13#10'\par'#13#10'_______________' +
+              '________________________________________________________________' +
+              '________________\f0 _____________\par'#13#10'\f1\par'#13#10'________________' +
+              '________________________________________________________________' +
+              '_______________\f0 _____________\f1\par'#13#10'\par'#13#10'Bemerkungen: \sup' +
+              'er 3)\par'#13#10'\nosupersub\par'#13#10'____________________________________' +
+              '___________________________________________________________\f0 _' +
+              '____________\f1\par'#13#10'\par'#13#10'_____________________________________' +
+              '__________________________________________________________\f0 __' +
+              '___________\f1\par'#13#10'\par'#13#10'______________________________________' +
+              '_________________________________________________________\f0 ___' +
+              '__________\f1\par'#13#10'\par'#13#10'_______________________________________' +
+              '________________________________________________________\f0 ____' +
+              '_________\f1\par'#13#10'\par'#13#10'Kenntnis genommen:\par'#13#10'\par'#13#10'\par'#13#10'\par' +
+              #13#10'\pard\tqc\tx1843\tqc\tx7655\tqr\tx9498 _______________________' +
+              '____________________\par'#13#10'\pard Vorsitzende(r) des Zentralen Abi' +
+              'turausschusses\par'#13#10'}'#13#10#0
+            RemoveEmptyLines = False
+            Transparent = True
+            mmHeight = 129646
+            mmLeft = 0
+            mmTop = 0
+            mmWidth = 169922
+            BandType = 8
+            LayerName = PageLayer3
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+          end
+          object ppLabel38: TppLabel
+            UserName = 'Label20'
+            Caption = 'Hier ist ggf. '#8222'entf'#228'llt'#8220' einzutragen.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 9
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3704
+            mmLeft = 2117
+            mmTop = 134938
+            mmWidth = 49477
+            BandType = 8
+            LayerName = PageLayer3
+          end
+          object ppLabel39: TppLabel
+            UserName = 'Label21'
+            Caption = '3)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 7
+            Font.Style = []
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 0
+            mmTop = 134938
+            mmWidth = 2117
+            BandType = 8
+            LayerName = PageLayer3
+          end
+          object ppLine3: TppLine
+            UserName = 'Line3'
+            Weight = 0.750000000000000000
+            mmHeight = 3969
+            mmLeft = 0
+            mmTop = 134673
+            mmWidth = 55563
+            BandType = 8
+            LayerName = PageLayer3
+          end
+          object ppLabel40: TppLabel
+            UserName = 'Label27'
+            Caption = '2 von 2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 11
+            Font.Style = []
+            Transparent = True
+            mmHeight = 4762
+            mmLeft = 156634
+            mmTop = 133615
+            mmWidth = 11377
+            BandType = 8
+            LayerName = PageLayer3
+          end
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F757263650C0701000070726F63656475726520
+            44657461696C4265666F72655072696E743B0D0A626567696E0D0A2020696620
+            284B75727353636875656C65725B274B757273617274275D3D27414233272920
+            4F5220284B75727353636875656C65725B274B757273617274275D3D274C4B31
+            2729204F5220284B75727353636875656C65725B274B757273617274275D3D27
+            4C4B322729207468656E0D0A20202020626567696E0D0A202020202020646574
+            61696C2E76697369626C653A3D747275650D0A20202020656E640D0A2020656C
+            73650D0A20202020626567696E0D0A20202020202064657461696C2E76697369
+            626C653A3D66616C73653B0D0A20202020656E643B0D0A656E643B0D0A0D436F
+            6D706F6E656E744E616D65060644657461696C094576656E744E616D65060B42
+            65666F72655072696E74074576656E7449440218084361726574506F73010201
+            0201000000}
+        end
+        object ppDesignLayers3: TppDesignLayers
+          object ppDesignLayer3: TppDesignLayer
+            UserName = 'PageLayer3'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+  end
+  object raCodeModule2: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365068E70726F6365647572652056
+      61726961626C65733B0D0A7661720D0A446174756D2C205261756D2C20417262
+      656974737A6569742C204175737761686C7A656974203A737472696E673B200D
+      0A4175737761686C203A20626F6F6C65616E3B0D0A5A656974656E4175736765
+      62656E203A20626F6F6C65616E3B0D0A0D0A0D0A626567696E0D0A0D0A656E64
+      3B0D0A084361726574506F730102010205000001060A54726150726F6772616D
+      094368696C645479706502150E497346756E6374696F6E54797065090B50726F
+      6772616D4E616D6506124461756572496E5A6569747374756E64656E0B50726F
+      6772616D54797065070A747446756E6374696F6E06536F7572636506ED66756E
+      6374696F6E204461756572496E5A6569747374756E64656E284D696E7574656E
+      3A696E7465676572293A20737472696E673B0D0A7661720D0A20207374756E64
+      656E203A20646F75626C653B0D0A20207A656974203A20737472696E673B0D0A
+      626567696E0D0A20207374756E64656E203A3D204D696E7574656E202F203630
+      3B0D0A20207A656974203A3D20466C6F6174546F537472287374756E64656E29
+      3B0D0A2F2F20207A656974203A3D20537472696E675265706C616365287A6569
+      742C272E272C272C272C2B293B0D0A2020526573756C74203A3D207A6569743B
+      0D0A0D0A656E643B0D0A084361726574506F730102010201000001060F547261
+      4576656E7448616E646C65720B50726F6772616D4E616D6506115265706F7274
+      4265666F72655072696E740B50726F6772616D54797065070B747450726F6365
+      6475726506536F75726365147A01000070726F636564757265205265706F7274
+      4265666F72655072696E743B0D0A626567696E0D0A202020446174756D3A3D20
+      5069636B446174756D2827446174756D2064657220736368726966746C696368
+      656E205072C3BC66756E67202866C3BC7220616C6C6520617573676577C3A468
+      6C74656E204B75727365293A20272C202727293B0D0A2020205261756D3A3D20
+      537472696E67496E70757428275072C3BC66756E67737261756D3A20286B616E
+      6E2061756368206C65657220626C656962656E29272C202727293B0D0A202020
+      417262656974737A6569743A3D20537472696E67496E70757428274172626569
+      74737A6569742028696E204D696E7574656E293A272C202731383027293B0D0A
+      2020200D0A202020200D0A2020205375625265706F72745F5365697465322E53
+      6869667452656C6174697665546F28205375625265706F72745F536569746531
+      293B202020200D0A20202020200D0A656E643B20202020202020202020202020
+      20202020202020200D0A0D436F6D706F6E656E744E616D6506065265706F7274
+      094576656E744E616D65060B4265666F72655072696E74074576656E74494402
+      01084361726574506F730102040208000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end
