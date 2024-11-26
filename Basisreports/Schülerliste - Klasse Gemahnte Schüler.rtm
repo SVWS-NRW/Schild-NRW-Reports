@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Sch'#252'lerliste Klasse Gemahnte Sch'#252'ler.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste - Klasse Gemahnte Sch'#252'ler.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Sch'#252'lerliste Klasse Gemahnte Sch' +
-    #252'ler.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SchILD-NRW\Sc' +
+    'hILD-Reports\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste - Klas' +
+    'se Gemahnte Sch'#252'ler.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -170,7 +170,7 @@ object Report: TppReport
     Border.Visible = True
     Border.Weight = 0.750000000000000000
     mmBottomOffset = 0
-    mmHeight = 5200
+    mmHeight = 10400
     mmPrintPosition = 0
     object ppShape1: TppShape
       UserName = 'HintergrundUnsichtbar'
@@ -178,7 +178,7 @@ object Report: TppReport
       ParentHeight = True
       ParentWidth = True
       Visible = False
-      mmHeight = 5200
+      mmHeight = 10400
       mmLeft = 0
       mmTop = 0
       mmWidth = 170000
@@ -192,7 +192,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 5200
+      mmHeight = 10400
       mmLeft = 10000
       mmTop = 0
       mmWidth = 1000
@@ -206,7 +206,7 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 5200
+      mmHeight = 10400
       mmLeft = 25000
       mmTop = 0
       mmWidth = 1000
@@ -220,8 +220,64 @@ object Report: TppReport
       Position = lpLeft
       StretchWithParent = True
       Weight = 0.750000000000000000
-      mmHeight = 5200
+      mmHeight = 10400
       mmLeft = 95000
+      mmTop = 0
+      mmWidth = 1058
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine8: TppLine
+      UserName = 'TrennlinieK4'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 10400
+      mmLeft = 110000
+      mmTop = 0
+      mmWidth = 1058
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine9: TppLine
+      UserName = 'TrennlinieK5'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 10400
+      mmLeft = 124000
+      mmTop = 0
+      mmWidth = 1058
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine10: TppLine
+      UserName = 'TrennlinieK6'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 10400
+      mmLeft = 146000
+      mmTop = 0
+      mmWidth = 1058
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine11: TppLine
+      UserName = 'TrennlinieK7'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 10400
+      mmLeft = 158000
       mmTop = 0
       mmWidth = 1058
       BandType = 0
@@ -241,7 +297,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5200
       mmLeft = 1000
-      mmTop = 0
+      mmTop = 5200
       mmWidth = 8000
       BandType = 0
       LayerName = Foreground1
@@ -259,7 +315,7 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5200
       mmLeft = 11000
-      mmTop = 0
+      mmTop = 5200
       mmWidth = 13000
       BandType = 0
       LayerName = Foreground1
@@ -277,8 +333,27 @@ object Report: TppReport
       Transparent = True
       mmHeight = 5200
       mmLeft = 26000
-      mmTop = 0
+      mmTop = 5200
       mmWidth = 68000
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel11: TppLabel
+      UserName = 'Wdh'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'Wdh.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 96000
+      mmTop = 5200
+      mmWidth = 13000
       BandType = 0
       LayerName = Foreground1
     end
@@ -292,11 +367,12 @@ object Report: TppReport
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
+      TextAlignment = taCentered
       Transparent = True
       mmHeight = 5292
-      mmLeft = 96000
-      mmTop = 0
-      mmWidth = 13000
+      mmLeft = 111000
+      mmTop = 5200
+      mmWidth = 12000
       BandType = 0
       LayerName = Foreground1
     end
@@ -312,9 +388,9 @@ object Report: TppReport
       Font.Style = [fsBold]
       Transparent = True
       mmHeight = 5292
-      mmLeft = 111000
-      mmTop = 0
-      mmWidth = 23000
+      mmLeft = 125000
+      mmTop = 5200
+      mmWidth = 20000
       BandType = 0
       LayerName = Foreground1
     end
@@ -322,7 +398,7 @@ object Report: TppReport
       UserName = 'Halbjahr'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'Halbjahr'
+      Caption = 'Halbj.'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
@@ -330,9 +406,28 @@ object Report: TppReport
       Font.Style = [fsBold]
       Transparent = True
       mmHeight = 5292
-      mmLeft = 136000
-      mmTop = 0
-      mmWidth = 15000
+      mmLeft = 147000
+      mmTop = 5200
+      mmWidth = 10000
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel10: TppLabel
+      UserName = 'akt'
+      Anchors = [atLeft, atRight]
+      AutoSize = False
+      Caption = 'Note'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Calibri'
+      Font.Size = 11
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 159000
+      mmTop = 5200
+      mmWidth = 10000
       BandType = 0
       LayerName = Foreground1
     end
@@ -340,17 +435,18 @@ object Report: TppReport
       UserName = 'Note'
       Anchors = [atLeft, atRight]
       AutoSize = False
-      Caption = 'akt. Note'
+      Caption = 'akt.'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Name = 'Calibri'
       Font.Size = 11
       Font.Style = [fsBold]
+      TextAlignment = taCentered
       Transparent = True
       mmHeight = 5292
-      mmLeft = 153000
+      mmLeft = 159000
       mmTop = 0
-      mmWidth = 16000
+      mmWidth = 10000
       BandType = 0
       LayerName = Foreground1
     end
@@ -364,7 +460,7 @@ object Report: TppReport
     Border.Weight = 0.750000000000000000
     PrintHeight = phDynamic
     mmBottomOffset = 0
-    mmHeight = 5200
+    mmHeight = 5292
     mmPrintPosition = 0
     object ppRegion1: TppRegion
       UserName = 'R'
@@ -377,7 +473,7 @@ object Report: TppReport
       Pen.Width = 0
       Stretch = True
       Transparent = True
-      mmHeight = 5200
+      mmHeight = 5292
       mmLeft = 0
       mmTop = 0
       mmWidth = 170000
@@ -394,7 +490,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 5200
+        mmHeight = 5292
         mmLeft = 10000
         mmTop = 0
         mmWidth = 1000
@@ -408,7 +504,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 5200
+        mmHeight = 5292
         mmLeft = 25000
         mmTop = 0
         mmWidth = 1000
@@ -422,7 +518,7 @@ object Report: TppReport
         Position = lpLeft
         StretchWithParent = True
         Weight = 0.750000000000000000
-        mmHeight = 5200
+        mmHeight = 5292
         mmLeft = 95000
         mmTop = 0
         mmWidth = 1000
@@ -442,7 +538,7 @@ object Report: TppReport
         Transparent = True
         DBCalcType = dcCount
         DataPipelineName = 'Schueler'
-        mmHeight = 5200
+        mmHeight = 5292
         mmLeft = 1000
         mmTop = 0
         mmWidth = 8000
@@ -460,8 +556,50 @@ object Report: TppReport
         Font.Style = []
         Transparent = True
         DataPipelineName = 'Schueler'
-        mmHeight = 5200
+        mmHeight = 5292
         mmLeft = 11000
+        mmTop = 0
+        mmWidth = 13000
+        BandType = 4
+        LayerName = Foreground1
+      end
+      object ppMemo1: TppMemo
+        UserName = 'dbNameVorname'
+        Caption = 'NameVorname'
+        CharWrap = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = []
+        RemoveEmptyLines = False
+        Stretch = True
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 26000
+        mmTop = 0
+        mmWidth = 68000
+        BandType = 4
+        LayerName = Foreground1
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+        mmLeading = 0
+      end
+      object ppLabel12: TppLabel
+        UserName = 'dbWdh'
+        AutoSize = False
+        Caption = 'Wdg.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = []
+        TextAlignment = taCentered
+        Transparent = True
+        mmHeight = 5292
+        mmLeft = 96000
         mmTop = 0
         mmWidth = 13000
         BandType = 4
@@ -476,10 +614,10 @@ object Report: TppReport
         ParentWidth = False
         TraverseAllData = False
         DataPipelineName = 'plWarnungen'
-        mmHeight = 5200
-        mmLeft = 96000
+        mmHeight = 5292
+        mmLeft = 111000
         mmTop = 0
-        mmWidth = 73000
+        mmWidth = 59000
         BandType = 4
         LayerName = Foreground1
         mmBottomOffset = 0
@@ -490,7 +628,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.plWarnungen
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Sch'#252'lerliste Klasse Gemahnte Sch'#252'ler.rtm'
+          PrinterSetup.DocumentName = 'Sch'#252'lerliste - Klasse Gemahnte Sch'#252'ler.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -510,10 +648,10 @@ object Report: TppReport
             Background1.Brush.Style = bsClear
             Background2.Brush.Style = bsClear
             mmBottomOffset = 0
-            mmHeight = 5200
+            mmHeight = 5292
             mmPrintPosition = 0
             object ppDBText4: TppDBText
-              UserName = 'DBFach'
+              UserName = 'dbFach'
               DataField = 'Fachkrz'
               DataPipeline = dmPipelines.plWarnungen
               Font.Charset = DEFAULT_CHARSET
@@ -521,17 +659,18 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 11
               Font.Style = []
+              TextAlignment = taCentered
               Transparent = True
               DataPipelineName = 'plWarnungen'
-              mmHeight = 5200
-              mmLeft = 0
+              mmHeight = 5292
+              mmLeft = 1000
               mmTop = 0
-              mmWidth = 13000
+              mmWidth = 12000
               BandType = 4
               LayerName = Foreground
             end
             object ppDBText6: TppDBText
-              UserName = 'DBWarndatum'
+              UserName = 'dbWarndatum'
               DataField = 'Warndatum'
               DataPipeline = dmPipelines.plWarnungen
               Font.Charset = DEFAULT_CHARSET
@@ -539,19 +678,20 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 11
               Font.Style = []
+              TextAlignment = taCentered
               Transparent = True
               DataPipelineName = 'plWarnungen'
-              mmHeight = 5200
-              mmLeft = 16000
+              mmHeight = 5292
+              mmLeft = 15000
               mmTop = 0
-              mmWidth = 23000
+              mmWidth = 20000
               BandType = 4
               LayerName = Foreground
             end
             object ppLabel3: TppLabel
-              UserName = 'Halbjahr'
+              UserName = 'dbHalbjahr'
               AutoSize = False
-              Caption = 'Halbjahr'
+              Caption = 'Hj.'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
               Font.Name = 'Calibri'
@@ -559,15 +699,15 @@ object Report: TppReport
               Font.Style = []
               TextAlignment = taCentered
               Transparent = True
-              mmHeight = 5200
-              mmLeft = 41000
+              mmHeight = 5292
+              mmLeft = 37000
               mmTop = 0
-              mmWidth = 15000
+              mmWidth = 10000
               BandType = 4
               LayerName = Foreground
             end
             object ppDBText5: TppDBText
-              UserName = 'DBNote'
+              UserName = 'dbNote'
               DataField = 'Notenkrz'
               DataPipeline = dmPipelines.plWarnungen
               Font.Charset = DEFAULT_CHARSET
@@ -578,36 +718,87 @@ object Report: TppReport
               TextAlignment = taCentered
               Transparent = True
               DataPipelineName = 'plWarnungen'
-              mmHeight = 5199
-              mmLeft = 58000
+              mmHeight = 5292
+              mmLeft = 49000
               mmTop = 0
-              mmWidth = 15000
+              mmWidth = 10000
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppLine13: TppLine
+              UserName = 'Line13'
+              Pen.Color = 4993567
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 5292
+              mmLeft = 14000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppLine14: TppLine
+              UserName = 'Line14'
+              Pen.Color = 4993567
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 5292
+              mmLeft = 36000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppLine15: TppLine
+              UserName = 'Line15'
+              Pen.Color = 4993567
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 5292
+              mmLeft = 48000
+              mmTop = 0
+              mmWidth = 1000
               BandType = 4
               LayerName = Foreground
             end
           end
           object raCodeModule1: TraCodeModule
             ProgramStream = {
-              01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
-              44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-              7450726F63656475726506536F757263650CCD01000070726F63656475726520
-              44657461696C4265666F72655072696E743B0D0A766172200D0A20206D6F6E61
-              74203A20696E74656765723B0D0A626567696E0D0A20202F2F42656920666568
-              6C656E64656D204D61686E646174756D206B65696E20446174756D20616E7A65
-              6967656E0D0A202044425761726E646174756D2E56697369626C65203A3D2057
-              61726E756E67656E5B275761726E646174756D275D203E20303B0D0A0D0A2020
-              2F2F48616C626A616872206265726563686E656E20756E64206175676562656E
-              0D0A20206966205761726E756E67656E5B275761726E646174756D275D203E20
-              30207468656E0D0A202020206D6F6E6174203A3D206E75726D6F6E6174285761
-              726E756E67656E5B275761726E646174756D275D290D0A2020656C73650D0A20
-              2020206D6F6E6174203A3D206E75726D6F6E61742843757272656E7444617465
-              293B0D0A20200D0A202069662028286D6F6E6174203E3D203829206F7220286D
-              6F6E6174203C20322929207468656E200D0A2020202048616C626A6168722E54
-              657874203A3D2027312E20486A2E27200D0A2020656C7365200D0A2020202048
-              616C626A6168722E54657874203A3D2027322E20486A2E273B0D0A0D0A656E64
-              3B0D0A0D436F6D706F6E656E744E616D65060644657461696C094576656E744E
-              616D65060B4265666F72655072696E74074576656E7449440218084361726574
-              506F7301020E0211000000}
+              01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650614
+              64625761726E646174756D4F6E476574546578740B50726F6772616D54797065
+              070B747450726F63656475726506536F7572636506E570726F63656475726520
+              64625761726E646174756D4F6E476574546578742876617220546578743A2053
+              7472696E67293B0D0A626567696E0D0A0D0A20202F2F426569206665686C656E
+              64656D204D61686E646174756D206B65696E20446174756D20616E7A65696765
+              6E0D0A20206966205761726E756E67656E5B275761726E646174756D275D203E
+              2030207468656E0D0A2020202054657874203A3D2044617465546F5374722857
+              61726E756E67656E5B275761726E646174756D275D290D0A2020656C73650D0A
+              2020202054657874203A3D20272D2D273B0D0A0D0A656E643B0D0A0D436F6D70
+              6F6E656E744E616D65060B64625761726E646174756D094576656E744E616D65
+              06094F6E47657454657874074576656E7449440235084361726574506F730102
+              010202000001060F5472614576656E7448616E646C65720B50726F6772616D4E
+              616D650613646248616C626A6168724F6E476574546578740B50726F6772616D
+              54797065070B747450726F63656475726506536F757263650C6801000070726F
+              63656475726520646248616C626A6168724F6E47657454657874287661722054
+              6578743A20537472696E67293B0D0A766172200D0A20206D6F6E6174203A2069
+              6E74656765723B0D0A626567696E0D0A0D0A20202F2F48616C626A6168722062
+              65726563686E656E20756E64206175676562656E0D0A20206966205761726E75
+              6E67656E5B275761726E646174756D275D203E2030207468656E0D0A20202020
+              6D6F6E6174203A3D206E75726D6F6E6174285761726E756E67656E5B27576172
+              6E646174756D275D290D0A2020656C73650D0A202020206D6F6E6174203A3D20
+              6E75726D6F6E61742843757272656E7444617465293B0D0A20200D0A20206966
+              2028286D6F6E6174203E3D203829206F7220286D6F6E6174203C203229292074
+              68656E200D0A2020202054657874203A3D2027312E20486A2E27200D0A202065
+              6C7365200D0A2020202054657874203A3D2027322E20486A2E273B0D0A0D0A65
+              6E643B0D0A0D436F6D706F6E656E744E616D65060A646248616C626A61687209
+              4576656E744E616D6506094F6E47657454657874074576656E74494402350843
+              61726574506F730102010202000000}
           end
           object ppDesignLayers1: TppDesignLayers
             object ppDesignLayer1: TppDesignLayer
@@ -618,30 +809,20 @@ object Report: TppReport
           end
         end
       end
-      object ppMemo1: TppMemo
-        UserName = 'dbNameVorname'
-        Caption = 'dbNameVorname'
-        CharWrap = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Name = 'Calibri'
-        Font.Size = 11
-        Font.Style = []
-        RemoveEmptyLines = False
-        Stretch = True
-        Transparent = True
-        mmHeight = 5200
-        mmLeft = 26000
-        mmTop = 0
-        mmWidth = 68000
-        BandType = 4
-        LayerName = Foreground1
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        mmLeading = 0
-      end
+    end
+    object ppLine16: TppLine
+      UserName = 'Line16'
+      Pen.Color = 4993567
+      ParentHeight = True
+      Position = lpLeft
+      StretchWithParent = True
+      Weight = 0.750000000000000000
+      mmHeight = 5292
+      mmLeft = 110000
+      mmTop = 0
+      mmWidth = 1000
+      BandType = 4
+      LayerName = Foreground1
     end
   end
   object ppFooterBand1: TppFooterBand
@@ -711,6 +892,45 @@ object Report: TppReport
       LayerName = Foreground1
     end
   end
+  object ppSummaryBand1: TppSummaryBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 16404
+    mmPrintPosition = 0
+    object ppMemo2: TppMemo
+      UserName = 'Erlaeuterung'
+      Border.Weight = 0.750000000000000000
+      Caption = 'Erlaeuterung'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 8
+      Font.Style = []
+      Lines.Strings = (
+        'Erl'#228'uterung:'
+        
+          'Rot markierte SuS sind entweder Wiederholer oder laufen Gefahr d' +
+          'ie H'#246'chstverweildauer zu '#252'berschreiten. Der Spalte "Wdh." kann e' +
+          'ntnommen werden, ob es sich um Wiederholer handelt (Ja). Wurden ' +
+          'noch weitere Schuljahre wiederholt, erscheint ein Summensymbol m' +
+          'it der Gesamtsumme der wiederholten Schuljahre.')
+      RemoveEmptyLines = False
+      TextAlignment = taFullJustified
+      Transparent = True
+      mmHeight = 14741
+      mmLeft = 0
+      mmTop = 1663
+      mmWidth = 170127
+      BandType = 7
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+  end
   object raCodeModule2: TraCodeModule
     ProgramStream = {
       01060A54726150726F6772616D094368696C645479706502150E497346756E63
@@ -738,26 +958,49 @@ object Report: TppReport
       084361726574506F730102050211000001060F5472614576656E7448616E646C
       65720B50726F6772616D4E616D65061144657461696C4265666F72655072696E
       740B50726F6772616D54797065070B747450726F63656475726506536F757263
-      650C1801000070726F6365647572652044657461696C4265666F72655072696E
-      743B0D0A626567696E0D0A20202069662053636875656C65726C617566626168
-      6E5B27576965646572686F6C756E67275D203D20272B27207468656E0D0A2020
-      20626567696E0D0A2020202064624E616D65566F726E616D652E54657874203A
-      3D2064624E616D65566F726E616D652E54657874202B20272028776965646572
-      682E29273B0D0A2020202064624E616D65566F726E616D652E436F6C6F72203A
-      3D20524742283235352C302C30293B0D0A202020656E640D0A202020656C7365
-      0D0A2020202064624E616D65566F726E616D652E436F6C6F72203A3D20524742
-      28302C302C30293B0D0A202020656E643B0D0A2020200D0A656E643B0D0A0D43
-      6F6D706F6E656E744E616D65060644657461696C094576656E744E616D65060B
-      4265666F72655072696E74074576656E7449440218084361726574506F730102
-      010201000001060F5472614576656E7448616E646C65720B50726F6772616D4E
-      616D65061464624E616D65566F726E616D654F6E5072696E740B50726F677261
-      6D54797065070B747450726F63656475726506536F75726365067670726F6365
-      647572652064624E616D65566F726E616D654F6E5072696E743B0D0A62656769
-      6E0D0A202064624E616D65566F726E616D652E54657874203A3D205363687565
-      6C65725B274E616D65275D202B20272C2027202B20566F726E616D656E416E61
-      6C7973696572656E3B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
-      0D64624E616D65566F726E616D65094576656E744E616D6506074F6E5072696E
-      74074576656E7449440220084361726574506F730102470203000000}
+      65141005000070726F6365647572652044657461696C4265666F72655072696E
+      743B0D0A7661720D0A2020776965646572686F6C756E67656E3A20696E746567
+      65723B0D0A626567696E0D0A0D0A202064624E616D65566F726E616D652E5465
+      7874203A3D2053636875656C65725B274E616D65275D202B20272C2027202B20
+      566F726E616D656E416E616C7973696572656E3B0D0A20200D0A20202F2F416E
+      7A61686C2064657220576965646572686F6C756E67732D536368756C6A616872
+      65206265726563686E656E0D0A2020696620282853636875656C65725B274A61
+      68725765636873656C5F5349275D203C3E20302920616E64202853636875656C
+      65725B274153444A61687267616E67275D203C3E20274546272929207468656E
+      0D0A20202020776965646572686F6C756E67656E203A3D2035202B2053636875
+      656C65725B27416B74536368756C6A616872275D202D2053636875656C65725B
+      274A6168725765636873656C5F5349275D202D2053636875656C65725B274A61
+      687267616E67275D0D0A2020656C73650D0A20202020776965646572686F6C75
+      6E67656E203A3D20303B0D0A20200D0A20202F2F576965646572686F6C657220
+      756E6420537553206D6974204765666168722064657220C39C62657273636872
+      656974756E67206465722048C3B6636873747665727765696C64617565722065
+      696E66C3A47262656E0D0A20206966202828284C65726E61627363686E697474
+      655B27576965646572686F6C756E67275D203D20272B2729206F722028776965
+      646572686F6C756E67656E203E20312929206F722028282853636875656C6572
+      5B274153444A61687267616E67275D203D20274546272920616E6420284C6572
+      6E61627363686E697474655B27576965646572686F6C756E67275D203D20272B
+      27292929207468656E0D0A2020626567696E0D0A2020202064625764682E466F
+      6E742E436F6C6F72203A3D20636C5265643B0D0A2020202064624E616D65566F
+      726E616D652E466F6E742E436F6C6F72203A3D20636C5265643B0D0A2020656E
+      640D0A2020656C73650D0A2020626567696E0D0A2020202064625764682E466F
+      6E742E436F6C6F72203A3D20636C426C61636B3B0D0A2020202064624E616D65
+      566F726E616D652E466F6E742E436F6C6F72203A3D20636C426C61636B3B0D0A
+      2020656E643B0D0A20200D0A20202F2F496E666F726D6174696F6E207A757220
+      576965646572686F6C756E6720756E6420416E7A61686C206465722057696564
+      6572686F6C756E67656E2065696E74726167656E0D0A202069662028284C6572
+      6E61627363686E697474655B27576965646572686F6C756E67275D203D20272B
+      272920616E642028776965646572686F6C756E67656E203E2031292920746865
+      6E0D0A2020202064625764682E54657874203A3D20274A612028E2889127202B
+      20496E74546F53747228776965646572686F6C756E67656E29202B202729270D
+      0A2020656C7365206966204C65726E61627363686E697474655B275769656465
+      72686F6C756E67275D203D20272B27207468656E0D0A2020202064625764682E
+      54657874203A3D20274A61270D0A2020656C736520696620776965646572686F
+      6C756E67656E203E2030207468656E0D0A2020202064625764682E5465787420
+      3A3D202728E2889127202B20496E74546F53747228776965646572686F6C756E
+      67656E29202B202729270D0A2020656C73650D0A2020202064625764682E5465
+      7874203A3D2027273B2020200D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D65060644657461696C094576656E744E616D65060B4265666F72655072
+      696E74074576656E7449440218084361726574506F7301021D0216000000}
   end
   object ppDesignLayers2: TppDesignLayers
     object ppDesignLayer2: TppDesignLayer
@@ -793,11 +1036,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2024'
+      AutoSearchSettings.SearchExpression = '26.11.2024'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '16.05.2024'
+      Value = '26.11.2024'
       UserName = 'Versionsdatum'
     end
   end
