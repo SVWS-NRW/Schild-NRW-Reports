@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +15,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports\SCH'#220'LERSTAMMBLATT mit Grundda' +
-    'ten Laufbahn @SuS.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
+    'Reportsammlung 2.0\Basisreports\SCH'#220'LERSTAMMBLATT mit Grunddaten' +
+    ' Laufbahn @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -125,7 +125,7 @@ object Report: TppReport
           '88106')
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -190,6 +190,7 @@ object Report: TppReport
             end
             object ppLabel76: TppLabel
               UserName = 'SchuelerID'
+              AutoSize = False
               Border.Weight = 0.750000000000000000
               Caption = 'Sch'#252'ler-ID'
               Font.Charset = DEFAULT_CHARSET
@@ -206,7 +207,6 @@ object Report: TppReport
             end
             object ppDBText63: TppDBText
               UserName = 'DBSchuelerID'
-              AutoSize = True
               Border.Weight = 0.750000000000000000
               DataField = 'ID'
               DataPipeline = dmPipelines.Schueler
@@ -578,6 +578,7 @@ object Report: TppReport
             end
             object ppLabel60: TppLabel
               UserName = 'Aufnahmedatum'
+              AutoSize = False
               Border.Weight = 0.750000000000000000
               Caption = 'Aufnahmedatum'
               Font.Charset = DEFAULT_CHARSET
@@ -585,7 +586,7 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              mmHeight = 3969
+              mmHeight = 3968
               mmLeft = 0
               mmTop = 54240
               mmWidth = 29104
@@ -594,7 +595,6 @@ object Report: TppReport
             end
             object ppDBText3: TppDBText
               UserName = 'DBAufnahmedatum'
-              AutoSize = True
               Border.Weight = 0.750000000000000000
               DataField = 'Aufnahmedatum'
               DataPipeline = dmPipelines.Schueler
@@ -604,7 +604,7 @@ object Report: TppReport
               Font.Size = 10
               Font.Style = []
               DataPipelineName = 'Schueler'
-              mmHeight = 3969
+              mmHeight = 3968
               mmLeft = 29104
               mmTop = 54240
               mmWidth = 52917
@@ -974,7 +974,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 105833
@@ -992,122 +991,10 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
               mmTop = 105833
-              mmWidth = 52917
-              BandType = 4
-              LayerName = Foreground
-            end
-            object ppLabel10: TppLabel
-              UserName = 'Zuzugsjahr'
-              AutoSize = False
-              Border.Weight = 0.750000000000000000
-              Caption = 'Zuzugsjahr'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
-              mmHeight = 3969
-              mmLeft = 0
-              mmTop = 121708
-              mmWidth = 29104
-              BandType = 4
-              LayerName = Foreground
-            end
-            object ppDBText12: TppDBText
-              UserName = 'DBZuzugsjahr'
-              Border.Weight = 0.750000000000000000
-              DataField = 'JahrZuzug'
-              DataPipeline = dmPipelines.Schueler
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              VerticalAlignment = avCenter
-              DataPipelineName = 'Schueler'
-              mmHeight = 3969
-              mmLeft = 29104
-              mmTop = 121708
-              mmWidth = 52917
-              BandType = 4
-              LayerName = Foreground
-            end
-            object ppLabel52: TppLabel
-              UserName = 'EndeEingliederung'
-              AutoSize = False
-              Border.Weight = 0.750000000000000000
-              Caption = 'Ende Eingliederung'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
-              mmHeight = 3969
-              mmLeft = 0
-              mmTop = 125677
-              mmWidth = 29104
-              BandType = 4
-              LayerName = Foreground
-            end
-            object ppDBText14: TppDBText
-              UserName = 'DBEndeEingliederung'
-              Border.Weight = 0.750000000000000000
-              DataField = 'EndeEingliederung'
-              DataPipeline = dmPipelines.Schueler
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              VerticalAlignment = avCenter
-              DataPipelineName = 'Schueler'
-              mmHeight = 3969
-              mmLeft = 29104
-              mmTop = 125677
-              mmWidth = 52917
-              BandType = 4
-              LayerName = Foreground
-            end
-            object ppLabel16: TppLabel
-              UserName = 'Aussiedler'
-              AutoSize = False
-              Border.Weight = 0.750000000000000000
-              Caption = 'Aussiedler'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
-              mmHeight = 3969
-              mmLeft = 0
-              mmTop = 129646
-              mmWidth = 29104
-              BandType = 4
-              LayerName = Foreground
-            end
-            object ppDBText18: TppDBText
-              UserName = 'DBAussiedler'
-              Border.Weight = 0.750000000000000000
-              DataField = 'Aussiedler'
-              DataPipeline = dmPipelines.Schueler
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              VerticalAlignment = avCenter
-              DataPipelineName = 'Schueler'
-              mmHeight = 3969
-              mmLeft = 29104
-              mmTop = 129646
               mmWidth = 52917
               BandType = 4
               LayerName = Foreground
@@ -1122,7 +1009,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 109802
@@ -1140,7 +1026,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1159,7 +1044,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 113771
@@ -1177,7 +1061,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1196,7 +1079,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 117739
@@ -1214,11 +1096,115 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
               mmTop = 117739
+              mmWidth = 52917
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppLabel10: TppLabel
+              UserName = 'Zuzugsjahr'
+              AutoSize = False
+              Border.Weight = 0.750000000000000000
+              Caption = 'Zuzugsjahr'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = [fsBold, fsItalic]
+              mmHeight = 3969
+              mmLeft = 0
+              mmTop = 121708
+              mmWidth = 29104
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppDBText12: TppDBText
+              UserName = 'DBZuzugsjahr'
+              Border.Weight = 0.750000000000000000
+              DataField = 'JahrZuzug'
+              DataPipeline = dmPipelines.Schueler
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              DataPipelineName = 'Schueler'
+              mmHeight = 3969
+              mmLeft = 29104
+              mmTop = 121708
+              mmWidth = 52917
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppLabel52: TppLabel
+              UserName = 'EndeEingliederung'
+              AutoSize = False
+              Border.Weight = 0.750000000000000000
+              Caption = 'Ende Eingliederung'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = [fsBold, fsItalic]
+              mmHeight = 3969
+              mmLeft = 0
+              mmTop = 125677
+              mmWidth = 29104
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppDBText14: TppDBText
+              UserName = 'DBEndeEingliederung'
+              Border.Weight = 0.750000000000000000
+              DataField = 'EndeEingliederung'
+              DataPipeline = dmPipelines.Schueler
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              DataPipelineName = 'Schueler'
+              mmHeight = 3969
+              mmLeft = 29104
+              mmTop = 125677
+              mmWidth = 52917
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppLabel16: TppLabel
+              UserName = 'Aussiedler'
+              AutoSize = False
+              Border.Weight = 0.750000000000000000
+              Caption = 'Aussiedler'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = [fsBold, fsItalic]
+              mmHeight = 3969
+              mmLeft = 0
+              mmTop = 129646
+              mmWidth = 29104
+              BandType = 4
+              LayerName = Foreground
+            end
+            object ppDBText18: TppDBText
+              UserName = 'DBAussiedler'
+              Border.Weight = 0.750000000000000000
+              DataField = 'Aussiedler'
+              DataPipeline = dmPipelines.Schueler
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              DataPipelineName = 'Schueler'
+              mmHeight = 3969
+              mmLeft = 29104
+              mmTop = 129646
               mmWidth = 52917
               BandType = 4
               LayerName = Foreground
@@ -1271,7 +1257,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 5027
               mmLeft = 0
               mmTop = 145522
@@ -1289,7 +1274,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 5027
               mmLeft = 29104
@@ -1308,7 +1292,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 149490
@@ -1326,7 +1309,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1345,7 +1327,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 153459
@@ -1363,7 +1344,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1382,7 +1362,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 157428
@@ -1400,7 +1379,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1419,7 +1397,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 165365
@@ -1437,7 +1414,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1456,7 +1432,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 169334
@@ -1475,7 +1450,6 @@ object Report: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1494,7 +1468,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 173303
@@ -1512,7 +1485,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1531,7 +1503,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 161397
@@ -1550,7 +1521,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1607,7 +1577,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 189177
@@ -1625,7 +1594,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1644,7 +1612,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 193146
@@ -1662,7 +1629,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1681,7 +1647,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 197114
@@ -1699,7 +1664,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1718,7 +1682,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 201083
@@ -1736,7 +1699,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1755,7 +1717,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 205052
@@ -1773,7 +1734,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1792,7 +1752,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 209021
@@ -1811,7 +1770,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1830,7 +1788,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 212990
@@ -1848,7 +1805,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1867,7 +1823,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 216959
@@ -1885,7 +1840,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1904,7 +1858,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 220928
@@ -1914,17 +1867,17 @@ object Report: TppReport
             end
             object ppLabel30: TppLabel
               UserName = 'DBLSVersetzung'
+              AutoSize = False
               Caption = 'LSVersetzung'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              Transparent = True
-              mmHeight = 3969
+              mmHeight = 3968
               mmLeft = 29104
               mmTop = 220928
-              mmWidth = 18521
+              mmWidth = 52917
               BandType = 4
               LayerName = Foreground
             end
@@ -1938,7 +1891,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 224897
@@ -1956,7 +1908,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -1975,7 +1926,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 228865
@@ -1994,11 +1944,10 @@ object Report: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
-              mmTop = 229130
+              mmTop = 228865
               mmWidth = 52917
               BandType = 4
               LayerName = Foreground
@@ -2013,7 +1962,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 232834
@@ -2037,7 +1985,7 @@ object Report: TppReport
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
-              mmTop = 233099
+              mmTop = 232834
               mmWidth = 52917
               BandType = 4
               LayerName = Foreground
@@ -2095,7 +2043,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 248708
@@ -2113,7 +2060,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2132,7 +2078,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 260614
@@ -2150,7 +2095,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 252677
@@ -2168,7 +2112,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2187,7 +2130,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 256646
@@ -2206,7 +2148,6 @@ object Report: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2290,7 +2231,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 276398
@@ -2308,7 +2248,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2327,7 +2266,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 280366
@@ -2345,7 +2283,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2364,7 +2301,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 284428
@@ -2382,7 +2318,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2401,7 +2336,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 288397
@@ -2419,7 +2353,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2438,7 +2371,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 292366
@@ -2457,7 +2389,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2476,7 +2407,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 296334
@@ -2494,7 +2424,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2513,7 +2442,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 308229
@@ -2531,7 +2459,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 300292
@@ -2549,7 +2476,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2568,7 +2494,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
-              VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 3969
               mmLeft = 29104
@@ -2587,7 +2512,6 @@ object Report: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = [fsBold, fsItalic]
-              VerticalAlignment = avCenter
               mmHeight = 3969
               mmLeft = 0
               mmTop = 304261
@@ -2646,7 +2570,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppSchuelerHerkunft
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -2692,7 +2616,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold]
-                  Transparent = True
                   mmHeight = 3969
                   mmLeft = 1058
                   mmTop = 10583
@@ -2709,7 +2632,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold]
-                  Transparent = True
                   mmHeight = 3969
                   mmLeft = 7144
                   mmTop = 10583
@@ -2727,7 +2649,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  Transparent = True
                   mmHeight = 3969
                   mmLeft = 31750
                   mmTop = 10583
@@ -2745,7 +2666,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  Transparent = True
                   mmHeight = 3969
                   mmLeft = 51065
                   mmTop = 10583
@@ -2763,7 +2683,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  Transparent = True
                   mmHeight = 3969
                   mmLeft = 57415
                   mmTop = 10583
@@ -2781,7 +2700,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  Transparent = True
                   mmHeight = 3969
                   mmLeft = 76729
                   mmTop = 10583
@@ -3089,7 +3007,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.Erzieher
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3149,7 +3067,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 0
@@ -3168,7 +3085,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = []
                   ParentDataPipeline = False
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3187,7 +3103,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 3969
@@ -3205,7 +3120,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3224,7 +3138,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 7938
@@ -3242,7 +3155,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3261,7 +3173,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 11906
@@ -3280,7 +3191,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3299,7 +3209,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 15875
@@ -3317,7 +3226,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3336,7 +3244,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 19844
@@ -3355,7 +3262,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3374,7 +3280,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 23813
@@ -3392,7 +3297,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3411,7 +3315,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
-                  VerticalAlignment = avCenter
                   mmHeight = 3969
                   mmLeft = 0
                   mmTop = 27781
@@ -3429,7 +3332,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3575,7 +3477,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plSchuelerTelefone
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3632,7 +3534,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = []
                   ParentDataPipeline = False
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'plSchuelerTelefone'
                   mmHeight = 3969
                   mmLeft = 29104
@@ -3652,7 +3553,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
                   ParentDataPipeline = False
-                  VerticalAlignment = avCenter
                   DataPipelineName = 'plSchuelerTelefone'
                   mmHeight = 3969
                   mmLeft = 0
@@ -3706,7 +3606,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plVermerke
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3828,7 +3728,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  Transparent = True
                   DataPipelineName = 'plVermerke'
                   mmHeight = 3969
                   mmLeft = 65042
@@ -3857,7 +3756,6 @@ object Report: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
-                  Transparent = True
                   DataPipelineName = 'plVermerke'
                   mmHeight = 3969
                   mmLeft = 1000
@@ -3879,7 +3777,6 @@ object Report: TppReport
                   RemoveEmptyLines = False
                   Stretch = True
                   TextAlignment = taFullJustified
-                  Transparent = True
                   DataPipelineName = 'plVermerke'
                   mmHeight = 5292
                   mmLeft = 1000
@@ -3948,7 +3845,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppSchuelerDatenschutz
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -4075,7 +3972,6 @@ object Report: TppReport
                   Font.Style = []
                   RemoveEmptyLines = False
                   Stretch = True
-                  Transparent = True
                   DataPipelineName = 'ppSchuelerDatenschutz'
                   mmHeight = 3969
                   mmLeft = 1058
@@ -4099,7 +3995,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = []
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'ppSchuelerDatenschutz'
                   mmHeight = 3969
                   mmLeft = 60854
@@ -4173,7 +4068,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plSchuelerlaufbahn
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -4444,7 +4339,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = []
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 1000
@@ -4464,7 +4358,6 @@ object Report: TppReport
                   Font.Style = []
                   ParentDataPipeline = False
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 16080
@@ -4484,7 +4377,6 @@ object Report: TppReport
                   Font.Style = []
                   ParentDataPipeline = False
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 27160
@@ -4504,7 +4396,6 @@ object Report: TppReport
                   Font.Style = []
                   ParentDataPipeline = False
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 43240
@@ -4524,7 +4415,6 @@ object Report: TppReport
                   Font.Style = []
                   ParentDataPipeline = False
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 54320
@@ -4543,7 +4433,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = []
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 69400
@@ -4562,7 +4451,6 @@ object Report: TppReport
                   Font.Size = 10
                   Font.Style = []
                   TextAlignment = taCentered
-                  Transparent = True
                   DataPipelineName = 'plSchuelerlaufbahn'
                   mmHeight = 3969
                   mmLeft = 75671
@@ -4916,10 +4804,10 @@ object Report: TppReport
       Font.Style = []
       TextAlignment = taCentered
       Transparent = True
-      mmHeight = 3704
-      mmLeft = 63236
-      mmTop = 1000
-      mmWidth = 44185
+      mmHeight = 3705
+      mmLeft = 43656
+      mmTop = 1058
+      mmWidth = 82815
       BandType = 8
       LayerName = Foreground1
     end
@@ -4964,7 +4852,6 @@ object Report: TppReport
       mmPrintPosition = 0
       object ppDBText2: TppDBText
         UserName = 'DBSchulnummer'
-        AutoSize = True
         DataField = 'SchulNr'
         DataPipeline = dmPipelines.EigeneSchule
         Font.Charset = DEFAULT_CHARSET
@@ -4977,15 +4864,16 @@ object Report: TppReport
         Transparent = True
         DataPipelineName = 'EigeneSchule'
         mmHeight = 3704
-        mmLeft = 80698
+        mmLeft = 75142
         mmTop = 17992
-        mmWidth = 9525
+        mmWidth = 20000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground1
       end
       object ppLabel1: TppLabel
         UserName = 'Schuelerstammblatt'
+        AutoSize = False
         Border.BorderPositions = [bpTop, bpBottom]
         Border.Color = 10516052
         Border.Weight = 2.000000000000000000
@@ -5021,9 +4909,9 @@ object Report: TppReport
         Transparent = True
         DataPipelineName = 'EigeneSchule'
         mmHeight = 3704
-        mmLeft = 65617
+        mmLeft = 65088
         mmTop = 6879
-        mmWidth = 40217
+        mmWidth = 40000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground1
@@ -5043,9 +4931,9 @@ object Report: TppReport
         Transparent = True
         DataPipelineName = 'EigeneSchule'
         mmHeight = 3705
-        mmLeft = 70115
+        mmLeft = 75142
         mmTop = 10583
-        mmWidth = 30691
+        mmWidth = 20000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground1
@@ -5065,9 +4953,9 @@ object Report: TppReport
         Transparent = True
         DataPipelineName = 'EigeneSchule'
         mmHeight = 3704
-        mmLeft = 75936
+        mmLeft = 75142
         mmTop = 14288
-        mmWidth = 19314
+        mmWidth = 20000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground1
@@ -7819,9 +7707,9 @@ object Report: TppReport
         TextAlignment = taCentered
         Transparent = True
         mmHeight = 3704
-        mmLeft = 75675
-        mmTop = 21686
-        mmWidth = 19579
+        mmLeft = 75142
+        mmTop = 21696
+        mmWidth = 20000
         BandType = 3
         GroupNo = 0
         LayerName = Foreground1
