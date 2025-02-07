@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Anlage_Schulformempfehlung.rtm'
+  PrinterSetup.DocumentName = 'Anlage_Schulformempfehlung_Ankreuzversion.rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -15,10 +15,10 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\SchILD-NRW\SchILD-Reports\2025_PS_MasterReports\Anlage_Schulf' +
-    'ormempfehlung.rtm'
+    'C:\SchILD-NRW2\SchILD-Reports\Neu\Anlage_Schulformempfehlung_Ank' +
+    'reuzversion.rtm'
   Template.Format = ftASCII
-  Units = utMillimeters
+  Units = utPrinterPixels
   AllowPrintToArchive = True
   AllowPrintToFile = True
   ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
@@ -192,7 +192,7 @@ object Report: TppReport
       PrintHeight = phDynamic
       HideWhenOneDetail = False
       mmBottomOffset = 0
-      mmHeight = 128059
+      mmHeight = 128852
       mmPrintPosition = 0
       object myCheckBox2: TmyCheckBox
         UserName = 'cb_R'
@@ -641,7 +641,7 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.plAKF_SONST
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Anlage_Schulformempfehlung.rtm'
+          PrinterSetup.DocumentName = 'Anlage_Schulformempfehlung_Ankreuzversion.rtm'
           PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
@@ -662,112 +662,112 @@ object Report: TppReport
             Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
             Border.Visible = True
             mmBottomOffset = 0
-            mmHeight = 19844
+            mmHeight = 24077
             mmPrintPosition = 0
             object ppLabel18: TppLabel
               UserName = 'Label_Stufe1'
               Angle = 90
+              Anchors = [atLeft, atBottom]
               AutoSize = False
-              Caption = 'lblStufe1'
+              Caption = 'Lable_Stufe1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
               Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 16933
-              mmLeft = 139629
-              mmTop = 2476
-              mmWidth = 5500
+              mmHeight = 20000
+              mmLeft = 139500
+              mmTop = 0
+              mmWidth = 4498
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
               RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
+              RotatedOriginTop = 20000
             end
             object ppLabel17: TppLabel
               UserName = 'Label_Stufe2'
               Angle = 90
+              Anchors = [atLeft, atBottom]
               AutoSize = False
-              Caption = 'lblStufe2'
+              Caption = 'Label_Stufe2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
               Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 16933
-              mmLeft = 145887
-              mmTop = 2476
-              mmWidth = 5500
+              mmHeight = 20000
+              mmLeft = 145500
+              mmTop = 0
+              mmWidth = 4498
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
               RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
+              RotatedOriginTop = 20000
             end
             object ppLabel19: TppLabel
               UserName = 'Label_Stufe3'
               Angle = 90
+              Anchors = [atLeft, atBottom]
               AutoSize = False
-              Caption = 'lblStufe3'
+              Caption = 'Label_Stufe3'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
               Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 16933
-              mmLeft = 152321
-              mmTop = 2476
-              mmWidth = 5500
+              mmHeight = 20000
+              mmLeft = 151824
+              mmTop = 0
+              mmWidth = 4498
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
               RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
+              RotatedOriginTop = 20000
             end
             object ppLabel20: TppLabel
               UserName = 'Label_Stufe4'
               Angle = 90
+              Anchors = [atLeft, atBottom]
               AutoSize = False
-              Caption = 'lblStufe4'
+              Caption = 'Label_Stufe4'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
               Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 16933
-              mmLeft = 158668
-              mmTop = 2476
-              mmWidth = 5500
+              mmHeight = 20000
+              mmLeft = 158000
+              mmTop = 0
+              mmWidth = 4498
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
               RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
+              RotatedOriginTop = 20000
             end
             object ppLabel21: TppLabel
               UserName = 'Label_Stufe5'
               Angle = 90
+              Anchors = [atLeft, atBottom]
               AutoSize = False
-              Caption = 'lblStufe5'
+              Caption = 'Label_Stufe5'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
               Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 16933
-              mmLeft = 164838
-              mmTop = 2476
-              mmWidth = 5500
+              mmHeight = 20000
+              mmLeft = 164824
+              mmTop = 0
+              mmWidth = 4498
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
               RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
+              RotatedOriginTop = 20000
             end
             object ppLine8: TppLine
               UserName = 'Line8'
@@ -775,12 +775,12 @@ object Report: TppReport
               ParentHeight = True
               Position = lpLeft
               Weight = 0.750000000000000000
-              mmHeight = 19844
-              mmLeft = 145388
+              mmHeight = 24077
+              mmLeft = 144684
               mmTop = 0
               mmWidth = 1000
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine3: TppLine
               UserName = 'Line3'
@@ -788,12 +788,12 @@ object Report: TppReport
               ParentHeight = True
               Position = lpLeft
               Weight = 0.750000000000000000
-              mmHeight = 19844
-              mmLeft = 151769
+              mmHeight = 24077
+              mmLeft = 151065
               mmTop = 0
               mmWidth = 1000
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine9: TppLine
               UserName = 'Line9'
@@ -801,12 +801,12 @@ object Report: TppReport
               ParentHeight = True
               Position = lpLeft
               Weight = 0.750000000000000000
-              mmHeight = 19844
-              mmLeft = 164455
+              mmHeight = 24077
+              mmLeft = 163751
               mmTop = 0
               mmWidth = 1000
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine10: TppLine
               UserName = 'Line10'
@@ -814,12 +814,12 @@ object Report: TppReport
               ParentHeight = True
               Position = lpLeft
               Weight = 0.750000000000000000
-              mmHeight = 19844
-              mmLeft = 158119
+              mmHeight = 24077
+              mmLeft = 157415
               mmTop = 0
               mmWidth = 1000
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine12: TppLine
               UserName = 'Line12'
@@ -827,15 +827,16 @@ object Report: TppReport
               ParentHeight = True
               Position = lpLeft
               Weight = 0.750000000000000000
-              mmHeight = 19844
-              mmLeft = 139287
+              mmHeight = 24077
+              mmLeft = 138583
               mmTop = 0
               mmWidth = 1000
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLabel14: TppLabel
               UserName = 'LabelName'
+              Anchors = [atLeft, atBottom]
               Caption = 'LabelName'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
@@ -844,11 +845,32 @@ object Report: TppReport
               Font.Style = [fsBold]
               Transparent = True
               mmHeight = 5027
-              mmLeft = 2910
-              mmTop = 12965
+              mmLeft = 1323
+              mmTop = 15875
               mmWidth = 20108
               BandType = 1
-              LayerName = Foreground1
+              LayerName = PageLayer2
+            end
+            object ppDBText3: TppDBText
+              UserName = 'txtBez'
+              AutoSize = True
+              DataField = 'BezeichnungSONST'
+              DataPipeline = dmPipelines.plAKF_Einstellungen
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Arial'
+              Font.Size = 14
+              Font.Style = [fsBold]
+              ParentDataPipeline = False
+              Transparent = True
+              Visible = False
+              DataPipelineName = 'plAKF_Einstellungen'
+              mmHeight = 6085
+              mmLeft = 0
+              mmTop = 0
+              mmWidth = 40745
+              BandType = 1
+              LayerName = PageLayer2
             end
           end
           object ppDetailBand2: TppDetailBand
@@ -869,11 +891,11 @@ object Report: TppReport
               Transparent = True
               DataPipelineName = 'plAKF_SONST'
               mmHeight = 5500
-              mmLeft = 139778
-              mmTop = 0
+              mmLeft = 139426
+              mmTop = 352
               mmWidth = 5500
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object myDBCheckBox2: TmyDBCheckBox
               UserName = 'chbxStufe2'
@@ -885,11 +907,11 @@ object Report: TppReport
               Transparent = True
               DataPipelineName = 'plAKF_SONST'
               mmHeight = 5500
-              mmLeft = 145956
-              mmTop = 0
+              mmLeft = 145780
+              mmTop = 352
               mmWidth = 5500
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object myDBCheckBox3: TmyDBCheckBox
               UserName = 'chbxStufe3'
@@ -901,11 +923,11 @@ object Report: TppReport
               Transparent = True
               DataPipelineName = 'plAKF_SONST'
               mmHeight = 5500
-              mmLeft = 152487
-              mmTop = 0
+              mmLeft = 152135
+              mmTop = 352
               mmWidth = 5500
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object myDBCheckBox4: TmyDBCheckBox
               UserName = 'chbxStufe4'
@@ -917,11 +939,11 @@ object Report: TppReport
               Transparent = True
               DataPipelineName = 'plAKF_SONST'
               mmHeight = 5500
-              mmLeft = 158663
-              mmTop = 0
+              mmLeft = 158487
+              mmTop = 352
               mmWidth = 5500
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object myDBCheckBox5: TmyDBCheckBox
               UserName = 'chbxStufe5'
@@ -933,11 +955,11 @@ object Report: TppReport
               Transparent = True
               DataPipelineName = 'plAKF_SONST'
               mmHeight = 5500
-              mmLeft = 164922
-              mmTop = 0
+              mmLeft = 164746
+              mmTop = 352
               mmWidth = 5500
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppMemo1: TppMemo
               UserName = 'Memo_Kompetenztext'
@@ -945,17 +967,17 @@ object Report: TppReport
               CharWrap = False
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 10
+              Font.Name = 'Calibri'
+              Font.Size = 12
               Font.Style = []
               RemoveEmptyLines = False
               Transparent = True
               mmHeight = 5292
-              mmLeft = 2822
-              mmTop = 176
+              mmLeft = 3174
+              mmTop = 528
               mmWidth = 49036
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
               mmBottomOffset = 0
               mmOverFlowOffset = 0
               mmStopPosition = 0
@@ -969,11 +991,11 @@ object Report: TppReport
               Position = lpLeft
               Weight = 0.750000000000000000
               mmHeight = 6085
-              mmLeft = 139331
+              mmLeft = 138627
               mmTop = 0
               mmWidth = 1000
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine14: TppLine
               UserName = 'Line14'
@@ -982,11 +1004,11 @@ object Report: TppReport
               Position = lpLeft
               Weight = 0.750000000000000000
               mmHeight = 6085
-              mmLeft = 145420
+              mmLeft = 144716
               mmTop = 0
               mmWidth = 1000
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine15: TppLine
               UserName = 'Line15'
@@ -995,11 +1017,11 @@ object Report: TppReport
               Position = lpLeft
               Weight = 0.750000000000000000
               mmHeight = 6085
-              mmLeft = 151756
+              mmLeft = 151052
               mmTop = 0
               mmWidth = 1000
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine16: TppLine
               UserName = 'Line16'
@@ -1008,11 +1030,11 @@ object Report: TppReport
               Position = lpLeft
               Weight = 0.750000000000000000
               mmHeight = 6085
-              mmLeft = 158092
+              mmLeft = 157388
               mmTop = 0
               mmWidth = 1000
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
             object ppLine18: TppLine
               UserName = 'Line18'
@@ -1021,11 +1043,11 @@ object Report: TppReport
               Position = lpLeft
               Weight = 0.750000000000000000
               mmHeight = 6085
-              mmLeft = 164428
+              mmLeft = 163724
               mmTop = 0
               mmWidth = 1000
               BandType = 4
-              LayerName = Foreground1
+              LayerName = PageLayer2
             end
           end
           object ppGroup2: TppGroup
@@ -1054,19 +1076,19 @@ object Report: TppReport
                 DataPipeline = dmPipelines.plAKF_SONST
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clBlack
-                Font.Name = 'Arial'
-                Font.Size = 10
+                Font.Name = 'Calibri'
+                Font.Size = 11
                 Font.Style = [fsBold]
                 Transparent = True
                 VerticalAlignment = avBottom
                 DataPipelineName = 'plAKF_SONST'
                 mmHeight = 6174
-                mmLeft = 794
+                mmLeft = 1322
                 mmTop = 0
                 mmWidth = 30956
                 BandType = 3
                 GroupNo = 0
-                LayerName = Foreground1
+                LayerName = PageLayer2
               end
             end
             object ppGroupFooterBand2: TppGroupFooterBand
@@ -1079,712 +1101,162 @@ object Report: TppReport
           end
           object raCodeModule2: TraCodeModule
             ProgramStream = {
-              01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
-              5469746C654265666F72655072696E740B50726F6772616D54797065070B7474
-              50726F63656475726506536F757263650CE703000070726F6365647572652054
-              69746C654265666F72655072696E743B0D0A626567696E0D0A0D0A2020204C61
-              62656C5F5374756665312E43617074696F6E203A3D2045696E7A656C456C656D
-              656E742820416E6B7265757A6B6F6D706574656E7A656E5F45696E7374656C6C
-              756E67656E5B2754657874537475666531275D2C202723272C203120293B0D0A
-              2020204C6162656C5F5374756665322E43617074696F6E203A3D2045696E7A65
-              6C456C656D656E742820416E6B7265757A6B6F6D706574656E7A656E5F45696E
-              7374656C6C756E67656E5B2754657874537475666532275D2C202723272C2031
-              20293B0D0A2020204C6162656C5F5374756665332E43617074696F6E203A3D20
-              45696E7A656C456C656D656E742820416E6B7265757A6B6F6D706574656E7A65
-              6E5F45696E7374656C6C756E67656E5B2754657874537475666533275D2C2027
-              23272C203120293B0D0A2020204C6162656C5F5374756665342E43617074696F
-              6E203A3D2045696E7A656C456C656D656E742820416E6B7265757A6B6F6D7065
-              74656E7A656E5F45696E7374656C6C756E67656E5B2754657874537475666534
-              275D2C202723272C203120293B0D0A2020204C6162656C5F5374756665352E43
-              617074696F6E203A3D2045696E7A656C456C656D656E742820416E6B7265757A
-              6B6F6D706574656E7A656E5F45696E7374656C6C756E67656E5B275465787453
-              7475666535275D2C202723272C203120293B0D0A20202020200D0A2020206368
-              62785374756665312E56697369626C65203A3D204C6162656C5F537475666531
-              2E43617074696F6E203C3E2027273B0D0A202020636862785374756665322E56
-              697369626C65203A3D204C6162656C5F5374756665322E43617074696F6E203C
-              3E2027273B0D0A202020636862785374756665332E56697369626C65203A3D20
-              4C6162656C5F5374756665332E43617074696F6E203C3E2027273B0D0A202020
-              636862785374756665342E56697369626C65203A3D204C6162656C5F53747566
-              65342E43617074696F6E203C3E2027273B0D0A20202063686278537475666535
-              2E56697369626C65203A3D204C6162656C5F5374756665352E43617074696F6E
-              203C3E2027273B20200D0A202020200D0A202020204C6162656C4E616D652E43
-              617074696F6E3A3D766F726E616D653B20202020202020202020202020202020
+              01060A54726150726F6772616D094368696C645479706502150E497346756E63
+              74696F6E54797065090B50726F6772616D4E616D6506064C61656E67650B5072
+              6F6772616D54797065070A747446756E6374696F6E06536F757263650CF60100
+              0066756E6374696F6E204C61656E67652028206C3A20537472696E6720293A20
+              646F75626C653B0D0A626567696E0D0A20200D0A20202F2F20206C656E677468
+              286C29203D20416E7A61686C204275636873746162656E20646572206C61656E
+              677374656E204B6F6D706574656E7A0D0A0D0A20206966206C656E677468286C
+              29203C2033207468656E0D0A20202020526573756C74203A3D20312020202020
+              2020202020200D0A20200D0A2020656C736520696620286C656E677468286C29
+              203C203629207468656E0D0A20202020526573756C74203A3D2031310D0A2020
+              656C7365206966206C656E677468286C29203C203130207468656E0D0A202020
+              20526573756C74203A3D2031330D0A2020656C7365206966206C656E67746828
+              6C29203C203133207468656E0D0A20202020526573756C74203A3D2031360D0A
+              2020656C7365206966206C656E677468286C29203C203137207468656E0D0A20
+              202020526573756C74203A3D2033300D0A2020656C7365206966206C656E6774
+              68286C29203C203230207468656E200D0A20202020526573756C74203A3D2033
+              360D0A2020656C7365206966206C656E677468286C29203C203234207468656E
+              0D0A20202020526573756C74203A3D2034300D0A2020656C73650D0A20202020
+              526573756C74203A3D2035383B0D0A0D0A656E643B0D0A084361726574506F73
+              0102010205000001060F5472614576656E7448616E646C65720B50726F677261
+              6D4E616D6506105469746C654265666F72655072696E740B50726F6772616D54
+              797065070B747450726F63656475726506536F757263650CC30B000070726F63
+              6564757265205469746C654265666F72655072696E743B0D0A766172200D0A6C
+              61656E6773746572203A535472696E673B0D0A70783A696E74656765723B0D0A
+              626567696E0D0A202020200D0A2020204C6162656C5F5374756665312E436170
+              74696F6E203A3D2045696E7A656C456C656D656E742820416E6B7265757A6B6F
+              6D706574656E7A656E5F45696E7374656C6C756E67656E5B2754657874537475
+              666531275D2C202723272C203120293B0D0A2020204C6162656C5F5374756665
+              322E43617074696F6E203A3D2045696E7A656C456C656D656E742820416E6B72
+              65757A6B6F6D706574656E7A656E5F45696E7374656C6C756E67656E5B275465
+              7874537475666532275D2C202723272C203120293B0D0A2020204C6162656C5F
+              5374756665332E43617074696F6E203A3D2045696E7A656C456C656D656E7428
+              20416E6B7265757A6B6F6D706574656E7A656E5F45696E7374656C6C756E6765
+              6E5B2754657874537475666533275D2C202723272C203120293B0D0A2020204C
+              6162656C5F5374756665342E43617074696F6E203A3D2045696E7A656C456C65
+              6D656E742820416E6B7265757A6B6F6D706574656E7A656E5F45696E7374656C
+              6C756E67656E5B2754657874537475666534275D2C202723272C203120293B0D
+              0A2020204C6162656C5F5374756665352E43617074696F6E203A3D2045696E7A
+              656C456C656D656E742820416E6B7265757A6B6F6D706574656E7A656E5F4569
+              6E7374656C6C756E67656E5B2754657874537475666535275D2C202723272C20
+              3120293B0D0A20200D0A20202020200D0A2020200D0A2020202F2F4C61656E67
+              6520646572206C616E677374656E204B6F6D706574656E7A7565626572736368
+              72696674200D0A202020206C61656E6773746572203A3D204C6162656C5F5374
+              756665312E43617074696F6E3B0D0A2020202070783A3D323B20200D0A202020
+              2020200D0A20206966204C656E677468284C6162656C5F5374756665322E4361
+              7074696F6E29203E204C656E677468286C61656E677374657229207468656E0D
+              0A202020206C61656E6773746572203A3D204C6162656C5F5374756665322E43
+              617074696F6E3B0D0A202020200D0A20206966204C656E677468284C6162656C
+              5F5374756665332E43617074696F6E29203E204C656E677468286C61656E6773
+              74657229207468656E0D0A202020206C61656E6773746572203A3D204C616265
+              6C5F5374756665332E43617074696F6E3B0D0A0D0A20206966204C656E677468
+              284C6162656C5F5374756665342E43617074696F6E29203E204C656E67746828
+              6C61656E677374657229207468656E0D0A202020206C61656E6773746572203A
+              3D204C6162656C5F5374756665342E43617074696F6E3B0D0A0D0A2020696620
+              4C656E677468284C6162656C5F5374756665352E43617074696F6E29203E204C
+              656E677468286C61656E677374657229207468656E0D0A2020202020206C6165
+              6E6773746572203A3D204C6162656C5F5374756665342E43617074696F6E3B20
+              0D0A202020200D0A20200D0A2020202020200D0A2020205469746C652E486569
+              676874203A3D204C61656E6765286C61656E6773746572293B0D0A0D0A202020
+              20202020202020202020200D0A202020204C6162656C5F5374756665312E4865
+              69676874203A3D205469746C652E486569676874202D2070783B0D0A20202020
+              4C6162656C5F5374756665322E486569676874203A3D205469746C652E486569
+              676874202D2070783B0D0A202020204C6162656C5F5374756665332E48656967
+              6874203A3D205469746C652E486569676874202D2070783B0D0A202020204C61
+              62656C5F5374756665342E486569676874203A3D205469746C652E4865696768
+              74202D2070783B0D0A202020204C6162656C5F5374756665352E486569676874
+              203A3D205469746C652E486569676874202D2070783B0D0A202020200D0A2020
+              20204C6162656C5F5374756665312E546F703A3D313B0D0A202020204C616265
+              6C5F5374756665322E546F703A3D313B0D0A202020204C6162656C5F53747566
+              65332E546F703A3D313B0D0A202020204C6162656C5F5374756665342E546F70
+              3A3D313B0D0A202020204C6162656C5F5374756665352E546F703A3D313B200D
+              0A20200D0A202020202020202020202020200D0A202020636862785374756665
+              312E56697369626C65203A3D204C6162656C5F5374756665312E43617074696F
+              6E203C3E2027273B0D0A202020636862785374756665322E56697369626C6520
+              3A3D204C6162656C5F5374756665322E43617074696F6E203C3E2027273B0D0A
+              202020636862785374756665332E56697369626C65203A3D204C6162656C5F53
+              74756665332E43617074696F6E203C3E2027273B0D0A20202063686278537475
+              6665342E56697369626C65203A3D204C6162656C5F5374756665342E43617074
+              696F6E203C3E2027273B0D0A202020636862785374756665352E56697369626C
+              65203A3D204C6162656C5F5374756665352E43617074696F6E203C3E2027273B
+              20200D0A202020200D0A2020204C6162656C4E616D652E43617074696F6E3A3D
+              766F726E616D653B20200D0A2020200D0A202020202F2F2066616C6C73206E75
+              722033204B6F6D706574656E7A656E206765676562656E2077757264656E0D0A
+              2020206966204C6162656C5F5374756665342E43617074696F6E203D20272720
+              7468656E0D0A20202020626567696E0D0A202020202020204C6162656C5F5374
+              756665312E4C656674203A3D20203135312E383B0D0A202020202020204C6162
+              656C5F5374756665322E4C656674203A3D20203135383B0D0A20202020202020
+              4C6162656C5F5374756665332E4C656674203A3D20203136342E363B0D0A2020
+              2020202020200D0A20202020202020636862785374756665312E4C656674203A
+              3D203135323B0D0A20202020202020636862785374756665322E4C656674203A
+              3D203135382E353B0D0A20202020202020636862785374756665332E4C656674
+              203A3D203136342E363B0D0A0D0A202020202020204C696E6531322E56697369
+              626C65203A3D2066616C73653B200D0A202020202020204C696E6531332E7669
+              7369626C65203A3D66616C73653B0D0A202020202020204C696E65382E766973
+              69626C65203A3D66616C73653B0D0A202020202020204C696E6531342E766973
+              69626C65203A3D66616C73653B0D0A20202020656E640D0A2020200D0A202020
+              2F2F2066616C6C73206E75722034204B6F6D706574656E7A656E206765676562
+              656E2077757264656E0D0A202020656C7365206966204C6162656C5F53747566
+              65352E43617074696F6E203D202727207468656E0D0A20202020626567696E0D
+              0A202020202020204C6162656C5F5374756665312E4C656674203A3D20203134
+              352E353B0D0A202020202020204C6162656C5F5374756665322E4C656674203A
+              3D20203135312E383B0D0A202020202020204C6162656C5F5374756665332E4C
+              656674203A3D20203135383B0D0A202020202020204C6162656C5F5374756665
+              342E4C656674203A3D20203136342E363B0D0A202020202020200D0A20202020
+              202020636862785374756665312E4C656674203A3D20203134352E353B0D0A20
+              202020202020636862785374756665322E4C656674203A3D203135312E383B0D
+              0A20202020202020636862785374756665332E4C656674203A3D203135382E35
+              3B0D0A20202020202020636862785374756665342E4C656674203A3D20313634
+              2E363B0D0A202020202020200D0A202020202020204C696E6531332E76697369
+              626C65203A3D66616C73653B0D0A202020202020204C696E6531322E56697369
+              626C65203A3D2066616C73653B20200D0A20202020656E643B0D0A202020200D
+              0A202020200D0A202020200D0A2020200D0A2020202020202020202020202020
               2020202020202020202020202020202020202020202020202020202020202020
               2020202020202020202020202020202020202020202020202020202020202020
               2020202020202020202020202020202020202020202020202020202020202020
-              20202020202020202020202020202020202020200D0A656E643B0D0A0D436F6D
-              706F6E656E744E616D6506055469746C65094576656E744E616D65060B426566
-              6F72655072696E74074576656E7449440218084361726574506F730102200210
-              000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
-              061B47726F757048656164657242616E64324265666F72655072696E740B5072
-              6F6772616D54797065070B747450726F63656475726506536F757263650C4301
-              000070726F6365647572652047726F757048656164657242616E64324265666F
-              72655072696E743B0D0A626567696E0D0A202020202047726F75704865616465
-              7242616E64312E56697369626C65203A3D2053636875656C6572416E6B726575
-              7A6B6F6D706574656E7A656E5F534F4E53545B2027556E7465726B617465676F
-              72696527205D203C3E2027273B0D0A202020200D0A2020202020696620536368
-              75656C6572416E6B7265757A6B6F6D706574656E7A656E5F534F4E53545B2027
-              556E7465726B617465676F72696527205D203C3E20272720207468656E0D0A20
-              20202020202020202047726F757048656164657242616E64322E486569676874
-              203A3D20362E370D0A2020202020656C73650D0A202020202020202020204772
-              6F757048656164657242616E64322E486569676874203A3D20302E313B0D0A65
-              6E643B0D0A0D436F6D706F6E656E744E616D65061047726F7570486561646572
-              42616E6432094576656E744E616D65060B4265666F72655072696E7407457665
-              6E7449440218084361726574506F730102010201000001060F5472614576656E
-              7448616E646C65720B50726F6772616D4E616D6506194D656D6F5F4B6F6D7065
-              74656E7A746578744F6E5072696E740B50726F6772616D54797065070B747450
-              726F63656475726506536F7572636506BB70726F636564757265204D656D6F5F
-              4B6F6D706574656E7A746578744F6E5072696E743B0D0A626567696E0D0A2020
-              204D656D6F5F4B6F6D706574656E7A746578742E4C696E65732E54657874203A
-              3D2053636875656C6572416E6B7265757A6B6F6D706574656E7A656E5F534F4E
-              53545B20274B6F6D706574656E7A5465787427205D3B0D0A20205A65696C656E
-              556D627275636828204D656D6F5F4B6F6D706574656E7A746578742E4C696E65
-              7320293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506124D656D6F
-              5F4B6F6D706574656E7A74657874094576656E744E616D6506074F6E5072696E
-              74074576656E7449440220084361726574506F730102010201000000}
+              20202020202020202020202020202020202020202020200D0A656E643B0D0A0D
+              436F6D706F6E656E744E616D6506055469746C65094576656E744E616D65060B
+              4265666F72655072696E74074576656E7449440218084361726574506F730102
+              23022F000001060F5472614576656E7448616E646C65720B50726F6772616D4E
+              616D65061B47726F757048656164657242616E64324265666F72655072696E74
+              0B50726F6772616D54797065070B747450726F63656475726506536F75726365
+              0C6201000070726F6365647572652047726F757048656164657242616E643242
+              65666F72655072696E743B0D0A626567696E0D0A0D0A202020202047726F7570
+              48656164657242616E64322E56697369626C65203A3D2053636875656C657241
+              6E6B7265757A6B6F6D706574656E7A656E5F534F4E53545B2027556E7465726B
+              617465676F72696527205D203C3E2027273B0D0A20202020202020202020202F
+              2F6F646572206865726164657262616E64323F3F3F0D0A202020202069662053
+              636875656C6572416E6B7265757A6B6F6D706574656E7A656E5F534F4E53545B
+              2027556E7465726B617465676F72696527205D203C3E20272720207468656E0D
+              0A2020202020202020202047726F757048656164657242616E64322E48656967
+              6874203A3D20362E370D0A2020202020656C73650D0A20202020202020202020
+              47726F757048656164657242616E64322E486569676874203A3D20302E313B0D
+              0A656E643B0D0A0D436F6D706F6E656E744E616D65061047726F757048656164
+              657242616E6432094576656E744E616D65060B4265666F72655072696E740745
+              76656E7449440218084361726574506F730102160204000001060F5472614576
+              656E7448616E646C65720B50726F6772616D4E616D6506194D656D6F5F4B6F6D
+              706574656E7A746578744F6E5072696E740B50726F6772616D54797065070B74
+              7450726F63656475726506536F7572636506BB70726F636564757265204D656D
+              6F5F4B6F6D706574656E7A746578744F6E5072696E743B0D0A626567696E0D0A
+              2020204D656D6F5F4B6F6D706574656E7A746578742E4C696E65732E54657874
+              203A3D2053636875656C6572416E6B7265757A6B6F6D706574656E7A656E5F53
+              4F4E53545B20274B6F6D706574656E7A5465787427205D3B0D0A20205A65696C
+              656E556D627275636828204D656D6F5F4B6F6D706574656E7A746578742E4C69
+              6E657320293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506124D65
+              6D6F5F4B6F6D706574656E7A74657874094576656E744E616D6506074F6E5072
+              696E74074576656E7449440220084361726574506F730102010201000001060F
+              5472614576656E7448616E646C65720B50726F6772616D4E616D650611446574
+              61696C4265666F72655072696E740B50726F6772616D54797065070B74745072
+              6F63656475726506536F75726365064270726F6365647572652044657461696C
+              4265666F72655072696E743B0D0A7661720D0A6C6565723A20626F6F6C65616E
+              3B0D0A626567696E0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+              060644657461696C094576656E744E616D65060B4265666F72655072696E7407
+              4576656E7449440218084361726574506F730102010201000000}
           end
           object ppDesignLayers2: TppDesignLayers
             object ppDesignLayer2: TppDesignLayer
-              UserName = 'Foreground1'
-              LayerType = ltBanded
-              Index = 0
-            end
-          end
-        end
-      end
-      object ppSubReport2: TppSubReport
-        UserName = 'srptAKK_SONST'
-        ExpandAll = False
-        NewPrintJob = False
-        OutlineSettings.CreateNode = True
-        ParentPrinterSetup = False
-        ShiftRelativeTo = ppSubReport1
-        TraverseAllData = False
-        Visible = False
-        DataPipelineName = 'plAKF_SONST'
-        mmHeight = 5027
-        mmLeft = 0
-        mmTop = 117211
-        mmWidth = 170000
-        BandType = 5
-        GroupNo = 0
-        LayerName = Foreground
-        mmBottomOffset = 3000
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppChildReport3: TppChildReport
-          AutoStop = False
-          DataPipeline = dmPipelines.plAKF_SONST
-          PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Ankreuzzeugnis.rtm'
-          PrinterSetup.PaperName = 'A4 210 x 297 mm'
-          PrinterSetup.PrinterName = 'Screen'
-          PrinterSetup.SaveDeviceSettings = False
-          PrinterSetup.mmMarginBottom = 10000
-          PrinterSetup.mmMarginLeft = 15000
-          PrinterSetup.mmMarginRight = 15000
-          PrinterSetup.mmMarginTop = 10000
-          PrinterSetup.mmPaperHeight = 297000
-          PrinterSetup.mmPaperWidth = 210000
-          PrinterSetup.PaperSize = 9
-          Template.Format = ftASCII
-          Units = utMillimeters
-          Version = '15.05'
-          mmColumnWidth = 0
-          DataPipelineName = 'plAKF_SONST'
-          object ppTitleBand2: TppTitleBand
-            Background.Brush.Style = bsClear
-            mmBottomOffset = 0
-            mmHeight = 30000
-            mmPrintPosition = 0
-            object ppLabel26: TppLabel
-              UserName = 'lblStufe1_1'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe1_1'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 133615
-              mmTop = 12171
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel28: TppLabel
-              UserName = 'lblStufe1_2'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe1_2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 137848
-              mmTop = 12171
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel29: TppLabel
-              UserName = 'lblStufe2_1'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe2_1'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 142611
-              mmTop = 12171
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel30: TppLabel
-              UserName = 'lblStufe2_2'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe2_2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 146050
-              mmTop = 12171
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel31: TppLabel
-              UserName = 'lblStufe3_1'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe3_1'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 152136
-              mmTop = 12171
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel32: TppLabel
-              UserName = 'lblStufe3_2'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe3_2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 155575
-              mmTop = 12171
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel33: TppLabel
-              UserName = 'lblStufe4_1'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe4_1'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 160073
-              mmTop = 12067
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel34: TppLabel
-              UserName = 'lblStufe4_2'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe4_2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 163513
-              mmTop = 12067
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel35: TppLabel
-              UserName = 'lblStufe5_1'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe5_1'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 170127
-              mmTop = 12067
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppLabel36: TppLabel
-              UserName = 'lblStufe5_2'
-              Angle = 90
-              AutoSize = False
-              Caption = 'lblStufe5_2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 9
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 16933
-              mmLeft = 173567
-              mmTop = 12067
-              mmWidth = 3969
-              BandType = 1
-              LayerName = PageLayer2
-              RotatedOriginLeft = 0
-              RotatedOriginTop = 16933
-            end
-            object ppDBText3: TppDBText
-              UserName = 'txtBez'
-              AutoSize = True
-              DataField = 'BezeichnungSONST'
-              DataPipeline = dmPipelines.plAKF_Einstellungen
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 14
-              Font.Style = [fsBold]
-              ParentDataPipeline = False
-              Transparent = True
-              DataPipelineName = 'plAKF_Einstellungen'
-              mmHeight = 6085
-              mmLeft = 0
-              mmTop = 0
-              mmWidth = 40745
-              BandType = 1
-              LayerName = PageLayer2
-            end
-            object ppLabel37: TppLabel
-              UserName = 'lblVorname'
-              Caption = 'lblVorname'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 12
-              Font.Style = [fsBold]
-              Transparent = True
-              mmHeight = 5027
-              mmLeft = 265
-              mmTop = 24000
-              mmWidth = 20902
-              BandType = 1
-              LayerName = PageLayer2
-            end
-            object ppLine11: TppLine
-              UserName = 'Line11'
-              ParentHeight = True
-              ParentWidth = True
-              Position = lpBottom
-              Weight = 0.750000000000000000
-              mmHeight = 30000
-              mmLeft = 0
-              mmTop = 0
-              mmWidth = 180000
-              BandType = 1
-              LayerName = PageLayer2
-            end
-          end
-          object ppDetailBand4: TppDetailBand
-            Background1.Brush.Style = bsClear
-            Background2.Brush.Style = bsClear
-            PrintHeight = phDynamic
-            mmBottomOffset = 0
-            mmHeight = 5000
-            mmPrintPosition = 0
-            object myDBCheckBox6: TmyDBCheckBox
-              UserName = 'chbxStufe1'
-              CheckBoxColor = clBlack
-              BooleanFalse = '-'
-              BooleanTrue = '+'
-              DataPipeline = dmPipelines.plAKF_SONST
-              DataField = 'Stufe1'
-              Transparent = True
-              DataPipelineName = 'plAKF_SONST'
-              mmHeight = 5000
-              mmLeft = 143000
-              mmTop = 0
-              mmWidth = 6350
-              BandType = 4
-              LayerName = PageLayer2
-            end
-            object myDBCheckBox7: TmyDBCheckBox
-              UserName = 'chbxStufe2'
-              CheckBoxColor = clBlack
-              BooleanFalse = '-'
-              BooleanTrue = '+'
-              DataPipeline = dmPipelines.plAKF_SONST
-              DataField = 'Stufe2'
-              Transparent = True
-              DataPipelineName = 'plAKF_SONST'
-              mmHeight = 5000
-              mmLeft = 151000
-              mmTop = 0
-              mmWidth = 6350
-              BandType = 4
-              LayerName = PageLayer2
-            end
-            object myDBCheckBox8: TmyDBCheckBox
-              UserName = 'chbxStufe3'
-              CheckBoxColor = clBlack
-              BooleanFalse = '-'
-              BooleanTrue = '+'
-              DataPipeline = dmPipelines.plAKF_SONST
-              DataField = 'Stufe3'
-              Transparent = True
-              DataPipelineName = 'plAKF_SONST'
-              mmHeight = 5000
-              mmLeft = 159000
-              mmTop = 0
-              mmWidth = 6350
-              BandType = 4
-              LayerName = PageLayer2
-            end
-            object myDBCheckBox9: TmyDBCheckBox
-              UserName = 'chbxStufe4'
-              CheckBoxColor = clBlack
-              BooleanFalse = '-'
-              BooleanTrue = '+'
-              DataPipeline = dmPipelines.plAKF_SONST
-              DataField = 'Stufe4'
-              Transparent = True
-              DataPipelineName = 'plAKF_SONST'
-              mmHeight = 5027
-              mmLeft = 167000
-              mmTop = 0
-              mmWidth = 6350
-              BandType = 4
-              LayerName = PageLayer2
-            end
-            object myDBCheckBox10: TmyDBCheckBox
-              UserName = 'chbxStufe5'
-              CheckBoxColor = clBlack
-              BooleanFalse = '-'
-              BooleanTrue = '+'
-              DataPipeline = dmPipelines.plAKF_SONST
-              DataField = 'Stufe5'
-              Transparent = True
-              DataPipelineName = 'plAKF_SONST'
-              mmHeight = 5027
-              mmLeft = 175000
-              mmTop = 0
-              mmWidth = 6350
-              BandType = 4
-              LayerName = PageLayer2
-            end
-            object ppMemo11: TppMemo
-              UserName = 'mmoKompText'
-              Caption = 'mmoKompText'
-              CharWrap = False
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Arial'
-              Font.Size = 10
-              Font.Style = []
-              RemoveEmptyLines = False
-              Stretch = True
-              Transparent = True
-              mmHeight = 5000
-              mmLeft = 0
-              mmTop = 0
-              mmWidth = 140000
-              BandType = 4
-              LayerName = PageLayer2
-              mmBottomOffset = 0
-              mmOverFlowOffset = 0
-              mmStopPosition = 0
-              mmMinHeight = 0
-              mmLeading = 0
-            end
-            object ppLine26: TppLine
-              UserName = 'Durchstreich'
-              Position = lpBottom
-              Weight = 0.750000000000000000
-              mmHeight = 2500
-              mmLeft = 140000
-              mmTop = 0
-              mmWidth = 40000
-              BandType = 4
-              LayerName = PageLayer2
-            end
-            object ppLine17: TppLine
-              UserName = 'Linie'
-              ParentHeight = True
-              ParentWidth = True
-              Position = lpBottom
-              StretchWithParent = True
-              Weight = 0.750000000000000000
-              mmHeight = 5000
-              mmLeft = 0
-              mmTop = 0
-              mmWidth = 180000
-              BandType = 4
-              LayerName = PageLayer2
-            end
-          end
-          object ppGroup4: TppGroup
-            BreakName = 'Unterkategorie'
-            DataPipeline = dmPipelines.plAKF_SONST
-            GroupFileSettings.NewFile = False
-            GroupFileSettings.EmailFile = False
-            KeepTogether = True
-            OutlineSettings.CreateNode = True
-            StartOnOddPage = False
-            UserName = 'Group1'
-            mmNewColumnThreshold = 0
-            mmNewPageThreshold = 0
-            DataPipelineName = 'plAKF_SONST'
-            NewFile = False
-            object ppGroupHeaderBand4: TppGroupHeaderBand
-              Background.Brush.Style = bsClear
-              mmBottomOffset = 0
-              mmHeight = 7000
-              mmPrintPosition = 0
-              object ppDBText5: TppDBText
-                UserName = 'txtUnterkategorie'
-                AutoSize = True
-                DataField = 'Unterkategorie'
-                DataPipeline = dmPipelines.plAKF_SONST
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clBlack
-                Font.Name = 'Arial'
-                Font.Size = 10
-                Font.Style = [fsBold]
-                Transparent = True
-                DataPipelineName = 'plAKF_SONST'
-                mmHeight = 4233
-                mmLeft = 0
-                mmTop = 2000
-                mmWidth = 24870
-                BandType = 3
-                GroupNo = 0
-                LayerName = PageLayer2
-              end
-            end
-            object ppGroupFooterBand4: TppGroupFooterBand
-              Background.Brush.Style = bsClear
-              HideWhenOneDetail = False
-              mmBottomOffset = 0
-              mmHeight = 0
-              mmPrintPosition = 0
-            end
-          end
-          object raCodeModule3: TraCodeModule
-            ProgramStream = {
-              01060A54726150726F6772616D094368696C645479706502150E497346756E63
-              74696F6E54797065090B50726F6772616D4E616D6506154B6F6D706574656E7A
-              5565626572736368726966740B50726F6772616D54797065070A747446756E63
-              74696F6E06536F75726365069066756E6374696F6E204B6F6D706574656E7A55
-              65626572736368726966742820636F6E737420616B6F6D703A20737472696E67
-              3B207465696C3A20696E746567657220293A20737472696E673B0D0A62656769
-              6E0D0A0D0A2020526573756C74203A3D2045696E7A656C456C656D656E742820
-              616B6F6D702C202723272C207465696C20293B0D0A0D0A656E643B0D0A084361
-              726574506F730102010201000001060F5472614576656E7448616E646C65720B
-              50726F6772616D4E616D6506105469746C654265666F72655072696E740B5072
-              6F6772616D54797065070B747450726F63656475726506536F757263650C5E0D
-              000070726F636564757265205469746C654265666F72655072696E743B0D0A76
-              61720D0A20207478743A20737472696E673B0D0A20206C5F6F66663A20646F75
-              626C653B0D0A2020725F6F66663A20646F75626C653B0D0A626567696E0D0A20
-              206C5F6F6666203A3D20323B0D0A2020725F6F6666203A3D20312E323B0D0A20
-              200D0A202F2F205469746C652E486569676874203A3D20486561646572486F65
-              68652820747275652C2074787442657A2E4865696768742C206C626C566F726E
-              616D652E48656967687420293B0D0A20200D0A2020696620416E6B7265757A6B
-              6F6D706574656E7A656E5F45696E7374656C6C756E67656E5B202742657A6569
-              63686E756E67534F4E535427205D203D202727207468656E0D0A202020205469
-              746C652E56697369626C65203A3D2066616C73653B0D0A202020200D0A200D0A
-              20200D0A0D0A20206C626C5374756665315F312E43617074696F6E203A3D204B
-              6F6D706574656E7A5565626572736368726966742820416E6B7265757A6B6F6D
-              706574656E7A656E5F45696E7374656C6C756E67656E5B202754657874537475
-              66653127205D2C203220293B0D0A20206C626C5374756665315F322E43617074
-              696F6E203A3D204B6F6D706574656E7A5565626572736368726966742820416E
-              6B7265757A6B6F6D706574656E7A656E5F45696E7374656C6C756E67656E5B20
-              275465787453747566653127205D2C203220293B0D0A0D0A20206C626C537475
-              6665325F312E43617074696F6E203A3D204B6F6D706574656E7A556562657273
-              6368726966742820416E6B7265757A6B6F6D706574656E7A656E5F45696E7374
-              656C6C756E67656E5B20275465787453747566653227205D2C203120293B0D0A
-              20206C626C5374756665325F322E43617074696F6E203A3D204B6F6D70657465
-              6E7A5565626572736368726966742820416E6B7265757A6B6F6D706574656E7A
-              656E5F45696E7374656C6C756E67656E5B20275465787453747566653227205D
-              2C203220293B0D0A0D0A20206C626C5374756665335F312E43617074696F6E20
-              3A3D204B6F6D706574656E7A5565626572736368726966742820416E6B726575
-              7A6B6F6D706574656E7A656E5F45696E7374656C6C756E67656E5B2027546578
-              7453747566653327205D2C203120293B0D0A20206C626C5374756665335F322E
-              43617074696F6E203A3D204B6F6D706574656E7A556562657273636872696674
-              2820416E6B7265757A6B6F6D706574656E7A656E5F45696E7374656C6C756E67
-              656E5B20275465787453747566653327205D2C203220293B0D0A0D0A20206C62
-              6C5374756665345F312E43617074696F6E203A3D204B6F6D706574656E7A5565
-              626572736368726966742820416E6B7265757A6B6F6D706574656E7A656E5F45
-              696E7374656C6C756E67656E5B20275465787453747566653427205D2C203120
-              293B0D0A20206C626C5374756665345F322E43617074696F6E203A3D204B6F6D
-              706574656E7A5565626572736368726966742820416E6B7265757A6B6F6D7065
-              74656E7A656E5F45696E7374656C6C756E67656E5B2027546578745374756665
-              3427205D2C203220293B0D0A0D0A20206C626C5374756665355F312E43617074
-              696F6E203A3D204B6F6D706574656E7A5565626572736368726966742820416E
-              6B7265757A6B6F6D706574656E7A656E5F45696E7374656C6C756E67656E5B20
-              275465787453747566653527205D2C203120293B0D0A20206C626C5374756665
-              355F322E43617074696F6E203A3D204B6F6D706574656E7A5565626572736368
-              726966742820416E6B7265757A6B6F6D706574656E7A656E5F45696E7374656C
-              6C756E67656E5B20275465787453747566653527205D2C203220293B0D0A2020
-              20202020202053686F774D65737361676528206C626C5374756665325F312E43
-              617074696F6E293B0D0A20206966206C626C5374756665315F322E4361707469
-              6F6E203C3E202727207468656E0D0A2020626567696E0D0A202020202F2F6C62
-              6C5374756665315F312E4C656674203A3D20636862785374756665312E4C6566
-              74202D206C5F6F66663B0D0A202020202F2F6C626C5374756665315F322E4C65
-              6674203A3D20636862785374756665312E4C656674202B20725F6F66663B0D0A
-              2020656E6420656C73650D0A2020626567696E20202020202F2F206973742061
-              6B7475656C6C20676C65696368206C6565720D0A202020206C626C5374756665
-              315F312E4C656674203A3D20636862785374756665312E4C6566743B0D0A2020
-              656E643B0D0A0D0A20206966206C626C5374756665325F322E43617074696F6E
-              203C3E202727207468656E0D0A2020626567696E0D0A202020206C626C537475
-              6665325F312E4C656674203A3D20636862785374756665322E4C656674202D20
-              6C5F6F66663B0D0A202020206C626C5374756665325F322E4C656674203A3D20
-              636862785374756665322E4C656674202B20725F6F66663B0D0A2020656E6420
-              656C73650D0A2020626567696E0D0A202020206C626C5374756665325F312E4C
-              656674203A3D20636862785374756665322E4C6566743B0D0A2020656E643B0D
-              0A20200D0A20206966206C626C5374756665335F322E43617074696F6E203C3E
-              202727207468656E0D0A2020626567696E0D0A202020206C626C537475666533
-              5F312E4C656674203A3D20636862785374756665332E4C656674202D206C5F6F
-              66663B0D0A202020206C626C5374756665335F322E4C656674203A3D20636862
-              785374756665332E4C656674202B20725F6F66663B0D0A2020656E6420656C73
-              650D0A2020626567696E0D0A202020206C626C5374756665335F312E4C656674
-              203A3D20636862785374756665332E4C6566743B0D0A2020656E643B0D0A2020
-              0D0A20206966206C626C5374756665345F322E43617074696F6E203C3E202727
-              207468656E0D0A2020626567696E0D0A202020206C626C5374756665345F312E
-              4C656674203A3D20636862785374756665342E4C656674202D206C5F6F66663B
-              0D0A202020206C626C5374756665345F322E4C656674203A3D20636862785374
-              756665342E4C656674202B20725F6F66663B0D0A2020656E6420656C73650D0A
-              2020626567696E0D0A202020206C626C5374756665345F312E4C656674203A3D
-              20636862785374756665342E4C6566743B0D0A2020656E643B0D0A20200D0A20
-              206966206C626C5374756665355F322E43617074696F6E203C3E202727207468
-              656E0D0A2020626567696E0D0A202020206C626C5374756665355F312E4C6566
-              74203A3D20636862785374756665352E4C656674202D206C5F6F66663B0D0A20
-              2020206C626C5374756665355F322E4C656674203A3D20636862785374756665
-              352E4C656674202B20725F6F66663B0D0A2020656E6420656C73650D0A202062
-              6567696E0D0A202020206C626C5374756665355F312E4C656674203A3D206368
-              62785374756665352E4C6566743B0D0A2020656E643B0D0A20200D0A20206368
-              62785374756665352E56697369626C65203A3D206C626C5374756665355F312E
-              43617074696F6E203C3E2027273B0D0A20200D0A200D0A20206C626C566F726E
-              616D652E43617074696F6E203A3D20566F726E616D653B0D0A20206C626C566F
-              726E616D652E546F70203A3D205469746C652E486569676874202D2031202D20
-              6C626C566F726E616D652E4865696768743B0D0A20200D0A20206C626C537475
-              6665315F312E546F70203A3D20303B0D0A20206C626C5374756665315F312E48
-              6569676874203A3D205469746C652E486569676874202D20313B0D0A0D0A2020
-              6C626C5374756665315F322E546F70203A3D20303B0D0A20206C626C53747566
-              65315F322E486569676874203A3D205469746C652E486569676874202D20313B
-              0D0A20200D0A20206C626C5374756665325F312E546F70203A3D20303B0D0A20
-              206C626C5374756665325F312E486569676874203A3D205469746C652E486569
-              676874202D20313B0D0A0D0A20206C626C5374756665325F322E546F70203A3D
-              20303B0D0A20206C626C5374756665325F322E486569676874203A3D20546974
-              6C652E486569676874202D20313B0D0A20200D0A20206C626C5374756665335F
-              312E546F70203A3D20303B0D0A20206C626C5374756665335F312E4865696768
-              74203A3D205469746C652E486569676874202D20313B0D0A0D0A20206C626C53
-              74756665335F322E546F70203A3D20303B0D0A20206C626C5374756665335F32
-              2E486569676874203A3D205469746C652E486569676874202D20313B0D0A2020
-              0D0A20206C626C5374756665345F312E546F70203A3D20303B0D0A20206C626C
-              5374756665345F312E486569676874203A3D205469746C652E48656967687420
-              2D20313B0D0A0D0A20206C626C5374756665345F322E546F70203A3D20303B0D
-              0A20206C626C5374756665345F322E486569676874203A3D205469746C652E48
-              6569676874202D20313B0D0A20200D0A20206C626C5374756665355F312E546F
-              70203A3D20303B0D0A20206C626C5374756665355F312E486569676874203A3D
-              205469746C652E486569676874202D20313B0D0A0D0A20206C626C5374756665
-              355F322E546F70203A3D20303B0D0A20206C626C5374756665355F322E486569
-              676874203A3D205469746C652E486569676874202D20313B0D0A656E643B0D0A
-              0D436F6D706F6E656E744E616D6506055469746C65094576656E744E616D6506
-              0B4265666F72655072696E74074576656E7449440218084361726574506F7301
-              02020250000001060F5472614576656E7448616E646C65720B50726F6772616D
-              4E616D65061B47726F757048656164657242616E64344265666F72655072696E
-              740B50726F6772616D54797065070B747450726F63656475726506536F757263
-              65069070726F6365647572652047726F757048656164657242616E6434426566
-              6F72655072696E743B0D0A626567696E0D0A202047726F757048656164657242
-              616E64342E56697369626C65203A3D2053636875656C6572416E6B7265757A6B
-              6F6D706574656E7A656E5F534F4E53545B2027556E7465726B617465676F7269
-              6527205D203C3E2027273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D
-              65061047726F757048656164657242616E6434094576656E744E616D65060B42
-              65666F72655072696E74074576656E7449440218084361726574506F73010201
-              0201000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
-              6D65061144657461696C4265666F72655072696E740B50726F6772616D547970
-              65070B747450726F63656475726506536F75726365065570726F636564757265
-              2044657461696C4265666F72655072696E743B0D0A7661720D0A20206C656572
-              3A20626F6F6C65616E3B0D0A626567696E0D0A0D0A0D0A20200D0A200D0A200D
-              0A0D0A200D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461
-              696C094576656E744E616D65060B4265666F72655072696E74074576656E7449
-              440218084361726574506F73010202020B000001060F5472614576656E744861
-              6E646C65720B50726F6772616D4E616D6506126D6D6F4B6F6D70546578744F6E
-              5072696E740B50726F6772616D54797065070B747450726F6365647572650653
-              6F7572636506A570726F636564757265206D6D6F4B6F6D70546578744F6E5072
-              696E743B0D0A626567696E0D0A20206D6D6F4B6F6D70546578742E4C696E6573
-              2E54657874203A3D2053636875656C6572416E6B7265757A6B6F6D706574656E
-              7A656E5F534F4E53545B20274B6F6D706574656E7A5465787427205D3B0D0A20
-              205A65696C656E556D627275636828206D6D6F4B6F6D70546578742E4C696E65
-              7320293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B6D6D6F4B
-              6F6D7054657874094576656E744E616D6506074F6E5072696E74074576656E74
-              49440220084361726574506F730102010201000000}
-          end
-          object ppDesignLayers4: TppDesignLayers
-            object ppDesignLayer4: TppDesignLayer
               UserName = 'PageLayer2'
               LayerType = ltBanded
               Index = 0
@@ -1844,7 +1316,7 @@ object Report: TppReport
       72656E64656E202F2F206CC3B6736368656E0D0A2020506970656C696E654F65
       66666E656E282042656D5072696D617220293B0D0A2020526573756C74203A3D
       205472696D282042656D5072696D61725B2066656C64205D20293B0D0A0D0A65
-      6E643B0D0A084361726574506F730102010201000001060A54726150726F6772
+      6E643B0D0A084361726574506F730102290201000001060A54726150726F6772
       616D094368696C645479706502150E497346756E6374696F6E54797065090B50
       726F6772616D4E616D6506154B6F6D706574656E7A5565626572736368726966
       740B50726F6772616D54797065070A747446756E6374696F6E06536F75726365
@@ -1891,7 +1363,7 @@ object Report: TppReport
       643B0D0A084361726574506F730102050207000001060F5472614576656E7448
       616E646C65720B50726F6772616D4E616D65061144657461696C4265666F7265
       5072696E740B50726F6772616D54797065070B747450726F6365647572650653
-      6F75726365141308000070726F6365647572652044657461696C4265666F7265
+      6F7572636514DF07000070726F6365647572652044657461696C4265666F7265
       5072696E743B0D0A626567696E0D0A2020206D6D6F456D706653656B31426567
       7275656E64756E672E466F6E742E53697A65203A3D204C6162656C4265677275
       656E64756E672E466F6E742E53697A653B0D0A2020206D6D6F456D706653656B
@@ -1903,81 +1375,79 @@ object Report: TppReport
       726B756E67282027455346272029203C3E202727207468656E0D0A202020206D
       6D6F456D706653656B314265677275656E64756E672E4C696E65732E41646428
       205072696D617242656D65726B756E6728202745534627202920293B0D0A0D0A
-      20202F2F204265677275656E64756E672064657220456D706665686C756E6720
-      6D697420416E6B7265757A6B6F6D706574656E7A656E0D0A2020202020200D0A
-      20200D0A202020200D0A20696620202053636875656C65725B2747657363686C
-      65636874275D203D2033207468656E0D0A2020202020204C6162656C5F45696E
-      7363687261656E6B756E672E43617074696F6E203A3D2027697374206572206D
-      69742045696E73636872C3A46E6B756E67656E2067656569676E65742E270D0A
-      20656C7365206966202053636875656C65725B2747657363686C65636874275D
-      203D2034207468656E0D0A2020202020204C6162656C5F45696E736368726165
-      6E6B756E672E43617074696F6E203A3D202769737420736965206D6974204569
-      6E73636872C3A46E6B756E67656E2067656569676E65742E270D0A20656C7365
-      0D0A202020202020204C6162656C5F45696E7363687261656E6B756E672E4361
-      7074696F6E203A3D202769737420646173204B696E64206D69742045696E7363
-      6872C3A46E6B756E67656E2067656569676E65742E2720203B0D0A200D0A200D
-      0A202F2F20436865636B626F78656E2067656D616573732064657220456D7066
-      65686C756E67207365747A656E0D0A202063625F482E436865636B6564203A3D
-      202820506F7328274861757074736368756C6527202C53636875656C65725B27
-      5562657267616E675F4A47355F54657874275D293D31293B0D0A20204C696E69
-      655F482E56697369626C653A3D206E6F74202820506F73282748617570747363
-      68756C6527202C53636875656C65725B275562657267616E675F4A47355F5465
-      7874275D293D31293B0D0A20204C6162656C5F48532E466F6E742E626F6C643A
-      3D202820506F7328274861757074736368756C6527202C53636875656C65725B
-      275562657267616E675F4A47355F54657874275D293D31293B0D0A2020200D0A
-      2020200D0A202063625F522E436865636B6564203A3D202820506F7328275265
-      616C736368756C6527202C53636875656C65725B275562657267616E675F4A47
-      355F54657874275D293D31293B0D0A20204C696E69655F522E56697369626C65
-      3A3D206E6F742820506F7328275265616C736368756C6527202C53636875656C
-      65725B275562657267616E675F4A47355F54657874275D293D31293B200D0A20
-      204C6162656C5F52532E466F6E742E626F6C643A3D202820506F732827526561
-      6C736368756C6527202C53636875656C65725B275562657267616E675F4A4735
-      5F54657874275D293D31293B0D0A20200D0A202063625F472E436865636B6564
-      203A3D202820506F73282747796D6E617369756D27202C53636875656C65725B
+      20200D0A2020202020200D0A20200D0A202020200D0A20696620202053636875
+      656C65725B2747657363686C65636874275D203D2033207468656E0D0A202020
+      2020204C6162656C5F45696E7363687261656E6B756E672E43617074696F6E20
+      3A3D2027697374206572206D69742045696E73636872C3A46E6B756E67656E20
+      67656569676E65742E270D0A20656C7365206966202053636875656C65725B27
+      47657363686C65636874275D203D2034207468656E0D0A2020202020204C6162
+      656C5F45696E7363687261656E6B756E672E43617074696F6E203A3D20276973
+      7420736965206D69742045696E73636872C3A46E6B756E67656E206765656967
+      6E65742E270D0A20656C73650D0A202020202020204C6162656C5F45696E7363
+      687261656E6B756E672E43617074696F6E203A3D202769737420646173204B69
+      6E64206D69742045696E73636872C3A46E6B756E67656E2067656569676E6574
+      2E2720203B0D0A200D0A200D0A202F2F20436865636B626F78656E2067656D61
+      6573732064657220456D706665686C756E67207365747A656E0D0A202063625F
+      482E436865636B6564203A3D202820506F7328274861757074736368756C6527
+      202C53636875656C65725B275562657267616E675F4A47355F54657874275D29
+      3D31293B0D0A20204C696E69655F482E56697369626C653A3D206E6F74202820
+      506F7328274861757074736368756C6527202C53636875656C65725B27556265
+      7267616E675F4A47355F54657874275D293D31293B0D0A20204C6162656C5F48
+      532E466F6E742E626F6C643A3D202820506F7328274861757074736368756C65
+      27202C53636875656C65725B275562657267616E675F4A47355F54657874275D
+      293D31293B0D0A2020200D0A2020200D0A202063625F522E436865636B656420
+      3A3D202820506F7328275265616C736368756C6527202C53636875656C65725B
       275562657267616E675F4A47355F54657874275D293D31293B0D0A20204C696E
-      69655F47592E56697369626C653A3D206E6F74202820506F73282747796D6E61
-      7369756D27202C53636875656C65725B275562657267616E675F4A47355F5465
-      7874275D293D31293B0D0A20204C6162656C5F47592E466F6E742E626F6C643A
-      3D202820506F73282747796D6E617369756D27202C53636875656C65725B2755
-      62657267616E675F4A47355F54657874275D293D31293B0D0A20200D0A202063
-      625F48522E436865636B6564203A3D202820506F7328275265616C736368756C
-      6527202C53636875656C65725B275562657267616E675F4A47355F5465787427
-      5D293E31293B0D0A20204C696E69655F485F522E56697369626C653A3D6E6F74
-      202820506F7328275265616C736368756C6527202C53636875656C65725B2755
-      62657267616E675F4A47355F54657874275D293E31293B0D0A20204C6162656C
-      5F525F65696E67657363687261656E6B742E466F6E742E626F6C643A3D282050
-      6F7328275265616C736368756C6527202C53636875656C65725B275562657267
-      616E675F4A47355F54657874275D293E31293B0D0A2020200D0A202063625F52
-      472E436865636B6564203A3D202820506F73282747796D6E617369756D27202C
-      53636875656C65725B275562657267616E675F4A47355F54657874275D293E31
-      293B0D0A20204C696E69655F525F47592E56697369626C653A3D206E6F742820
-      506F73282747796D6E617369756D27202C53636875656C65725B275562657267
-      616E675F4A47355F54657874275D293E31293B0D0A20204C6162656C5F47595F
-      65696E67657363687261656E6B742E466F6E742E626F6C643A3D202820506F73
-      282747796D6E617369756D27202C53636875656C65725B275562657267616E67
-      5F4A47355F54657874275D293E31293B0D0A200D0A0D0A656E643B0D0A0D436F
-      6D706F6E656E744E616D65060644657461696C094576656E744E616D65060B42
-      65666F72655072696E74074576656E7449440218084361726574506F73010201
-      0201000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
-      6D6506115265706F72744265666F72655072696E740B50726F6772616D547970
-      65070B747450726F63656475726506536F75726365067370726F636564757265
-      205265706F72744265666F72655072696E743B0D0A626567696E0D0A20200D0A
-      2020506970656C696E654F6566666E656E28204C65726E61627363686E697474
-      6520293B0D0A20200D0A20200D0A20200D0A20200D0A656E643B0D0A656E643B
-      20202020202020200D0A0D436F6D706F6E656E744E616D6506065265706F7274
-      094576656E744E616D65060B4265666F72655072696E74074576656E74494402
-      01084361726574506F730102010201000001060F5472614576656E7448616E64
-      6C65720B50726F6772616D4E616D6506145269636854657874314F6E4D61696C
-      4D657267650B50726F6772616D54797065070B747450726F6365647572650653
-      6F7572636506BD70726F636564757265205269636854657874314F6E4D61696C
-      4D657267653B0D0A626567696E0D0A20205269636854657874312E5269636854
-      657874203A3D5265706C61636554657874285269636854657874312E52696368
-      546578742C27244B6F6E666572656E7A646174756D24272C466F726D61744461
-      746554696D6528202744442E4D4D2E59595959272C204C65726E61627363686E
-      697474655B20274B6F6E666572656E7A646174756D27205D2029293B0D0A656E
-      643B0D0A0D436F6D706F6E656E744E616D650609526963685465787431094576
-      656E744E616D65060B4F6E4D61696C4D65726765074576656E744944038E0008
-      4361726574506F730102010201000000}
+      69655F522E56697369626C653A3D206E6F742820506F7328275265616C736368
+      756C6527202C53636875656C65725B275562657267616E675F4A47355F546578
+      74275D293D31293B200D0A20204C6162656C5F52532E466F6E742E626F6C643A
+      3D202820506F7328275265616C736368756C6527202C53636875656C65725B27
+      5562657267616E675F4A47355F54657874275D293D31293B0D0A20200D0A2020
+      63625F472E436865636B6564203A3D202820506F73282747796D6E617369756D
+      27202C53636875656C65725B275562657267616E675F4A47355F54657874275D
+      293D31293B0D0A20204C696E69655F47592E56697369626C653A3D206E6F7420
+      2820506F73282747796D6E617369756D27202C53636875656C65725B27556265
+      7267616E675F4A47355F54657874275D293D31293B0D0A20204C6162656C5F47
+      592E466F6E742E626F6C643A3D202820506F73282747796D6E617369756D2720
+      2C53636875656C65725B275562657267616E675F4A47355F54657874275D293D
+      31293B0D0A20200D0A202063625F48522E436865636B6564203A3D202820506F
+      7328275265616C736368756C6527202C53636875656C65725B27556265726761
+      6E675F4A47355F54657874275D293E31293B0D0A20204C696E69655F485F522E
+      56697369626C653A3D6E6F74202820506F7328275265616C736368756C652720
+      2C53636875656C65725B275562657267616E675F4A47355F54657874275D293E
+      31293B0D0A20204C6162656C5F525F65696E67657363687261656E6B742E466F
+      6E742E626F6C643A3D2820506F7328275265616C736368756C6527202C536368
+      75656C65725B275562657267616E675F4A47355F54657874275D293E31293B0D
+      0A2020200D0A202063625F52472E436865636B6564203A3D202820506F732827
+      47796D6E617369756D27202C53636875656C65725B275562657267616E675F4A
+      47355F54657874275D293E31293B0D0A20204C696E69655F525F47592E566973
+      69626C653A3D206E6F742820506F73282747796D6E617369756D27202C536368
+      75656C65725B275562657267616E675F4A47355F54657874275D293E31293B0D
+      0A20204C6162656C5F47595F65696E67657363687261656E6B742E466F6E742E
+      626F6C643A3D202820506F73282747796D6E617369756D27202C53636875656C
+      65725B275562657267616E675F4A47355F54657874275D293E31293B0D0A200D
+      0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C09
+      4576656E744E616D65060B4265666F72655072696E74074576656E7449440218
+      084361726574506F730102010201000001060F5472614576656E7448616E646C
+      65720B50726F6772616D4E616D6506115265706F72744265666F72655072696E
+      740B50726F6772616D54797065070B747450726F63656475726506536F757263
+      65067370726F636564757265205265706F72744265666F72655072696E743B0D
+      0A626567696E0D0A20200D0A2020506970656C696E654F6566666E656E28204C
+      65726E61627363686E6974746520293B0D0A20200D0A20200D0A20200D0A2020
+      0D0A656E643B0D0A656E643B20202020202020200D0A0D436F6D706F6E656E74
+      4E616D6506065265706F7274094576656E744E616D65060B4265666F72655072
+      696E74074576656E7449440201084361726574506F730102010201000001060F
+      5472614576656E7448616E646C65720B50726F6772616D4E616D650614526963
+      6854657874314F6E4D61696C4D657267650B50726F6772616D54797065070B74
+      7450726F63656475726506536F7572636506BD70726F63656475726520526963
+      6854657874314F6E4D61696C4D657267653B0D0A626567696E0D0A2020526963
+      6854657874312E5269636854657874203A3D5265706C61636554657874285269
+      636854657874312E52696368546578742C27244B6F6E666572656E7A64617475
+      6D24272C466F726D61744461746554696D6528202744442E4D4D2E5959595927
+      2C204C65726E61627363686E697474655B20274B6F6E666572656E7A64617475
+      6D27205D2029293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D650609
+      526963685465787431094576656E744E616D65060B4F6E4D61696C4D65726765
+      074576656E744944038E00084361726574506F730102010201000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
