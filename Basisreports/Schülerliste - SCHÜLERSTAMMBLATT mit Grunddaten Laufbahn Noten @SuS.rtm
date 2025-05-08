@@ -2,8 +2,10 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
-  PrinterSetup.PaperName = 'A4 297 x 210 mm'
+  PrinterSetup.DocumentName = 
+    'Sch'#252'lerliste - SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @' +
+    'SuS.rtm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -15,9 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Basisreports\SCH'#220'LERSTAMMBLATT mit Grundda' +
-    'ten Laufbahn Noten @SuS.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
+    'D-Reports\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste - SCH'#220'LER' +
+    'STAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -125,7 +127,7 @@ object Report: TppReport
           '88106')
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 15000
@@ -2646,7 +2648,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppSchuelerHerkunft
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3089,7 +3091,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.Erzieher
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3575,7 +3577,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plSchuelerTelefone
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3706,7 +3708,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plVermerke
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -3948,7 +3950,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppSchuelerDatenschutz
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -4173,7 +4175,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plSchuelerlaufbahn
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn @SuS.rtm'
-              PrinterSetup.PaperName = 'A4 297 x 210 mm'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 15000
@@ -4892,7 +4894,9 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport7: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
+        PrinterSetup.DocumentName = 
+          'Sch'#252'lerliste - SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @' +
+          'SuS.rtm'
         PrinterSetup.PaperName = 'A4 297 x 210 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -4903,6 +4907,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 210000
         PrinterSetup.PaperSize = 9
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -5187,7 +5192,9 @@ object Report: TppReport
                 '165000')
               DataPipeline = dmPipelines.plLeistungsuebersicht
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
+              PrinterSetup.DocumentName = 
+                'Sch'#252'lerliste - SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @' +
+                'SuS.rtm'
               PrinterSetup.PaperName = 'A4 297 x 210 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
@@ -5198,6 +5205,7 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 210000
               PrinterSetup.PaperSize = 9
+              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -5315,7 +5323,9 @@ object Report: TppReport
                 AutoStop = False
                 DataPipeline = dmPipelines.plSchuelerlaufbahn
                 PrinterSetup.BinName = 'Default'
-                PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
+                PrinterSetup.DocumentName = 
+                  'Sch'#252'lerliste - SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @' +
+                  'SuS.rtm'
                 PrinterSetup.PaperName = 'A4 297 x 210 mm'
                 PrinterSetup.PrinterName = 'Default'
                 PrinterSetup.SaveDeviceSettings = False
@@ -5326,6 +5336,7 @@ object Report: TppReport
                 PrinterSetup.mmPaperHeight = 297000
                 PrinterSetup.mmPaperWidth = 210000
                 PrinterSetup.PaperSize = 9
+                Template.Offset = 284
                 Template.Format = ftASCII
                 Units = utMillimeters
                 Version = '15.05'
@@ -5454,7 +5465,7 @@ object Report: TppReport
                         DataPipeline = dmPipelines.plLeistungsuebersicht
                         PrinterSetup.BinName = 'Default'
                         PrinterSetup.DocumentName = 'SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Noten @SuS.rtm'
-                        PrinterSetup.PaperName = 'A4 297 x 210 mm'
+                        PrinterSetup.PaperName = 'A4 210 x 297 mm'
                         PrinterSetup.PrinterName = 'Default'
                         PrinterSetup.SaveDeviceSettings = False
                         PrinterSetup.mmMarginBottom = 15000
@@ -5464,6 +5475,7 @@ object Report: TppReport
                         PrinterSetup.mmPaperHeight = 297000
                         PrinterSetup.mmPaperWidth = 210000
                         PrinterSetup.PaperSize = 9
+                        Template.Offset = 284
                         Template.Format = ftASCII
                         Units = utMillimeters
                         Version = '15.05'
@@ -5620,7 +5632,7 @@ object Report: TppReport
                       DataPipelineName = 'plSchuelerlaufbahn'
                       mmHeight = 2910
                       mmLeft = 18521
-                      mmTop = 3704
+                      mmTop = 6615
                       mmWidth = 17992
                       BandType = 4
                       LayerName = Foreground4
@@ -5638,7 +5650,7 @@ object Report: TppReport
                       DataPipelineName = 'plSchuelerlaufbahn'
                       mmHeight = 2910
                       mmLeft = 18521
-                      mmTop = 6615
+                      mmTop = 3704
                       mmWidth = 17992
                       BandType = 4
                       LayerName = Foreground4
