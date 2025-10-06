@@ -4,7 +4,7 @@ object Report: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
     'Sch'#252'lerliste - Sch'#252'lerinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz' +
-    ' NRW - SchILD-NRW2.rtm'
+    ' NRW @SuS.rtm'
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -17,9 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
-    'D-Reports\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste - Sch'#252'ler' +
-    'innen- und Sch'#252'lerdaten'#252'bermittlungsgesetz NRW - SchILD-NRW2.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SchILD-NRW\Sc' +
+    'hILD-Reports\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste - Sch'#252 +
+    'lerinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz NRW @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -6027,6 +6027,35 @@ object Report: TppReport
       mmWidth = 22754
       BandType = 4
       LayerName = Foreground
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    ResetPageNo = True
+    ReprintOnSubsequentPage = False
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = True
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
     end
   end
   object raCodeModule1: TraCodeModule
