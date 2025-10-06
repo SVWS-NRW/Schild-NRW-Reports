@@ -14,10 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Reports SI\ZP10 - Anlage 4 - Bekanntgabe der ' +
-    'Noten - alle Schulformen.rtm'
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Reports SI\Sch''#252''lerliste - ZP10 Anlage 4 Bekanntgabe der Noten alle Schulformen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

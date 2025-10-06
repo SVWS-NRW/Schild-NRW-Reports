@@ -15,10 +15,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 297000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Repor' +
-    'ts\Reportsammlung 2.0\Reports SI\ZP10 - Export der Textdatei ZP1' +
-    '0Export.rtm'
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Reports SI\ZP10 - Export der Textdatei ZP10Export.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
