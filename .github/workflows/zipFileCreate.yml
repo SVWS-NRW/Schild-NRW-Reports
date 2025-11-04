@@ -45,7 +45,7 @@ jobs:
       - name: Build ZIP (uses .zipignore)
         shell: bash
         run: |
-          ZIP_NAME="Basisreports-SchILD-NRW-3-v${VERSION}-$(date +'%d.%m.%Y').zip"
+          ZIP_NAME="Basisreports-SchILD-NRW-2-v${VERSION}-$(date +'%d.%m.%Y').zip"
           zip -r ".zip/${ZIP_NAME}" . -x@.zipignore
 
       # 6) GitHub Release erstellen oder aktualisieren
