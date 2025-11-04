@@ -1,24 +1,59 @@
-name: Create Release
+# Name des Workflows, wird in der GitHub UI angezeigt
+name: Create Release by pushing new Tag
+
 on:
+  # Workflow läuft beim Push eines Tags wie v1.2.3
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'   # z.B. v1.2.3
+
+# Notwendige Berechtigungen für den Job für Release/Assets
 permissions:
   contents: write
+
 jobs:
   create-zip:
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, 'release')"
+
     steps:
-      - uses: actions/checkout@v4
-      - run: mkdir .zip
-      - run: zip -r ."/.zip/Reports-v1.0.${{ github.run_number }}-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*" "Report-Archiv/*"
-      # zerlegen der Sammlung in zwei getrennte Files
-      # - run: zip -r ."/.zip/Basisreports - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Serienbriefe/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
-      # - run: zip -r ."/.zip/Serienbriefe - v1.0.${{ github.run_number }} - $(date +'%d.%m.%Y').zip" . -x "Basisreports/*" ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat"  "*.docx"
-      - uses: ncipollo/release-action@v1
+      # 1) Code auschecken
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          artifacts: "./.zip/*"
-          allowUpdates: true
-          tag: v1.0.${{ github.run_number }}
+          fetch-depth: 0
+
+      # 2) Version aus dem Tag extrahieren und validieren
+      - name: Extract version from tag
+        id: ver
+        shell: bash
+        run: |
+          RAW="${GITHUB_REF_NAME}"          # z.B. "v1.2.3"
+          if [[ ! "$RAW" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Tag muss das Format vMAJOR.MINOR.PATCH haben (z.B. v1.2.3). Bekommen: $RAW"
+            exit 1
+          fi
+          VER="${RAW#v}"                    # führendes 'v' entfernen -> "1.2.3"
+          echo "version=$VER" >> "$GITHUB_OUTPUT"
+          echo "VERSION=$VER" >> "$GITHUB_ENV"
+          echo "Release version: $VER"
+
+      # 3) .zip-Ordner vorbereiten
+      - name: Create .zip folder
+        run: mkdir -p .zip
+
+      # 5) ZIP-Archiv bauen, ohne Ordner und Dateien aus .zipignore
+      - name: Build ZIP (uses .zipignore)
+        shell: bash
+        run: |
+          ZIP_NAME="Basisreports-SchILD-NRW-3-v${VERSION}-$(date +'%d.%m.%Y').zip"
+          zip -r ".zip/${ZIP_NAME}" . -x@.zipignore
+
+      # 6) GitHub Release erstellen oder aktualisieren
+      - name: Create/Update GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: ".zip/*"                         # alle ZIPs im .zip-Ordner anhängen
+          allowUpdates: true                          # Release bei gleichem Tag aktualisieren
+          tag: "${{ github.ref_name }}"               # = vX.Y.Z
+          name: "Release v${{ steps.ver.outputs.version }}"
           token: ${{ secrets.GITHUB_TOKEN }}
