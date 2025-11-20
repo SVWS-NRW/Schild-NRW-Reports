@@ -5,7 +5,7 @@ object Report: TppReport
   PrinterSetup.DocumentName = 
     'Sch'#252'lerliste - Sch'#252'lerinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz' +
     ' NRW @SuS.rtm'
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -17,9 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SchILD-NRW\Sc' +
-    'hILD-Reports\Reportsammlung 2.0\Basisreports\Sch'#252'lerliste - Sch'#252 +
-    'lerinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz NRW @SuS.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
+    'D-Reports\Schild-NRW-2-Reports\Basisreports\Sch'#252'lerliste - Sch'#252'l' +
+    'erinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz NRW @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -3163,16 +3163,17 @@ object Report: TppReport
             UserName = 'dbBildungsgang'
             Anchors = [atLeft, atRight]
             CharWrap = False
-            DataField = 'Fachklasse'
-            DataPipeline = dmPipelines.Schueler
+            DataField = 'ASDSchulgliederungLang'
+            DataPipeline = dmPipelines.plLernabschnitte
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            ParentDataPipeline = False
             RemoveEmptyLines = False
             Transparent = True
-            DataPipelineName = 'Schueler'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 19017
             mmLeft = 67000
             mmTop = 211929
