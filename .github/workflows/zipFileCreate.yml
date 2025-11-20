@@ -46,7 +46,6 @@ jobs:
       - name: Build ZIP from .zipallow
         shell: bash
         run: |
-		  #Bei Fehlern abbrechen
           set -euo pipefail
 
           #Name der zip-Datei
