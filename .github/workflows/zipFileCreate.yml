@@ -27,6 +27,7 @@ jobs:
         id: ver
         shell: bash
         run: |
+          set -euo pipefail
           RAW="${GITHUB_REF_NAME}"          # z.B. "v1.2.3"
           if [[ ! "$RAW" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "Tag muss das Format vMAJOR.MINOR.PATCH haben (z.B. v1.2.3). Bekommen: $RAW"
@@ -41,14 +42,32 @@ jobs:
       - name: Create .zip folder
         run: mkdir -p .zip
 
-      # 5) ZIP-Archiv bauen, ohne Ordner und Dateien aus .zipignore
-      - name: Build ZIP (uses .zipignore)
+      # 4) ZIP-Archiv bauen, basierend auf Allowlist (.zipallow)
+      - name: Build ZIP from .zipallow
         shell: bash
         run: |
-          ZIP_NAME="Basisreports-SchILD-NRW-2-v${VERSION}-$(date +'%d.%m.%Y').zip"
-          zip -r ".zip/${ZIP_NAME}" . -x@.zipignore
+		      #Bei Fehlern abbrechen
+          set -euo pipefail
 
-      # 6) GitHub Release erstellen oder aktualisieren
+	        #Name der zip-Datei
+          ZIP_NAME="Basisreports-SchILD-NRW3-v${VERSION}-$(date +'%d.%m.%Y').zip"							   
+
+          # Windows-Zeilenenden in .zipallow entfernen (falls Datei unter Windows bearbeitet wurde)
+          sed -i 's/\r$//' .zipallow
+
+          echo "Folgende Einträge werden ins ZIP übernommen:"
+          while IFS= read -r p; do
+            if [[ -e "$p" ]]; then
+              echo "  - $p"
+            else
+              echo "  - WARNUNG: '$p' existiert nicht und wird ignoriert."
+            fi
+          done < .zipallow
+
+          # Jede Zeile in .zipallow ist Datei/Ordner im Repo-Root
+          zip -r ".zip/${ZIP_NAME}" -@ < .zipallow
+
+      # 5) GitHub Release erstellen oder aktualisieren
       - name: Create/Update GitHub Release
         uses: ncipollo/release-action@v1
         with:
