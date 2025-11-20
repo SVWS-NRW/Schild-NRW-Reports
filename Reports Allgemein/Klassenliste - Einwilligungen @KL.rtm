@@ -14,10 +14,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SchILD-NRW\Sc' +
-    'hILD-Reports\Reportsammlung 2.0\Basisreports\Klassenliste - Einw' +
-    'illigungen @KL.rtm'
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Basisreports\Klassenliste - Einwilligungen @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
