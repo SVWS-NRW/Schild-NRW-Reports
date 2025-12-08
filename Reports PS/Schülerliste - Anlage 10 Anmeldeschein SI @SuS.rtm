@@ -4,7 +4,7 @@ object Report: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.Collation = False
   PrinterSetup.DocumentName = 'Sch'#252'lerliste - Anlage 10 Anmeldeschein SI @SuS.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -1004,13 +1004,13 @@ object Report: TppReport
         '{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Calibr' +
         'i;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\view' +
         'kind4\uc1\pard\qj\cf1\lang1031\b\f0\fs18 Hiermit wird verbindlic' +
-        'h best\'#39'e4tigt, dass <dbtext datapipeline='#39'Schueler'#39'>AlleVorname' +
-        'nName</dbtext> heute an unserer Schule aufgenommen worden ist.\f' +
-        '1\par'#13#10'Hinweis:\line\b0\f0 Die aufnehmende weiterf\'#39'fchrende Sch' +
-        'ule hat darauf zu achten, dass die Anmeldung des Kindes von alle' +
-        'n das Kind betreffenden Personen im Sinne des \'#39'a7 123 Absatz 1 ' +
-        'Schulgesetz NRW unterschrieben werden muss (z. B. beide Elternte' +
-        'ile).\f1\par'#13#10'}'#13#10#0
+        'h best\'#39'e4tigt, dass <dbtext datapipeline='#39'Schueler'#39'>VornameName' +
+        '</dbtext>  heute an unserer Schule aufgenommen worden ist.\f1\pa' +
+        'r'#13#10'Hinweis:\line\b0\f0 Die aufnehmende weiterf\'#39'fchrende Schule ' +
+        'hat darauf zu achten, dass die Anmeldung des Kindes von allen da' +
+        's Kind betreffenden Personen im Sinne des \'#39'a7 123 Absatz 1 Schu' +
+        'lgesetz NRW unterschrieben werden muss (z. B. beide Elternteile)' +
+        '.\f1\par'#13#10'}'#13#10#0
       RemoveEmptyLines = False
       Stretch = True
       mmHeight = 23495
