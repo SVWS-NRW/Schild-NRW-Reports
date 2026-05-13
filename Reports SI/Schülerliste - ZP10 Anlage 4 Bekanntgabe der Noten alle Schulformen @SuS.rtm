@@ -2,8 +2,10 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ZP10 - Anlage 4 - Bekanntgabe der Noten - alle Schulformen.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.DocumentName = 
+    'Sch'#252'lerliste - ZP10 Anlage 4 Bekanntgabe der Noten alle Schulfor' +
+    'men @SuS.rtm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -14,8 +16,10 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchILD-Reports\Reportsammlung 2.0\Reports SI\Sch''#252''lerliste - ZP10 Anlage 4 Bekanntgabe der Noten alle Schulformen.rtm'
+  Template.FileName = 
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
+    'D-Reports\Schild-NRW-2-Reports\Reports SI\Sch'#252'lerliste - ZP10 An' +
+    'lage 4 Bekanntgabe der Noten alle Schulformen @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -217,7 +221,6 @@ object Report: TppReport
       mmDefaultColWidth = 40000
       object ppTableRow1: TppTableRow
         UserName = 'TableRow1'
-        Stretch = True
         mmHeight = 8000
         mmLeft = 0
         mmTop = 0
@@ -565,7 +568,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.ppBKAbschlussFaecher
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Sch'#252'lerliste Namen.rtm'
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -1871,11 +1874,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2024'
+      AutoSearchSettings.SearchExpression = '13.05.2026'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '16.05.2024'
+      Value = '13.05.2026'
       UserName = 'Versionsdatum'
     end
   end
