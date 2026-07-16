@@ -1,0 +1,574 @@
+object Report: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.ppPersonengruppen
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Personengruppen - Gruppen und Mitgliederliste.rtm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 15000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 20000
+  PrinterSetup.mmMarginTop = 15000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
+    'D-Reports\Schild-NRW-2-Reports\Reports Allgemein\Personengruppen' +
+    ' - Gruppen und Mitgliederliste.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Calibri'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 170000
+  DataPipelineName = 'ppPersonengruppen'
+  object ppTitleBand1: TppTitleBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 17000
+    mmPrintPosition = 0
+    object ppLabel3: TppLabel
+      UserName = 'dbListenbezeichnung'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 1.000000000000000000
+      Caption = 'Personengruppen'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 16
+      Font.Style = [fsBold]
+      mmHeight = 7197
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 170127
+      BandType = 1
+      LayerName = Foreground1
+    end
+    object ppDBText2: TppDBText
+      UserName = 'dbSchuljahrAbschnitt'
+      AutoSize = True
+      DataField = 'SchuljahrUndAbschnittText'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      ParentDataPipeline = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 3704
+      mmLeft = 129964
+      mmTop = 7408
+      mmWidth = 39952
+      BandType = 1
+      LayerName = Foreground1
+    end
+    object ppDBText1: TppDBText
+      UserName = 'dbSchuleBezeichnung'
+      AutoSize = True
+      DataField = 'Bezeichnung1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 7408
+      mmWidth = 19844
+      BandType = 1
+      LayerName = Foreground1
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    Border.Style = psClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 10054
+    mmPrintPosition = 0
+    object ppSubReport3: TppSubReport
+      UserName = 'UnterberichtPersonen'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ParentWidth = False
+      TraverseAllData = False
+      DataPipelineName = 'ppPersonengruppen_Personen'
+      mmHeight = 5000
+      mmLeft = 5000
+      mmTop = 0
+      mmWidth = 165000
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport3: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.ppPersonengruppen_Personen
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Personengruppen - Gruppen und Mitgliederliste.rtm'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 15000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 20000
+        PrinterSetup.mmMarginTop = 15000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 170000
+        DataPipelineName = 'ppPersonengruppen_Personen'
+        object ppDetailBand4: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          Border.Color = clSilver
+          Border.Weight = 0.750000000000000000
+          PrintHeight = phDynamic
+          mmBottomOffset = 0
+          mmHeight = 5027
+          mmPrintPosition = 0
+          object ppMemo1: TppMemo
+            UserName = 'MemoPerson'
+            KeepTogether = True
+            Border.BorderPositions = [bpBottom]
+            Border.Visible = True
+            Border.Weight = 0.750000000000000000
+            Caption = 'MemoPerson'
+            CharWrap = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            Lines.Strings = (
+              'Personendetails')
+            RemoveEmptyLines = True
+            Stretch = True
+            Transparent = True
+            mmHeight = 5000
+            mmLeft = 1000
+            mmTop = 0
+            mmWidth = 168000
+            BandType = 4
+            LayerName = PageLayer1
+            mmBottomOffset = 1000
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            mmLeading = 0
+          end
+        end
+        object ppGroup7: TppGroup
+          DataPipeline = dmPipelines.ppPersonengruppen_Personen
+          GroupFileSettings.NewFile = False
+          GroupFileSettings.EmailFile = False
+          OutlineSettings.CreateNode = True
+          StartOnOddPage = False
+          UserName = 'Group7'
+          mmNewColumnThreshold = 0
+          mmNewPageThreshold = 0
+          DataPipelineName = 'ppPersonengruppen_Personen'
+          NewFile = False
+          object ppGroupHeaderBand7: TppGroupHeaderBand
+            Background.Brush.Style = bsClear
+            Border.Weight = 0.750000000000000000
+            mmBottomOffset = 0
+            mmHeight = 0
+            mmPrintPosition = 0
+          end
+          object ppGroupFooterBand7: TppGroupFooterBand
+            Background.Brush.Style = bsClear
+            Border.BorderPositions = [bpTop]
+            Border.Visible = True
+            Border.Weight = 0.750000000000000000
+            HideWhenOneDetail = False
+            mmBottomOffset = 0
+            mmHeight = 0
+            mmPrintPosition = 0
+          end
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+            44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+            7450726F63656475726506536F7572636514C508000070726F63656475726520
+            44657461696C4265666F72655072696E743B0D0A7661720D0A20206E616D6520
+            3A20537472696E673B0D0A2020617274203A20737472696E673B0D0A62656769
+            6E0D0A20200D0A20202F2F476C6F62616C65205661726961626C65207A7572C3
+            BC636B7365747A656E0D0A2020706572736F6E656E646174656E203A3D202727
+            3B0D0A20200D0A20202F2F416E726564652C20416B6164656D69736368657220
+            477261642C20566F726E616D652C204E6163686E616D65207A7573616D6D656E
+            7365747A656E0D0A2020696620506572736F6E656E6772757070656E5F506572
+            736F6E656E5B27506572736F6E4E616D65275D203C3E202727207468656E206E
+            616D65203A3D20506572736F6E656E6772757070656E5F506572736F6E656E5B
+            27506572736F6E4E616D65275D3B0D0A2020696620506572736F6E656E677275
+            7070656E5F506572736F6E656E5B27506572736F6E566F726E616D65275D203C
+            3E202727207468656E206E616D65203A3D20506572736F6E656E677275707065
+            6E5F506572736F6E656E5B27506572736F6E566F726E616D65275D202B202720
+            27202B206E616D653B0D0A2020696620506572736F6E656E6772757070656E5F
+            506572736F6E656E5B27506572736F6E416B616447726164275D203C3E202727
+            207468656E206E616D65203A3D20506572736F6E656E6772757070656E5F5065
+            72736F6E656E5B27506572736F6E416B616447726164275D202B20272027202B
+            206E616D653B0D0A2020696620506572736F6E656E6772757070656E5F506572
+            736F6E656E5B27506572736F6E416E72656465275D203C3E202727207468656E
+            206E616D65203A3D20506572736F6E656E6772757070656E5F506572736F6E65
+            6E5B27506572736F6E416E72656465275D202B20272027202B206E616D653B0D
+            0A2020706572736F6E656E646174656E203A3D206E616D653B0D0A20200D0A20
+            202F2F506572736F6E656E2D4172742D4BC3BC727A656C20696E205465787420
+            C3BC6265727365747A656E0D0A2020696620506572736F6E656E677275707065
+            6E5F506572736F6E656E5B27506572736F6E417274275D203D20274C27207468
+            656E20617274203A3D20274C6568726B72616674270D0A2020656C7365206966
+            20506572736F6E656E6772757070656E5F506572736F6E656E5B27506572736F
+            6E417274275D203D20275327207468656E20617274203A3D2027536368756C6B
+            696E64270D0A2020656C736520696620506572736F6E656E6772757070656E5F
+            506572736F6E656E5B27506572736F6E417274275D203D20274527207468656E
+            20617274203A3D202765727A696568756E677362657265636874696774652050
+            6572736F6E270D0A2020656C736520696620506572736F6E656E677275707065
+            6E5F506572736F6E656E5B27506572736F6E417274275D203D20274127207468
+            656E20417274203A3D2027736F6E737469676520506572736F6E270D0A202065
+            6C736520617274203A3D2027273B0D0A2020696620617274203C3E2027272074
+            68656E20706572736F6E656E646174656E203A3D20706572736F6E656E646174
+            656E202B20272C2027202B206172743B0D0A20200D0A20202F2F526573746C69
+            63686520446174656E2068696E7A7566C3BC67656E0D0A202069662050657273
+            6F6E656E6772757070656E5F506572736F6E656E5B27506572736F6E53747261
+            737365275D203C3E202727207468656E20706572736F6E656E646174656E203A
+            3D20706572736F6E656E646174656E202B20272C2027202B20506572736F6E65
+            6E6772757070656E5F506572736F6E656E5B27506572736F6E53747261737365
+            275D3B0D0A2020696620506572736F6E656E6772757070656E5F506572736F6E
+            656E5B27506572736F6E504C5A275D203C3E202727207468656E20706572736F
+            6E656E646174656E203A3D20706572736F6E656E646174656E202B20272C2027
+            202B20506572736F6E656E6772757070656E5F506572736F6E656E5B27506572
+            736F6E504C5A275D202B20272027202B20506572736F6E656E6772757070656E
+            5F506572736F6E656E5B27506572736F6E4F7274275D3B0D0A20206966205065
+            72736F6E656E6772757070656E5F506572736F6E656E5B27506572736F6E5465
+            6C65666F6E275D203C3E202727207468656E20706572736F6E656E646174656E
+            203A3D20706572736F6E656E646174656E202B20272C2027202B20506572736F
+            6E656E6772757070656E5F506572736F6E656E5B27506572736F6E54656C6566
+            6F6E275D3B0D0A2020696620506572736F6E656E6772757070656E5F50657273
+            6F6E656E5B27506572736F6E456D61696C275D203C3E202727207468656E2070
+            6572736F6E656E646174656E203A3D20706572736F6E656E646174656E202B20
+            272C2027202B20506572736F6E656E6772757070656E5F506572736F6E656E5B
+            27506572736F6E456D61696C275D3B0D0A2020696620506572736F6E656E6772
+            757070656E5F506572736F6E656E5B275A757361747A696E666F275D203C3E20
+            2727207468656E20706572736F6E656E646174656E203A3D20706572736F6E65
+            6E646174656E202B20272C2027202B20506572736F6E656E6772757070656E5F
+            506572736F6E656E5B275A757361747A696E666F275D3B0D0A20206966205065
+            72736F6E656E6772757070656E5F506572736F6E656E5B2742656D65726B756E
+            67275D203C3E202727207468656E20706572736F6E656E646174656E203A3D20
+            706572736F6E656E646174656E202B20272C2027202B20506572736F6E656E67
+            72757070656E5F506572736F6E656E5B2742656D65726B756E67275D3B0D0A20
+            200D0A20202F2F496E666F726D6174696F6E656E20696E204D656D6F2D46656C
+            642073636872656962656E0D0A2020696620706572736F6E656E646174656E20
+            3D202727207468656E204D656D6F506572736F6E2E54657874203A3D20272D20
+            6B65696E65202D2720656C7365204D656D6F506572736F6E2E54657874203A3D
+            20706572736F6E656E646174656E3B0D0A20200D0A656E643B0D0A0D436F6D70
+            6F6E656E744E616D65060644657461696C094576656E744E616D65060B426566
+            6F72655072696E74074576656E7449440218084361726574506F730102290221
+            000000}
+        end
+        object ppDesignLayers4: TppDesignLayers
+          object ppDesignLayer4: TppDesignLayer
+            UserName = 'PageLayer1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppMemo2: TppMemo
+      UserName = 'MemoKeine'
+      KeepTogether = True
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Caption = 'MemoKeine'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      Lines.Strings = (
+        '- keine -')
+      RemoveEmptyLines = True
+      ShiftRelativeTo = ppSubReport3
+      Stretch = True
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 5027
+      mmTop = 5027
+      mmWidth = 168011
+      BandType = 4
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 1000
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 5000
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'AbgrenzungslinieFuss'
+      ParentWidth = True
+      Weight = 0.750000000000000000
+      mmHeight = 1000
+      mmLeft = 0
+      mmTop = 500
+      mmWidth = 170000
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'Datum'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 1000
+      mmWidth = 16000
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'Dokumentenname'
+      VarType = vtDocumentName
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3705
+      mmLeft = 25194
+      mmTop = 1058
+      mmWidth = 120000
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'Seitenzahl'
+      VarType = vtPageNoDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3705
+      mmLeft = 154000
+      mmTop = 1058
+      mmWidth = 16000
+      BandType = 8
+      LayerName = Foreground1
+    end
+  end
+  object ppGroup2: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.ppPersonengruppen
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    KeepTogether = True
+    OutlineSettings.CreateNode = True
+    StartOnOddPage = False
+    UserName = 'Group2'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'ppPersonengruppen'
+    NewFile = False
+    object ppGroupHeaderBand2: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 9000
+      mmPrintPosition = 0
+      object ppDBText71: TppDBText
+        UserName = 'dbSchuelernameUeberschrift'
+        Border.Weight = 1.000000000000000000
+        DataField = 'Gruppenname'
+        DataPipeline = dmPipelines.ppPersonengruppen
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 12
+        Font.Style = [fsBold]
+        Transparent = True
+        DataPipelineName = 'ppPersonengruppen'
+        mmHeight = 5500
+        mmLeft = 0
+        mmTop = 2500
+        mmWidth = 170000
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground1
+      end
+    end
+    object ppGroupFooterBand2: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365068E70726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20200D0A20202F2F5661726961626C65
+      207A7572204175666E61686D652064657220446174656E2065696E6572205065
+      72736F6E20696E2065696E6572204772757070650D0A2020706572736F6E656E
+      646174656E203A20537472696E673B200D0A0D0A626567696E0D0A0D0A656E64
+      3B0D0A084361726574506F730102030203000001060F5472614576656E744861
+      6E646C65720B50726F6772616D4E616D65061144657461696C4265666F726550
+      72696E740B50726F6772616D54797065070B747450726F63656475726506536F
+      7572636506CA70726F6365647572652044657461696C4265666F72655072696E
+      743B0D0A626567696E0D0A0D0A20202F2F446173204D656D6F4B65696E652077
+      697264206E7572206765647275636B742C2077656E6E2073696368206B65696E
+      6520506572736F6E20696E206465722047727570706520626566696E6465740D
+      0A20204D656D6F4B65696E652E56697369626C65203A3D20506572736F6E656E
+      6772757070656E5F506572736F6E656E5B27506572736F6E4E616D65275D203D
+      2027273B0D0A20200D0A656E643B0D0A0D436F6D706F6E656E744E616D650606
+      44657461696C094576656E744E616D65060B4265666F72655072696E74074576
+      656E7449440218084361726574506F730102530204000000}
+  end
+  object ppDesignLayers6: TppDesignLayers
+    object ppDesignLayer6: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '46204'
+      DataType = dtDate
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 46204d
+      UserName = 'Versionsdatum'
+    end
+  end
+end
