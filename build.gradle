@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '1.1.2'
+version = '1.1.3'
 
 
 publishing {
@@ -42,14 +42,40 @@ publishing {
     }
 }
 
-task copyBasisreports(type: Copy) {
-    into "$buildDir/output/Basisreports"
-    from "Basisreports"
+task copyReportsAllgemein(type: Copy) {
+    into "$buildDir/output/Reports Allgemein"
+    from "Reports Allgemein"
+}
+
+task copyReportsLeistungsuebersichten(type: Copy) {
+    into "$buildDir/output/Reports Leistungsübersichten"
+    from "Reports Leistungsübersichten"
+}
+
+task copyReportsPS(type: Copy) {
+    into "$buildDir/output/Reports PS"
+    from "Reports PS"
+}
+
+task copyReportsSI(type: Copy) {
+    into "$buildDir/output/Reports SI"
+    from "Reports SI"
+}
+
+task copyReportsSII(type: Copy) {
+    into "$buildDir/output/Reports SII"
+    from "Reports SII"
 }
 
 task copySerienbriefe(type: Copy) {
     into "$buildDir/output/Serienbriefe"
     from "Serienbriefe"
+}
+
+task copyHinweis(type: Copy) {
+    into "$buildDir/output"
+	include "Hinweis.txt"
+    from "."
 }
 
 task doZip(type: Zip) {
@@ -59,7 +85,12 @@ task doZip(type: Zip) {
     from "$buildDir/output"
 }
 
-doZip.dependsOn copyBasisreports
+doZip.dependsOn copyReportsAllgemein
+doZip.dependsOn copyReportsLeistungsuebersichten
+doZip.dependsOn copyReportsPS
+doZip.dependsOn copyReportsSI
+doZip.dependsOn copyReportsSII
 doZip.dependsOn copySerienbriefe
+doZip.dependsOn copyHinweis
 build.dependsOn doZip
 generatePomFileForMavenZipPublication.dependsOn build
