@@ -4,7 +4,7 @@ object Report: TppReport
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Sch'#252'lerliste - Aufnahmebest'#228'tigung.rtm'
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -130,19 +130,19 @@ object Report: TppReport
         '--\cf0\kerning2\f1 "\cf1\kerning0\f0 ---------------------------' +
         '----------------------------------\cf0\kerning2\f1 "\cf1\kerning' +
         '0\f0 --------\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\b\fs28 Abmeldebest\'#39'e4tigu' +
-        'ng\b0\fs22\par'#13#10'\par'#13#10'\b\i <dbtext>VornameName<dbtext>\b0\i0 , g' +
-        'eboren am \b\i <dbtext>Geburtsdatum</dbtext> \b0\i0 in \b\i <dbt' +
-        'ext>Geburtsort</dbtext>\b0\i0 , Staatsangeh\'#39'f6rigkeit \b\i <dbt' +
-        'ext>StaatAbk</dbtext>\b0\i0 , Religionszugeh\'#39'f6rigkeit \b\i <db' +
-        'text>ReligionAbk</dbtext>\b0\i0 , besuchte zuletzt\par'#13#10'\par'#13#10'di' +
-        'e Klasse __________ und wird am _________________ aus unserer Sc' +
-        'hule entlassen.\par'#13#10'\par'#13#10'\b Erziehungsberechtigt: \b0 <dbtext ' +
-        'datapipeline='#39'Erzieher'#39'>VornamenUndName</dbtext>\par'#13#10'\par'#13#10'Mit ' +
-        'freundlichen Gr\'#39'fc\'#39'dfen\par'#13#10'\par'#13#10'\par'#13#10'_____________________' +
-        '_\tab _________________________\tab        _____________________' +
-        '____\par'#13#10'                  \fs18 Ort, Datum\tab\tab\tab   Schul' +
-        'leiter/in\tab\tab\tab            Schulstempel\f2\fs22\par'#13#10'\b\f0' +
-        '\fs28\par'#13#10'}'#13#10#0
+        'ng\b0\fs22\par'#13#10'\par'#13#10'\b\i <dbtext>VornameName</dbtext>\b0\i0 , ' +
+        'geboren am \b\i <dbtext>Geburtsdatum</dbtext> \b0\i0 in \b\i <db' +
+        'text>Geburtsort</dbtext>\b0\i0 , Staatsangeh\'#39'f6rigkeit \b\i <db' +
+        'text>StaatAbk</dbtext>\b0\i0 , Religionszugeh\'#39'f6rigkeit \b\i <d' +
+        'btext>ReligionAbk</dbtext>\b0\i0 , besuchte zuletzt\par'#13#10'\par'#13#10'd' +
+        'ie Klasse __________ und wird am _________________ aus unserer S' +
+        'chule entlassen.\par'#13#10'\par'#13#10'\b Erziehungsberechtigt: \b0 <dbtext' +
+        ' datapipeline='#39'Erzieher'#39'>VornamenUndName</dbtext>\par'#13#10'\par'#13#10'Mit' +
+        ' freundlichen Gr\'#39'fc\'#39'dfen\par'#13#10'\par'#13#10'\par'#13#10'____________________' +
+        '__\tab _________________________\tab        ____________________' +
+        '_____\par'#13#10'                  \fs18 Ort, Datum\tab\tab\tab   Schu' +
+        'lleiter/in\tab\tab\tab            Schulstempel\f2\fs22\par'#13#10'\b\f' +
+        '0\fs28\par'#13#10'}'#13#10#0
       RemoveEmptyLines = False
       Stretch = True
       Transparent = True
@@ -486,11 +486,11 @@ object Report: TppReport
     object ppParameter5: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '28.04.2026'
+      AutoSearchSettings.SearchExpression = '07.09.2026'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '28.04.2026'
+      Value = '07.09.2026'
       UserName = 'Versionsdatum'
     end
   end
