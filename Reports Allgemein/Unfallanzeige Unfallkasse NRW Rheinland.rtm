@@ -15,14 +15,15 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Unfallanzeige Unfallkasse NRW Rh' +
-    'einland.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
+    'D-Reports\Schild-NRW-2-Reports\Reports Allgemein\Unfallanzeige U' +
+    'nfallkasse NRW Rheinland.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
   AllowPrintToFile = True
   ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  CachePages = True
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
