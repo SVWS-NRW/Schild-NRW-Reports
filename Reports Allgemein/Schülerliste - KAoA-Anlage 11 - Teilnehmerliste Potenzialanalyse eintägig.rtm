@@ -4,10 +4,10 @@ object Report: TppReport
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
-    'Sch'#252'lerliste KAoA-Anlage 11 - Teilnehmerliste Potenzialanalyse e' +
-    'int'#228'gig.rtm'
+    'Sch'#252'lerliste - KAoA-Anlage 11 - Teilnehmerliste Potenzialanalyse' +
+    ' eint'#228'gig.rtm'
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -19,9 +19,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\SchILD-NRW\SchILD-Reports\' +
-    'Reportsammlung 2.0\Basisreports\Sch'#252'lerliste KAoA-Anlage 11 - Te' +
-    'ilnehmerliste Potenzialanalyse eint'#228'gig.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SchILD-NRW\SchIL' +
+    'D-Reports\Schild-NRW-2-Reports\Reports Allgemein\Sch'#252'lerliste - ' +
+    'KAoA-Anlage 11 - Teilnehmerliste Potenzialanalyse eint'#228'gig.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -110,10 +110,9 @@ object Report: TppReport
       Font.Name = 'Calibri'
       Font.Size = 10
       Font.Style = []
-      TextAlignment = taRightJustified
       Transparent = True
       mmHeight = 3969
-      mmLeft = 265
+      mmLeft = 1058
       mmTop = 1852
       mmWidth = 39423
       BandType = 0
@@ -529,7 +528,7 @@ object Report: TppReport
             UserName = 'Teilnahmebeleg'
             Anchors = [atLeft, atRight]
             AutoSize = False
-            Caption = 'Teilnahmebeleg zum BO-Instrument:'
+            Caption = 'Teilnehmerbeleg zum BO-Instrument:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -569,11 +568,11 @@ object Report: TppReport
             UserName = 'Potenzialanalyse'
             Anchors = [atLeft, atRight]
             AutoSize = False
-            Caption = 'Potenzialanalyse'
+            Caption = '"Potenziale entdecken"'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
-            Font.Size = 12
+            Font.Size = 10
             Font.Style = [fsBold]
             Transparent = True
             VerticalAlignment = avCenter
@@ -1316,9 +1315,8 @@ object Report: TppReport
             Anchors = [atLeft, atRight]
             AutoSize = False
             Caption = 
-              'Gef'#246'rdert mit Mitteln des Landes Nordrhein-Westfalen, der Region' +
-              'aldirektion Nordrhein-Westfalen der Bundesagentur f'#252'r Arbeit und' +
-              ' des Bundesministeriums f'#252'r Bildung und Forschung'
+              'Mit finanzieller Unterst'#252'tzung des Landes Nordrhein-Westfalen, d' +
+              'er Europ'#228'ischen Union und der Bundesagentur f'#252'r Arbeit.'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -1565,6 +1563,23 @@ object Report: TppReport
         mmWidth = 89976
       end
     end
+    object ppLabel23: TppLabel
+      UserName = 'Label23'
+      Caption = 'V30'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 259292
+      mmTop = 1852
+      mmWidth = 5556
+      BandType = 0
+      LayerName = Foreground
+    end
   end
   object ppDetailBand1: TppDetailBand
     Background1.Brush.Style = bsClear
@@ -1775,7 +1790,7 @@ object Report: TppReport
     mmPrintPosition = 0
     object ppLabel13: TppLabel
       UserName = 'Beobachter'
-      Caption = 'Beobachter/innen:'
+      Caption = 'P'#228'dagogische Begleitperson/en:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1785,7 +1800,7 @@ object Report: TppReport
       mmHeight = 3969
       mmLeft = 0
       mmTop = 0
-      mmWidth = 26723
+      mmWidth = 46302
       BandType = 8
       LayerName = Foreground
     end
@@ -2097,314 +2112,6 @@ object Report: TppReport
         mmWidth = 57541
       end
     end
-    object ppTableGrid6: TppTableGrid
-      UserName = 'TableGrid6'
-      DefaultColWidth = 12.699999809265140000
-      DefaultRowHeight = 12.699999809265140000
-      mmHeight = 20108
-      mmLeft = 140000
-      mmTop = 4763
-      mmWidth = 124884
-      BandType = 8
-      LayerName = Foreground
-      mmBottomOffset = 0
-      mmOverFlowOffset = 0
-      mmStopPosition = 0
-      mmMinHeight = 0
-      mmDefaultRowHeight = 12700
-      mmDefaultColWidth = 12700
-      object ppTableRow8: TppTableRow
-        UserName = 'TableRow8'
-        mmHeight = 5850
-        mmLeft = 0
-        mmTop = 0
-        mmWidth = 48948
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppTableCell34: TppTableCell
-          UserName = 'TableCell34'
-          Border.BorderPositions = [bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 5850
-          mmPadding = 1058
-        end
-        object ppTableCell35: TppTableCell
-          UserName = 'TableCell35'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 5850
-          mmPadding = 1058
-          object ppLabel15: TppLabel
-            UserName = 'Beobachter34'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Caption = 'Name, Vorname'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 149084
-            mmTop = 5821
-            mmWidth = 57239
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-        object ppTableCell36: TppTableCell
-          UserName = 'TableCell36'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 5850
-          mmPadding = 1058
-          object ppLabel16: TppLabel
-            UserName = 'Unterschrift34'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Caption = 'Unterschrift'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 208439
-            mmTop = 5821
-            mmWidth = 55387
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-      end
-      object ppTableRow9: TppTableRow
-        UserName = 'TableRow9'
-        mmHeight = 7129
-        mmLeft = 0
-        mmTop = 0
-        mmWidth = 48948
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppTableCell37: TppTableCell
-          UserName = 'TableCell37'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-          object ppLabel17: TppLabel
-            UserName = 'Nr3'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Caption = '3.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 141058
-            mmTop = 12200
-            mmWidth = 5910
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-        object ppTableCell38: TppTableCell
-          UserName = 'TableCell38'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-        object ppTableCell39: TppTableCell
-          UserName = 'TableCell301'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-      end
-      object ppTableRow10: TppTableRow
-        UserName = 'TableRow10'
-        mmHeight = 7129
-        mmLeft = 0
-        mmTop = 0
-        mmWidth = 48948
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppTableCell40: TppTableCell
-          UserName = 'TableCell40'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-          object ppLabel18: TppLabel
-            UserName = 'Nr4'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Caption = '4.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 141058
-            mmTop = 19637
-            mmWidth = 5910
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-        object ppTableCell41: TppTableCell
-          UserName = 'TableCell41'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-        object ppTableCell42: TppTableCell
-          UserName = 'TableCell42'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Visible = True
-          Border.Weight = 1.000000000000000000
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-      end
-      object ppTableColumn52: TppTableColumn
-        mmWidth = 8026
-      end
-      object ppTableColumn53: TppTableColumn
-        mmWidth = 59355
-      end
-      object ppTableColumn54: TppTableColumn
-        mmWidth = 57503
-      end
-    end
   end
   object raCodeModule1: TraCodeModule
     ProgramStream = {
@@ -2581,11 +2288,11 @@ object Report: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '16.05.2024'
+      AutoSearchSettings.SearchExpression = '08.09.2026'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '16.05.2024'
+      Value = '08.09.2026'
       UserName = 'Versionsdatum'
     end
   end
